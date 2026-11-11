@@ -2740,6 +2740,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/mechanisms-hrv-and-age.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-hrv-and-age.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-hrv-and-age.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/mechanisms-hrv-day-to-day.avif": {
     "width": 1916,
     "height": 821
@@ -2761,6 +2773,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "height": 768
   },
   "/images/science/mechanisms-illness-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-loneliness-social-connections-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-loneliness-social-connections-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-loneliness-social-connections-and-hrv.webp": {
     "width": 1376,
     "height": 768
   },

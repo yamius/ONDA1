@@ -1107,6 +1107,27 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s10433-021-00638-2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The association between supportive social ties and autonomic nervous system function—differences between family ties and friendship ties in a cohort of older adults",
+   "firstAuthor": "Bosle",
+   "authors": [
+    "Bosle",
+    "Brenner",
+    "Fischer",
+    "Jarczok",
+    "Schöttker",
+    "Perna",
+    "Hoffmann",
+    "Herr"
+   ],
+   "year": 2021,
+   "yearAlt": 2022,
+   "journal": "European Journal of Ageing",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
+  },
   "doi:10.1007/s10484-006-9009-3": {
    "kind": "doi",
    "valid": true,
@@ -1795,6 +1816,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.biopsycho.2024.108963": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Loneliness is associated with diminished heart rate variability reactivity to acute social stress in younger adults",
+   "firstAuthor": "Song",
+   "authors": [
+    "Song",
+    "Sun",
+    "Luo",
+    "Yu"
+   ],
+   "year": 2025,
+   "journal": "Biological Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
+  },
   "doi:10.1016/j.biopsycho.2026.109254": {
    "kind": "doi",
    "valid": true,
@@ -1810,6 +1847,21 @@
    "journal": "Biological Psychology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.biopsycho.2026.109328": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Young adults’ resilience in the context of loneliness: The moderating role of autonomic nervous system activity at rest and in response to challenge",
+   "firstAuthor": "Philbrook",
+   "authors": [
+    "Philbrook",
+    "Hinnant",
+    "Garcia"
+   ],
+   "year": 2026,
+   "journal": "Biological Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.1016/j.bpsc.2017.12.004": {
    "kind": "doi",
@@ -2392,6 +2444,20 @@
    "journal": "Forensic Science International",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.hrthm.2016.02.006": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Reference values for time- and frequency-domain heart rate variability measures",
+   "firstAuthor": "Sammito",
+   "authors": [
+    "Sammito",
+    "Böckelmann"
+   ],
+   "year": 2016,
+   "journal": "Heart Rhythm",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.1016/j.ijpsycho.2011.02.004": {
    "kind": "doi",
@@ -7361,6 +7427,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1111/psyp.14760": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Enhancing Psychophysiological Well‐Being Through Nature‐Based Soundscapes: An Examination of Heart Rate Variability in a Cross‐Over Study",
+   "firstAuthor": "Kumpulainen",
+   "authors": [
+    "Kumpulainen",
+    "Esmaeilzadeh",
+    "Pesonen",
+    "Brazão",
+    "Pesola"
+   ],
+   "year": 2025,
+   "journal": "Psychophysiology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
+  },
   "doi:10.1111/psyp.70213": {
    "kind": "doi",
    "valid": true,
@@ -9128,6 +9211,23 @@
    "source": "crossref",
    "verifiedAt": "2026-11-11"
   },
+  "doi:10.1186/s12889-026-27255-x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Forest therapy for psychological stress and emotional disorders: a systematic review and meta-analysis",
+   "firstAuthor": "Qin",
+   "authors": [
+    "Qin",
+    "Yang",
+    "Liu",
+    "Zhang",
+    "Pan"
+   ],
+   "year": 2026,
+   "journal": "BMC Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
+  },
   "doi:10.1186/s12902-016-0128-4": {
    "kind": "doi",
    "valid": true,
@@ -9566,6 +9666,37 @@
    "journal": "Annals of Clinical Biochemistry: International Journal of Laboratory Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1265/ehpm.26-00092": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Short-term effects of urban versus forest bathing on stress, mood, sleep, immune function, and metabolic health: a randomized, open-label, 2 × 2 crossover trial",
+   "firstAuthor": "Dai",
+   "authors": [
+    "Dai",
+    "Liao",
+    "Ouyang",
+    "Xiao",
+    "Tian",
+    "Qiu",
+    "Yang",
+    "Wang",
+    "Gong",
+    "Li",
+    "Wang",
+    "Xu",
+    "Fang",
+    "Tan",
+    "Huang",
+    "Zhou",
+    "Peng",
+    "Peng",
+    "Wu"
+   ],
+   "year": 2026,
+   "journal": "Environmental Health and Preventive Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.12688/molpsychol.17401.1": {
    "kind": "doi",
@@ -10124,6 +10255,26 @@
    "journal": "Physiological Reports",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.14814/phy2.70399": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sex and age differences in the association between heart rate variability and cardiac chronotropy: A replication‐extension study",
+   "firstAuthor": "Carnevali",
+   "authors": [
+    "Carnevali",
+    "Watanabe",
+    "Barbetti",
+    "Hong",
+    "Williams",
+    "Kohn",
+    "Koenig",
+    "Thayer"
+   ],
+   "year": 2025,
+   "journal": "Physiological Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.14814/phy2.70527": {
    "kind": "doi",
@@ -11629,6 +11780,26 @@
    "journal": "Frontiers in Public Health",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.3389/fpubh.2025.1631613": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Therapeutic effects of forest bathing on older adult patients with essential hypertension: evidence from a subtropical evergreen broad-leaved forest",
+   "firstAuthor": "Li",
+   "authors": [
+    "Li",
+    "Liu",
+    "Qian",
+    "Sun",
+    "Zhao",
+    "Uehara",
+    "Wang",
+    "Zhou"
+   ],
+   "year": 2025,
+   "journal": "Frontiers in Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.3389/fspor.2021.700757": {
    "kind": "doi",
@@ -16576,6 +16747,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:26883166": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Reference values for time- and frequency-domain heart rate variability measures.",
+   "firstAuthor": "Sammito",
+   "authors": [
+    "Sammito",
+    "Böckelmann"
+   ],
+   "year": 2016,
+   "journal": "Heart Rhythm",
+   "doi": "10.1016/j.hrthm.2016.02.006",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:26888648": {
    "kind": "pmid",
    "valid": true,
@@ -20167,6 +20353,28 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:35663910": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The association between supportive social ties and autonomic nervous system function-differences between family ties and friendship ties in a cohort of older adults.",
+   "firstAuthor": "Bosle",
+   "authors": [
+    "Bosle",
+    "Brenner",
+    "Fischer",
+    "Jarczok",
+    "Schöttker",
+    "Perna",
+    "Hoffmann",
+    "Herr"
+   ],
+   "year": 2022,
+   "yearAlt": 2021,
+   "journal": "Eur J Ageing",
+   "doi": "10.1007/s10433-021-00638-2",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:35777519": {
    "kind": "pmid",
    "valid": true,
@@ -21373,6 +21581,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:39662770": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Loneliness is associated with diminished heart rate variability reactivity to acute social stress in younger adults.",
+   "firstAuthor": "Song",
+   "authors": [
+    "Song",
+    "Sun",
+    "Luo",
+    "Yu"
+   ],
+   "year": 2025,
+   "yearAlt": 2024,
+   "journal": "Biol Psychol",
+   "doi": "10.1016/j.biopsycho.2024.108963",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:39685636": {
    "kind": "pmid",
    "valid": true,
@@ -21421,6 +21647,24 @@
    "doi": "10.3390/bioengineering11121223",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:39803887": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Enhancing Psychophysiological Well-Being Through Nature-Based Soundscapes: An Examination of Heart Rate Variability in a Cross-Over Study.",
+   "firstAuthor": "Kumpulainen",
+   "authors": [
+    "Kumpulainen",
+    "Esmaeilzadeh",
+    "Pesonen",
+    "Brazão",
+    "Pesola"
+   ],
+   "year": 2025,
+   "journal": "Psychophysiology",
+   "doi": "10.1111/psyp.14760",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
   },
   "pmid:39838188": {
    "kind": "pmid",
@@ -21705,6 +21949,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
   },
+  "pmid:40495293": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sex and age differences in the association between heart rate variability and cardiac chronotropy: A replication-extension study.",
+   "firstAuthor": "Carnevali",
+   "authors": [
+    "Carnevali",
+    "Watanabe",
+    "Barbetti",
+    "Hong",
+    "Williams",
+    "Kohn",
+    "Koenig",
+    "Thayer"
+   ],
+   "year": 2025,
+   "journal": "Physiol Rep",
+   "doi": "10.14814/phy2.70399",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:40527833": {
    "kind": "pmid",
    "valid": true,
@@ -21797,6 +22062,27 @@
    "doi": "10.1126/sciadv.adx6491",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:40809748": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Therapeutic effects of forest bathing on older adult patients with essential hypertension: evidence from a subtropical evergreen broad-leaved forest.",
+   "firstAuthor": "Li",
+   "authors": [
+    "Li",
+    "Liu",
+    "Qian",
+    "Sun",
+    "Zhao",
+    "Uehara",
+    "Wang",
+    "Zhou"
+   ],
+   "year": 2025,
+   "journal": "Front Public Health",
+   "doi": "10.3389/fpubh.2025.1631613",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
   },
   "pmid:40828179": {
    "kind": "pmid",
@@ -22908,6 +23194,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-10"
   },
+  "pmid:41998562": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Forest therapy for psychological stress and emotional disorders: a systematic review and meta-analysis.",
+   "firstAuthor": "Qin",
+   "authors": [
+    "Qin",
+    "Yang",
+    "Liu",
+    "Zhang",
+    "Pan"
+   ],
+   "year": 2026,
+   "journal": "BMC Public Health",
+   "doi": "10.1186/s12889-026-27255-x",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:42002307": {
    "kind": "pmid",
    "valid": true,
@@ -23093,6 +23397,22 @@
    "doi": "10.1016/j.autneu.2026.103447",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:42302916": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Young adults' resilience in the context of loneliness: The moderating role of autonomic nervous system activity at rest and in response to challenge.",
+   "firstAuthor": "Philbrook",
+   "authors": [
+    "Philbrook",
+    "Hinnant",
+    "Garcia"
+   ],
+   "year": 2026,
+   "journal": "Biol Psychol",
+   "doi": "10.1016/j.biopsycho.2026.109328",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
   },
   "pmid:42325329": {
    "kind": "pmid",
@@ -23383,6 +23703,38 @@
    "doi": "10.3389/fnins.2026.1832059",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:42649025": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Short-term effects of urban versus forest bathing on stress, mood, sleep, immune function, and metabolic health: a randomized, open-label, 2 × 2 crossover trial.",
+   "firstAuthor": "Dai",
+   "authors": [
+    "Dai",
+    "Liao",
+    "Ouyang",
+    "Xiao",
+    "Tian",
+    "Qiu",
+    "Yang",
+    "Wang",
+    "Gong",
+    "Li",
+    "Wang",
+    "Xu",
+    "Fang",
+    "Tan",
+    "Huang",
+    "Zhou",
+    "Peng",
+    "Peng",
+    "Wu"
+   ],
+   "year": 2026,
+   "journal": "Environ Health Prev Med",
+   "doi": "10.1265/ehpm.26-00092",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
   },
   "pmid:42655500": {
    "kind": "pmid",
