@@ -2288,6 +2288,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.envpol.2022.119109": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of respirators to reduce fine particulate matter exposures on blood pressure and heart rate variability: A systematic review and meta-analysis",
+   "firstAuthor": "Faridi",
+   "authors": [
+    "Faridi",
+    "Brook",
+    "Yousefian",
+    "Hassanvand",
+    "Nodehi",
+    "Shamsipour",
+    "Rajagopalan",
+    "Naddafi"
+   ],
+   "year": 2022,
+   "journal": "Environmental Pollution",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
+  },
   "doi:10.1016/j.explore.2020.03.009": {
    "kind": "doi",
    "valid": true,
@@ -4695,6 +4715,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1038/s41370-026-00848-9": {
+   "kind": "doi",
+   "valid": true,
+   "title": "An innovative method of evaluating the association of heat exposure and heart rate variability in a panel of agricultural workers with small and lightweight personal sensors",
+   "firstAuthor": "Candice Lung",
+   "authors": [
+    "Candice Lung",
+    "Hu",
+    "Tsai",
+    "Mark Tsou",
+    "Joy Yeh",
+    "Liu"
+   ],
+   "year": 2026,
+   "journal": "Journal of Exposure Science &amp; Environmental Epidemiology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
+  },
   "doi:10.1038/s41371-018-0130-6": {
    "kind": "doi",
    "valid": true,
@@ -5248,6 +5286,36 @@
    "journal": "Gastroenterology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1055/a-2820-4197": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Air, Noise, and Light Pollution and Thromboembolic Cardiovascular Complications: A TH Scientific Statement",
+   "firstAuthor": "Kurasz",
+   "authors": [
+    "Kurasz",
+    "Abohashem",
+    "El-Bouri",
+    "Ortega-Martorell",
+    "Olier",
+    "Wijata",
+    "Nalepa",
+    "Święczkowski",
+    "Jemielita",
+    "Duzinkiewicz",
+    "Januszko",
+    "Małyszko",
+    "Wańha",
+    "Franchini",
+    "Proietti",
+    "Osborne",
+    "Lip",
+    "Kuźma"
+   ],
+   "year": 2026,
+   "journal": "Thrombosis and Haemostasis",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.1055/s-0031-1275356": {
    "kind": "doi",
@@ -8912,6 +8980,32 @@
    "journal": "Breathe",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1186/s12199-020-00912-2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Acute effect of ambient fine particulate matter on heart rate variability: an updated systematic review and meta-analysis of panel studies",
+   "firstAuthor": "Niu",
+   "authors": [
+    "Niu",
+    "Liu",
+    "Li",
+    "Li",
+    "Yu",
+    "Wang",
+    "Tang",
+    "Chen",
+    "Lu",
+    "Cheng",
+    "Liu",
+    "Chen",
+    "Zhang",
+    "Xiang"
+   ],
+   "year": 2020,
+   "journal": "Environmental Health and Preventive Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.1186/s12902-016-0128-4": {
    "kind": "doi",
@@ -19012,6 +19106,33 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:33261557": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Acute effect of ambient fine particulate matter on heart rate variability: an updated systematic review and meta-analysis of panel studies.",
+   "firstAuthor": "Niu",
+   "authors": [
+    "Niu",
+    "Liu",
+    "Li",
+    "Li",
+    "Yu",
+    "Wang",
+    "Tang",
+    "Chen",
+    "Lu",
+    "Cheng",
+    "Liu",
+    "Chen",
+    "Zhang",
+    "Xiang"
+   ],
+   "year": 2020,
+   "journal": "Environ Health Prev Med",
+   "doi": "10.1186/s12199-020-00912-2",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:33299095": {
    "kind": "pmid",
    "valid": true,
@@ -19707,6 +19828,27 @@
    "doi": "10.1097/PSY.0000000000001065",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:35271952": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of respirators to reduce fine particulate matter exposures on blood pressure and heart rate variability: A systematic review and meta-analysis.",
+   "firstAuthor": "Faridi",
+   "authors": [
+    "Faridi",
+    "Brook",
+    "Yousefian",
+    "Hassanvand",
+    "Nodehi",
+    "Shamsipour",
+    "Rajagopalan",
+    "Naddafi"
+   ],
+   "year": 2022,
+   "journal": "Environ Pollut",
+   "doi": "10.1016/j.envpol.2022.119109",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
   },
   "pmid:35272883": {
    "kind": "pmid",
@@ -22261,6 +22403,37 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:41825463": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Air, Noise, and Light Pollution and Thromboembolic Cardiovascular Complications: A TH Scientific Statement.",
+   "firstAuthor": "Kurasz",
+   "authors": [
+    "Kurasz",
+    "Abohashem",
+    "El-Bouri",
+    "Ortega-Martorell",
+    "Olier",
+    "Wijata",
+    "Nalepa",
+    "Święczkowski",
+    "Jemielita",
+    "Duzinkiewicz",
+    "Januszko",
+    "Małyszko",
+    "Wańha",
+    "Franchini",
+    "Proietti",
+    "Osborne",
+    "Lip",
+    "Kuźma Ł"
+   ],
+   "year": 2026,
+   "journal": "Thromb Haemost",
+   "doi": "10.1055/a-2820-4197",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:41838387": {
    "kind": "pmid",
    "valid": true,
@@ -22298,6 +22471,25 @@
    "doi": "10.1249/MSS.0000000000003972",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:41844868": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "An innovative method of evaluating the association of heat exposure and heart rate variability in a panel of agricultural workers with small and lightweight personal sensors.",
+   "firstAuthor": "Candice Lung",
+   "authors": [
+    "Candice Lung",
+    "Hu",
+    "Tsai",
+    "Mark Tsou",
+    "Joy Yeh",
+    "Liu"
+   ],
+   "year": 2026,
+   "journal": "J Expo Sci Environ Epidemiol",
+   "doi": "10.1038/s41370-026-00848-9",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
   },
   "pmid:41862627": {
    "kind": "pmid",

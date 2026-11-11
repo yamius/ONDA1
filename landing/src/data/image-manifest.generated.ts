@@ -2632,6 +2632,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1376,
     "height": 768
   },
+  "/images/science/mechanisms-air-pollution-noise-and-hrv.avif": {
+    "width": 1184,
+    "height": 896
+  },
+  "/images/science/mechanisms-air-pollution-noise-and-hrv.jpg": {
+    "width": 1184,
+    "height": 896
+  },
+  "/images/science/mechanisms-air-pollution-noise-and-hrv.webp": {
+    "width": 1184,
+    "height": 896
+  },
   "/images/science/mechanisms-alcohol-and-hrv.avif": {
     "width": 1376,
     "height": 768
