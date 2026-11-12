@@ -2459,6 +2459,26 @@
    "source": "crossref",
    "verifiedAt": "2026-11-11"
   },
+  "doi:10.1016/j.ijcard.2018.01.089": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Shift work is associated with reduced heart rate variability among men but not women",
+   "firstAuthor": "Hulsegge",
+   "authors": [
+    "Hulsegge",
+    "Gupta",
+    "Proper",
+    "van Lobenstein",
+    "IJzelenberg",
+    "Hallman",
+    "Holtermann",
+    "van der Beek"
+   ],
+   "year": 2018,
+   "journal": "International Journal of Cardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-12"
+  },
   "doi:10.1016/j.ijpsycho.2011.02.004": {
    "kind": "doi",
    "valid": true,
@@ -5991,6 +6011,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1080/07420528.2026.2679138": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability and heart rate fragmentation among shift workers: The Multi-Ethnic Study of Atherosclerosis",
+   "firstAuthor": "Sowrin",
+   "authors": [
+    "Sowrin",
+    "Espinosa",
+    "Heckbert",
+    "Redline",
+    "Hulsegge",
+    "Harding"
+   ],
+   "year": 2026,
+   "journal": "Chronobiology International",
+   "source": "crossref",
+   "verifiedAt": "2026-11-12"
+  },
   "doi:10.1080/09638288.2024.2313123": {
    "kind": "doi",
    "valid": true,
@@ -6585,6 +6623,26 @@
    "journal": "SLEEP",
    "source": "crossref",
    "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1093/sleep/zsaf015": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Circadian misalignment impacts cardiac autonomic modulation in adolescence",
+   "firstAuthor": "Morales-Ghinaglia",
+   "authors": [
+    "Morales-Ghinaglia",
+    "He",
+    "Calhoun",
+    "Vgontzas",
+    "Liao",
+    "Liao",
+    "Bixler",
+    "Fernandez-Mendoza"
+   ],
+   "year": 2025,
+   "journal": "SLEEP",
+   "source": "crossref",
+   "verifiedAt": "2026-11-12"
   },
   "doi:10.1093/sleep/zsaf077": {
    "kind": "doi",
@@ -7311,6 +7369,29 @@
    "journal": "Journal of Anatomy",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1111/jsr.13935": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Association of intra‐shift nap duration with heart rate variability in medical night shift workers",
+   "firstAuthor": "Deng",
+   "authors": [
+    "Deng",
+    "Wang",
+    "Fan",
+    "Lu",
+    "Liu",
+    "Wang",
+    "Yang",
+    "Ding",
+    "Mei",
+    "Ba"
+   ],
+   "year": 2023,
+   "yearAlt": 2024,
+   "journal": "Journal of Sleep Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-12"
   },
   "doi:10.1111/nyas.70149": {
    "kind": "doi",
@@ -17852,6 +17933,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:29433969": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Shift work is associated with reduced heart rate variability among men but not women.",
+   "firstAuthor": "Hulsegge",
+   "authors": [
+    "Hulsegge",
+    "Gupta",
+    "Proper",
+    "van Lobenstein",
+    "IJzelenberg",
+    "Hallman",
+    "Holtermann",
+    "van der Beek"
+   ],
+   "year": 2018,
+   "journal": "Int J Cardiol",
+   "doi": "10.1016/j.ijcard.2018.01.089",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-12"
+  },
   "pmid:29467611": {
    "kind": "pmid",
    "valid": true,
@@ -20835,6 +20937,30 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:37226542": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Association of intra-shift nap duration with heart rate variability in medical night shift workers.",
+   "firstAuthor": "Deng",
+   "authors": [
+    "Deng",
+    "Wang",
+    "Fan",
+    "Lu",
+    "Liu",
+    "Wang",
+    "Yang",
+    "Ding",
+    "Mei",
+    "Ba"
+   ],
+   "year": 2024,
+   "yearAlt": 2023,
+   "journal": "J Sleep Res",
+   "doi": "10.1111/jsr.13935",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-12"
+  },
   "pmid:37230264": {
    "kind": "pmid",
    "valid": true,
@@ -21665,6 +21791,27 @@
    "doi": "10.1111/psyp.14760",
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
+  },
+  "pmid:39826092": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Circadian misalignment impacts cardiac autonomic modulation in adolescence.",
+   "firstAuthor": "Morales-Ghinaglia",
+   "authors": [
+    "Morales-Ghinaglia",
+    "He",
+    "Calhoun",
+    "Vgontzas",
+    "Liao",
+    "Liao",
+    "Bixler",
+    "Fernandez-Mendoza"
+   ],
+   "year": 2025,
+   "journal": "Sleep",
+   "doi": "10.1093/sleep/zsaf015",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-12"
   },
   "pmid:39838188": {
    "kind": "pmid",
@@ -23432,6 +23579,25 @@
    "doi": "10.3389/fpsyg.2026.1792917",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42341764": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability and heart rate fragmentation among shift workers: The Multi-Ethnic Study of Atherosclerosis.",
+   "firstAuthor": "Sowrin",
+   "authors": [
+    "Sowrin",
+    "Espinosa",
+    "Heckbert",
+    "Redline",
+    "Hulsegge",
+    "Harding"
+   ],
+   "year": 2026,
+   "journal": "Chronobiol Int",
+   "doi": "10.1080/07420528.2026.2679138",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-12"
   },
   "pmid:42383502": {
    "kind": "pmid",
