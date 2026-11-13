@@ -2544,6 +2544,20 @@
    "source": "crossref",
    "verifiedAt": "2026-11-12"
   },
+  "doi:10.1016/j.ijcha.2025.101778": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of traditional Chinese exercises on the rehabilitation of patients with chronic heart failure: A meta-analysis",
+   "firstAuthor": "Wu",
+   "authors": [
+    "Wu",
+    "Wang"
+   ],
+   "year": 2025,
+   "journal": "IJC Heart &amp; Vasculature",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.1016/j.ijpsycho.2011.02.004": {
    "kind": "doi",
    "valid": true,
@@ -8576,6 +8590,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1159/000550084": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of Tai Chi and Qigong on Heart Rate Variability: A Systematic Review and Meta-Analysis Examining Baseline Autonomic Function and Intervention Complexity as Moderators in Adults",
+   "firstAuthor": "Gunawan",
+   "authors": [
+    "Gunawan",
+    "Suen",
+    "Denny",
+    "Chauhan",
+    "Fakhria",
+    "Jayanti",
+    "Mallari"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Complementary Medicine Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.1161/01.cir.93.5.1043": {
    "kind": "doi",
    "valid": true,
@@ -11896,6 +11930,28 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3389/fpsyg.2026.1854234": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Combined Liuzijue and mindful breathing promote greater sustained relaxation than mindful breathing alone in university students with anxiety symptoms",
+   "firstAuthor": "Liang",
+   "authors": [
+    "Liang",
+    "Griškova-Bulanova",
+    "Xiao",
+    "Zhao",
+    "Hou",
+    "Ren",
+    "Zhu",
+    "Truskauskaitė",
+    "Xiao",
+    "Rukšėnas"
+   ],
+   "year": 2026,
+   "journal": "Frontiers in Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.3389/fpsyt.2018.00044": {
    "kind": "doi",
    "valid": true,
@@ -12049,6 +12105,20 @@
    "journal": "Frontiers in Sports and Active Living",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.3389/fspor.2026.1736747": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Network meta-analysis of traditional Chinese exercises for cardiovascular health in middle-aged and older adults hypertensive patients",
+   "firstAuthor": "Zhou",
+   "authors": [
+    "Zhou",
+    "Zhang"
+   ],
+   "year": 2026,
+   "journal": "Frontiers in Sports and Active Living",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
   },
   "doi:10.3390/bioengineering11121223": {
    "kind": "doi",
@@ -22534,6 +22604,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:40894342": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of traditional Chinese exercises on the rehabilitation of patients with chronic heart failure: A meta-analysis.",
+   "firstAuthor": "Wu",
+   "authors": [
+    "Wu",
+    "Wang"
+   ],
+   "year": 2025,
+   "journal": "Int J Cardiol Heart Vasc",
+   "doi": "10.1016/j.ijcha.2025.101778",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
+  },
   "pmid:40895095": {
    "kind": "pmid",
    "valid": true,
@@ -22837,6 +22922,27 @@
    "doi": "10.1161/CIRCULATIONAHA.125.076170",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41417690": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of Tai Chi and Qigong on Heart Rate Variability: A Systematic Review and Meta-Analysis Examining Baseline Autonomic Function and Intervention Complexity as Moderators in Adults.",
+   "firstAuthor": "Gunawan",
+   "authors": [
+    "Gunawan",
+    "Suen",
+    "Denny",
+    "Chauhan",
+    "Fakhria",
+    "Jayanti",
+    "Mallari"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Complement Med Res",
+   "doi": "10.1159/000550084",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
   },
   "pmid:41454435": {
    "kind": "pmid",
@@ -23468,6 +23574,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:41868976": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Network meta-analysis of traditional Chinese exercises for cardiovascular health in middle-aged and older adults hypertensive patients.",
+   "firstAuthor": "Zhou",
+   "authors": [
+    "Zhou",
+    "Zhang"
+   ],
+   "year": 2026,
+   "journal": "Front Sports Act Living",
+   "doi": "10.3389/fspor.2026.1736747",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
+  },
   "pmid:41885789": {
    "kind": "pmid",
    "valid": true,
@@ -24096,6 +24217,29 @@
    "doi": "10.3390/s26144486",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42516207": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Combined Liuzijue and mindful breathing promote greater sustained relaxation than mindful breathing alone in university students with anxiety symptoms.",
+   "firstAuthor": "Liang",
+   "authors": [
+    "Liang",
+    "Griškova-Bulanova",
+    "Xiao",
+    "Zhao",
+    "Hou",
+    "Ren",
+    "Zhu",
+    "Truskauskaitė",
+    "Xiao",
+    "Rukšėnas"
+   ],
+   "year": 2026,
+   "journal": "Front Psychol",
+   "doi": "10.3389/fpsyg.2026.1854234",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
   },
   "pmid:42522355": {
    "kind": "pmid",

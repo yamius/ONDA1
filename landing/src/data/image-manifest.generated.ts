@@ -2524,6 +2524,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/evidence-tai-chi-and-qigong.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/evidence-tai-chi-and-qigong.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/evidence-tai-chi-and-qigong.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/evidence-vagus-nerve-stimulation.avif": {
     "width": 1024,
     "height": 768
