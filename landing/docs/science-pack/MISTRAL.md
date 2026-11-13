@@ -1372,6 +1372,11 @@ New sources of the questions hub (task 064); all other hub sources (S1–S11, S1
 | Zhou 2026 | Zhou & Zhang. Network meta-analysis of traditional Chinese exercises in hypertensive middle-aged and older adults. *Front Sports Act Living* 2026 | network MA / context, no HRV | DOI 10.3389/fspor.2026.1736747 · PMID 41868976 | SUCRA ranking; evidence/tai-chi-and-qigong. P321 |
 | Wu 2025 | Wu & Wang. Traditional Chinese exercises in chronic heart failure rehabilitation: MA. *Int J Cardiol Heart Vasc* 2025 | meta-analysis / context, no HRV | DOI 10.1016/j.ijcha.2025.101778 · PMID 40894342 | Adjunct only; evidence/tai-chi-and-qigong. P322 |
 | Gunawan 2026 | Gunawan et al. Tai Chi and Qigong on HRV: SR/MA with baseline and complexity moderators. *Complement Med Res* 2026 | meta-analysis / moderate short-term | DOI 10.1159/000550084 · PMID 41417690 | Beginners only; evidence/tai-chi-and-qigong. P309 |
+| Dujawara 2026 | Dujawara, Ali & Kumari. SR of RCTs on box breathing for stress, autonomic and clinical outcomes. *Appl Psychophysiol Biofeedback* 2026 | systematic review / no HRV effect | DOI 10.1007/s10484-026-09812-7 · PMID 42768274 | Abstract count inconsistency (8 vs 29); evidence/box-breathing. P44 |
+| McAllister 2026 | McAllister et al. Box breathing and prolonged exhalation before a virtual TSST. *Compr Psychoneuroendocrinol* 2026 | RCT / HR-SAI-sAA buffered, HRV null | DOI 10.1016/j.cpnec.2026.100360 · PMID 42388906 | evidence/box-breathing. P203 |
+| Jones 2026 | Jones et al. Structured breathwork and HRV recovery after maximal exertion in tactical athletes. *Med Sci Sports Exerc* 2026 | RCT / debated | DOI 10.1249/mss.0000000000003972 · PMID 41839180 | vs spontaneous; evidence/box-breathing. P201 |
+| Kasap 2025 | Kasap & Aydin. Box breathing vs six breaths per minute after HIIT. *PLOS ONE* 2025 | crossover RCT / debated | DOI 10.1371/journal.pone.0336615 · PMID 41248139 | vs paced; evidence/box-breathing. P202 |
+| Riedl 2026 | Riedl et al. One-minute cyclic sighing vs box breathing in real life (EMA pilot). *Anxiety Stress Coping* 2026 | pilot RCT / emerging | DOI 10.1080/10615806.2026.2659809 · PMID 42002307 | Attention cost; evidence/box-breathing. P207 |
 
 ---
 

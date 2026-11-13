@@ -1347,6 +1347,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s10484-026-09812-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Systematic Review of Randomised Controlled Trials Evaluating Box Breathing for Stress, Autonomic, and Clinical Outcomes",
+   "firstAuthor": "Dujawara",
+   "authors": [
+    "Dujawara",
+    "Ali",
+    "Kumari"
+   ],
+   "year": 2026,
+   "journal": "Applied Psychophysiology and Biofeedback",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.1007/s10865-024-00548-5": {
    "kind": "doi",
    "valid": true,
@@ -24489,6 +24504,22 @@
    "doi": "10.1007/s00424-026-03210-y",
    "source": "pubmed",
    "verifiedAt": "2026-10-17"
+  },
+  "pmid:42768274": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Systematic Review of Randomised Controlled Trials Evaluating Box Breathing for Stress, Autonomic, and Clinical Outcomes.",
+   "firstAuthor": "Dujawara",
+   "authors": [
+    "Dujawara",
+    "Ali",
+    "Kumari"
+   ],
+   "year": 2026,
+   "journal": "Appl Psychophysiol Biofeedback",
+   "doi": "10.1007/s10484-026-09812-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
   },
   "pmid:42771122": {
    "kind": "pmid",

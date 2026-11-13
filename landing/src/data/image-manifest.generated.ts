@@ -2392,6 +2392,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 768
   },
+  "/images/science/evidence-box-breathing.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/evidence-box-breathing.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/evidence-box-breathing.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/evidence-cold-exposure.avif": {
     "width": 1584,
     "height": 672
