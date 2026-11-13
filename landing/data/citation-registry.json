@@ -1073,6 +1073,36 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s10286-025-01107-x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Attenuated cardiac autonomic function in patients with long-COVID with impaired orthostatic hemodynamics",
+   "firstAuthor": "Hira",
+   "authors": [
+    "Hira",
+    "Baker",
+    "Siddiqui",
+    "Patel",
+    "Valani",
+    "Lloyd",
+    "Floras",
+    "Morillo",
+    "Sheldon",
+    "Raj",
+    "on behalf of the Canadian Long COVID Autonomic Network (CanLoCAN)",
+    "Dunn",
+    "Guzman",
+    "Claydon",
+    "Runté",
+    "Ayala-Paredes",
+    "Harvey",
+    "Osuntokun"
+   ],
+   "year": 2025,
+   "journal": "Clinical Autonomic Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.1007/s10286-026-01243-y": {
    "kind": "doi",
    "valid": true,
@@ -1533,6 +1563,23 @@
    "journal": "Sports Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-09"
+  },
+  "doi:10.1007/s40279-026-02487-4": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Wearable Heart Rate Variability Monitoring, Autonomic Dysfunction and Post-exertional Malaise in Long COVID: An Observational Study",
+   "firstAuthor": "Ruijgt",
+   "authors": [
+    "Ruijgt",
+    "Slaghekke",
+    "Ellens",
+    "Janssen",
+    "Wüst"
+   ],
+   "year": 2026,
+   "journal": "Sports Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
   },
   "doi:10.1007/s41465-021-00218-3": {
    "kind": "doi",
@@ -7130,6 +7177,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1111/ene.70561": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Neurocardiac Autonomic Dysfunction in Patients With Post‐\n                    <scp>COVID</scp>\n                    ‐19 Condition: A Systematic Review and Meta‐Analysis",
+   "firstAuthor": "Schoene",
+   "authors": [
+    "Schoene",
+    "Deckert",
+    "Barlinn",
+    "Huttner",
+    "Kösters",
+    "Siepmann"
+   ],
+   "year": 2026,
+   "journal": "European Journal of Neurology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.1111/head.12896": {
    "kind": "doi",
    "valid": true,
@@ -10842,6 +10907,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.2196/99630": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Bidirectional Associations Between Autonomic Function, Sleep Quality, and Daily Fatigue and Energy Symptoms in Long COVID: Longitudinal Digital Health Study",
+   "firstAuthor": "Aboagye",
+   "authors": [
+    "Aboagye",
+    "R Baker",
+    "Baker",
+    "Del Din"
+   ],
+   "year": 2026,
+   "journal": "JMIR Cardio",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.2196/mental.9519": {
    "kind": "doi",
    "valid": true,
@@ -11980,6 +12061,26 @@
    "journal": "Biology",
    "source": "crossref",
    "verifiedAt": "2026-10-09"
+  },
+  "doi:10.3390/biology15010001": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Long COVID Patients with Orthostatic Intolerance Have Reduced Heart Rate Variability and Preserved Physiological Response to Active Standing",
+   "firstAuthor": "González-Hermosillo González",
+   "authors": [
+    "González-Hermosillo González",
+    "Lerma",
+    "Celestino Montelongo",
+    "Alba Lorenzo",
+    "Salas Santos",
+    "Gun Cuninghame Ballesteros",
+    "Jorge-Galarza",
+    "Martínez-Alvarado"
+   ],
+   "year": 2025,
+   "journal": "Biology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
   },
   "doi:10.3390/biomedicines13030700": {
    "kind": "doi",
@@ -21887,6 +21988,29 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:39841332": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Attenuated cardiac autonomic function in patients with long-COVID with impaired orthostatic hemodynamics.",
+   "firstAuthor": "Hira",
+   "authors": [
+    "Hira",
+    "Baker",
+    "Siddiqui",
+    "Patel",
+    "Valani",
+    "Lloyd",
+    "Floras",
+    "Morillo",
+    "Sheldon",
+    "Raj"
+   ],
+   "year": 2025,
+   "journal": "Clin Auton Res",
+   "doi": "10.1007/s10286-025-01107-x",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
+  },
   "pmid:39879231": {
    "kind": "pmid",
    "valid": true,
@@ -22765,6 +22889,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:41514842": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Long COVID Patients with Orthostatic Intolerance Have Reduced Heart Rate Variability and Preserved Physiological Response to Active Standing.",
+   "firstAuthor": "González-Hermosillo González",
+   "authors": [
+    "González-Hermosillo González",
+    "Lerma",
+    "Celestino Montelongo",
+    "Alba Lorenzo",
+    "Salas Santos",
+    "Gun Cuninghame Ballesteros",
+    "Jorge-Galarza",
+    "Martínez-Alvarado"
+   ],
+   "year": 2025,
+   "journal": "Biology (Basel)",
+   "doi": "10.3390/biology15010001",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
+  },
   "pmid:41516438": {
    "kind": "pmid",
    "valid": true,
@@ -23127,6 +23272,25 @@
    "doi": "10.1371/journal.pdig.0001284",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:41814525": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Neurocardiac Autonomic Dysfunction in Patients With Post-COVID-19 Condition: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Schoene",
+   "authors": [
+    "Schoene",
+    "Deckert",
+    "Barlinn",
+    "Huttner",
+    "Kösters",
+    "Siepmann"
+   ],
+   "year": 2026,
+   "journal": "Eur J Neurol",
+   "doi": "10.1111/ene.70561",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
   },
   "pmid:41825463": {
    "kind": "pmid",
@@ -23828,6 +23992,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:42501245": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Wearable Heart Rate Variability Monitoring, Autonomic Dysfunction and Post-exertional Malaise in Long COVID: An Observational Study.",
+   "firstAuthor": "Ruijgt",
+   "authors": [
+    "Ruijgt",
+    "Slaghekke",
+    "Ellens",
+    "Janssen",
+    "Wüst"
+   ],
+   "year": 2026,
+   "journal": "Sports Med",
+   "doi": "10.1007/s40279-026-02487-4",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
+  },
   "pmid:42515370": {
    "kind": "pmid",
    "valid": true,
@@ -24044,6 +24226,23 @@
    "doi": "10.1097/SGA.0000000000000977",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:42735381": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Bidirectional Associations Between Autonomic Function, Sleep Quality, and Daily Fatigue and Energy Symptoms in Long COVID: Longitudinal Digital Health Study.",
+   "firstAuthor": "Aboagye",
+   "authors": [
+    "Aboagye",
+    "R Baker",
+    "Baker",
+    "Del Din"
+   ],
+   "year": 2026,
+   "journal": "JMIR Cardio",
+   "doi": "10.2196/99630",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
   },
   "pmid:42745081": {
    "kind": "pmid",

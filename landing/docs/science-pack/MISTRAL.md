@@ -1359,6 +1359,12 @@ New sources of the questions hub (task 064); all other hub sources (S1–S11, S1
 | Kane 2025 | Kane et al. Continuous HRV monitoring, stress and recovery in doctors: SR/MA. *Occup Med* 2025 | meta-analysis / moderate quality | DOI 10.1093/occmed/kqaf101 · PMID 41157926 | Within-day periods, not burnout; mechanisms/burnout-work-stress-and-hrv. P82 |
 | Brinkmann 2020 | Brinkmann et al. HRV-biofeedback vs mindfulness for workplace stress: RCT. *Appl Psychophysiol Biofeedback* 2020 | RCT / null vs wait-list | DOI 10.1007/s10484-020-09477-w · PMID 32556709 | mechanisms/burnout-work-stress-and-hrv. P41 |
 | Kirk 2026 | Kirk et al. A digital mindfulness intervention improves sleep efficiency and HRV. *Sci Rep* 2026 | RCT / emerging; CBI rose post | DOI 10.1038/s41598-026-44902-w · PMID 41862627 | mechanisms/burnout-work-stress-and-hrv. P24 |
+| Schoene 2026 | Schoene et al. Neurocardiac autonomic dysfunction in post-COVID-19 condition: SR/MA. *Eur J Neurol* 2026 | meta-analysis / non-significant trend, high RoB | DOI 10.1111/ene.70561 · PMID 41814525 | mechanisms/long-covid-pots-and-hrv. P299 |
+| González-Hermosillo 2025 | González-Hermosillo González et al. Long COVID with orthostatic intolerance: reduced HRV, preserved response to standing. *Biology* 2025 | cross-sectional / protocol-dependent | DOI 10.3390/biology15010001 · PMID 41514842 | mechanisms/long-covid-pots-and-hrv. P300 |
+| Hira 2025 | Hira et al. Attenuated cardiac autonomic function in long-COVID with impaired orthostatic hemodynamics. *Clin Auton Res* 2025 | cross-sectional / heterogeneous subgroups | DOI 10.1007/s10286-025-01107-x · PMID 39841332 | mechanisms/long-covid-pots-and-hrv. P301 |
+| Ruijgt 2026 | Ruijgt et al. Wearable HRV monitoring, autonomic dysfunction and PEM in long COVID. *Sports Med* 2026 | observational / emerging | DOI 10.1007/s40279-026-02487-4 · PMID 42501245 | mechanisms/long-covid-pots-and-hrv. P65 |
+| Aboagye 2026 | Aboagye et al. Autonomic function, sleep and daily fatigue in long COVID: longitudinal digital health study. *JMIR Cardio* 2026 | n=14 wearable / within-person null | DOI 10.2196/99630 · PMID 42735381 | mechanisms/long-covid-pots-and-hrv. P77 |
+| Uwakwe 2025 | Uwakwe et al. Longitudinal wearable sensor data enhance precision of Long COVID detection. *PLOS Digit Health* 2025 | ML model / research stage | DOI 10.1371/journal.pdig.0001093 · PMID 41264615 | mechanisms/long-covid-pots-and-hrv. P143 |
 
 ---
 
