@@ -2692,6 +2692,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1376,
     "height": 768
   },
+  "/images/science/mechanisms-burnout-work-stress-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-burnout-work-stress-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-burnout-work-stress-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/mechanisms-caffeine-and-hrv.avif": {
     "width": 1376,
     "height": 768

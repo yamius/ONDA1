@@ -1177,6 +1177,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s10484-020-09477-w": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparing Effectiveness of HRV-Biofeedback and Mindfulness for Workplace Stress Reduction: A Randomized Controlled Trial",
+   "firstAuthor": "Brinkmann",
+   "authors": [
+    "Brinkmann",
+    "Press",
+    "Helmert",
+    "Hautzinger",
+    "Khazan",
+    "Vagedes"
+   ],
+   "year": 2020,
+   "journal": "Applied Psychophysiology and Biofeedback",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.1007/s10484-021-09528-w": {
    "kind": "doi",
    "valid": true,
@@ -11627,6 +11645,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-10"
   },
+  "doi:10.3389/fphys.2026.1908141": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability and burnout risk among healthy employees in jobs involving interaction with others",
+   "firstAuthor": "Böckelmann",
+   "authors": [
+    "Böckelmann",
+    "Hartung",
+    "Darius",
+    "Sammito",
+    "Thielmann"
+   ],
+   "year": 2026,
+   "journal": "Frontiers in Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.3389/fpsyg.2013.00334": {
    "kind": "doi",
    "valid": true,
@@ -19317,6 +19352,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:32556709": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Comparing Effectiveness of HRV-Biofeedback and Mindfulness for Workplace Stress Reduction: A Randomized Controlled Trial.",
+   "firstAuthor": "Brinkmann",
+   "authors": [
+    "Brinkmann",
+    "Press",
+    "Helmert",
+    "Hautzinger",
+    "Khazan",
+    "Vagedes"
+   ],
+   "year": 2020,
+   "journal": "Appl Psychophysiol Biofeedback",
+   "doi": "10.1007/s10484-020-09477-w",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
+  },
   "pmid:32620379": {
    "kind": "pmid",
    "valid": true,
@@ -23869,6 +23923,24 @@
    "doi": "10.3389/fnins.2026.1832059",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:42614159": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability and burnout risk among healthy employees in jobs involving interaction with others.",
+   "firstAuthor": "Böckelmann",
+   "authors": [
+    "Böckelmann",
+    "Hartung",
+    "Darius",
+    "Sammito",
+    "Thielmann"
+   ],
+   "year": 2026,
+   "journal": "Front Physiol",
+   "doi": "10.3389/fphys.2026.1908141",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
   },
   "pmid:42649025": {
    "kind": "pmid",
