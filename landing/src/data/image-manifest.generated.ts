@@ -2716,6 +2716,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1376,
     "height": 768
   },
+  "/images/science/mechanisms-chronic-pain-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-chronic-pain-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-chronic-pain-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/mechanisms-depression-anxiety-and-hrv.avif": {
     "width": 1184,
     "height": 896

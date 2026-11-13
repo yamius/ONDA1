@@ -6941,6 +6941,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1097/j.pain.0000000000003958": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Which moderating factors influence autonomic imbalance in chronic musculoskeletal pain? A domain-specific systematic review and multilevel meta-regression of heart rate variability",
+   "firstAuthor": "Fernández-Morales",
+   "authors": [
+    "Fernández-Morales",
+    "Espejo-Antúnez",
+    "Rubio-Fernández",
+    "Albornoz-Cabello",
+    "Cardero-Durán"
+   ],
+   "year": 2026,
+   "journal": "Pain",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.1097/md.0000000000021449": {
    "kind": "doi",
    "valid": true,
@@ -11935,6 +11952,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3389/fpsyt.2026.1813993": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cardiac interoception in chronic pain: no association between interoceptive accuracy and symptom report",
+   "firstAuthor": "Thomas",
+   "authors": [
+    "Thomas",
+    "Schulz",
+    "van Ryckeghem",
+    "Lutz",
+    "Lambracht",
+    "Adermann",
+    "Vögele"
+   ],
+   "year": 2026,
+   "journal": "Frontiers in Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
+  },
   "doi:10.3389/fpubh.2017.00222": {
    "kind": "doi",
    "valid": true,
@@ -12691,6 +12727,22 @@
    "journal": "International Journal of Yoga",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.4103/sjmms.sjmms_729_25": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Impact of Physiotherapy on Autonomic Nervous System Function in Spinal Pain: A Systematic Review and Meta-analysis",
+   "firstAuthor": "Alkhawajah",
+   "authors": [
+    "Alkhawajah",
+    "Al-Abbad",
+    "Albarrati",
+    "Alshami"
+   ],
+   "year": 2026,
+   "journal": "Saudi Journal of Medicine &amp; Medical Sciences",
+   "source": "crossref",
+   "verifiedAt": "2026-11-13"
   },
   "doi:10.4330/wjc.v7.i4.204": {
    "kind": "doi",
@@ -23361,6 +23413,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:41841811": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Which moderating factors influence autonomic imbalance in chronic musculoskeletal pain? A domain-specific systematic review and multilevel meta-regression of heart rate variability.",
+   "firstAuthor": "Fernández-Morales",
+   "authors": [
+    "Fernández-Morales",
+    "Espejo-Antúnez",
+    "Rubio-Fernández",
+    "Albornoz-Cabello",
+    "Cardero-Durán MLÁ"
+   ],
+   "year": 2026,
+   "journal": "Pain",
+   "doi": "10.1097/j.pain.0000000000003958",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
+  },
   "pmid:41844868": {
    "kind": "pmid",
    "valid": true,
@@ -24124,6 +24194,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-13"
   },
+  "pmid:42622018": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Impact of Physiotherapy on Autonomic Nervous System Function in Spinal Pain: A Systematic Review and Meta-analysis.",
+   "firstAuthor": "Alkhawajah",
+   "authors": [
+    "Alkhawajah",
+    "Al-Abbad",
+    "Albarrati",
+    "Alshami"
+   ],
+   "year": 2026,
+   "journal": "Saudi J Med Med Sci",
+   "doi": "10.4103/sjmms.sjmms_729_25",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
+  },
   "pmid:42649025": {
    "kind": "pmid",
    "valid": true,
@@ -24274,6 +24361,26 @@
    "doi": "10.1007/s10484-026-09811-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42780632": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cardiac interoception in chronic pain: no association between interoceptive accuracy and symptom report.",
+   "firstAuthor": "Thomas",
+   "authors": [
+    "Thomas",
+    "Schulz",
+    "van Ryckeghem",
+    "Lutz",
+    "Lambracht",
+    "Adermann",
+    "Vögele"
+   ],
+   "year": 2026,
+   "journal": "Front Psychiatry",
+   "doi": "10.3389/fpsyt.2026.1813993",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-13"
   },
   "pmid:42783005": {
    "kind": "pmid",
