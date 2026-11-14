@@ -1,5 +1,5 @@
 ---
-sourceHash: "855b06082cb7"
+sourceHash: "e0527269fba5"
 title: "Werkt nervus-vagusstimulatie echt? Wat het bewijs laat zien"
 metaTitle: "Nervus-vagusstimulatie: wat het bewijs laat zien"
 metaDescription: "Nervus-vagusstimulatie heeft door de FDA vrijgegeven medische toepassingen en wisselende resultaten. Wat elk bewijsniveau steunt en welke claims verder gaan."
@@ -93,6 +93,10 @@ evidenceMap:
     limitation: "Beschrijft de chirurgische therapie; het is niet relevant voor handapparaten of oorclips."
   - claim: "Het geïmplanteerde systeem heeft een indicatie voor epilepsie als aanvullende therapie bij focale aanvallen die niet reageren op anti-epileptica."
     limitation: "De formulering in het label voor de geïmplanteerde vorm; de pagina van de fabrikant noemt geen indicatie voor depressie."
+  - claim: "In één kleine gerandomiseerde trial bij ouderen met diabetes type 2 gaf wekelijkse ooracupressuur gedurende acht weken, vergeleken met druk op placebopunten, volgens de auteurs zwakke positieve effecten op bloedsuikermarkers, stress en slaap."
+    limitation: "Eén kleine trial in een klinische groep; de vragenlijst over ervaren stress verschilde niet tussen de groepen; mechanische druk, geen elektrische stimulatie."
+  - claim: "In dezelfde trial daalde de hoogfrequente HRV-index in de acupressuurgroep ten opzichte van placebo, dus de studie laat geen vagale activatie door druk op het oor zien."
+    limitation: "HRV gemeten met een stressmeter in eigen eenheden, niet met een standaard-ECG-opname; de LF/HF-verhouding verschilde niet tussen de groepen."
 ---
 
 ## Wat is nervus-vagusstimulatie?
@@ -144,6 +148,8 @@ Een latere studie naar parameters maakte het probleem scherper. Bepaalde combina
 **Het verhaal van de biomarker houdt geen stand.** De meest onderzochte kandidaat-marker voor ‘succes’ — vagaal gemedieerde HRV — reageert over studies met een schijnbehandeling heen niet robuust op acute stimulatie [S3], en de maat die verandert, kan een andere zijn dan de maat die wordt geclaimd [S4]. De eerlijke conclusie is niet dat stimulatie niets doet; het is dat de favoriete biomarker van het vakgebied op dit moment niet doet wat de marketing eraan toeschrijft.
 
 **Elektriciteit en ademhaling zijn verschillende routes.** Ademoefening is geen elektrische stimulatie, en het bewijs ervoor is van een andere aard. {{fact:claim.slowExhale}} [S14]. In één crossoverstudie verhoogde het toevoegen van oorstimulatie, gekoppeld aan de uitademing, tijdens langzaam ademen in een vast tempo de HRV niet verder vergeleken met een schijnbehandeling [S9] — het langzame ademen deed dat werk al. Dit is geen bewijs dat ademhaling elektriciteit overtreft; er is geen direct vergelijkend bewijs dat ze rangschikt voor wellnessuitkomsten, en claims van gelijkwaardigheid in welke richting dan ook verdienen scepsis. De praktische kant staat in [oefeningen voor de nervus vagus](/articles/vagus-nerve-exercises), [neuriën](/articles/humming-breath-vagus), [blootstelling aan kou](/articles/cold-exposure-vagus-nerve) en [HRV op natuurlijke wijze verhogen](/articles/how-to-raise-hrv-naturally); het bredere technologische beeld staat in [Elektrische geneeskunde: neuromodulatie](/articles/electric-medicine-neuromodulation).
+
+**Druk op het oor is geen oorstimulatie.** Ooracupressuur betekent punten op het oor indrukken met de vingers of met kleine zaadjes of bolletjes; er komt geen stroom aan te pas en het is niet hetzelfde als taVNS. Het bewijs is mager: één kleine gerandomiseerde trial bij ouderen met diabetes type twee vergeleek acht weken wekelijkse acupressuur met druk op placebopunten, en de auteurs noemen de effecten op bloedsuikermarkers, stress en slaap positief maar niet sterk [S15]. In dezelfde trial daalde de hoogfrequente HRV-index, die vaak als vagaal wordt gelezen, in de acupressuurgroep ten opzichte van placebo [S15]. Deze studie laat dus geen vagale activatie door druk op het oor zien, en resultaten van elektrische oorstimulatie gelden niet voor acupressuur.
 
 **Wat nog onzeker is.**
 

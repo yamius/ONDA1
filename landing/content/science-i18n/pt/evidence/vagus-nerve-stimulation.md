@@ -1,5 +1,5 @@
 ---
-sourceHash: "855b06082cb7"
+sourceHash: "e0527269fba5"
 title: "A estimulação do nervo vago funciona mesmo? O que mostram as evidências"
 metaTitle: "Estimulação do nervo vago: o que mostram as evidências"
 metaDescription: "A estimulação do nervo vago tem usos liberados pela FDA e resultados de pesquisa mistos. Veja o que cada nível de evidência sustenta e o que vai além dele."
@@ -94,6 +94,10 @@ evidenceMap:
     limitation: "Descreve a terapia cirúrgica; não tem relação com dispositivos portáteis ou de clipe na orelha."
   - claim: "O sistema implantado tem uma indicação para epilepsia como terapia complementar para crises de início parcial que continuam refratárias aos medicamentos antiepilépticos."
     limitation: "Formulação do rótulo da forma implantada; a página do fabricante não informa uma indicação para depressão."
+  - claim: "Em um pequeno ensaio randomizado com idosos com diabetes tipo 2, a acupressão auricular semanal por oito semanas, comparada com pressão em pontos placebo, mostrou segundo os autores efeitos positivos fracos em marcadores de glicose, estresse e sono."
+    limitation: "Um único ensaio pequeno em população clínica; o questionário de estresse percebido não diferiu entre os grupos; pressão mecânica, não estimulação elétrica."
+  - claim: "No mesmo ensaio, o índice de HRV de alta frequência caiu no grupo de acupressão em relação ao placebo, então o estudo não mostra ativação vagal ao pressionar a orelha."
+    limitation: "HRV medida por um medidor de estresse em unidades próprias, não por um registro de ECG padrão; a razão LF/HF não diferiu entre os grupos."
 ---
 
 ## O que é estimulação do nervo vago?
@@ -145,6 +149,8 @@ Um ensaio posterior de busca de parâmetros tornou o problema mais nítido. Cert
 **A história do biomarcador não se sustenta.** O marcador candidato de «sucesso» mais estudado — a HRV mediada pelo nervo vago — não responde de forma robusta à estimulação aguda nos estudos controlados por simulação [S3], e a métrica que se move pode ser diferente da métrica alegada [S4]. A conclusão honesta não é que a estimulação não faça nada; é que o biomarcador preferido da área hoje não cumpre o papel que o marketing lhe atribui.
 
 **Eletricidade e respiração são vias diferentes.** A prática respiratória não é estimulação elétrica, e as suas evidências são de outro tipo. {{fact:claim.slowExhale}} [S14]. Em um estudo cruzado, acrescentar estimulação na orelha sincronizada com a expiração durante a respiração lenta cadenciada não elevou ainda mais a HRV em comparação com a simulação [S9] — a respiração lenta já estava fazendo esse trabalho. Isso não é evidência de que a respiração supere a eletricidade; não há evidências de comparação direta que as classifiquem para desfechos de bem-estar, e alegações de equivalência em qualquer direção merecem ceticismo. Os aspectos práticos estão em [exercícios para o nervo vago](/articles/vagus-nerve-exercises), [cantarolar](/articles/humming-breath-vagus), [exposição ao frio](/articles/cold-exposure-vagus-nerve) e [como aumentar a HRV naturalmente](/articles/how-to-raise-hrv-naturally); o panorama tecnológico mais amplo está em [Medicina elétrica: neuromodulação](/articles/electric-medicine-neuromodulation).
+
+**Pressionar a orelha não é estimulá-la.** A acupressão auricular consiste em pressionar pontos da orelha com os dedos ou com pequenas sementes ou esferas; não aplica eletricidade e não deve ser confundida com a taVNS. As evidências são escassas: um pequeno ensaio randomizado com idosos com diabetes tipo dois comparou oito semanas de acupressão semanal com pressão em pontos placebo, e os autores descrevem os efeitos em marcadores de glicose, estresse e sono como positivos, mas não fortes [S15]. No mesmo ensaio, o índice de HRV de alta frequência, muitas vezes lido como vagal, caiu no grupo de acupressão em relação ao placebo [S15]. Portanto, este estudo não mostra ativação vagal ao pressionar a orelha, e os resultados da estimulação elétrica da orelha não se transferem para a acupressão.
 
 **O que continua incerto.**
 

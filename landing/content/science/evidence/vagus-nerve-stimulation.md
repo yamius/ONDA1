@@ -137,6 +137,14 @@ sources:
     doi: "10.1097/01.psy.0000089200.81962.19"
     pmid: 14508023
     type: randomized-trial
+  - id: S15
+    cite: "Lee, Kim & Park (2025)"
+    title: "Effects of Auricular Acupressure on Glycemic Markers, Stress, and Sleep in Older Adult Patients With Type 2 Diabetes: A Randomized Controlled Trial"
+    journal: "The Journal of Nursing Research"
+    year: 2025
+    doi: "10.1097/jnr.0000000000000683"
+    pmid: 40586734
+    type: randomized-trial
 evidenceMap:
   - claim: "Non-invasive delivery relies on the skin territory of vagal afferent fibres, at the external ear or at the neck."
     sources: [S1]
@@ -348,6 +356,18 @@ evidenceMap:
     claimType: regulatory
     quote: "The VNS Therapy™ System is indicated for use as an adjunctive therapy in reducing the frequency of seizures in patients 4 years of age and older with partial onset seizures that are refractory to antiepileptic medications."
     limitation: "Label wording for the implanted form; the manufacturer page does not state a depression indication."
+  - claim: "In one small randomized trial in older adults with type 2 diabetes, weekly auricular acupressure for eight weeks, compared with pressure on placebo points, showed weak positive effects on blood sugar markers, stress and sleep, in the authors' words."
+    sources: [S15]
+    class: emerging
+    claimType: efficacy
+    quote: "Although the effects are not strong, the findings suggests auricular acupressure influences glycemic index, stress, and sleep quality in older individuals with Type 2 diabetes positively."
+    limitation: "One small trial in a clinical population; the perceived stress questionnaire did not differ between groups; mechanical pressure, not electrical stimulation."
+  - claim: "In the same trial, the high-frequency HRV index fell in the acupressure group relative to placebo, so the study does not show vagal activation from pressing the ear."
+    sources: [S15]
+    class: emerging
+    claimType: physiology
+    quote: "Moreover, parasympathetic nerve activity (HF) decreased"
+    limitation: "HRV from a stress-meter device in its own units, not a standard ECG recording; the LF/HF ratio did not differ between groups."
 ---
 
 ## What is vagus nerve stimulation?
@@ -399,6 +419,8 @@ A later parameter-finding trial sharpened the problem. Certain combinations of s
 **The biomarker story is not holding.** The most-studied candidate marker of "success" — vagally mediated heart rate variability — does not robustly respond to acute stimulation across sham-controlled studies [S3], and the metric that moves can differ from the metric that is claimed [S4]. The honest conclusion is not that stimulation does nothing; it is that the field's favourite biomarker does not currently do the job marketing assigns to it.
 
 **Electricity and breathing are different routes.** Breathing practice is not electrical stimulation, and its evidence is of a different kind. {{fact:claim.slowExhale}} [S14]. In one crossover study, adding expiratory-gated ear stimulation during slow paced breathing did not further augment heart rate variability compared with sham [S9] — slow breathing was already doing that work. This is not evidence that breathing outranks electricity; no head-to-head evidence ranks them for wellness outcomes, and claims of equivalence in either direction deserve skepticism. The practical angles live in [vagus nerve exercises](/articles/vagus-nerve-exercises), [humming](/articles/humming-breath-vagus), [cold exposure](/articles/cold-exposure-vagus-nerve) and [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally); the wider technology picture lives in [Electric Medicine: Neuromodulation](/articles/electric-medicine-neuromodulation).
+
+**Ear pressure is not ear stimulation.** Auricular acupressure means pressing points on the ear by hand or with small seeds or pellets; it delivers no electricity and should not be confused with taVNS. The evidence is thin: one small randomized trial in older adults with type two diabetes compared eight weeks of weekly acupressure with pressure on placebo points, and the authors describe the effects on blood sugar markers, stress and sleep as positive but not strong [S15]. In the same trial the high-frequency HRV index, often read as vagal, fell in the acupressure group relative to placebo [S15]. So this study does not show vagal activation from pressing the ear, and results from electrical ear stimulation do not transfer to acupressure.
 
 **What remains uncertain.**
 

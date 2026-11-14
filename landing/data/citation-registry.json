@@ -7039,6 +7039,21 @@
    "source": "crossref",
    "verifiedAt": "2026-11-13"
   },
+  "doi:10.1097/jnr.0000000000000683": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Auricular Acupressure on Glycemic Markers, Stress, and Sleep in Older Adult Patients With Type 2 Diabetes: A Randomized Controlled Trial",
+   "firstAuthor": "LEE",
+   "authors": [
+    "LEE",
+    "KIM",
+    "PARK"
+   ],
+   "year": 2025,
+   "journal": "Journal of Nursing Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-14"
+  },
   "doi:10.1097/md.0000000000021449": {
    "kind": "doi",
    "valid": true,
@@ -22663,6 +22678,22 @@
    "doi": "10.1016/j.neubiorev.2025.106268",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:40586734": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Auricular Acupressure on Glycemic Markers, Stress, and Sleep in Older Adult Patients With Type 2 Diabetes: A Randomized Controlled Trial.",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Kim",
+    "Park"
+   ],
+   "year": 2025,
+   "journal": "J Nurs Res",
+   "doi": "10.1097/jnr.0000000000000683",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-14"
   },
   "pmid:40715924": {
    "kind": "pmid",

@@ -1,5 +1,5 @@
 ---
-sourceHash: "855b06082cb7"
+sourceHash: "e0527269fba5"
 title: "¿Funciona de verdad la estimulación del nervio vago? Qué muestra la evidencia"
 metaTitle: "Estimulación del nervio vago: qué muestra la evidencia"
 metaDescription: "La estimulación del nervio vago tiene usos médicos autorizados por la FDA y resultados dispares. Qué respalda cada nivel de evidencia y qué afirmaciones lo exceden."
@@ -93,6 +93,10 @@ evidenceMap:
     limitation: "Describe la terapia quirúrgica; no tiene relación con los dispositivos de mano ni de pinza auricular."
   - claim: "El sistema implantado tiene una indicación para la epilepsia como terapia complementaria de las crisis de inicio parcial refractarias a la medicación antiepiléptica."
     limitation: "Formulación de la etiqueta de la forma implantada; la página del fabricante no menciona ninguna indicación para la depresión."
+  - claim: "En un pequeño ensayo aleatorizado en personas mayores con diabetes tipo 2, la acupresión auricular semanal durante ocho semanas, frente a presión en puntos placebo, mostró según los autores efectos positivos débiles sobre marcadores de glucosa, estrés y sueño."
+    limitation: "Un solo ensayo pequeño en población clínica; el cuestionario de estrés percibido no difirió entre grupos; presión mecánica, no estimulación eléctrica."
+  - claim: "En el mismo ensayo, el índice de HRV de alta frecuencia bajó en el grupo de acupresión frente al placebo, así que el estudio no muestra activación vagal al presionar la oreja."
+    limitation: "HRV medida con un medidor de estrés en sus propias unidades, no con un registro de ECG estándar; el cociente LF/HF no difirió entre grupos."
 ---
 
 ## ¿Qué es la estimulación del nervio vago?
@@ -144,6 +148,8 @@ Un ensayo posterior de búsqueda de parámetros agudizó el problema. Ciertas co
 **La historia del biomarcador no se sostiene.** El marcador candidato de «éxito» más estudiado —la HRV de mediación vagal— no responde de forma robusta a la estimulación aguda en los estudios controlados con simulación [S3], y la métrica que se mueve puede ser distinta de la que se proclama [S4]. La conclusión honesta no es que la estimulación no haga nada, sino que el biomarcador favorito del campo no cumple hoy la función que le asigna el marketing.
 
 **La electricidad y la respiración son vías distintas.** La práctica respiratoria no es estimulación eléctrica, y su evidencia es de otro tipo. {{fact:claim.slowExhale}} [S14]. En un estudio cruzado, añadir estimulación auricular sincronizada con la espiración durante la respiración lenta pautada no aumentó más la HRV en comparación con la simulación [S9]: la respiración lenta ya estaba haciendo ese trabajo. Esto no es evidencia de que la respiración supere a la electricidad; ninguna evidencia directa las compara para resultados de bienestar, y las afirmaciones de equivalencia en cualquier sentido merecen escepticismo. Los aspectos prácticos están en [ejercicios para el nervio vago](/articles/vagus-nerve-exercises), [tararear](/articles/humming-breath-vagus), [exposición al frío](/articles/cold-exposure-vagus-nerve) y [cómo aumentar la HRV de forma natural](/articles/how-to-raise-hrv-naturally); el panorama tecnológico más amplio está en [Medicina eléctrica: neuromodulación](/articles/electric-medicine-neuromodulation).
+
+**Presionar la oreja no es estimularla.** La acupresión auricular consiste en presionar puntos de la oreja con los dedos o con pequeñas semillas o bolitas; no aplica electricidad y no debe confundirse con la taVNS. La evidencia es escasa: un pequeño ensayo aleatorizado en personas mayores con diabetes tipo dos comparó ocho semanas de acupresión semanal con presión en puntos placebo, y los autores describen los efectos sobre marcadores de glucosa, estrés y sueño como positivos pero no fuertes [S15]. En el mismo ensayo, el índice de HRV de alta frecuencia, que suele leerse como vagal, bajó en el grupo de acupresión frente al placebo [S15]. Así que este estudio no muestra activación vagal al presionar la oreja, y los resultados de la estimulación eléctrica de la oreja no se trasladan a la acupresión.
 
 **Lo que sigue sin estar claro.**
 

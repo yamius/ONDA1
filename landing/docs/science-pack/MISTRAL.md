@@ -1386,6 +1386,7 @@ New sources of the questions hub (task 064); all other hub sources (S1–S11, S1
 | Ramaswamy 2026 | Ramaswamy, Shetty & Shetty. Yoga-based visual respiratory biofeedback in migraine: RCT. *Appl Psychophysiol Biofeedback* 2026 | RCT / single session | DOI 10.1007/s10484-025-09761-7 · PMID 41441966 | evidence/yoga. P25 |
 | Strauch 2026 | Strauch et al. VR interventions for stress reduction in the general population: SR/MA of RCTs. *J Med Internet Res* 2026 | meta-analysis / perceived stress only | DOI 10.2196/78212 · PMID 42184377 | Questionnaire outcome, high heterogeneity; evidence/virtual-reality-and-stress. P325 |
 | Robbemond 2026 | Robbemond et al. Physiological responses to VR-based stress regulation and relaxation interventions: SR. *Stress Health* 2026 | systematic review / emerging, low quality | DOI 10.1002/smi.70164 · PMID 41830413 | HRV not pooled; evidence/virtual-reality-and-stress. P326 |
+| Lee 2025 | Lee, Kim & Park. Auricular acupressure on glycemic markers, stress and sleep in older adults with type 2 diabetes: RCT. *J Nurs Res* 2025 | RCT vs placebo points / emerging | DOI 10.1097/jnr.0000000000000683 · PMID 40586734 | HF fell vs placebo (no vagal activation); evidence/vagus-nerve-stimulation. P327 |
 
 ---
 

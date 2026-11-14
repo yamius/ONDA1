@@ -1,5 +1,5 @@
 ---
-sourceHash: "855b06082cb7"
+sourceHash: "e0527269fba5"
 title: "La stimolazione del nervo vago funziona davvero? Che cosa mostrano le evidenze"
 metaTitle: "Stimolazione del nervo vago: che cosa dicono le evidenze"
 metaDescription: "La stimolazione del nervo vago ha usi medici autorizzati dalla FDA e risultati di ricerca contrastanti. Ecco che cosa sostiene ogni livello di evidenza, e cosa no."
@@ -93,6 +93,10 @@ evidenceMap:
     limitation: "Descrive la terapia chirurgica; è irrilevante per i dispositivi portatili o a clip per l'orecchio."
   - claim: "Il sistema impiantato ha un'indicazione per l'epilessia come terapia aggiuntiva nelle crisi a esordio parziale che restano refrattarie ai farmaci antiepilettici."
     limitation: "Formulazione dell'etichetta per la forma impiantata; la pagina del produttore non indica un'indicazione per la depressione."
+  - claim: "In un piccolo studio randomizzato su anziani con diabete di tipo 2, l'acupressione auricolare settimanale per otto settimane, rispetto alla pressione su punti placebo, ha mostrato secondo gli autori deboli effetti positivi su marcatori della glicemia, stress e sonno."
+    limitation: "Un solo piccolo studio in una popolazione clinica; il questionario sullo stress percepito non differiva tra i gruppi; pressione meccanica, non stimolazione elettrica."
+  - claim: "Nello stesso studio l'indice di HRV ad alta frequenza è sceso nel gruppo di acupressione rispetto al placebo, quindi lo studio non mostra un'attivazione vagale premendo l'orecchio."
+    limitation: "HRV misurata con un misuratore di stress nelle sue unità, non con una registrazione ECG standard; il rapporto LF/HF non differiva tra i gruppi."
 ---
 
 ## Che cos'è la stimolazione del nervo vago?
@@ -144,6 +148,8 @@ Uno studio successivo sulla ricerca dei parametri ha reso il problema ancora pi�
 **La storia del biomarcatore non regge.** Il marcatore di «successo» più studiato, l'HRV di mediazione vagale, non risponde in modo robusto alla stimolazione acuta negli studi controllati con sham [S3], e la metrica che si muove può essere diversa da quella dichiarata [S4]. La conclusione onesta non è che la stimolazione non faccia nulla; è che il biomarcatore preferito del settore, al momento, non svolge il compito che il marketing gli assegna.
 
 **Elettricità e respiro sono vie diverse.** La pratica del respiro non è una stimolazione elettrica, e le sue evidenze sono di un altro tipo. {{fact:claim.slowExhale}} [S14]. In uno studio crossover, aggiungere la stimolazione dell'orecchio sincronizzata con l'espirazione durante la respirazione lenta cadenzata non ha aumentato ulteriormente l'HRV rispetto alla simulazione [S9]: la respirazione lenta stava già facendo quel lavoro. Questa non è la prova che il respiro superi l'elettricità; nessuna evidenza di confronto diretto le mette in graduatoria per gli esiti di benessere, e le affermazioni di equivalenza in un senso o nell'altro meritano scetticismo. Gli aspetti pratici si trovano in [esercizi per il nervo vago](/articles/vagus-nerve-exercises), [canticchiare a bocca chiusa](/articles/humming-breath-vagus), [esposizione al freddo](/articles/cold-exposure-vagus-nerve) e [come aumentare l'HRV in modo naturale](/articles/how-to-raise-hrv-naturally); il quadro tecnologico più ampio è in [Medicina elettrica: la neuromodulazione](/articles/electric-medicine-neuromodulation).
+
+**Premere l'orecchio non è stimolarlo.** L'acupressione auricolare consiste nel premere punti dell'orecchio con le dita o con piccoli semi o sferette; non applica elettricità e non va confusa con la taVNS. Le prove sono scarse: un piccolo studio randomizzato su anziani con diabete di tipo due ha confrontato otto settimane di acupressione settimanale con la pressione su punti placebo, e gli autori descrivono gli effetti su marcatori della glicemia, stress e sonno come positivi ma non forti [S15]. Nello stesso studio l'indice di HRV ad alta frequenza, spesso letto come vagale, è sceso nel gruppo di acupressione rispetto al placebo [S15]. Quindi questo studio non mostra un'attivazione vagale premendo l'orecchio, e i risultati della stimolazione elettrica dell'orecchio non si trasferiscono all'acupressione.
 
 **Cosa resta incerto.**
 

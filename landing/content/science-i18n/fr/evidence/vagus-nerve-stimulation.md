@@ -1,5 +1,5 @@
 ---
-sourceHash: "855b06082cb7"
+sourceHash: "e0527269fba5"
 title: "La stimulation du nerf vague fonctionne-t-elle vraiment ? Ce que montrent les données"
 metaTitle: "Stimulation du nerf vague : ce que montrent les données"
 metaDescription: "Stimulation du nerf vague : usages autorisés par la FDA, résultats mitigés. Ce que soutient chaque niveau de preuve, et les allégations qui le dépassent."
@@ -94,6 +94,10 @@ evidenceMap:
     limitation: "Décrit la thérapie chirurgicale ; sans rapport avec les appareils portatifs ou à pince d’oreille."
   - claim: "Le système implanté a une indication dans l’épilepsie, en traitement d’appoint des crises partielles qui restent réfractaires aux médicaments antiépileptiques."
     limitation: "Formulation de la notice pour la forme implantée ; la page du fabricant n’indique pas d’indication dans la dépression."
+  - claim: "Dans un petit essai randomisé chez des personnes âgées atteintes de diabète de type 2, une acupression auriculaire hebdomadaire pendant huit semaines, comparée à une pression sur des points placebo, a montré selon les auteurs de faibles effets positifs sur les marqueurs de glycémie, le stress et le sommeil."
+    limitation: "Un seul petit essai en population clinique ; le questionnaire de stress perçu ne différait pas entre les groupes ; pression mécanique, pas stimulation électrique."
+  - claim: "Dans le même essai, l'indice de HRV à haute fréquence a baissé dans le groupe acupression par rapport au placebo, donc l'étude ne montre pas d'activation vagale par la pression sur l'oreille."
+    limitation: "HRV mesurée par un appareil de mesure du stress dans ses propres unités, pas par un enregistrement ECG standard ; le rapport LF/HF ne différait pas entre les groupes."
 ---
 
 ## Qu’est-ce que la stimulation du nerf vague ?
@@ -145,6 +149,8 @@ Un essai ultérieur de recherche de paramètres a accentué le problème. Certai
 **Le récit du biomarqueur ne tient pas.** Le marqueur de « succès » le plus étudié — la HRV d’origine vagale — ne réagit pas de façon robuste à la stimulation ponctuelle dans les études contrôlées par simulation [S3], et l’indicateur qui bouge peut différer de celui qui est mis en avant [S4]. La conclusion honnête n’est pas que la stimulation ne fait rien ; c’est que le biomarqueur favori du domaine ne remplit pas actuellement le rôle que le marketing lui attribue.
 
 **L’électricité et la respiration sont des voies différentes.** La pratique respiratoire n’est pas une stimulation électrique, et ses données sont d’une autre nature. {{fact:claim.slowExhale}} [S14]. Dans une étude croisée, l’ajout d’une stimulation de l’oreille synchronisée sur l’expiration pendant une respiration lente rythmée n’a pas augmenté davantage la HRV par rapport à la simulation [S9] — la respiration lente faisait déjà ce travail. Ce n’est pas la preuve que la respiration surpasse l’électricité : aucune comparaison directe ne les départage pour des effets de bien-être, et les affirmations d’équivalence, dans un sens comme dans l’autre, méritent le scepticisme. Les aspects pratiques se trouvent dans [les exercices du nerf vague](/articles/vagus-nerve-exercises), [le fredonnement](/articles/humming-breath-vagus), [l’exposition au froid](/articles/cold-exposure-vagus-nerve) et [comment augmenter sa HRV naturellement](/articles/how-to-raise-hrv-naturally) ; le panorama technologique plus large est présenté dans [La médecine électrique : la neuromodulation](/articles/electric-medicine-neuromodulation).
+
+**Presser l'oreille n'est pas la stimuler.** L'acupression auriculaire consiste à presser des points de l'oreille avec les doigts ou avec de petites graines ou billes ; elle n'applique aucun courant et ne doit pas être confondue avec la taVNS. Les données sont minces : un petit essai randomisé chez des personnes âgées atteintes de diabète de type deux a comparé huit semaines d'acupression hebdomadaire à une pression sur des points placebo, et les auteurs décrivent des effets sur les marqueurs de glycémie, le stress et le sommeil comme positifs mais pas forts [S15]. Dans le même essai, l'indice de HRV à haute fréquence, souvent lu comme vagal, a baissé dans le groupe acupression par rapport au placebo [S15]. Cette étude ne montre donc pas d'activation vagale par la pression sur l'oreille, et les résultats de la stimulation électrique de l'oreille ne se transposent pas à l'acupression.
 
 **Ce qui reste incertain.**
 

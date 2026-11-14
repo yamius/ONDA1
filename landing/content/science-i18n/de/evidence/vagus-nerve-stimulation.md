@@ -1,5 +1,5 @@
 ---
-sourceHash: "855b06082cb7"
+sourceHash: "e0527269fba5"
 title: "Wirkt Vagusnervstimulation wirklich? Was die Evidenz zeigt"
 metaTitle: "Vagusnervstimulation: Was die Evidenz zeigt"
 metaDescription: "Vagusnervstimulation hat von der FDA freigegebene Anwendungen und gemischte Studienergebnisse. Was jede Evidenzstufe stützt – und was darüber hinausgeht."
@@ -93,6 +93,10 @@ evidenceMap:
     limitation: "Beschreibt die chirurgische Therapie; für Handgeräte oder Ohrclips ist das irrelevant."
   - claim: "Das implantierte System hat eine Epilepsie-Indikation als ergänzende Therapie bei fokal beginnenden Anfällen, die auf Antiepileptika nicht ansprechen."
     limitation: "Kennzeichnungstext für die implantierte Form; die Herstellerseite nennt keine Depressionsindikation."
+  - claim: "In einer kleinen randomisierten Studie bei älteren Menschen mit Typ-2-Diabetes zeigte wöchentliche Ohrakupressur über acht Wochen im Vergleich mit Druck auf Placebopunkte laut den Autoren schwache positive Effekte auf Blutzuckermarker, Stress und Schlaf."
+    limitation: "Eine kleine Studie in einer klinischen Gruppe; der Fragebogen zum empfundenen Stress unterschied sich nicht zwischen den Gruppen; mechanischer Druck, keine elektrische Stimulation."
+  - claim: "In derselben Studie sank der Hochfrequenz-Index der HRV in der Akupressurgruppe im Vergleich zu Placebo, die Studie zeigt also keine vagale Aktivierung durch Druck auf das Ohr."
+    limitation: "HRV mit einem Stressmessgerät in eigenen Einheiten gemessen, nicht mit einer Standard-EKG-Aufzeichnung; das LF/HF-Verhältnis unterschied sich nicht zwischen den Gruppen."
 ---
 
 ## Was ist Vagusnervstimulation?
@@ -144,6 +148,8 @@ Eine spätere Studie zur Parametersuche verschärfte das Problem. Bestimmte Komb
 **Die Geschichte vom Biomarker hält nicht.** Der am besten untersuchte Kandidat für einen Marker des „Erfolgs“ – die vagal vermittelte HRV – reagiert über scheinkontrollierte Studien hinweg nicht robust auf eine akute Stimulation [S3], und das Maß, das sich bewegt, kann ein anderes sein als das, auf das sich die Aussage beruft [S4]. Die ehrliche Schlussfolgerung lautet nicht, dass Stimulation nichts bewirkt, sondern dass der Lieblings-Biomarker des Feldes derzeit nicht die Aufgabe erfüllt, die ihm das Marketing zuschreibt.
 
 **Strom und Atmung sind verschiedene Wege.** Atemübungen sind keine elektrische Stimulation, und ihre Evidenz ist anderer Art. {{fact:claim.slowExhale}} [S14]. In einer Crossover-Studie steigerte eine zusätzliche, an die Ausatmung gekoppelte Ohrstimulation während langsamen getakteten Atmens die HRV im Vergleich zur Scheinbehandlung nicht weiter [S9] – das langsame Atmen leistete diese Arbeit bereits. Das ist kein Beleg dafür, dass Atmung Strom überlegen ist; keine direkte Vergleichsevidenz stellt beide für Wellness-Ergebnisse in eine Rangfolge, und Behauptungen der Gleichwertigkeit in die eine oder andere Richtung verdienen Skepsis. Die praktischen Aspekte findest du unter [Übungen für den Vagusnerv](/articles/vagus-nerve-exercises), [Summen](/articles/humming-breath-vagus), [Kälteexposition](/articles/cold-exposure-vagus-nerve) und [die HRV natürlich steigern](/articles/how-to-raise-hrv-naturally); das größere technologische Bild zeigt [Elektrische Medizin: Neuromodulation](/articles/electric-medicine-neuromodulation).
+
+**Druck auf das Ohr ist keine Ohrstimulation.** Ohrakupressur bedeutet, Punkte am Ohr mit den Fingern oder mit kleinen Samen oder Kügelchen zu drücken; sie gibt keinen Strom ab und ist nicht mit taVNS zu verwechseln. Die Evidenz ist dünn: Eine kleine randomisierte Studie bei älteren Menschen mit Typ-zwei-Diabetes verglich acht Wochen wöchentlicher Akupressur mit Druck auf Placebopunkte, und die Autoren beschreiben die Effekte auf Blutzuckermarker, Stress und Schlaf als positiv, aber nicht stark [S15]. In derselben Studie sank der Hochfrequenz-Index der HRV, der oft als vagal gelesen wird, in der Akupressurgruppe im Vergleich zu Placebo [S15]. Diese Studie zeigt also keine vagale Aktivierung durch Druck auf das Ohr, und Ergebnisse elektrischer Ohrstimulation lassen sich nicht auf Akupressur übertragen.
 
 **Was offen bleibt.**
 

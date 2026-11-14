@@ -1,5 +1,5 @@
 ---
-sourceHash: "855b06082cb7"
+sourceHash: "e0527269fba5"
 title: "Czy stymulacja nerwu błędnego naprawdę działa? Co pokazują badania"
 metaTitle: "Stymulacja nerwu błędnego: co pokazują badania"
 metaDescription: "Stymulacja nerwu błędnego ma zastosowania medyczne dopuszczone przez FDA i niejednoznaczne wyniki badań. Co popiera każdy poziom dowodów, a co go wyprzedza."
@@ -93,6 +93,10 @@ evidenceMap:
     limitation: "Opisuje terapię chirurgiczną; nie ma związku z urządzeniami ręcznymi ani zaciskanymi na uchu."
   - claim: "Wszczepiany system ma wskazanie w padaczce jako terapia uzupełniająca w napadach ogniskowych opornych na leki przeciwpadaczkowe."
     limitation: "Treść etykiety formy wszczepianej; strona producenta nie podaje wskazania w depresji."
+  - claim: "W jednym małym badaniu randomizowanym u starszych osób z cukrzycą typu 2 cotygodniowa akupresura uszna przez osiem tygodni w porównaniu z uciskiem punktów placebo dała, według autorów, słaby pozytywny wpływ na wskaźniki cukru we krwi, stres i sen."
+    limitation: "Jedno małe badanie w grupie klinicznej; kwestionariusz odczuwanego stresu nie różnił się między grupami; ucisk mechaniczny, nie stymulacja elektryczna."
+  - claim: "W tym samym badaniu wysokoczęstotliwościowy wskaźnik HRV spadł w grupie akupresury względem placebo, więc badanie nie pokazuje aktywacji nerwu błędnego przez ucisk ucha."
+    limitation: "HRV mierzono miernikiem stresu we własnych jednostkach, a nie standardowym zapisem EKG; stosunek LF/HF nie różnił się między grupami."
 ---
 
 ## Czym jest stymulacja nerwu błędnego?
@@ -144,6 +148,8 @@ Późniejsze badanie poszukujące parametrów jeszcze wyostrzyło problem. Niekt
 **Teza o biomarkerze się nie broni.** Najczęściej badany kandydat na marker „sukcesu” — HRV zależne od nerwu błędnego — nie reaguje w sposób powtarzalny na doraźną stymulację w badaniach z pozorowaną stymulacją [S3], a miara, która się zmienia, może być inna niż ta, o której się mówi [S4]. Uczciwy wniosek nie brzmi: stymulacja nic nie robi; brzmi: ulubiony biomarker tej dziedziny nie spełnia obecnie roli, jaką przypisuje mu marketing.
 
 **Prąd i oddech to różne drogi.** Praktyka oddechowa nie jest stymulacją elektryczną, a jej dowody są innego rodzaju. {{fact:claim.slowExhale}} [S14]. W jednym badaniu naprzemiennym (crossover) dodanie stymulacji ucha zsynchronizowanej z wydechem w czasie wolnego, miarowego oddychania nie zwiększyło dodatkowo HRV w porównaniu ze stymulacją pozorowaną [S9] — wolny oddech już wykonywał tę pracę. Nie jest to dowód, że oddech przewyższa prąd; żadne bezpośrednie porównania nie szeregują ich pod względem efektów wellness, a twierdzenia o równoważności w którąkolwiek stronę zasługują na sceptycyzm. Praktyczne ujęcie znajdziesz w artykułach [ćwiczenia nerwu błędnego](/articles/vagus-nerve-exercises), [nucenie](/articles/humming-breath-vagus), [ekspozycja na zimno](/articles/cold-exposure-vagus-nerve) i [jak naturalnie podnieść HRV](/articles/how-to-raise-hrv-naturally); szerszy obraz technologii — w artykule [Medycyna elektryczna: neuromodulacja](/articles/electric-medicine-neuromodulation).
+
+**Ucisk ucha to nie stymulacja ucha.** Akupresura uszna polega na uciskaniu punktów ucha palcami lub małymi nasionkami czy kulkami; nie dostarcza prądu i nie należy jej mylić z taVNS. Dowodów jest mało: jedno małe badanie randomizowane u starszych osób z cukrzycą typu drugiego porównało osiem tygodni cotygodniowej akupresury z uciskiem punktów placebo, a autorzy opisują wpływ na wskaźniki cukru we krwi, stres i sen jako pozytywny, ale niesilny [S15]. W tym samym badaniu wysokoczęstotliwościowy wskaźnik HRV, często odczytywany jako wagalny, spadł w grupie akupresury względem placebo [S15]. To badanie nie pokazuje więc aktywacji nerwu błędnego przez ucisk ucha, a wyników elektrycznej stymulacji ucha nie przenosi się na akupresurę.
 
 **Co pozostaje niepewne.**
 
