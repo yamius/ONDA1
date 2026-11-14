@@ -3398,6 +3398,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1016/j.neubiorev.2025.106241": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of light exposure on vagally-mediated heart rate variability: A systematic review",
+   "firstAuthor": "Martins",
+   "authors": [
+    "Martins",
+    "Allen",
+    "Borges",
+    "Laterza",
+    "Jackovič",
+    "Mosley",
+    "Javelle",
+    "Laborde"
+   ],
+   "year": 2025,
+   "journal": "Neuroscience &amp; Biobehavioral Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-11-14"
+  },
   "doi:10.1016/j.neubiorev.2025.106268": {
    "kind": "doi",
    "valid": true,
@@ -10438,6 +10458,28 @@
    "journal": "PLOS One",
    "source": "crossref",
    "verifiedAt": "2026-10-11"
+  },
+  "doi:10.1371/journal.pone.0357293": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effects of coherent breathing and blue light after an acute stress on sleepiness and the stress response in a workplace setting: A randomized double-blind cross-over trial",
+   "firstAuthor": "Ráčková",
+   "authors": [
+    "Ráčková",
+    "Diamond",
+    "Makarová",
+    "Morcinek",
+    "Butin",
+    "Nemmi",
+    "Boyer",
+    "Boyer",
+    "Vašků",
+    "Chabani"
+   ],
+   "year": 2026,
+   "journal": "PLOS One",
+   "source": "crossref",
+   "verifiedAt": "2026-11-14"
   },
   "doi:10.1378/chest.125.2.683": {
    "kind": "doi",
@@ -22432,6 +22474,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
   },
+  "pmid:40499799": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of light exposure on vagally-mediated heart rate variability: A systematic review.",
+   "firstAuthor": "Martins",
+   "authors": [
+    "Martins",
+    "Allen",
+    "Borges",
+    "Laterza",
+    "Jackovič",
+    "Mosley",
+    "Javelle",
+    "Laborde"
+   ],
+   "year": 2025,
+   "journal": "Neurosci Biobehav Rev",
+   "doi": "10.1016/j.neubiorev.2025.106241",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-14"
+  },
   "pmid:40527833": {
    "kind": "pmid",
    "valid": true,
@@ -24591,6 +24654,29 @@
    "doi": "10.1007/s10286-026-01243-y",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:42814696": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effects of coherent breathing and blue light after an acute stress on sleepiness and the stress response in a workplace setting: A randomized double-blind cross-over trial.",
+   "firstAuthor": "Ráčková",
+   "authors": [
+    "Ráčková",
+    "Diamond",
+    "Makarová",
+    "Morcinek",
+    "Butin",
+    "Nemmi",
+    "Boyer",
+    "Boyer",
+    "Vašků",
+    "Chabani"
+   ],
+   "year": 2026,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0357293",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-14"
   },
   "pmid:42870311": {
    "kind": "pmid",
