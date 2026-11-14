@@ -703,6 +703,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1002/smi.70164": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Physiological Responses to Virtual Reality‐Based Stress Regulation and Relaxation Interventions: A Systematic Review",
+   "firstAuthor": "Robbemond",
+   "authors": [
+    "Robbemond",
+    "Noordzij",
+    "van Driel",
+    "Veling"
+   ],
+   "year": 2026,
+   "journal": "Stress and Health",
+   "source": "crossref",
+   "verifiedAt": "2026-11-14"
+  },
   "doi:10.1002/wps.20229": {
    "kind": "doi",
    "valid": true,
@@ -11046,6 +11062,24 @@
    "journal": "JMIR Cardio",
    "source": "crossref",
    "verifiedAt": "2026-11-07"
+  },
+  "doi:10.2196/78212": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Virtual Reality Interventions for Stress Reduction in the General Population: Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+   "firstAuthor": "Strauch",
+   "authors": [
+    "Strauch",
+    "Schuil",
+    "Simm",
+    "Grubert",
+    "Kalamkar",
+    "Meissner"
+   ],
+   "year": 2026,
+   "journal": "Journal of Medical Internet Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-14"
   },
   "doi:10.2196/80450": {
    "kind": "doi",
@@ -23726,6 +23760,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
   },
+  "pmid:41830413": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Physiological Responses to Virtual Reality-Based Stress Regulation and Relaxation Interventions: A Systematic Review.",
+   "firstAuthor": "Robbemond",
+   "authors": [
+    "Robbemond",
+    "Noordzij",
+    "van Driel",
+    "Veling"
+   ],
+   "year": 2026,
+   "journal": "Stress Health",
+   "doi": "10.1002/smi.70164",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-14"
+  },
   "pmid:41838387": {
    "kind": "pmid",
    "valid": true,
@@ -24143,6 +24194,25 @@
    "doi": "10.1038/s41598-026-53333-6",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42184377": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Virtual Reality Interventions for Stress Reduction in the General Population: Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+   "firstAuthor": "Strauch",
+   "authors": [
+    "Strauch",
+    "Schuil",
+    "Simm",
+    "Grubert",
+    "Kalamkar",
+    "Meissner"
+   ],
+   "year": 2026,
+   "journal": "J Med Internet Res",
+   "doi": "10.2196/78212",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-14"
   },
   "pmid:42185632": {
    "kind": "pmid",
