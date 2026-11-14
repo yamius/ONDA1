@@ -1379,6 +1379,11 @@ New sources of the questions hub (task 064); all other hub sources (S1–S11, S1
 | Riedl 2026 | Riedl et al. One-minute cyclic sighing vs box breathing in real life (EMA pilot). *Anxiety Stress Coping* 2026 | pilot RCT / emerging | DOI 10.1080/10615806.2026.2659809 · PMID 42002307 | Attention cost; evidence/box-breathing. P207 |
 | Martins 2025 | Martins et al. Effects of light exposure on vagally-mediated HRV: SR. *Neurosci Biobehav Rev* 2025 | systematic review / all high RoB | DOI 10.1016/j.neubiorev.2025.106241 · PMID 40499799 | Directions only; mechanisms/light-and-hrv. P323 |
 | Ráčková 2026 | Ráčková et al. Coherent breathing and blue light after acute stress in a workplace setting: crossover RCT. *PLOS ONE* 2026 | crossover RCT / HRV null | DOI 10.1371/journal.pone.0357293 · PMID 42814696 | Combined intervention; mechanisms/light-and-hrv. P45 |
+| Sharma 2025 | Sharma et al. Yoga-based interventions on HRV and anxiety among students: SR/MA. *Ann Neurosci* 2025 | meta-analysis (4 RCTs) / positive | DOI 10.1177/09727531251394924 · PMID 41395352 | No effect sizes in abstract; evidence/yoga. P324 |
+| Mütze 2025 | Mütze, Mitzinger & Haller. Pranayama for mental disorders: SR/MA of RCTs. *Front Psychiatry* 2025 | meta-analysis / vs passive only | DOI 10.3389/fpsyt.2025.1616996 · PMID 40896223 | High RoB 4/6; evidence/yoga. P19 |
+| Kavitha 2026 | Kavitha et al. Slow breathing and cardiac autonomic function in anxiety disorder: RCT. *Ann Neurosci* 2026 | RCT / emerging | DOI 10.1177/09727531241266094 · PMID 39544659 | Add-on, no breathing control; evidence/yoga. P78 |
+| Chetry 2026 | Chetry, Telles & Balkrishna. HRV and mood in three yoga breathing practices: crossover. *Int J Yoga Ther* 2026 | crossover RCT / acute | DOI 10.17761/2025-d-25-00006 · PMID 41580220 | Affiliation flag; evidence/yoga. P21 |
+| Ramaswamy 2026 | Ramaswamy, Shetty & Shetty. Yoga-based visual respiratory biofeedback in migraine: RCT. *Appl Psychophysiol Biofeedback* 2026 | RCT / single session | DOI 10.1007/s10484-025-09761-7 · PMID 41441966 | evidence/yoga. P25 |
 
 ---
 

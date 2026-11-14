@@ -1310,6 +1310,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s10484-025-09761-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Immediate Cognitive and Interoceptive Benefits of Yoga-Based Visual Respiratory Biofeedback in Migraine: A Randomized Controlled Trial",
+   "firstAuthor": "Ramaswamy",
+   "authors": [
+    "Ramaswamy",
+    "Shetty",
+    "Shetty"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Applied Psychophysiology and Biofeedback",
+   "source": "crossref",
+   "verifiedAt": "2026-11-14"
+  },
   "doi:10.1007/s10484-025-09765-3": {
    "kind": "doi",
    "valid": true,
@@ -9119,6 +9135,41 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1177/09727531241266094": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Slow Breathing Exercises on Cardiac Autonomic Functions in Anxiety Disorder—A Randomised Control Trial",
+   "firstAuthor": "Kavitha",
+   "authors": [
+    "Kavitha",
+    "Pal",
+    "Pal",
+    "Bharadwaj",
+    "Nanda"
+   ],
+   "year": 2024,
+   "yearAlt": 2026,
+   "journal": "Annals of Neurosciences",
+   "source": "crossref",
+   "verifiedAt": "2026-11-14"
+  },
+  "doi:10.1177/09727531251394924": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of Yoga-based Interventions on Heart Rate Variability and Anxiety Among Students: A Systematic Review and Meta-analysis",
+   "firstAuthor": "Sharma",
+   "authors": [
+    "Sharma",
+    "Kaushik",
+    "Saini",
+    "Sharma",
+    "Metri"
+   ],
+   "year": 2025,
+   "journal": "Annals of Neurosciences",
+   "source": "crossref",
+   "verifiedAt": "2026-11-14"
+  },
   "doi:10.1177/09727531261454450": {
    "kind": "doi",
    "valid": true,
@@ -10823,6 +10874,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.17761/2025-d-25-00006": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart Rate Variability and Mood State Changes in Three Yoga Breathing Practices: A Randomized Crossover Trial",
+   "firstAuthor": "Chetry",
+   "authors": [
+    "Chetry",
+    "Telles",
+    "Balkrishna"
+   ],
+   "year": 2025,
+   "journal": "International Journal of Yoga Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-14"
+  },
   "doi:10.20463/pan.2026.0031": {
    "kind": "doi",
    "valid": true,
@@ -12064,6 +12130,21 @@
    "journal": "Frontiers in Psychiatry",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3389/fpsyt.2025.1616996": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effectiveness of pranayama for mental disorders: a systematic review and meta-analysis of randomized controlled trials",
+   "firstAuthor": "Mütze",
+   "authors": [
+    "Mütze",
+    "Mitzinger",
+    "Haller"
+   ],
+   "year": 2025,
+   "journal": "Frontiers in Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-14"
   },
   "doi:10.3389/fpsyt.2026.1813993": {
    "kind": "doi",
@@ -21946,6 +22027,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:39544659": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Slow Breathing Exercises on Cardiac Autonomic Functions in Anxiety Disorder-A Randomised Control Trial.",
+   "firstAuthor": "Kavitha",
+   "authors": [
+    "Kavitha",
+    "Pal",
+    "Pal",
+    "Bharadwaj",
+    "Nanda"
+   ],
+   "year": 2026,
+   "yearAlt": 2024,
+   "journal": "Ann Neurosci",
+   "doi": "10.1177/09727531241266094",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-14"
+  },
   "pmid:39568666": {
    "kind": "pmid",
    "valid": true,
@@ -22716,6 +22816,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:40896223": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effectiveness of pranayama for mental disorders: a systematic review and meta-analysis of randomized controlled trials.",
+   "firstAuthor": "Mütze",
+   "authors": [
+    "Mütze",
+    "Mitzinger",
+    "Haller"
+   ],
+   "year": 2025,
+   "journal": "Front Psychiatry",
+   "doi": "10.3389/fpsyt.2025.1616996",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-14"
+  },
   "pmid:41032498": {
    "kind": "pmid",
    "valid": true,
@@ -22940,6 +23056,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
   },
+  "pmid:41395352": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of Yoga-based Interventions on Heart Rate Variability and Anxiety Among Students: A Systematic Review and Meta-analysis.",
+   "firstAuthor": "Sharma",
+   "authors": [
+    "Sharma",
+    "Kaushik",
+    "Saini",
+    "Sharma",
+    "Metri"
+   ],
+   "year": 2025,
+   "journal": "Ann Neurosci",
+   "doi": "10.1177/09727531251394924",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-14"
+  },
   "pmid:41399178": {
    "kind": "pmid",
    "valid": true,
@@ -23021,6 +23155,23 @@
    "doi": "10.1159/000550084",
    "source": "pubmed",
    "verifiedAt": "2026-11-13"
+  },
+  "pmid:41441966": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Immediate Cognitive and Interoceptive Benefits of Yoga-Based Visual Respiratory Biofeedback in Migraine: A Randomized Controlled Trial.",
+   "firstAuthor": "Ramaswamy",
+   "authors": [
+    "Ramaswamy",
+    "Shetty",
+    "Shetty"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Appl Psychophysiol Biofeedback",
+   "doi": "10.1007/s10484-025-09761-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-14"
   },
   "pmid:41454435": {
    "kind": "pmid",
@@ -23218,6 +23369,22 @@
    "doi": "10.3389/fphys.2025.1696346",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41580220": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart Rate Variability and Mood State Changes in Three Yoga Breathing Practices: A Randomized Crossover Trial.",
+   "firstAuthor": "Chetry",
+   "authors": [
+    "Chetry",
+    "Telles",
+    "Balkrishna"
+   ],
+   "year": 2026,
+   "journal": "Int J Yoga Therap",
+   "doi": "10.17761/2025-D-25-00006",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-14"
   },
   "pmid:41616929": {
    "kind": "pmid",

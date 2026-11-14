@@ -2572,6 +2572,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/science/evidence-yoga.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/evidence-yoga.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/evidence-yoga.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/measurements-heart-rate-variability.avif": {
     "width": 1916,
     "height": 821
