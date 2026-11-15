@@ -117,6 +117,8 @@ const published = new Set(publishable.map(key))
 const translations = new Map<string, Map<string, Raw>>()
 const stale: { lang: string; page: string }[] = []
 const problems: string[] = []
+const queued: string[] = []
+const BUILD_DATE = new Date().toISOString().slice(0, 10)
 if (existsSync(I18N_DIR)) {
   for (const lang of readdirSync(I18N_DIR)) {
     if (!statSync(join(I18N_DIR, lang)).isDirectory()) continue
@@ -129,6 +131,11 @@ if (existsSync(I18N_DIR)) {
       if (rows.length !== (en.fm.evidenceMap ?? []).length) problems.push(`${lang}/${key(t)}: evidenceMap has ${rows.length} rows, EN has ${(en.fm.evidenceMap ?? []).length}`)
       for (const f of ['title', 'metaTitle', 'metaDescription', 'shortAnswer', 'imageAlt']) if (!t.fm[f] && en.fm[f]) problems.push(`${lang}/${key(t)}: missing ${f}`)
       if ((t.fm.keyPoints ?? []).length !== (en.fm.keyPoints ?? []).length) problems.push(`${lang}/${key(t)}: keyPoints count differs from EN`)
+      // Translation queue (owner 2026-11-15): `publishAfter: "YYYY-MM-DD"` keeps a finished translation off the site until
+      // that date; the daily scheduled rebuild publishes it. Cadence: own queue, separate from article-release-queue.ts —
+      // 3 languages every 2 days per page (es,ru,uk → zh,de,fr → it,pt,nl → pl,ja). Checks above still run, so a queued file must be valid.
+      const after = t.fm.publishAfter ? String(t.fm.publishAfter).slice(0, 10) : ''
+      if (after && after > BUILD_DATE) { queued.push(`${lang}/${key(t)}@${after}`); continue }
       m.set(key(t), t)
     }
     translations.set(lang, m)
@@ -280,4 +287,5 @@ writeFileSync(
 const tr = SCIENCE_LIVE_LANGS.map((l) => `${l}:${full[l].length}`).join(' ')
 console.log(`[science] generated ${publishable.length} page(s)${tr ? ` + translations ${tr}` : ''}${skipped.length ? `; NOT published (pending): ${skipped.join('; ')}` : ''}`)
 if (untranslated.length) console.warn(`[science] not yet translated in live languages (EN only there): ${untranslated.join('; ')}`)
+if (queued.length) console.log(`[science] queued translations (publishAfter): ${queued.join(', ')}`)
 if (staleNotLive.length) console.warn(`[science] STALE translations in not-yet-live languages (fix before their SCIENCE_ROLLOUT date): ${staleNotLive.map((s) => `${s.page}:${s.lang}`).join(', ')}`)
