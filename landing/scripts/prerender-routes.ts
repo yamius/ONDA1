@@ -463,6 +463,9 @@ const liveGlossarySetByLang: Record<string, Set<string>> = Object.fromEntries(
   Object.entries(liveGlossaryByLang).map(([lang, slugs]) => [lang, new Set(slugs)]),
 )
 
+/** lang → live localized glossary slugs (read by generate-glossary-cards.ts). */
+export const liveGlossarySlugsByLang: Readonly<Record<string, readonly string[]>> = liveGlossaryByLang
+
 const localizedGlossaryRoutes: string[] = Object.entries(liveGlossaryByLang).flatMap(
   ([lang, slugs]) => [`/${lang}/glossary`, ...slugs.map((s) => `/${lang}/glossary/${s}`)],
 )

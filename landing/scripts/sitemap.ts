@@ -11,6 +11,8 @@ import { fileURLToPath } from 'url'
 import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs, reviewLocalizedLangs, REVIEW_PILOT_LANGS, glossaryLocalizedLangs, GLOSSARY_INDEX_LANGS } from './prerender-routes'
 import { SUPPORTED_LANGS, ARTICLES_ONLY_LANGS, isPageLocalizedFor, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
 import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
+import { glossaryCardPath, glossaryCardAlt } from '../src/data/glossary-cards'
+import { getTermBySlug } from '../src/data/glossary'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
 import { getArticleBySlug } from '../src/data/articles'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
@@ -77,6 +79,37 @@ function buildImageBlockForComparison(slug: string): string {
       <image:loc>${escapeXml(loc)}</image:loc>
       <image:title>${escapeXml(c.title)}</image:title>
       <image:caption>${escapeXml(c.description)}</image:caption>
+    </image:image>`
+}
+
+/** Image:image block for an EN glossary term — its generated card. */
+const glossaryBodiesCache: Record<string, Record<string, { title?: string; shortDescription?: string }>> = {}
+function glossaryBodies(lang: string) {
+  if (!glossaryBodiesCache[lang]) {
+    try {
+      glossaryBodiesCache[lang] = JSON.parse(readFileSync(join(__dirname, '..', 'public', 'locales', lang, 'glossary.json'), 'utf-8')).bodies ?? {}
+    } catch {
+      glossaryBodiesCache[lang] = {}
+    }
+  }
+  return glossaryBodiesCache[lang]
+}
+/** Image:image block for a glossary term (any live language) — its generated card. */
+function buildImageBlockForGlossary(path: string): string {
+  const m = path.match(/^(?:\/([a-z]{2}))?\/glossary\/([^/]+)$/)
+  if (!m) return ''
+  const lang = m[1] ?? 'en'
+  const slug = m[2]
+  const t = getTermBySlug(slug)
+  if (!t) return ''
+  const b = lang === 'en' ? {} : glossaryBodies(lang)[slug] ?? {}
+  const title = b.title || t.title
+  const caption = glossaryCardAlt(title, b.shortDescription || t.shortDescription)
+  return `
+    <image:image>
+      <image:loc>${escapeXml(`${SITE_URL}${glossaryCardPath(slug, lang)}`)}</image:loc>
+      <image:title>${escapeXml(title)}</image:title>
+      <image:caption>${escapeXml(caption)}</image:caption>
     </image:image>`
 }
 
@@ -348,7 +381,7 @@ const urls = routes.map((path) => {
       ? buildImageBlockForComparison(compareSlug)
       : reviewSlug
         ? buildImageBlockForReview(reviewSlug)
-        : ''
+        : buildImageBlockForGlossary(path)
   let alternates = ''
   if (LOCALIZED_ROUTE_SET.has(path)) {
     const base = stripLangPrefix(path)

@@ -14,6 +14,7 @@ import { TERM_ARTICLES } from '../generated/term-articles'
 import { getArticleMeta } from '../lib/article-content'
 import { langFromPath, langHref, homePathFor } from '../i18n'
 import { ui } from '../data/ui-i18n'
+import { glossaryCardPath, glossaryCardAlt, GLOSSARY_CARD_W, GLOSSARY_CARD_H } from '../data/glossary-cards'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -52,18 +53,19 @@ export function GlossaryTermPage() {
     if (!term) return
     const title = `${tTitle} | ONDA Life Glossary`
     const url = `${SITE_URL}${langPrefix}/glossary/${term.slug}`
+    const cardUrl = `${SITE_URL}${glossaryCardPath(term.slug, lang)}`
     const ogDesc = `${tTitle} in the ONDA system: ${tShortDescription} Learn how this element affects your biocomputer.`
     document.title = title
     setMeta('description', ogDesc)
     setMeta('og:title', title, true)
     setMeta('og:description', ogDesc, true)
     setMeta('og:url', url, true)
-    setMeta('og:image', OG_IMAGE, true)
+    setMeta('og:image', cardUrl, true)
     setMeta('og:type', 'article', true)
     setMeta('twitter:card', 'summary_large_image', true)
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', ogDesc, true)
-    setMeta('twitter:image', OG_IMAGE, true)
+    setMeta('twitter:image', cardUrl, true)
     syncOgLocale(lang)
 
     // --- JSON-LD: DefinedTerm + BreadcrumbList ---
@@ -217,9 +219,18 @@ export function GlossaryTermPage() {
       <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
         {tTitle}
       </h1>
-      <p className="mb-10 font-mono text-sm leading-relaxed text-white/50">
+      <p className="mb-6 font-mono text-sm leading-relaxed text-white/50">
         {tShortDescription}
       </p>
+      {/* Term card (generated at build, also og:image); 4:1 box shows the middle band. */}
+      <img
+        src={glossaryCardPath(term.slug, lang)}
+        alt={glossaryCardAlt(tTitle, tShortDescription)}
+        width={GLOSSARY_CARD_W}
+        height={GLOSSARY_CARD_H}
+        decoding="async"
+        className="mb-10 aspect-[4/1] w-full rounded-lg object-cover"
+      />
 
       {/* Markdown content */}
       <article className="prose-onda">

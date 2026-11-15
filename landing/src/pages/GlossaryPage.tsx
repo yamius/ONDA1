@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { glossaryCardPath, glossaryCardAlt, GLOSSARY_CARD_W, GLOSSARY_CARD_H } from '../data/glossary-cards'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { glossaryTerms, glossaryLayer } from '../lib/glossary-content'
@@ -163,12 +164,27 @@ export function GlossaryPage() {
 
       {/* Terms grid */}
       <div className="grid gap-4 md:grid-cols-2">
-        {filtered.map((term) => (
+        {filtered.map((term) => {
+          const href = langHref(`/glossary/${term.slug}`, lang)
+          // Card exists for the language only where the localized term page is built.
+          const cardLang = lang !== 'en' && href.startsWith(`/${lang}/`) ? lang : 'en'
+          const cardTitle = tField(term.slug, 'title', term.title)
+          return (
           <Link
             key={term.slug}
-            to={langHref(`/glossary/${term.slug}`, lang)}
+            to={href}
             className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/10"
           >
+            {/* Term card (generated at build); the 4:1 box shows the card's middle band. */}
+            <img
+              src={glossaryCardPath(term.slug, cardLang)}
+              alt={glossaryCardAlt(cardTitle, tField(term.slug, 'shortDescription', term.shortDescription))}
+              width={GLOSSARY_CARD_W}
+              height={GLOSSARY_CARD_H}
+              loading="lazy"
+              decoding="async"
+              className="mb-4 aspect-[4/1] w-full rounded-lg object-cover"
+            />
             <div className="mb-2 flex items-center justify-between">
               <span className="flex items-center gap-1.5">
                 <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">
@@ -194,7 +210,8 @@ export function GlossaryPage() {
               {tField(term.slug, 'shortDescription', term.shortDescription)}
             </p>
           </Link>
-        ))}
+          )
+        })}
       </div>
 
       {filtered.length === 0 && (

@@ -30,6 +30,7 @@ import i18n, {
   parsePartRoute,
   type Lang,
 } from '../src/i18n'
+import { glossaryCardPath, glossaryCardAlt } from '../src/data/glossary-cards'
 import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, roundupLocalizedLangs, LOCALIZED_ROUNDUP_ROUTE_SET, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, GLOSSARY_INDEX_LANGS, connectDeviceLangs } from './prerender-routes'
 import { CONNECT_DEVICES as CONNECT_DEVICE_LIST } from '../src/data/connect-devices'
 import { SERP_OVERRIDES } from '../src/data/serp-overrides'
@@ -1115,6 +1116,31 @@ for (const route of routes) {
         out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
         out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
         out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+        // Term card in the page language (og:image, twitter:image, JSON-LD ImageObject, alt).
+        if (glossaryInfo.kind === 'term') {
+          const enCard = glossaryCardPath(glossaryInfo.slug)
+          out = out.split(enCard).join(glossaryCardPath(glossaryInfo.slug, glossaryInfo.lang))
+          const body = gf.bodies?.[glossaryInfo.slug]
+          // DefinedTerm JSON-LD in the page language: name, description, url, inLanguage, image caption.
+          out = out.replace(/<script type="application\/ld\+json">(\{"@context":"https:\/\/schema\.org","@type":"DefinedTerm"[\s\S]*?)<\/script>/, (m, json: string) => {
+            try {
+              const d = JSON.parse(json) as Record<string, unknown> & { image?: Record<string, unknown> }
+              if (body?.title) d.name = body.title
+              if (body?.shortDescription) d.description = body.shortDescription
+              d.url = url
+              d.inLanguage = glossaryInfo.lang
+              if (d.image && body?.title) d.image.caption = glossaryCardAlt(body.title, body.shortDescription ?? '')
+              return `<script type="application/ld+json">${JSON.stringify(d)}</script>`
+            } catch {
+              return m
+            }
+          })
+          if (body?.title) {
+            const altL = escAttr(glossaryCardAlt(body.title, body.shortDescription ?? ''))
+            out = out.replace(/(<meta\s+property="og:image:alt"\s+content=")[^"]*(")/i, `$1${altL}$2`)
+            out = out.replace(/(<meta\s+(?:property|name)="twitter:image:alt"\s+content=")[^"]*(")/i, `$1${altL}$2`)
+          }
+        }
         const hreflang = buildHreflangLinksForGlossary(glossaryInfo.kind, glossaryInfo.slug, glossaryLangs)
         const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[glossaryInfo.lang]}">`
         out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)

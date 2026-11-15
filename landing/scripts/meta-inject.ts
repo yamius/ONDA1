@@ -6,6 +6,7 @@ import { IMAGE_DIMENSIONS } from '../src/data/image-manifest.generated'
 import { getTermBySlug, glossaryTerms } from '../src/data/glossary'
 import { GLOSSARY_SEO } from '../src/data/glossary-seo'
 import { glossaryLayer } from '../src/data/glossary-layer'
+import { glossaryCardPath, glossaryCardAlt, GLOSSARY_CARD_W, GLOSSARY_CARD_H } from '../src/data/glossary-cards'
 import { levelsData } from '../src/data/levels'
 import { PART_SEO } from '../src/data/part-seo'
 import { parts } from '../src/pages/PartPage'
@@ -467,6 +468,8 @@ export interface RouteMeta {
     /** Term set this belongs to. Defaults to the ONDA Life Glossary; bio-metric
      *  pages pass the Bio OS metrics set so they don't claim glossary membership. */
     termSet?: { id: string; name: string; url: string }
+    /** Term card (glossary) → ImageObject on the DefinedTerm. */
+    image?: { url: string; caption: string }
   }
   /** Extracted "The Hack" blockquote bodies — emitted as Quotation JSON-LD. */
   hackQuotes?: string[]
@@ -829,6 +832,7 @@ function buildDefinedTermJsonLd(
   url: string,
   termSet?: { id: string; name: string; url: string },
   dates?: { published: string; modified: string },
+  image?: { url: string; caption: string },
 ): string {
   const set = termSet ?? { id: `${SITE_URL}/glossary#glossary`, name: 'ONDA Life Glossary', url: `${SITE_URL}/glossary` }
   const term = {
@@ -838,6 +842,20 @@ function buildDefinedTermJsonLd(
     description,
     url,
     ...(dates ? { datePublished: dates.published, dateModified: dates.modified } : {}),
+    ...(image
+      ? {
+          image: {
+            '@type': 'ImageObject',
+            url: image.url,
+            contentUrl: image.url,
+            width: GLOSSARY_CARD_W,
+            height: GLOSSARY_CARD_H,
+            caption: image.caption,
+            creditText: 'ONDA Life',
+            copyrightNotice: 'ONDA Life',
+          },
+        }
+      : {}),
     inDefinedTermSet: {
       '@type': 'DefinedTermSet',
       '@id': set.id,
@@ -3266,7 +3284,15 @@ function getMetaForRouteBase(route: string): RouteMeta {
         description,
         url,
         breadcrumbs,
-        definedTerm: { name: term.title, description, url },
+        // Generated term card (generate-glossary-cards.ts): og:image + DefinedTerm ImageObject.
+        image: `${SITE_URL}${glossaryCardPath(slug)}`,
+        imageAlt: glossaryCardAlt(term.title, term.shortDescription),
+        definedTerm: {
+          name: term.title,
+          description,
+          url,
+          image: { url: `${SITE_URL}${glossaryCardPath(slug)}`, caption: glossaryCardAlt(term.title, term.shortDescription) },
+        },
         // FAQPage from the entry's own text (science terms only — ONDA
         // metaphors must not be lifted as facts): "What is X?" → the
         // definition paragraph, plus every question-form H2 → its first paragraph.
@@ -3712,7 +3738,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
 
   // JSON-LD: DefinedTerm (glossary pages only)
   if (meta.definedTerm) {
-    const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description, meta.definedTerm.url, meta.definedTerm.termSet, glossaryDates)}</script>`
+    const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description, meta.definedTerm.url, meta.definedTerm.termSet, glossaryDates, meta.definedTerm.image)}</script>`
     out = out.replace('</head>', `  ${definedTermScript}\n</head>`)
   }
 
