@@ -66,7 +66,13 @@ export const REG_DESIGNATION = new RegExp(
   'g',
 )
 
+
+// Disease names (owner decision 2026-11-15): "type 1 / type 2 diabetes" is a name, not data — allowed everywhere,
+// including title/meta/shortAnswer/keyPoints. Kept tight to the diabetes noun in each site language.
+export const DIABETES_TYPE =
+  /\b[Tt]ype?[ -]?[12](?=[ -]+[Dd]iabet)|(?<=[Dd]iabetes(?: mellitus)? [Tt]ype )[12]\b|(?<=diabète(?: sucré)? de type )[12]\b|(?<=[Dd]iabe\p{L}*(?: mellitus)? (?:de |di )?tipo )[12]\b|(?<=[Cc]ukrzyc\p{L}* typu )[12]\b|(?<=[Дд][иі]абет\p{L}*\s)[12](?=\s?тип[ау])|[12](?=\s?型糖尿病)/gu
+
 /** Remove every allowed body label (designations, full dates, years) — whatever digits remain must fail. */
 export function stripBodyDigitExceptions(text: string): string {
-  return text.replace(REG_DESIGNATION, ' ').replace(FULL_DATE, ' ').replace(STUDY_YEAR, ' ')
+  return text.replace(DIABETES_TYPE, ' ').replace(REG_DESIGNATION, ' ').replace(FULL_DATE, ' ').replace(STUDY_YEAR, ' ')
 }

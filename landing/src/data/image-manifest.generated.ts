@@ -2944,6 +2944,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1376,
     "height": 590
   },
+  "/images/science/mechanisms-type-2-diabetes-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-type-2-diabetes-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-type-2-diabetes-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/questions-why-is-my-hrv-low.avif": {
     "width": 1376,
     "height": 768

@@ -24,7 +24,7 @@
  *  7. related links exist; relatedPlanned = science pages not written yet (format only)
  * Exit code 1 on any error (and on pending items with --publish).
  */
-import { stripBodyDigitExceptions } from './science-body-digits'
+import { stripBodyDigitExceptions, DIABETES_TYPE } from './science-body-digits'
 import matter from 'gray-matter'
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs'
 import { join, relative, basename, dirname, resolve } from 'node:path'
@@ -260,7 +260,7 @@ async function main() {
     const stray = [...stripAllowed(body).matchAll(/[^\n]{0,30}\d[^\n]{0,30}/g)].map((x) => x[0].trim())
     for (const s of stray) err(rel, `number outside {{fact:}} / {{proposed:}}: “${s}”`)
     const fmText = [fm.title, fm.metaTitle, fm.metaDescription, fm.shortAnswer, ...(fm.keyPoints || [])].join(' ')
-    if (/\d/.test(String(fmText).replace(/\{\{(fact|proposed):[^}]+\}\}/g, ' ').replace(APP_VERSION, ' '))) err(rel, 'digits in title/meta/shortAnswer/keyPoints — write numbers in words there')
+    if (/\d/.test(String(fmText).replace(/\{\{(fact|proposed):[^}]+\}\}/g, ' ').replace(APP_VERSION, ' ').replace(DIABETES_TYPE, ' '))) err(rel, 'digits in title/meta/shortAnswer/keyPoints — write numbers in words there')
 
     // 6. banned wording. A paragraph that starts with <!-- myth-debunk --> states a banned claim only to refute it: it is
     // exempt from the banned list, and every such paragraph is listed for the owner's manual review (use rarely).

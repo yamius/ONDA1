@@ -568,6 +568,31 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1002/dmrr.1239": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cardiovascular autonomic neuropathy in diabetes: clinical impact, assessment, diagnosis, and management",
+   "firstAuthor": "Spallone",
+   "authors": [
+    "Spallone",
+    "Ziegler",
+    "Freeman",
+    "Bernardi",
+    "Frontoni",
+    "Pop‐Busui",
+    "Stevens",
+    "Kempler",
+    "Hilsted",
+    "Tesfaye",
+    "Low",
+    "Valensi",
+    "on behalf of The Toronto Consensus Panel on Diabetic Neuropathy"
+   ],
+   "year": 2011,
+   "journal": "Diabetes/Metabolism Research and Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-11-15"
+  },
   "doi:10.1002/eat.70064": {
    "kind": "doi",
    "valid": true,
@@ -822,6 +847,27 @@
    "journal": "Journal of Endocrinological Investigation",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1007/s00125-015-3534-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Increased prevalence of cardiac autonomic dysfunction at different degrees of glucose intolerance in the general population: the KORA S4 survey",
+   "firstAuthor": "for the KORA Study Group",
+   "authors": [
+    "for the KORA Study Group",
+    "Ziegler",
+    "Voss",
+    "Rathmann",
+    "Strom",
+    "Perz",
+    "Roden",
+    "Peters",
+    "Meisinger"
+   ],
+   "year": 2015,
+   "journal": "Diabetologia",
+   "source": "crossref",
+   "verifiedAt": "2026-11-15"
   },
   "doi:10.1007/s00246-025-03770-3": {
    "kind": "doi",
@@ -9612,6 +9658,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1186/s12911-026-03455-8": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Re-evaluating heart rate variability biomarkers for glucose sensing: the impact of age normalisation and subject-independent validation",
+   "firstAuthor": "Azam",
+   "authors": [
+    "Azam",
+    "Singh"
+   ],
+   "year": 2026,
+   "journal": "BMC Medical Informatics and Decision Making",
+   "source": "crossref",
+   "verifiedAt": "2026-11-15"
+  },
   "doi:10.1186/s12916-019-1399-1": {
    "kind": "doi",
    "valid": true,
@@ -10403,6 +10463,26 @@
    "journal": "PLOS ONE",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1371/journal.pone.0251863": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of exercise training on heart rate variability in type 2 diabetes mellitus patients: A systematic review and meta-analysis",
+   "firstAuthor": "Picard",
+   "authors": [
+    "Picard",
+    "Tauveron",
+    "Magdasy",
+    "Benichou",
+    "Bagheri",
+    "Ugbolue",
+    "Navel",
+    "Dutheil"
+   ],
+   "year": 2021,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-11-15"
   },
   "doi:10.1371/journal.pone.0268361": {
    "kind": "doi",
@@ -11266,6 +11346,27 @@
    "journal": "Diabetes Care",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.2337/dc16-2042": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Diabetic Neuropathy: A Position Statement by the American Diabetes Association",
+   "firstAuthor": "Pop-Busui",
+   "authors": [
+    "Pop-Busui",
+    "Boulton",
+    "Feldman",
+    "Bril",
+    "Freeman",
+    "Malik",
+    "Sosenko",
+    "Ziegler"
+   ],
+   "year": 2016,
+   "yearAlt": 2017,
+   "journal": "Diabetes Care",
+   "source": "crossref",
+   "verifiedAt": "2026-11-15"
   },
   "doi:10.2337/diab.45.11.1511": {
    "kind": "doi",
@@ -15516,6 +15617,31 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:21695768": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cardiovascular autonomic neuropathy in diabetes: clinical impact, assessment, diagnosis, and management.",
+   "firstAuthor": "Spallone",
+   "authors": [
+    "Spallone",
+    "Ziegler",
+    "Freeman",
+    "Bernardi",
+    "Frontoni",
+    "Pop-Busui",
+    "Stevens",
+    "Kempler",
+    "Hilsted",
+    "Tesfaye",
+    "Low",
+    "Valensi"
+   ],
+   "year": 2011,
+   "journal": "Diabetes Metab Res Rev",
+   "doi": "10.1002/dmrr.1239",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-15"
+  },
   "pmid:21876150": {
    "kind": "pmid",
    "valid": true,
@@ -16868,6 +16994,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:25724570": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Increased prevalence of cardiac autonomic dysfunction at different degrees of glucose intolerance in the general population: the KORA S4 survey.",
+   "firstAuthor": "Ziegler",
+   "authors": [
+    "Ziegler",
+    "Voss",
+    "Rathmann",
+    "Strom",
+    "Perz",
+    "Roden",
+    "Peters",
+    "Meisinger"
+   ],
+   "year": 2015,
+   "journal": "Diabetologia",
+   "doi": "10.1007/s00125-015-3534-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-15"
+  },
   "pmid:25818837": {
    "kind": "pmid",
    "valid": true,
@@ -17683,6 +17830,27 @@
    "doi": "10.1093/ageing/afw212",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:27999003": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Diabetic Neuropathy: A Position Statement by the American Diabetes Association.",
+   "firstAuthor": "Pop-Busui",
+   "authors": [
+    "Pop-Busui",
+    "Boulton",
+    "Feldman",
+    "Bril",
+    "Freeman",
+    "Malik",
+    "Sosenko",
+    "Ziegler"
+   ],
+   "year": 2017,
+   "journal": "Diabetes Care",
+   "doi": "10.2337/dc16-2042",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-15"
   },
   "pmid:28033127": {
    "kind": "pmid",
@@ -20387,6 +20555,27 @@
    "doi": "10.1093/brain/awaa443",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:33999947": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of exercise training on heart rate variability in type 2 diabetes mellitus patients: A systematic review and meta-analysis.",
+   "firstAuthor": "Picard",
+   "authors": [
+    "Picard",
+    "Tauveron",
+    "Magdasy",
+    "Benichou",
+    "Bagheri",
+    "Ugbolue",
+    "Navel",
+    "Dutheil"
+   ],
+   "year": 2021,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0251863",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-15"
   },
   "pmid:34070932": {
    "kind": "pmid",
@@ -24151,6 +24340,21 @@
    "doi": "10.1177/15578682261438763",
    "source": "pubmed",
    "verifiedAt": "2026-10-10"
+  },
+  "pmid:41923229": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Re-evaluating heart rate variability biomarkers for glucose sensing: the impact of age normalisation and subject-independent validation.",
+   "firstAuthor": "Azam",
+   "authors": [
+    "Azam",
+    "Singh"
+   ],
+   "year": 2026,
+   "journal": "BMC Med Inform Decis Mak",
+   "doi": "10.1186/s12911-026-03455-8",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-15"
   },
   "pmid:41930853": {
    "kind": "pmid",
