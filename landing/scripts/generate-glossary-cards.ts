@@ -6,7 +6,8 @@
  * pages), into dist/images/glossary/<lang>/<slug>.png. SVG → PNG via sharp, like
  * generate-tool-cards.ts.
  *
- * Fonts: the site's own Roboto / Roboto Mono woff2 files (public/fonts, Latin + Cyrillic)
+ * Fonts: Roboto Mono Regular + Bold TTF in scripts/fonts (Latin + Cyrillic subset; WOFF2 does NOT load in
+ * the Linux build container — cards rendered as boxes on 2026-11-15)
  * through a private fontconfig file, so the output is identical on Windows and on the
  * Linux build container and never depends on system fonts.
  */
@@ -22,7 +23,7 @@ const fcDir = join(tmpdir(), 'onda-glossary-fc')
 mkdirSync(join(fcDir, 'cache'), { recursive: true })
 writeFileSync(
   join(fcDir, 'fonts.conf'),
-  `<?xml version="1.0"?><!DOCTYPE fontconfig SYSTEM "fonts.dtd"><fontconfig><dir>${fwd(join(ROOT, 'public', 'fonts'))}</dir><cachedir>${fwd(join(fcDir, 'cache'))}</cachedir></fontconfig>`,
+  `<?xml version="1.0"?><!DOCTYPE fontconfig SYSTEM "fonts.dtd"><fontconfig><dir>${fwd(join(ROOT, 'scripts', 'fonts'))}</dir><cachedir>${fwd(join(fcDir, 'cache'))}</cachedir></fontconfig>`,
 )
 process.env.FONTCONFIG_FILE = join(fcDir, 'fonts.conf') // must be set before sharp loads
 
