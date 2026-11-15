@@ -3651,6 +3651,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.preghy.2020.03.003": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability in hypertensive pregnancy disorders: A systematic review",
+   "firstAuthor": "Moors",
+   "authors": [
+    "Moors",
+    "Staaks",
+    "Westerhuis",
+    "Dekker",
+    "Verdurmen",
+    "Oei",
+    "van Laar"
+   ],
+   "year": 2020,
+   "journal": "Pregnancy Hypertension",
+   "source": "crossref",
+   "verifiedAt": "2026-11-15"
+  },
   "doi:10.1016/j.pscychresns.2010.08.006": {
    "kind": "doi",
    "valid": true,
@@ -8892,6 +8911,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1161/jaha.123.032636": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Blood Pressure and Heart Rate Variability and the Impact on Pregnancy Outcomes: A Systematic Review",
+   "firstAuthor": "Wilson",
+   "authors": [
+    "Wilson",
+    "Bone",
+    "Mistry",
+    "Slade",
+    "Singer",
+    "von Dadelszen",
+    "Magee"
+   ],
+   "year": 2024,
+   "journal": "Journal of the American Heart Association",
+   "source": "crossref",
+   "verifiedAt": "2026-11-15"
+  },
   "doi:10.1164/ajrccm/138.4.874": {
    "kind": "doi",
    "valid": true,
@@ -11063,6 +11101,39 @@
    "journal": "Journal of Medical Internet Research",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.2196/36791": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Utilization of Heart Rate Variability for Autonomic Nervous System Assessment in Healthy Pregnant Women: Systematic Review",
+   "firstAuthor": "Sharifiheris",
+   "authors": [
+    "Sharifiheris",
+    "Rahmani",
+    "Onwuka",
+    "Bender"
+   ],
+   "year": 2022,
+   "journal": "JMIR Bioinformatics and Biotechnology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-15"
+  },
+  "doi:10.2196/44430": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart Rate Variability and Pregnancy Complications: Systematic Review",
+   "firstAuthor": "Sharifi-Heris",
+   "authors": [
+    "Sharifi-Heris",
+    "Rahmani",
+    "Axelin",
+    "Rasouli",
+    "Bender"
+   ],
+   "year": 2023,
+   "journal": "Interactive Journal of Medical Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-15"
   },
   "doi:10.2196/67110": {
    "kind": "doi",
@@ -19599,6 +19670,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:32179490": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability in hypertensive pregnancy disorders: A systematic review.",
+   "firstAuthor": "Moors",
+   "authors": [
+    "Moors",
+    "Staaks",
+    "Westerhuis",
+    "Dekker",
+    "Verdurmen",
+    "Oei",
+    "van Laar"
+   ],
+   "year": 2020,
+   "journal": "Pregnancy Hypertens",
+   "doi": "10.1016/j.preghy.2020.03.003",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-15"
+  },
   "pmid:32212422": {
    "kind": "pmid",
    "valid": true,
@@ -21458,6 +21549,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:37276013": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart Rate Variability and Pregnancy Complications: Systematic Review.",
+   "firstAuthor": "Sharifi-Heris",
+   "authors": [
+    "Sharifi-Heris",
+    "Rahmani",
+    "Axelin",
+    "Rasouli",
+    "Bender"
+   ],
+   "year": 2023,
+   "journal": "Interact J Med Res",
+   "doi": "10.2196/44430",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-15"
+  },
   "pmid:37287085": {
    "kind": "pmid",
    "valid": true,
@@ -21834,6 +21943,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:38410988": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Blood Pressure and Heart Rate Variability and the Impact on Pregnancy Outcomes: A Systematic Review.",
+   "firstAuthor": "Wilson",
+   "authors": [
+    "Wilson",
+    "Bone",
+    "Mistry",
+    "Slade",
+    "Singer",
+    "von Dadelszen",
+    "Magee"
+   ],
+   "year": 2024,
+   "journal": "J Am Heart Assoc",
+   "doi": "10.1161/JAHA.123.032636",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-15"
+  },
   "pmid:38478473": {
    "kind": "pmid",
    "valid": true,
@@ -21929,6 +22058,23 @@
    "doi": "10.1038/s41593-024-01638-y",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:38935943": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Utilization of Heart Rate Variability for Autonomic Nervous System Assessment in Healthy Pregnant Women: Systematic Review.",
+   "firstAuthor": "Sharifiheris",
+   "authors": [
+    "Sharifiheris",
+    "Rahmani",
+    "Onwuka",
+    "Bender"
+   ],
+   "year": 2022,
+   "journal": "JMIR Bioinform Biotechnol",
+   "doi": "10.2196/36791",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-15"
   },
   "pmid:38953770": {
    "kind": "pmid",
