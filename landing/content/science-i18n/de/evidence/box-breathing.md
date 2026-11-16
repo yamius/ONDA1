@@ -2,7 +2,7 @@
 sourceHash: 922442f38ab8
 title: "Box Breathing: Was die Studien wirklich zeigen"
 metaTitle: "Box Breathing: Evidenz"
-metaDescription: "Was randomisierte Studien über Box Breathing zeigen: niedrigere Herzfrequenz und Angst bei akutem Stress, keine klare HRV-Änderung und gemischte Ergebnisse nach Belastung."
+metaDescription: "Was randomisierte Studien zu Box Breathing zeigen: weniger Puls und Angst bei akutem Stress, keine klare HRV-Änderung, gemischte Ergebnisse nach Sport."
 shortAnswer: >
   Box Breathing besteht aus gleich langen Phasen von Einatmen, Halten,
   Ausatmen und Halten. In Studien senkt es manche akuten Stressreaktionen wie

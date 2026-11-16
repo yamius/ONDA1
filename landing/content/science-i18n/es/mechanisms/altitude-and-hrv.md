@@ -2,7 +2,7 @@
 sourceHash: 0a5bb76126f6
 title: "Altitud y HRV: qué cambia y qué no puede predecir"
 metaTitle: "Altitud y HRV: qué muestran los estudios"
-metaDescription: "Cómo cambia la variabilidad de la frecuencia cardíaca a gran altitud, si la HRV puede predecir el mal de altura y por qué deciden los síntomas, no un reloj, cuándo bajar."
+metaDescription: "Cómo cambia la HRV a gran altitud, si puede predecir el mal de altura y por qué deciden los síntomas, no un reloj, cuándo bajar."
 shortAnswer: >
   En los primeros días a gran altitud, la variabilidad de la frecuencia
   cardíaca suele bajar, un hallazgo combinado en adultos sanos. La

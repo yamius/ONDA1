@@ -2,7 +2,7 @@
 sourceHash: 922442f38ab8
 title: "Respirazione quadrata: cosa mostrano davvero gli studi"
 metaTitle: "Respirazione quadrata: evidenze"
-metaDescription: "Cosa mostrano gli studi randomizzati sulla respirazione quadrata: battito e ansia più bassi sotto stress acuto, nessun chiaro cambiamento della HRV e risultati misti dopo lo sforzo."
+metaDescription: "Cosa mostrano gli studi sulla respirazione quadrata: battito e ansia più bassi sotto stress acuto, nessun chiaro cambiamento della HRV, esiti misti."
 shortAnswer: >
   La respirazione quadrata prevede fasi uguali di inspirazione, pausa,
   espirazione e pausa. Negli studi riduce alcune risposte acute allo stress,

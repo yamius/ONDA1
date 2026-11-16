@@ -2,7 +2,7 @@
 sourceHash: b21ec4baa415
 title: "HRV i tętno podczas snu: dlaczego noc to najlepsze okno pomiarowe"
 metaTitle: "HRV i tętno podczas snu"
-metaDescription: "Co dzieje się z tętnem i HRV w ciągu nocy i w fazach snu, dlaczego odczyty nocne są najstabilniejszym oknem i co urządzenia ubieralne mogą, a czego nie mogą powiedzieć."
+metaDescription: "Co dzieje się z tętnem i HRV w nocy i w fazach snu, dlaczego odczyty nocne są najstabilniejsze i co urządzenia noszone mogą, a czego nie mogą powiedzieć."
 shortAnswer: >
   Podczas snu tętno spada, a zmienność od uderzenia do uderzenia związana z
   nerwem błędnym zwykle rośnie, najwyraźniej w głębokim śnie NREM. Odczyty

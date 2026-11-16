@@ -2,7 +2,7 @@
 sourceHash: "9bfcf8e49dbe"
 title: "Terapia PEMF (campi elettromagnetici pulsati): cosa mostrano le evidenze"
 metaTitle: "Terapia PEMF: cosa mostrano le evidenze"
-metaDescription: "La terapia con campi elettromagnetici pulsati spiegata: stimolatori ossei medici e tappetini per uso domestico, dove gli studi mostrano sollievo dal dolore e chi dovrebbe evitarla."
+metaDescription: "La terapia con campi elettromagnetici pulsati: stimolatori ossei medici e tappetini per casa, dove gli studi mostrano sollievo dal dolore e chi la eviti."
 shortAnswer: >
   La terapia PEMF applica al corpo campi magnetici deboli e pulsati tramite
   bobine inserite in un tappetino, un cuscinetto o un applicatore. Le versioni

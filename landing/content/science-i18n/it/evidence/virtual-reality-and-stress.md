@@ -2,7 +2,7 @@
 sourceHash: db6fe338f25e
 title: "Realtà virtuale e stress: cosa mostrano le prove"
 metaTitle: "Realtà virtuale e stress"
-metaDescription: "Cosa mostra la ricerca sulla realtà virtuale contro lo stress: meno stress percepito negli studi, prove più deboli su HRV e marcatori del corpo, conta la qualità."
+metaDescription: "Cosa mostra la ricerca sulla realtà virtuale contro lo stress: meno stress percepito, prove più deboli su HRV e marcatori del corpo, conta la qualità."
 shortAnswer: >
   Il rilassamento in realtà virtuale, quasi sempre una scena di natura
   virtuale, ha ridotto lo stress percepito in una meta-analisi di studi

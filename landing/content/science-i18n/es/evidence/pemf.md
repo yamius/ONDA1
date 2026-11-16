@@ -2,7 +2,7 @@
 sourceHash: "9bfcf8e49dbe"
 title: "Terapia PEMF (campos electromagnéticos pulsados): qué muestra la evidencia"
 metaTitle: "Terapia PEMF: qué muestra la evidencia"
-metaDescription: "La terapia con campos electromagnéticos pulsados explicada: estimuladores óseos médicos frente a esterillas domésticas, dónde los ensayos muestran alivio del dolor y quién debe evitarla."
+metaDescription: "La terapia con campos electromagnéticos pulsados: estimuladores óseos médicos frente a esterillas domésticas, dónde alivia el dolor y quién debe evitarla."
 shortAnswer: >
   La terapia PEMF aplica al cuerpo campos magnéticos débiles y pulsados
   mediante bobinas integradas en una esterilla, una almohadilla o un

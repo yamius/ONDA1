@@ -2,7 +2,7 @@
 sourceHash: "2744e8dc82ed"
 title: "Cohérence physiologique : ce qu’elle est, ce qu’elle n’est pas"
 metaTitle: "Cohérence physiologique : ce qu’elle est"
-metaDescription: "La cohérence physiologique est un rythme cardiaque lisse, en vague, pendant une respiration lente : ce qu’elle mesure, sa différence avec la HRV, les mythes."
+metaDescription: "La cohérence physiologique est un rythme cardiaque lisse, en vague, lors d’une respiration lente : ce qu’elle mesure, son écart avec la HRV, les mythes."
 shortAnswer: >
   La cohérence physiologique est un profil du rythme cardiaque : la fréquence
   cardiaque monte et descend selon une forme lisse, presque sinusoïdale, à une

@@ -2,7 +2,7 @@
 sourceHash: 0a5bb76126f6
 title: "Hoogte en HRV: wat er verandert en wat ze niet kan voorspellen"
 metaTitle: "Hoogte en HRV: wat studies laten zien"
-metaDescription: "Hoe grote hoogte de hartslagvariabiliteit verandert, of HRV hoogteziekte kan voorspellen en waarom klachten, niet een horloge, bepalen wanneer je moet afdalen."
+metaDescription: "Hoe grote hoogte de HRV verandert, of HRV hoogteziekte kan voorspellen en waarom klachten, niet een horloge, bepalen wanneer je moet afdalen."
 shortAnswer: >
   In de eerste dagen op grote hoogte daalt de hartslagvariabiliteit meestal;
   dat is een samengevoegde bevinding bij gezonde volwassenen. Hoger daalt de

@@ -2,7 +2,7 @@
 sourceHash: a9e351bb7504
 title: "Contaminación del aire, calor, ruido y HRV: qué muestra la investigación"
 metaTitle: "Contaminación, calor y HRV: la evidencia"
-metaDescription: "Cómo las partículas finas, el calor y el ruido se relacionan con la variabilidad de la frecuencia cardiaca, qué tan pequeños son los efectos y qué mostraron los ensayos con mascarillas."
+metaDescription: "Cómo las partículas finas, el calor y el ruido se relacionan con la HRV, qué tan pequeños son los efectos y qué mostraron los ensayos con mascarillas."
 shortAnswer: >
   La exposición breve a partículas finas de la contaminación del aire se asocia,
   en estudios de panel, con una variabilidad de la frecuencia cardiaca algo más

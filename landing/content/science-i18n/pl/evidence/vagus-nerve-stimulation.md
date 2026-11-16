@@ -2,7 +2,7 @@
 sourceHash: "e0527269fba5"
 title: "Czy stymulacja nerwu błędnego naprawdę działa? Co pokazują badania"
 metaTitle: "Stymulacja nerwu błędnego: co pokazują badania"
-metaDescription: "Stymulacja nerwu błędnego ma zastosowania medyczne dopuszczone przez FDA i niejednoznaczne wyniki badań. Co popiera każdy poziom dowodów, a co go wyprzedza."
+metaDescription: "Stymulacja nerwu błędnego ma zastosowania dopuszczone przez FDA i niejednoznaczne wyniki. Co popiera każdy poziom dowodów, a co go wyprzedza."
 shortAnswer: >
   Stymulacja nerwu błędnego to nie jedna metoda. Obejmuje wszczepianą
   terapię chirurgiczną, urządzenia medyczne przykładane do szyi, dopuszczone

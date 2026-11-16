@@ -2,7 +2,7 @@
 sourceHash: 1641802b55a4
 title: "Burnout, estrés laboral y HRV: qué muestra la evidencia"
 metaTitle: "Burnout, estrés laboral y HRV"
-metaDescription: "Cómo se relacionan el burnout y el estrés laboral con la variabilidad de la frecuencia cardiaca, por qué los vínculos son débiles y por qué la HRV no detecta el burnout."
+metaDescription: "Cómo se relacionan el burnout y el estrés laboral con la HRV, por qué los vínculos son débiles y por qué la HRV no detecta el burnout."
 shortAnswer: >
   Los vínculos entre la variabilidad de la frecuencia cardiaca (HRV, o VFC) y
   el burnout son débiles, y en un estudio se explicaron en gran parte por la

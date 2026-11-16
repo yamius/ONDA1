@@ -2,7 +2,7 @@
 sourceHash: "d8a1a7847676"
 title: "Yoga nidra y NSDR (descanso profundo sin dormir): qué muestra la evidencia"
 metaTitle: "Yoga nidra y NSDR: qué muestra la evidencia"
-metaDescription: "Yoga nidra y descanso profundo sin dormir: qué pasa con el pulso y las ondas cerebrales, qué muestran los ensayos sobre sueño y estrés, y la cifra de dopamina."
+metaDescription: "Yoga nidra y descanso profundo sin dormir: qué pasa con el pulso y las ondas cerebrales, qué muestran los ensayos de sueño y estrés, y la dopamina."
 shortAnswer: >
   El yoga nidra es una relajación guiada que se hace tumbado, con un recorrido
   por el cuerpo, atención a la respiración y una intención personal; el

@@ -2,7 +2,7 @@
 sourceHash: 948e8a39ec33
 title: "Meditação e sistema nervoso autônomo: o que mostram as evidências"
 metaTitle: "Meditação e sistema nervoso: as evidências"
-metaDescription: "O que a pesquisa mostra sobre a meditação e a HRV, a frequência cardíaca em repouso, a pressão arterial e o cortisol, e por que a respiração lenta confunde."
+metaDescription: "O que a pesquisa mostra sobre meditação e HRV, frequência cardíaca em repouso, pressão arterial e cortisol, e por que a respiração lenta confunde."
 shortAnswer: >
   A meditação é uma família de práticas, não um único tratamento, e seus efeitos
   sobre o sistema nervoso autônomo variam conforme o estilo. Ensaios com

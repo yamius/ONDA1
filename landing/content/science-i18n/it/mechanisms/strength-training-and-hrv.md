@@ -2,7 +2,7 @@
 sourceHash: 073b60b66be6
 title: "Allenamento di forza e HRV: calo breve, guadagni lenti, lacune dichiarate"
 metaTitle: "Allenamento di forza e HRV: cosa dicono le prove"
-metaDescription: "Che cosa fa una singola seduta di forza all'HRV, che cosa si sa dell'allenamento a lungo termine negli anziani e perché un aumento nei giovani non è stato dimostrato."
+metaDescription: "Cosa fa una seduta di forza all'HRV, cosa si sa dell'allenamento a lungo termine negli anziani e perché un aumento nei giovani non è dimostrato."
 shortAnswer: >
   Subito dopo una seduta di forza, la variabilità della frequenza cardiaca si
   allontana per un po' dal suo schema di riposo; in uno studio lo spostamento

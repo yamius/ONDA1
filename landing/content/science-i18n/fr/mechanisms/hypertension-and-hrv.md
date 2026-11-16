@@ -3,7 +3,7 @@ sourceHash: 4d9dfa249538
 publishAfter: "2026-12-04"
 title: "Hypertension et HRV : ce que montrent les études et ce que fait l'exercice"
 metaTitle: "Hypertension et HRV"
-metaDescription: "Pourquoi la variabilité de la fréquence cardiaque est souvent basse en cas d'hypertension, ce qu'en fait l'exercice et pourquoi elle ne remplace pas un tensiomètre."
+metaDescription: "Pourquoi la HRV est souvent basse en cas d'hypertension, ce qu'en fait l'exercice et pourquoi elle ne remplace pas un tensiomètre."
 shortAnswer: >
   Dans une grande étude en population, la variabilité de la fréquence
   cardiaque (HRV, ou VFC) était plus basse chez les hommes et les femmes

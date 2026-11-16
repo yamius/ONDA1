@@ -2,7 +2,7 @@
 sourceHash: "2744e8dc82ed"
 title: "Coherencia fisiológica: qué es y qué no es"
 metaTitle: "Coherencia fisiológica: qué es y qué no es"
-metaDescription: "La coherencia fisiológica es un ritmo cardíaco suave y ondulante al respirar despacio. Qué mide, en qué se diferencia de la HRV y qué afirmaciones son mitos."
+metaDescription: "La coherencia fisiológica es un ritmo cardíaco suave y ondulante al respirar despacio. Qué mide, en qué difiere de la HRV y qué afirmaciones son mitos."
 shortAnswer: >
   La coherencia fisiológica es un patrón del ritmo cardíaco: la frecuencia
   cardíaca sube y baja con una forma suave, casi sinusoidal, a una única

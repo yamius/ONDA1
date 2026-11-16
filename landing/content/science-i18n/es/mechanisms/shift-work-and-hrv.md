@@ -2,7 +2,7 @@
 sourceHash: 1edd012e0c70
 title: "Trabajo por turnos, jet lag y HRV: qué muestra la evidencia"
 metaTitle: "Trabajo por turnos, jet lag y HRV"
-metaDescription: "Qué hacen los turnos nocturnos y largos a la variabilidad de la frecuencia cardiaca, por qué los datos son mixtos, qué halló un ensayo sobre horarios de comida y por qué el jet lag no está estudiado."
+metaDescription: "Qué hacen los turnos nocturnos y largos a la HRV, por qué los datos son mixtos, qué halló un ensayo sobre horarios de comida y el jet lag sin estudiar."
 shortAnswer: >
   Tras un turno largo, los estudios muestran cambios mixtos en la HRV (o VFC),
   y algunos apuntan a un alejamiento del modo de descanso y recuperación. En

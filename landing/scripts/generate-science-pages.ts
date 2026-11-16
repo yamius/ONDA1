@@ -131,6 +131,7 @@ if (existsSync(I18N_DIR)) {
       const rows = (t.fm.evidenceMap ?? []) as unknown[]
       if (rows.length !== (en.fm.evidenceMap ?? []).length) problems.push(`${lang}/${key(t)}: evidenceMap has ${rows.length} rows, EN has ${(en.fm.evidenceMap ?? []).length}`)
       for (const f of ['title', 'metaTitle', 'metaDescription', 'shortAnswer', 'imageAlt']) if (!t.fm[f] && en.fm[f]) problems.push(`${lang}/${key(t)}: missing ${f}`)
+      if (String(t.fm.metaDescription ?? '').length > 155) problems.push(`${lang}/${key(t)}: metaDescription ${String(t.fm.metaDescription).length} chars > 155 (Google cuts it with …)`)
       if ((t.fm.keyPoints ?? []).length !== (en.fm.keyPoints ?? []).length) problems.push(`${lang}/${key(t)}: keyPoints count differs from EN`)
       // Translation queue (owner 2026-11-15): `publishAfter: "YYYY-MM-DD"` keeps a finished translation off the site until
       // that date; the daily scheduled rebuild publishes it. Cadence: own queue, separate from article-release-queue.ts —

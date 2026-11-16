@@ -2,7 +2,7 @@
 sourceHash: f21f1ca24c96
 title: "Lumière et HRV : ce que montrent les données"
 metaTitle: "Lumière et HRV : les données"
-metaDescription: "Comment la lumière vive, bleue, chaude et tamisée est liée à la variabilité de la fréquence cardiaque, pourquoi toutes les études ont un risque de biais élevé et ce que signifie la lumière nocturne."
+metaDescription: "Comment la lumière vive, bleue, chaude et tamisée est liée à la HRV, pourquoi toutes les études sont à risque de biais et ce que fait la lumière la nuit."
 shortAnswer: >
   Dans des études en laboratoire, la lumière bleue vive est en général allée
   de pair avec une variabilité de la fréquence cardiaque (HRV, ou VFC) vagale

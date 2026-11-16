@@ -3,7 +3,7 @@ sourceHash: d8304a42c781
 publishAfter: "2026-11-18"
 title: "Grossesse et HRV : ce qui change et ce qu'elle ne peut pas dire"
 metaTitle: "Grossesse et HRV"
-metaDescription: "Comment la variabilité de la fréquence cardiaque change pendant la grossesse, ce que montrent les études sur la prééclampsie et pourquoi la HRV ne dépiste rien."
+metaDescription: "Comment la HRV change pendant la grossesse, ce que montrent les études sur la prééclampsie et pourquoi la HRV ne dépiste pas les complications."
 shortAnswer: >
   Dans la plupart des études sur des grossesses saines, la variabilité de la
   fréquence cardiaque (HRV, ou VFC) diminue du premier au troisième

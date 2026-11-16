@@ -2,7 +2,7 @@
 sourceHash: "5e9bed91397e"
 title: "Terapia a luce rossa (fotobiomodulazione): che cosa mostrano le evidenze"
 metaTitle: "Terapia a luce rossa: che cosa mostrano le evidenze"
-metaDescription: "La fotobiomodulazione spiegata: come funziona la dose, dove le evidenze sono solide (mucosite orale, alcuni dolori, caduta dei capelli), dove sono iniziali, e la sicurezza degli occhi."
+metaDescription: "La fotobiomodulazione: come funziona la dose, dove le prove sono solide (mucosite orale, alcuni dolori, caduta dei capelli) e la sicurezza degli occhi."
 shortAnswer: >
   La terapia a luce rossa, o fotobiomodulazione, usa luce rossa e del vicino
   infrarosso a bassa potenza per modificare il comportamento delle cellule,

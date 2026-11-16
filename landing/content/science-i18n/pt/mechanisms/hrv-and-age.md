@@ -2,7 +2,7 @@
 sourceHash: 3987e60ffcf5
 title: "HRV e idade: por que seu número cai com os anos"
 metaTitle: "HRV e idade: por que ela cai"
-metaDescription: "Por que a variabilidade da frequência cardíaca cai com a idade, por que o padrão depende da métrica e por que sua linha de base importa mais que uma norma por idade."
+metaDescription: "Por que a HRV cai com a idade, por que o padrão depende da métrica e por que sua linha de base importa mais que uma norma por idade."
 shortAnswer: >
   A variabilidade da frequência cardíaca (HRV, ou VFC) cai com a idade em
   todos os grandes grupos de pessoas saudáveis estudados, de registros

@@ -2,7 +2,7 @@
 sourceHash: "5e9bed91397e"
 title: "Thérapie par lumière rouge (photobiomodulation) : ce que montrent les données"
 metaTitle: "Lumière rouge : ce que montrent les données"
-metaDescription: "La photobiomodulation expliquée : le rôle de la dose, où les preuves sont solides (mucite buccale, certaines douleurs, chute de cheveux), où elles sont précoces, et la sécurité des yeux."
+metaDescription: "La photobiomodulation : le rôle de la dose, où les preuves sont solides (mucite buccale, certaines douleurs, chute de cheveux), et la sécurité des yeux."
 shortAnswer: >
   La thérapie par lumière rouge, ou photobiomodulation, utilise une lumière rouge et
   proche infrarouge de faible puissance pour modifier le comportement des

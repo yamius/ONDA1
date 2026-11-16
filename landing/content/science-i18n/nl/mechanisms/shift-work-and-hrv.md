@@ -2,7 +2,7 @@
 sourceHash: 1edd012e0c70
 title: "Ploegendienst, jetlag en HRV: wat het bewijs laat zien"
 metaTitle: "Ploegendienst, jetlag en HRV"
-metaDescription: "Wat nacht- en lange diensten met hartslagvariabiliteit doen, waarom de bevindingen wisselend zijn, wat één trial naar maaltijdtijden vond en waarom jetlag niet onderzocht is."
+metaDescription: "Wat nacht- en lange diensten met HRV doen, waarom de bevindingen wisselen, wat één trial naar maaltijdtijden vond en waarom jetlag niet onderzocht is."
 shortAnswer: >
   Na een lange dienst laten studies wisselende HRV-veranderingen zien, en
   sommige wijzen op een verschuiving weg van rust en herstel. In grote studies

@@ -2,7 +2,7 @@
 sourceHash: "9bfcf8e49dbe"
 title: "PEMF-Therapie (gepulste elektromagnetische Felder): Was die Evidenz zeigt"
 metaTitle: "PEMF-Therapie: Was die Evidenz zeigt"
-metaDescription: "Therapie mit gepulsten elektromagnetischen Feldern erklärt: medizinische Knochenstimulatoren und Matten für zu Hause, wo Studien Schmerzlinderung zeigen und wer verzichten sollte."
+metaDescription: "Pulsierende elektromagnetische Felder erklärt: medizinische Knochenstimulatoren und Heimmatten, wo Studien Schmerzlinderung zeigen, wer verzichtet."
 shortAnswer: >
   Die PEMF-Therapie bringt schwache, gepulste Magnetfelder über Spulen in
   einer Matte, einem Pad oder einem Applikator an den Körper. Medizinische

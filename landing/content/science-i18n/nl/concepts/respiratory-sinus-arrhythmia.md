@@ -2,7 +2,7 @@
 sourceHash: "c3660007032f"
 title: "Respiratoire sinusaritmie: hoe je ademhaling je hartritme vormt"
 metaTitle: "Respiratoire sinusaritmie (RSA) uitgelegd"
-metaDescription: "Respiratoire sinusaritmie is het normale versnellen van het hart bij inademen en vertragen bij uitademen: hoe het ontstaat, wat het beïnvloedt en de grenzen."
+metaDescription: "Respiratoire sinusaritmie is het normale versnellen van het hart bij inademen en vertragen bij uitademen: hoe het ontstaat, wat het beïnvloedt, de grenzen."
 shortAnswer: >
   Respiratoire sinusaritmie (RSA) is de normale stijging van de hartslag bij
   elke inademing en de daling bij elke uitademing. Ondanks de naam is het een

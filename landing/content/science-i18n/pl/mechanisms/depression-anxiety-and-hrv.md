@@ -2,7 +2,7 @@
 sourceHash: b9b35e9ef773
 title: "Depresja, lęk i HRV: co pokazują badania"
 metaTitle: "Depresja, lęk i HRV: dowody"
-metaDescription: "Jak zmienność rytmu serca wiąże się w badaniach z depresją, lękiem i PTSD, dlaczego te związki są małe i dlaczego HRV nie może ich rozpoznać ani przewidzieć."
+metaDescription: "Jak HRV wiąże się w badaniach z depresją, lękiem i PTSD, dlaczego te związki są małe i dlaczego HRV nie może ich rozpoznać ani przewidzieć."
 shortAnswer: >
   Średnio grupy osób z niektórymi zaburzeniami psychicznymi mają niższą
   zmienność rytmu serca niż grupy zdrowe. Dla depresji i lęku uogólnionego te

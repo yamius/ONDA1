@@ -2,7 +2,7 @@
 sourceHash: "9bfcf8e49dbe"
 title: "Terapia PEMF (pulsujące pola elektromagnetyczne): co pokazują badania"
 metaTitle: "Terapia PEMF: co pokazują badania"
-metaDescription: "Terapia pulsującym polem elektromagnetycznym wyjaśniona: medyczne stymulatory kości a maty domowe, gdzie badania pokazują ulgę w bólu i kto nie powinien jej stosować."
+metaDescription: "Terapia pulsującym polem elektromagnetycznym: medyczne stymulatory kości a maty domowe, gdzie badania pokazują ulgę w bólu i kto nie powinien jej stosować."
 shortAnswer: >
   Terapia PEMF polega na działaniu na ciało słabymi, pulsującymi polami
   magnetycznymi wytwarzanymi przez cewki w macie, poduszce lub aplikatorze.

@@ -37,6 +37,7 @@ if (cmd === 'facts') {
     const errs: string[] = []
     if (t.data.sourceHash !== hash(readFileSync(`content/science/${p}.md`, 'utf8'))) errs.push('sourceHash does not match the EN file')
     for (const f of ['title', 'metaTitle', 'metaDescription', 'shortAnswer', 'imageAlt']) if (!t.data[f]) errs.push(`missing ${f}`)
+    if (String(t.data.metaDescription ?? '').length > 155) errs.push(`metaDescription ${String(t.data.metaDescription).length} chars > 155 (Google cuts it)`)
     if ((t.data.keyPoints ?? []).length !== (en.data.keyPoints ?? []).length) errs.push('keyPoints count differs')
     if ((t.data.evidenceMap ?? []).length !== (en.data.evidenceMap ?? []).length) errs.push(`evidenceMap rows ${(t.data.evidenceMap ?? []).length} ≠ EN ${(en.data.evidenceMap ?? []).length}`)
     const facts = (s: string) => [...s.matchAll(/\{\{fact:[^}]+\}\}/g)].map((m) => m[0]).sort().join(' ')

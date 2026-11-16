@@ -2,7 +2,7 @@
 sourceHash: "088e2861f077"
 title: "Interocepción: cómo percibe el cerebro el cuerpo"
 metaTitle: "Interocepción: cómo percibe el cerebro el cuerpo"
-metaDescription: "Qué es la interocepción, cómo se miden sus dimensiones, qué hace el cerebro con las señales del cuerpo y qué muestra, y qué no, la evidencia sobre entrenarla."
+metaDescription: "Qué es la interocepción, cómo se miden sus dimensiones, qué hace el cerebro con las señales del cuerpo y qué muestra la evidencia sobre entrenarla."
 shortAnswer: >
   La interocepción es la percepción, por parte del sistema nervioso, del estado
   interno del cuerpo: el latido, la respiración, el hambre, la temperatura y los

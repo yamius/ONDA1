@@ -2,7 +2,7 @@
 sourceHash: "fc1adc20f09d"
 title: "Perché la mia HRV è bassa? Cause comuni e cosa dicono gli studi"
 metaTitle: "HRV bassa: perché, cause e quando preoccuparsi"
-metaDescription: "Perché l'HRV è bassa: di solito è una reazione a sonno, alcol, malattia, stress o allenamento, non una diagnosi. Ogni causa con le sue prove, e quando andare dal medico."
+metaDescription: "Perché l'HRV è bassa: di solito una reazione a sonno, alcol, malattia, stress o allenamento, non una diagnosi. Le cause e quando andare dal medico."
 shortAnswer: >
   Una variabilità della frequenza cardiaca bassa è il più delle volte una reazione
   normale a qualcosa di specifico, come una notte corta, l'alcol, un'infezione,

@@ -2,7 +2,7 @@
 sourceHash: 1641802b55a4
 title: "Burn-out, werkstress en HRV: wat het bewijs laat zien"
 metaTitle: "Burn-out, werkstress en HRV"
-metaDescription: "Hoe burn-out en werkstress samenhangen met hartslagvariabiliteit, waarom de verbanden zwak zijn, wat trials op de werkvloer vonden en waarom HRV geen burn-out opspoort."
+metaDescription: "Hoe burn-out en werkstress samenhangen met HRV, waarom de verbanden zwak zijn, wat trials op het werk vonden en waarom HRV geen burn-out opspoort."
 shortAnswer: >
   Verbanden tussen hartslagvariabiliteit en burn-out zijn zwak en werden in
   één studie grotendeels verklaard door leeftijd en geslacht. Bij artsen

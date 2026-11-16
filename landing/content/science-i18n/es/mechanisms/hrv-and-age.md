@@ -2,7 +2,7 @@
 sourceHash: 3987e60ffcf5
 title: "HRV y edad: por qué tu cifra baja con los años"
 metaTitle: "HRV y edad: por qué baja con los años"
-metaDescription: "Por qué la variabilidad de la frecuencia cardiaca baja con la edad, por qué el patrón depende de la métrica y por qué tu línea base importa más que una norma de edad."
+metaDescription: "Por qué la HRV baja con la edad, por qué el patrón depende de la métrica y por qué tu línea base importa más que una norma por edad."
 shortAnswer: >
   La variabilidad de la frecuencia cardiaca (HRV, o VFC) baja con la edad en
   todos los grandes grupos de personas sanas estudiados, desde registros

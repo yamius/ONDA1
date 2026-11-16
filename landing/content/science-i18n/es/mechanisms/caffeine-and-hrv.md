@@ -2,7 +2,7 @@
 sourceHash: 79cf13031244
 title: "Cafeína y HRV: lo que el café hace y lo que no"
 metaTitle: "Cafeína y HRV: ¿baja el café tu HRV?"
-metaDescription: "Qué muestra la investigación sobre el café y la HRV en reposo y tras el ejercicio, en qué se diferencian las bebidas energéticas y cómo la cafeína tardía llega a la HRV."
+metaDescription: "Qué muestra la investigación sobre el café y la HRV en reposo y tras el ejercicio, cómo difieren las bebidas energéticas y cómo afecta la cafeína tardía."
 shortAnswer: >
   En bebedores habituales de café, no se ha demostrado que dosis moderadas de
   cafeína cambien la variabilidad de la frecuencia cardíaca en reposo ni

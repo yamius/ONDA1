@@ -2,7 +2,7 @@
 sourceHash: db6fe338f25e
 title: "Virtual reality en stress: wat het bewijs laat zien"
 metaTitle: "VR en stress: bewijs"
-metaDescription: "Wat onderzoek laat zien over virtual reality tegen stress: minder ervaren stress in trials, zwakker bewijs voor HRV en lichaamsmarkers, en waarom kwaliteit telt."
+metaDescription: "Wat onderzoek laat zien over virtual reality tegen stress: minder ervaren stress, zwakker bewijs voor HRV en lichaamsmarkers, en waarom kwaliteit telt."
 shortAnswer: >
   Ontspanning in virtual reality, meestal een virtuele natuurscène,
   verminderde de ervaren stress in een meta-analyse van gerandomiseerde

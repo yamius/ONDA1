@@ -2,7 +2,7 @@
 sourceHash: 0847ebf97cd1
 title: "Respiration rapide : ce que montrent les données et quels sont les vrais risques"
 metaTitle: "Respiration rapide : données et vrais risques"
-metaDescription: "Wim Hof, respiration holotropique, tummo, hyperventilation cyclique : ce que montrent les études sur l’inflammation, l’humeur et le sport, et pourquoi jamais dans l’eau."
+metaDescription: "Wim Hof, respiration holotropique, tummo, hyperventilation cyclique : ce que montrent les études sur l’inflammation, l’humeur, le sport. Jamais dans l’eau."
 shortAnswer: >
   La respiration rapide regroupe des pratiques comme la respiration Wim Hof, la
   respiration holotropique, le tummo et l’hyperventilation cyclique. Respirer

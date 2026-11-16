@@ -2,7 +2,7 @@
 sourceHash: 6a68f313f430
 title: "Respiration nasale et bouche scotchée : ce que montrent les données"
 metaTitle: "Respiration nasale et bouche scotchée : les données"
-metaDescription: "Ce que fait la respiration par le nez, ce que disent les études sur le sommeil, l’attention, la HRV, le sport et l’asthme, et les risques de la bouche scotchée."
+metaDescription: "Ce que fait la respiration nasale, ce que disent les études sur sommeil, attention, HRV, sport et asthme, et les risques de la bouche scotchée."
 shortAnswer: >
   Le nez réchauffe, humidifie et filtre l’air, oppose une résistance au flux
   d’air et transporte jusqu’aux poumons le monoxyde d’azote produit dans les

@@ -2,7 +2,7 @@
 sourceHash: db6fe338f25e
 title: "Virtuelle Realität gegen Stress: Was die Evidenz zeigt"
 metaTitle: "VR und Stress: Evidenz"
-metaDescription: "Was die Forschung zu virtueller Realität gegen Stress zeigt: weniger empfundener Stress in Studien, schwächere Evidenz zu HRV und Körpermarkern, Qualität zählt."
+metaDescription: "Was die Forschung zu virtueller Realität gegen Stress zeigt: weniger empfundener Stress, schwächere Evidenz zu HRV und Körpermarkern, Qualität zählt."
 shortAnswer: >
   Entspannung in virtueller Realität, meist eine virtuelle Naturszene,
   senkte in einer Metaanalyse randomisierter Studien in der

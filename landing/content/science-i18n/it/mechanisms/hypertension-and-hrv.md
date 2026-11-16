@@ -3,7 +3,7 @@ sourceHash: 4d9dfa249538
 publishAfter: "2026-12-06"
 title: "Pressione alta e HRV: cosa mostrano gli studi e cosa fa l'esercizio"
 metaTitle: "Pressione alta e HRV"
-metaDescription: "Perché la variabilità della frequenza cardiaca è spesso bassa con la pressione alta, cosa fa l'esercizio e perché la HRV non sostituisce lo sfigmomanometro."
+metaDescription: "Perché la HRV è spesso bassa con la pressione alta, cosa fa l'esercizio e perché la HRV non sostituisce lo sfigmomanometro."
 shortAnswer: >
   In un grande studio di popolazione, la variabilità della frequenza
   cardiaca era più bassa in uomini e donne con pressione alta, e negli

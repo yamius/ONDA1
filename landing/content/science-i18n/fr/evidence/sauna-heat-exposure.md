@@ -2,7 +2,7 @@
 sourceHash: "986eda6f4234"
 title: "Sauna et exposition à la chaleur : ce que montrent les données"
 metaTitle: "Sauna et chaleur : données et risques"
-metaDescription: "Sauna finlandais, cabine infrarouge, bain chaud et thermothérapie clinique : ce que montrent les études pour le cœur, la tension et l’humeur, et les vrais risques."
+metaDescription: "Sauna finlandais, infrarouge, bain chaud et thermothérapie : ce que montrent les études pour le cœur, la tension et l’humeur, et les vrais risques."
 shortAnswer: >
   L’exposition à la chaleur recouvre des choses différentes : le sauna
   finlandais traditionnel, les cabines infrarouges, l’immersion en eau chaude

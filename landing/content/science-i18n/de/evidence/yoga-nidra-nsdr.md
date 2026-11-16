@@ -2,7 +2,7 @@
 sourceHash: "d8a1a7847676"
 title: "Yoga Nidra und NSDR (Non-Sleep Deep Rest): Was die Evidenz zeigt"
 metaTitle: "Yoga Nidra und NSDR: Was die Evidenz zeigt"
-metaDescription: "Yoga Nidra und Non-Sleep Deep Rest erklärt: was mit Herzfrequenz und Hirnwellen passiert, was Studien zu Schlaf und Stress zeigen und was hinter der Dopamin-Behauptung steckt."
+metaDescription: "Yoga Nidra und Non-Sleep Deep Rest: was mit Puls und Hirnwellen passiert, was Studien zu Schlaf und Stress zeigen und was am Dopamin-Mythos dran ist."
 shortAnswer: >
   Yoga Nidra ist eine angeleitete Entspannung im Liegen mit Körperreise,
   Atembeobachtung und einem persönlichen Vorsatz; Non-Sleep Deep Rest (NSDR)

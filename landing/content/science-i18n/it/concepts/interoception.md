@@ -2,7 +2,7 @@
 sourceHash: "088e2861f077"
 title: "Interocezione: come il cervello percepisce il corpo"
 metaTitle: "Interocezione: come il cervello percepisce il corpo"
-metaDescription: "Che cos'è l'interocezione, come si misurano le sue dimensioni, che cosa fa il cervello con i segnali del corpo e che cosa mostra la ricerca sull'allenamento."
+metaDescription: "Che cos'è l'interocezione, come si misurano le sue dimensioni, cosa fa il cervello con i segnali del corpo e cosa mostra la ricerca sull'allenamento."
 shortAnswer: >
   L'interocezione è la percezione, da parte del sistema nervoso, dello stato
   interno del corpo: battito cardiaco, respiro, fame, temperatura e organi. Il

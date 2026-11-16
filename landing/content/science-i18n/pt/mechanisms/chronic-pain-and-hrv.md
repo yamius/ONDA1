@@ -2,7 +2,7 @@
 sourceHash: 4d330d1d9902
 title: "Dor crônica e HRV: o que mostram as evidências"
 metaTitle: "Dor crônica e HRV: as evidências"
-metaDescription: "Como a dor musculoesquelética crônica se relaciona com a variabilidade da frequência cardíaca, por que o protocolo importa e o que os ensaios de fisioterapia encontraram."
+metaDescription: "Como a dor musculoesquelética crônica se relaciona com a HRV, por que o protocolo de medida importa e o que os ensaios de fisioterapia encontraram."
 shortAnswer: >
   Em média, pessoas com dor musculoesquelética crônica têm variabilidade da
   frequência cardíaca (HRV, ou VFC) em repouso mais baixa que pessoas sem dor,

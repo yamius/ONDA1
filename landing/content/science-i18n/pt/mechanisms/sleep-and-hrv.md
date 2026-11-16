@@ -2,7 +2,7 @@
 sourceHash: b21ec4baa415
 title: "HRV e frequência cardíaca durante o sono: por que a noite é a melhor janela"
 metaTitle: "HRV e frequência cardíaca durante o sono"
-metaDescription: "O que acontece com a frequência cardíaca e a HRV ao longo da noite e dos estágios do sono, por que as medições noturnas são as mais estáveis e o que os wearables podem ou não dizer."
+metaDescription: "O que acontece com o pulso e a HRV durante a noite e as fases do sono, por que as medições noturnas são as mais estáveis e o que dizem os wearables."
 shortAnswer: >
   Durante o sono, a frequência cardíaca cai e a variação de um batimento para
   o outro ligada ao nervo vago costuma aumentar, mais claramente no sono não REM

@@ -2,7 +2,7 @@
 sourceHash: "fc1adc20f09d"
 title: "Dlaczego mam niskie HRV? Najczęstsze przyczyny i co pokazują badania"
 metaTitle: "Niskie HRV: przyczyny i co oznaczają"
-metaDescription: "Dlaczego HRV jest niskie? Najczęściej to reakcja na sen, alkohol, infekcję, stres lub trening, a nie diagnoza. Każda przyczyna z dowodami i kiedy iść do lekarza."
+metaDescription: "Dlaczego HRV jest niskie? Zwykle to reakcja na sen, alkohol, infekcję, stres lub trening, a nie diagnoza. Przyczyny z dowodami i kiedy iść do lekarza."
 shortAnswer: >
   Niska zmienność rytmu serca to najczęściej normalna reakcja na coś
   konkretnego, na przykład krótki sen, alkohol, infekcję, stres lub ciężki

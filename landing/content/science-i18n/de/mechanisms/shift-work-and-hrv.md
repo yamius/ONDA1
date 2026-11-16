@@ -2,7 +2,7 @@
 sourceHash: 1edd012e0c70
 title: "Schichtarbeit, Jetlag und HRV: Was die Evidenz zeigt"
 metaTitle: "Schichtarbeit, Jetlag und HRV"
-metaDescription: "Was Nacht- und lange Schichten mit der Herzratenvariabilität machen, warum die Befunde gemischt sind, was eine Studie zu Essenszeiten fand und warum Jetlag kaum erforscht ist."
+metaDescription: "Was Nacht- und lange Schichten mit der HRV machen, warum Befunde gemischt sind, was eine Studie zu Essenszeiten fand und warum Jetlag kaum erforscht ist."
 shortAnswer: >
   Nach einer langen Schicht zeigen Studien gemischte HRV-Veränderungen, manche
   deuten auf eine Verschiebung weg vom Ruhe- und Erholungsmodus. In großen

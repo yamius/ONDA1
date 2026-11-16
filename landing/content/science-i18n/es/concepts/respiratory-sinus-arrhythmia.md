@@ -2,7 +2,7 @@
 sourceHash: "c3660007032f"
 title: "Arritmia sinusal respiratoria: cómo la respiración moldea el ritmo cardíaco"
 metaTitle: "Arritmia sinusal respiratoria (RSA): qué es"
-metaDescription: "La arritmia sinusal respiratoria es la aceleración normal del corazón al inhalar y su enlentecimiento al exhalar: cómo surge, qué la modifica y sus límites."
+metaDescription: "La arritmia sinusal respiratoria es la aceleración normal del corazón al inhalar y su enlentecimiento al exhalar: cómo surge, qué la cambia, sus límites."
 shortAnswer: >
   La arritmia sinusal respiratoria (RSA) es el aumento normal de la frecuencia
   cardíaca en cada inhalación y su descenso en cada exhalación. Pese al nombre,

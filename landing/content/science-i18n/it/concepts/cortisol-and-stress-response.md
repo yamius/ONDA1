@@ -2,7 +2,7 @@
 sourceHash: "c1cebe81c567"
 title: "Cortisolo e risposta allo stress: che cosa fa e che cosa è mito"
 metaTitle: "Cortisolo e risposta allo stress"
-metaDescription: "Cosa fa il cortisolo, perché conta il suo ritmo giornaliero, come si misura, che cosa lo modifica e perché fatica surrenale e detox del cortisolo sono miti."
+metaDescription: "Cosa fa il cortisolo, perché conta il suo ritmo giornaliero, come si misura, cosa lo modifica e perché fatica surrenale e detox del cortisolo sono miti."
 shortAnswer: >
   Il corpo risponde allo stress con due sistemi: una risposta nervosa rapida,
   che rilascia adrenalina e noradrenalina in pochi secondi, e una risposta

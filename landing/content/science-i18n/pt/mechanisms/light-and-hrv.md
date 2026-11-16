@@ -2,7 +2,7 @@
 sourceHash: f21f1ca24c96
 title: "Luz e HRV: o que mostram as evidências"
 metaTitle: "Luz e HRV: as evidências"
-metaDescription: "Como luz intensa, azul, quente e fraca se relaciona com a variabilidade da frequência cardíaca, por que todos os estudos têm alto risco de viés e o que significa a luz à noite."
+metaDescription: "Como luz intensa, azul, quente e fraca se relaciona com a HRV, por que todos os estudos têm alto risco de viés e o que significa a luz à noite."
 shortAnswer: >
   Em estudos de laboratório, a luz azul intensa esteve em geral associada a
   uma variabilidade da frequência cardíaca (HRV, ou VFC) vagal mais baixa, e a

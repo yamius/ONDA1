@@ -2,7 +2,7 @@
 sourceHash: 922442f38ab8
 title: "Respiración cuadrada: qué muestran de verdad los ensayos"
 metaTitle: "Respiración cuadrada: evidencia"
-metaDescription: "Qué muestran los ensayos aleatorizados sobre la respiración cuadrada: menos frecuencia cardiaca y ansiedad ante el estrés agudo, sin cambio claro de la HRV y con resultados mixtos tras el ejercicio."
+metaDescription: "Qué muestran los ensayos sobre la respiración cuadrada: menos pulso y ansiedad ante el estrés agudo, sin cambio claro de la HRV y resultados mixtos."
 shortAnswer: >
   La respiración cuadrada consiste en fases iguales de inspirar, retener,
   espirar y retener. En los ensayos reduce algunas respuestas agudas al

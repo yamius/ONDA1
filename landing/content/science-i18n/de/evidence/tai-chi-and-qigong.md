@@ -2,7 +2,7 @@
 sourceHash: 0ebcc189e11a
 title: "Tai-Chi, Qigong und HRV: Was die Evidenz zeigt"
 metaTitle: "Tai-Chi und Qigong: Evidenz"
-metaDescription: "Was Studien über Tai-Chi, Qigong und andere traditionelle chinesische Übungen zeigen: mäßige kurzfristige HRV-Anstiege bei Anfängern und Studien zum Blutdruck."
+metaDescription: "Was Studien zu Tai-Chi, Qigong und anderen chinesischen Übungen zeigen: mäßige kurzfristige HRV-Anstiege bei Anfängern und Studien zum Blutdruck."
 shortAnswer: >
   Bei Anfängerinnen und Anfängern gehen Tai-Chi und Qigong mit mäßigen
   kurzfristigen Verbesserungen zeitbezogener Maße der Herzratenvariabilität

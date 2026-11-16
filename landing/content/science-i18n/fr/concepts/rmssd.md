@@ -2,7 +2,7 @@
 sourceHash: 25ad1e60cd2e
 title: "RMSSD : ce que reflète cette mesure de la HRV, et ce qu’elle ne reflète pas"
 metaTitle: "RMSSD : définition, signification et mesure"
-metaDescription: "La RMSSD, mesure de la HRV, reflète les variations de la fréquence cardiaque d’origine vagale. Ce qu’elle mesure, comment les montres l’estiment, ses limites."
+metaDescription: "La RMSSD, mesure de la HRV, reflète les variations du pouls d’origine vagale. Ce qu’elle mesure, comment les montres l’estiment, et ses limites."
 shortAnswer: >
   La RMSSD est une mesure de la variabilité de la fréquence cardiaque (HRV, ou
   VFC) : la racine carrée de la moyenne des carrés des différences entre

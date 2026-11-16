@@ -2,7 +2,7 @@
 sourceHash: af5d6a3da844
 title: "Exposition au froid : ce que montrent les données et où sont les risques"
 metaTitle: "Exposition au froid : données et risques"
-metaDescription: "Bain froid, douche froide, visage refroidi : ce que montrent les études sur le stress, les arrêts maladie, la récupération et le métabolisme, et les risques."
+metaDescription: "Bain froid, douche froide, visage refroidi : ce que montrent les études sur le stress, les arrêts maladie, la récupération, le métabolisme, et les risques."
 shortAnswer: >
   L’exposition au froid recouvre des pratiques différentes : immersion en eau
   froide, douches froides, refroidissement du visage et cryothérapie corps

@@ -2,7 +2,7 @@
 sourceHash: a88cc71c33c7
 title: "Neuriën, chanten en Om: wat het bewijs laat zien"
 metaTitle: "Neuriën, chanten en Om: het bewijs"
-metaDescription: "Wat studies laten zien over neuriën, Om-chanten, mantra's en koorzang: stikstofmonoxide in de neus, trager ademen, HRV, de hersenen en waar het bewijs dun is."
+metaDescription: "Wat studies laten zien over neuriën, Om-chanten, mantra's en koorzang: stikstofmonoxide in de neus, trager ademen, HRV, de hersenen en dun bewijs."
 shortAnswer: >
   Neuriën, chanten en zingen zijn stemoefeningen op een lange uitademing.
   Onderzochte effecten zijn onder meer een sterke stijging van stikstofmonoxide

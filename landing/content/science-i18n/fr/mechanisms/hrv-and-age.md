@@ -2,7 +2,7 @@
 sourceHash: 3987e60ffcf5
 title: "HRV et âge : pourquoi votre chiffre baisse avec les années"
 metaTitle: "HRV et âge : pourquoi elle baisse"
-metaDescription: "Pourquoi la variabilité de la fréquence cardiaque baisse avec l’âge, pourquoi le profil dépend de l’indice et pourquoi votre ligne de base compte plus qu’une norme d’âge."
+metaDescription: "Pourquoi la HRV baisse avec l’âge, pourquoi le profil dépend de l’indice et pourquoi votre ligne de base compte plus qu’une norme d’âge."
 shortAnswer: >
   La variabilité de la fréquence cardiaque (HRV, ou VFC) baisse avec l’âge
   dans tous les grands groupes de personnes en bonne santé étudiés, des

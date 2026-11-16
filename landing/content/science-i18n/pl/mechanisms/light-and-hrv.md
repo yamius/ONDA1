@@ -2,7 +2,7 @@
 sourceHash: f21f1ca24c96
 title: "Światło a HRV: co pokazują dowody"
 metaTitle: "Światło a HRV: dowody"
-metaDescription: "Jak jasne, niebieskie, ciepłe i przyćmione światło wiąże się ze zmiennością rytmu serca, dlaczego wszystkie badania mają wysokie ryzyko błędu i co oznacza światło w nocy."
+metaDescription: "Jak jasne, niebieskie, ciepłe i przyćmione światło wiąże się z HRV, dlaczego wszystkie badania mają wysokie ryzyko błędu i co oznacza światło w nocy."
 shortAnswer: >
   W badaniach laboratoryjnych jasne niebieskie światło na ogół szło w parze z
   niższą zmiennością rytmu serca zależną od nerwu błędnego, a przyćmione

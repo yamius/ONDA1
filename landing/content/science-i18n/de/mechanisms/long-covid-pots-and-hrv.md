@@ -2,7 +2,7 @@
 sourceHash: 68efe2df22d2
 title: "Long COVID, POTS und HRV: Was die Evidenz zeigt"
 metaTitle: "Long COVID, POTS und HRV"
-metaDescription: "Wie Long COVID und POTS mit der Herzratenvariabilität zusammenhängen, warum gepoolte Daten unsicher sind und warum die HRV Long COVID nicht diagnostizieren kann."
+metaDescription: "Wie Long COVID und POTS mit der Herzratenvariabilität zusammenhängen, warum gepoolte Daten unsicher sind und warum HRV Long COVID nicht diagnostiziert."
 shortAnswer: >
   Gepoolte Studien zeigen bei Menschen mit Long COVID nur einen Trend zu
   niedrigerer Herzratenvariabilität, und die meisten dieser Studien haben ein

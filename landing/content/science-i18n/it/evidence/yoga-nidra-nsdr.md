@@ -2,7 +2,7 @@
 sourceHash: "d8a1a7847676"
 title: "Yoga Nidra e NSDR (Non-Sleep Deep Rest): che cosa mostrano le evidenze"
 metaTitle: "Yoga Nidra e NSDR: che cosa mostrano le evidenze"
-metaDescription: "Yoga Nidra e non-sleep deep rest spiegati: che cosa succede a frequenza cardiaca e onde cerebrali, che cosa mostrano gli studi su sonno e stress e l’affermazione sulla dopamina."
+metaDescription: "Yoga Nidra e non-sleep deep rest: cosa succede a battito e onde cerebrali, cosa mostrano gli studi su sonno e stress e il mito della dopamina."
 shortAnswer: >
   Lo Yoga Nidra è un rilassamento guidato da sdraiati, con una scansione del
   corpo, l’attenzione al respiro e un’intenzione personale; il non-sleep deep

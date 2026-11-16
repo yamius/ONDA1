@@ -2,7 +2,7 @@
 sourceHash: "c9ad9e84df17"
 title: "Polyvagal-Theorie: Was sie annimmt, was trägt, was umstritten ist"
 metaTitle: "Polyvagal-Theorie: Was davon trägt"
-metaDescription: "Was die Polyvagal-Theorie annimmt, warum Therapeuten sie nutzen, was zur Physiologie passt und warum viele Fachleute ihre Grundannahmen für unhaltbar halten."
+metaDescription: "Was die Polyvagal-Theorie annimmt, warum Therapeuten sie nutzen, was zur Physiologie passt und warum viele Fachleute sie für unhaltbar halten."
 shortAnswer: >
   Die Polyvagal-Theorie, vorgeschlagen von Stephen Porges, beschreibt drei
   hierarchisch geordnete autonome Zustände: soziales Engagement über eine

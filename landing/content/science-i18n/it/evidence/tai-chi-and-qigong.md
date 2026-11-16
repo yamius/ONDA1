@@ -2,7 +2,7 @@
 sourceHash: 0ebcc189e11a
 title: "Tai chi, qigong e HRV: cosa mostrano le evidenze"
 metaTitle: "Tai chi e qigong: evidenze"
-metaDescription: "Cosa mostrano gli studi su tai chi, qigong e altri esercizi tradizionali cinesi: aumenti moderati e brevi della HRV nei principianti e studi sulla pressione."
+metaDescription: "Cosa mostrano gli studi su tai chi, qigong e altri esercizi cinesi: aumenti moderati e brevi della HRV nei principianti e studi sulla pressione."
 shortAnswer: >
   Nei principianti, tai chi e qigong si associano a miglioramenti moderati e a
   breve termine delle misure temporali della variabilità della frequenza

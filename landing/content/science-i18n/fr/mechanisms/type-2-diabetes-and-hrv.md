@@ -3,7 +3,7 @@ sourceHash: e2322cec72cf
 publishAfter: "2026-11-26"
 title: "Diabète de type 2 et HRV : pourquoi elle baisse et ce que fait l'exercice"
 metaTitle: "Diabète de type 2 et HRV"
-metaDescription: "Pourquoi la variabilité de la fréquence cardiaque est souvent basse dans le diabète de type 2, ce qu'en fait l'exercice et pourquoi elle ne mesure pas la glycémie."
+metaDescription: "Pourquoi la HRV est souvent basse dans le diabète de type 2, ce qu'en fait l'exercice et pourquoi elle ne mesure pas la glycémie."
 shortAnswer: >
   Le diabète peut abîmer les nerfs qui contrôlent le cœur. Au début, cette
   neuropathie autonome cardiaque peut ne donner aucun symptôme et n'apparaître

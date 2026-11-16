@@ -2,7 +2,7 @@
 sourceHash: 0847ebf97cd1
 title: "Szybkie oddychanie: co pokazują badania i jakie są realne zagrożenia"
 metaTitle: "Szybkie oddychanie: badania i realne zagrożenia"
-metaDescription: "Oddychanie metodą Wima Hofa, oddychanie holotropowe, tummo i cykliczna hiperwentylacja: co badania mówią o stanie zapalnym, nastroju i sporcie oraz dlaczego woda jest wykluczona."
+metaDescription: "Metoda Wima Hofa, oddech holotropowy, tummo i cykliczna hiperwentylacja: co badania mówią o stanie zapalnym, nastroju i sporcie. Nigdy w wodzie."
 shortAnswer: >
   Szybkie oddychanie obejmuje praktyki takie jak oddychanie metodą Wima Hofa,
   oddychanie holotropowe, tummo i cykliczna hiperwentylacja. Oddychanie szybsze

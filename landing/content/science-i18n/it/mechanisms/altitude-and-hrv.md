@@ -2,7 +2,7 @@
 sourceHash: 0a5bb76126f6
 title: "Altitudine e HRV: che cosa cambia e che cosa non può prevedere"
 metaTitle: "Altitudine e HRV: che cosa mostrano gli studi"
-metaDescription: "Come l'alta quota cambia la variabilità della frequenza cardiaca, se l'HRV può prevedere il mal di montagna e perché a decidere quando scendere sono i sintomi, non un orologio."
+metaDescription: "Come l'alta quota cambia la HRV, se può prevedere il mal di montagna e perché a decidere quando scendere sono i sintomi, non un orologio."
 shortAnswer: >
   Nei primi giorni in alta quota la variabilità della frequenza cardiaca di
   solito cala, un risultato aggregato in adulti sani. La variabilità

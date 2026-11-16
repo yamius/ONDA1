@@ -2,7 +2,7 @@
 sourceHash: f21f1ca24c96
 title: "Licht und HRV: Was die Evidenz zeigt"
 metaTitle: "Licht und HRV: Die Evidenz"
-metaDescription: "Wie helles, blaues, warmes und gedimmtes Licht mit der Herzratenvariabilität zusammenhängt, warum alle Studien ein hohes Verzerrungsrisiko haben und was Licht in der Nacht bedeutet."
+metaDescription: "Wie helles, blaues, warmes und gedimmtes Licht mit der HRV zusammenhängt, warum alle Studien stark verzerrungsanfällig sind und was Licht nachts bedeutet."
 shortAnswer: >
   In Laborstudien ging helles blaues Licht im Allgemeinen mit niedrigerer
   vagal vermittelter Herzratenvariabilität einher, gedimmtes warmes Licht mit

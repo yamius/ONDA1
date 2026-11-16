@@ -3,7 +3,7 @@ sourceHash: b3ced0e29258
 publishAfter: "2026-12-14"
 title: "Menopausa e HRV: o que os estudos mostram e o que ainda não se sabe"
 metaTitle: "Menopausa e HRV"
-metaDescription: "O que a pesquisa mostra sobre a variabilidade da frequência cardíaca na menopausa: fogachos, idade, terapia hormonal e por que idade e menopausa se confundem."
+metaDescription: "O que a pesquisa mostra sobre a HRV na menopausa: fogachos, idade, terapia hormonal e por que idade e menopausa se confundem."
 shortAnswer: >
   A variabilidade da frequência cardíaca (HRV, ou VFC) cai com a idade em
   mulheres e homens, e as diferenças entre eles desaparecem nas décadas mais

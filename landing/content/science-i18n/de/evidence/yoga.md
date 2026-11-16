@@ -2,7 +2,7 @@
 sourceHash: 93d8f8c1c062
 title: "Yoga und Yoga-Atmung: Was die Evidenz zeigt"
 metaTitle: "Yoga und HRV: Evidenz"
-metaDescription: "Was Studien zu Yoga und Pranayama für HRV und Angst zeigen: kleine gepoolte Analysen, Effekte vor allem gegenüber passiven Kontrollen, langsames und schnelles Atmen."
+metaDescription: "Was Studien zu Yoga und Pranayama für HRV und Angst zeigen: kleine Analysen, Effekte vor allem gegen passive Kontrollen, langsames und schnelles Atmen."
 shortAnswer: >
   Yoga ist ein Sammelbegriff für Haltungen, Atmung und Meditation, und Studien
   kombinieren sie unterschiedlich. Eine kleine Metaanalyse bei Studierenden

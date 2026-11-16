@@ -3,7 +3,7 @@ sourceHash: b3ced0e29258
 publishAfter: "2026-12-12"
 title: "Wechseljahre und HRV: Was Studien zeigen und was noch unbekannt ist"
 metaTitle: "Wechseljahre und HRV"
-metaDescription: "Was die Forschung zur Herzratenvariabilität in den Wechseljahren zeigt: Hitzewallungen, Alter, Hormontherapie und warum Alter und Menopause schwer trennbar sind."
+metaDescription: "Was die Forschung zur HRV in den Wechseljahren zeigt: Hitzewallungen, Alter, Hormontherapie und warum Alter und Menopause schwer zu trennen sind."
 shortAnswer: >
   Die Herzratenvariabilität sinkt mit dem Alter bei Frauen und Männern, und
   die Unterschiede zwischen ihnen verschwinden in späteren Jahrzehnten. Ob

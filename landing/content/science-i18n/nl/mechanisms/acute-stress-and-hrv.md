@@ -2,7 +2,7 @@
 sourceHash: f2910c8b743d
 title: "Acute stress en HRV: wat er gebeurt en hoe je herstelt"
 metaTitle: "Acute stress en HRV: wat studies laten zien"
-metaDescription: "Hoe examens, interviews en stresstests in het lab de hartslagvariabiliteit veranderen, hoe herstel werkt en wat stressscores van wearables wel en niet zeggen."
+metaDescription: "Hoe examens, interviews en stresstests in het lab de HRV veranderen, hoe herstel werkt en wat stressscores van wearables wel en niet zeggen."
 shortAnswer: >
   Acute psychische stress, zoals hoofdrekenen onder tijdsdruk of een echt
   examen, verlaagt in gecontroleerde studies de hartslagvariabiliteit.

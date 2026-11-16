@@ -2,7 +2,7 @@
 sourceHash: "34edde49fd8a"
 title: "Neurofeedback EEG i opaski konsumenckie: co pokazują badania"
 metaTitle: "Neurofeedback EEG: co pokazują badania"
-metaDescription: "Co naprawdę mierzą opaski EEG, dlaczego wyniki skupienia i spokoju nie są pomiarami laboratoryjnymi i co pokazują zaślepione badania neurofeedbacku z grupą pozorowaną."
+metaDescription: "Co naprawdę mierzą opaski EEG, dlaczego wyniki skupienia i spokoju nie są pomiarami laboratoryjnymi i co pokazują zaślepione badania neurofeedbacku."
 shortAnswer: >
   Neurofeedback EEG to trening, w którym człowiek widzi lub słyszy własną
   aktywność fal mózgowych, rejestrowaną ze skóry głowy, i próbuje ją zmienić.

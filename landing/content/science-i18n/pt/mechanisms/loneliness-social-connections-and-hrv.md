@@ -2,7 +2,7 @@
 sourceHash: e7c29c2801a2
 title: "Solidão, vínculos sociais, natureza e HRV: o que mostram as evidências"
 metaTitle: "Solidão, vínculos sociais, natureza e HRV"
-metaDescription: "Como a solidão, o apoio social e o tempo na natureza se relacionam com a variabilidade da frequência cardíaca, por que as ligações são pequenas e o que não se sabe."
+metaDescription: "Como a solidão, o apoio social e o tempo na natureza se relacionam com a HRV, por que as ligações são pequenas e o que não se sabe."
 shortAnswer: >
   Em estudos populacionais, vínculos sociais de apoio estão associados a uma
   variabilidade da frequência cardíaca (HRV, ou VFC) um pouco maior, mas essas

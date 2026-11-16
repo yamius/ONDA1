@@ -2,7 +2,7 @@
 sourceHash: "5e9bed91397e"
 title: "Rotlichttherapie (Photobiomodulation): Was die Evidenz zeigt"
 metaTitle: "Rotlichttherapie: Was die Evidenz zeigt"
-metaDescription: "Photobiomodulation erklärt: wie die Dosis wirkt, wo die Evidenz solide ist (orale Mukositis, manche Schmerzen, Haarausfall), wo sie früh ist – und Augenschutz."
+metaDescription: "Photobiomodulation erklärt: wie die Dosis wirkt, wo die Evidenz solide ist (orale Mukositis, manche Schmerzen, Haarausfall), wo früh – und Augenschutz."
 shortAnswer: >
   Rotlichttherapie oder Photobiomodulation nutzt rotes und nahinfrarotes Licht
   geringer Leistung, um das Verhalten von Zellen zu verändern, ohne Gewebe zu

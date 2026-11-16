@@ -2,7 +2,7 @@
 sourceHash: b9b35e9ef773
 title: "Depressão, ansiedade e HRV: o que mostra a pesquisa"
 metaTitle: "Depressão, ansiedade e HRV: as evidências"
-metaDescription: "Como a variabilidade da frequência cardíaca se relaciona com depressão, ansiedade e TEPT na pesquisa, por que essas ligações são pequenas e por que ela não pode diagnosticá-las nem prevê-las."
+metaDescription: "Como a HRV se relaciona com depressão, ansiedade e TEPT, por que essas ligações são pequenas e por que ela não pode diagnosticá-las nem prevê-las."
 shortAnswer: >
   Em média, grupos de pessoas com alguns transtornos mentais têm
   variabilidade da frequência cardíaca mais baixa que grupos saudáveis. Para

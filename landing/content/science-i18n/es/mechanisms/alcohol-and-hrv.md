@@ -2,7 +2,7 @@
 sourceHash: 93c36ac07742
 title: "Alcohol y HRV: lo que una copa le hace a tu noche"
 metaTitle: "Alcohol y HRV: la noche después de beber"
-metaDescription: "Por qué la HRV nocturna baja y la frecuencia cardíaca en reposo sube después de beber, cómo influyen la dosis y el momento y qué no sabe aún la investigación sobre el alcohol."
+metaDescription: "Por qué la HRV nocturna baja y el pulso en reposo sube después de beber, cómo influyen la dosis y el momento y qué no sabe aún la investigación."
 shortAnswer: >
   El alcohol eleva de forma aguda la frecuencia cardíaca nocturna y reduce la
   variabilidad de la frecuencia cardíaca, y cuanto más bebes, mayor es el

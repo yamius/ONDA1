@@ -2,7 +2,7 @@
 sourceHash: faee58737375
 title: "Le nerf vague : ce qu’il fait, et ce qui relève du mythe"
 metaTitle: "Le nerf vague : son rôle réel et les mythes"
-metaDescription: "Ce que fait vraiment le nerf vague — cœur, intestin, voies respiratoires, gorge, signaux vers le cerveau — et les allégations sur le tonus vagal qui exagèrent."
+metaDescription: "Ce que fait vraiment le nerf vague — cœur, intestin, voies respiratoires, gorge, signaux vers le cerveau — et les idées sur le tonus vagal qui exagèrent."
 shortAnswer: >
   Le nerf vague est le dixième nerf crânien : il part du tronc cérébral et
   descend par le cou et le thorax jusqu’à l’abdomen. L’organisme s’en sert

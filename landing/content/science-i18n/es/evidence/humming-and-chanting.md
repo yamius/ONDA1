@@ -2,7 +2,7 @@
 sourceHash: a88cc71c33c7
 title: "Tarareo, canto y Om: lo que muestra la evidencia"
 metaTitle: "Tarareo, canto y Om: la evidencia"
-metaDescription: "Qué muestran los estudios sobre el tarareo, el canto del Om, los mantras y el canto en coro: óxido nítrico nasal, respiración más lenta, HRV, el cerebro y dónde la evidencia es escasa."
+metaDescription: "Qué muestran los estudios sobre tararear, cantar el Om, los mantras y el canto en coro: óxido nítrico, respiración lenta, HRV, cerebro y sus límites."
 shortAnswer: >
   Tararear, cantar mantras y cantar son prácticas vocales que se hacen con una
   exhalación larga. Entre los efectos estudiados están un gran aumento del óxido

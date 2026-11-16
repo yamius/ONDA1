@@ -2,7 +2,7 @@
 sourceHash: "986eda6f4234"
 title: "Sauna y exposición al calor: qué muestra la evidencia"
 metaTitle: "Sauna y exposición al calor: evidencia y riesgos"
-metaDescription: "Sauna finlandesa, cabinas de infrarrojos, baños calientes y terapia térmica clínica: qué muestran los estudios sobre el corazón, la presión arterial y el ánimo, y cuáles son los riesgos reales."
+metaDescription: "Sauna finlandesa, infrarrojos, baños calientes y terapia térmica clínica: qué muestran los estudios sobre corazón, presión y ánimo, y los riesgos reales."
 shortAnswer: >
   La exposición al calor abarca cosas distintas: la sauna finlandesa
   tradicional, las cabinas de infrarrojos, la inmersión en agua caliente y la

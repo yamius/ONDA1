@@ -2,7 +2,7 @@
 sourceHash: 1641802b55a4
 title: "Burnout, estresse no trabalho e HRV: o que mostram as evidências"
 metaTitle: "Burnout, estresse no trabalho e HRV"
-metaDescription: "Como o burnout e o estresse no trabalho se relacionam com a variabilidade da frequência cardíaca, por que as ligações são fracas e por que a HRV não detecta burnout."
+metaDescription: "Como o burnout e o estresse no trabalho se relacionam com a HRV, por que as ligações são fracas e por que a HRV não detecta burnout."
 shortAnswer: >
   As ligações entre a variabilidade da frequência cardíaca (HRV, ou VFC) e o
   burnout são fracas e, em um estudo, foram explicadas em grande parte por

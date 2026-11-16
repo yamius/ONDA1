@@ -2,7 +2,7 @@
 sourceHash: faee58737375
 title: "Il nervo vago: che cosa fa e che cosa è mito"
 metaTitle: "Il nervo vago: che cosa fa e che cosa è mito"
-metaDescription: "Che cosa fa davvero il nervo vago (cuore, intestino, vie aeree, gola, segnali al cervello) e quali affermazioni su tono vagale ed esercizi vanno troppo oltre."
+metaDescription: "Che cosa fa davvero il nervo vago (cuore, intestino, vie aeree, gola, segnali al cervello) e quali affermazioni su tono vagale ed esercizi esagerano."
 shortAnswer: >
   Il nervo vago è il decimo nervo cranico: parte dal tronco encefalico e
   attraversa il collo e il torace fino all'addome. Il corpo lo usa soprattutto

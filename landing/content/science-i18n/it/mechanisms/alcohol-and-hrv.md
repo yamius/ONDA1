@@ -2,7 +2,7 @@
 sourceHash: 93c36ac07742
 title: "Alcol e HRV: che cosa fa un drink alla tua notte"
 metaTitle: "Alcol e HRV: la notte dopo aver bevuto"
-metaDescription: "Perché dopo aver bevuto l'HRV notturna scende e la frequenza cardiaca a riposo sale, come contano dose e orario e che cosa la ricerca sull'alcol non sa ancora."
+metaDescription: "Perché dopo aver bevuto l'HRV notturna scende e il battito a riposo sale, come contano dose e orario e cosa la ricerca sull'alcol non sa ancora."
 shortAnswer: >
   L'alcol aumenta in modo acuto la frequenza cardiaca notturna e riduce la
   variabilità della frequenza cardiaca, e più si beve, maggiore è il

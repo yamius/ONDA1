@@ -2,7 +2,7 @@
 sourceHash: "34edde49fd8a"
 title: "Neurofeedback EEG et casques grand public : ce que montrent les données"
 metaTitle: "Neurofeedback EEG : ce que montrent les données"
-metaDescription: "Ce que mesurent vraiment les casques EEG, pourquoi les scores de concentration et de calme ne sont pas des mesures de labo, et ce que montrent les essais en aveugle."
+metaDescription: "Ce que mesurent vraiment les casques EEG, pourquoi les scores de concentration et de calme ne sont pas des mesures de labo, et ce que montrent les essais."
 shortAnswer: >
   Le neurofeedback EEG est un entraînement au cours duquel une personne voit
   ou entend sa propre activité cérébrale, enregistrée sur le cuir chevelu, et

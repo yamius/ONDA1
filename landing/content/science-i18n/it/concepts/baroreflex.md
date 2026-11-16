@@ -2,7 +2,7 @@
 sourceHash: "45dd01994151"
 title: "Il baroriflesso: come il corpo mantiene stabile la pressione"
 metaTitle: "Il baroriflesso: la pressione, battito per battito"
-metaDescription: "Come il baroriflesso stabilizza la pressione arteriosa battito per battito, che cosa indica la sua sensibilità e che effetto hanno respiro lento e allenamento."
+metaDescription: "Come il baroriflesso stabilizza la pressione battito per battito, cosa indica la sua sensibilità e che effetto hanno respiro lento e allenamento."
 shortAnswer: >
   Il baroriflesso è il circuito rapido con cui il corpo regola la pressione
   arteriosa. Sensori di stiramento nelle arterie carotidi e nell'arco aortico

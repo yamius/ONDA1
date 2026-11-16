@@ -2,7 +2,7 @@
 sourceHash: af5d6a3da844
 title: "Ekspozycja na zimno: co pokazują badania i gdzie zaczyna się ryzyko"
 metaTitle: "Ekspozycja na zimno: badania i ryzyko"
-metaDescription: "Zimne kąpiele, prysznic i chłodzenie twarzy: co badania mówią o stresie, chorobie, regeneracji i metabolizmie, co pomijają mity o dopaminie i jakie są ryzyka."
+metaDescription: "Zimne kąpiele, prysznic i chłodzenie twarzy: co badania mówią o stresie, chorobie, regeneracji i metabolizmie, mity o dopaminie i jakie są ryzyka."
 shortAnswer: >
   Ekspozycja na zimno to kilka różnych rzeczy: zanurzenie w zimnej wodzie,
   zimny prysznic, chłodzenie twarzy i krioterapia ogólnoustrojowa. Nagłe zimno

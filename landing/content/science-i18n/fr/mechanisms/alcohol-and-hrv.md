@@ -2,7 +2,7 @@
 sourceHash: 93c36ac07742
 title: "Alcool et HRV : ce qu’un verre fait à votre nuit"
 metaTitle: "Alcool et HRV : la nuit après avoir bu"
-metaDescription: "Pourquoi la HRV nocturne baisse et la fréquence cardiaque au repos augmente après avoir bu, quel rôle jouent la dose et le moment, et ce que la recherche ne sait pas encore sur l’alcool."
+metaDescription: "Pourquoi la HRV nocturne baisse et le pouls au repos monte après avoir bu, le rôle de la dose et de l’heure, et ce que la recherche ignore encore."
 shortAnswer: >
   L’alcool augmente de façon aiguë la fréquence cardiaque nocturne et abaisse
   la variabilité de la fréquence cardiaque, et plus on boit, plus le changement

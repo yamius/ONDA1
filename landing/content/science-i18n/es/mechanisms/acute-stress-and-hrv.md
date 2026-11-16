@@ -2,7 +2,7 @@
 sourceHash: f2910c8b743d
 title: "Estrés agudo y HRV: qué ocurre y cómo te recuperas"
 metaTitle: "Estrés agudo y HRV: qué muestran los estudios"
-metaDescription: "Cómo cambian la HRV los exámenes, las entrevistas y las pruebas de estrés, cómo es la recuperación y qué pueden decir las puntuaciones de estrés de un wearable."
+metaDescription: "Cómo cambian la HRV los exámenes, las entrevistas y las pruebas de estrés, cómo es la recuperación y qué dicen las puntuaciones de estrés de un wearable."
 shortAnswer: >
   El estrés psicológico agudo, como el cálculo mental bajo presión o un examen
   real, baja la variabilidad de la frecuencia cardíaca en estudios controlados.

@@ -2,7 +2,7 @@
 sourceHash: "fc1adc20f09d"
 title: "Por que minha HRV está baixa? Causas comuns e o que a evidência mostra"
 metaTitle: "Por que minha HRV está baixa? Causas e o que significam"
-metaDescription: "HRV baixa quase sempre é uma reação ao sono, ao álcool, a uma doença, ao estresse ou ao treino, não um diagnóstico. Cada causa com sua evidência e quando procurar um médico."
+metaDescription: "HRV baixa quase sempre é reação ao sono, ao álcool, a uma doença, ao estresse ou ao treino, não um diagnóstico. Causas com evidência e quando ir ao médico."
 shortAnswer: >
   Uma variabilidade da frequência cardíaca baixa costuma ser uma reação normal
   a algo específico, como dormir pouco, álcool, uma infecção, estresse ou uma

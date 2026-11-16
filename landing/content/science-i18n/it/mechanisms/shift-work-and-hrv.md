@@ -2,7 +2,7 @@
 sourceHash: 1edd012e0c70
 title: "Lavoro a turni, jet lag e HRV: cosa mostrano le evidenze"
 metaTitle: "Lavoro a turni, jet lag e HRV"
-metaDescription: "Cosa fanno i turni notturni e lunghi alla variabilità della frequenza cardiaca, perché i dati sono contrastanti, cosa ha trovato uno studio sull’orario dei pasti e perché il jet lag non è studiato."
+metaDescription: "Cosa fanno i turni notturni e lunghi alla HRV, perché i dati sono contrastanti, cosa ha trovato uno studio sui pasti e perché il jet lag è poco studiato."
 shortAnswer: >
   Dopo un turno lungo, gli studi mostrano variazioni contrastanti della HRV, e
   alcune indicano un allontanamento dalla modalità di riposo e recupero. In

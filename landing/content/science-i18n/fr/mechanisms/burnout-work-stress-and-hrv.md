@@ -2,7 +2,7 @@
 sourceHash: 1641802b55a4
 title: "Burn-out, stress au travail et HRV : ce que montrent les données"
 metaTitle: "Burn-out, stress au travail et HRV"
-metaDescription: "Comment le burn-out et le stress au travail sont liés à la variabilité de la fréquence cardiaque, pourquoi ces liens sont faibles et pourquoi la HRV ne détecte pas le burn-out."
+metaDescription: "Comment le burn-out et le stress au travail sont liés à la HRV, pourquoi ces liens sont faibles et pourquoi la HRV ne détecte pas le burn-out."
 shortAnswer: >
   Les liens entre la variabilité de la fréquence cardiaque (HRV, ou VFC) et le
   burn-out sont faibles, et dans une étude ils s’expliquaient en grande partie

@@ -2,7 +2,7 @@
 sourceHash: a88cc71c33c7
 title: "Fredonnement, chant et Om : ce que montrent les données"
 metaTitle: "Fredonnement, chant et Om : les données"
-metaDescription: "Ce que montrent les études sur le fredonnement, le chant du Om, les mantras et le chant choral : monoxyde d’azote nasal, respiration plus lente, HRV, cerveau et limites des données."
+metaDescription: "Ce que montrent les études sur le fredonnement, le chant du Om, les mantras et le chant choral : monoxyde d’azote, respiration lente, HRV et leurs limites."
 shortAnswer: >
   Le fredonnement, le chant psalmodié et le chant sont des pratiques vocales
   réalisées sur une longue expiration. Les effets étudiés comprennent une forte

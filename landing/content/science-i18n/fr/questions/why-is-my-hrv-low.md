@@ -2,7 +2,7 @@
 sourceHash: "fc1adc20f09d"
 title: "Pourquoi ma HRV est-elle basse ? Causes fréquentes et ce que montrent les études"
 metaTitle: "HRV (VFC) basse : pourquoi, causes et quand s’inquiéter"
-metaDescription: "Pourquoi votre HRV (VFC) est basse : le plus souvent une réaction au sommeil, à l’alcool, à une maladie, au stress ou à l’entraînement, pas un diagnostic. Chaque cause avec ses preuves, et quand consulter."
+metaDescription: "HRV basse ? Le plus souvent une réaction au sommeil, à l’alcool, à une maladie, au stress ou au sport, pas un diagnostic. Causes et quand consulter."
 shortAnswer: >
   Une variabilité de la fréquence cardiaque basse est le plus souvent une
   réaction normale à quelque chose de précis, comme une nuit courte, l’alcool,

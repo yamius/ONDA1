@@ -2,7 +2,7 @@
 sourceHash: 4d330d1d9902
 title: "Dolor crónico y HRV: qué muestra la evidencia"
 metaTitle: "Dolor crónico y HRV: la evidencia"
-metaDescription: "Cómo se relaciona el dolor musculoesquelético crónico con la variabilidad de la frecuencia cardiaca, por qué importa el protocolo y qué hallaron los ensayos de fisioterapia."
+metaDescription: "Cómo se relaciona el dolor musculoesquelético crónico con la HRV, por qué importa el protocolo de medición y qué hallaron los ensayos de fisioterapia."
 shortAnswer: >
   De media, las personas con dolor musculoesquelético crónico tienen una
   variabilidad de la frecuencia cardiaca (HRV, o VFC) en reposo más baja que

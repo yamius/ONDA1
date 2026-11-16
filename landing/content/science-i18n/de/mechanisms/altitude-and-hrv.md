@@ -2,7 +2,7 @@
 sourceHash: 0a5bb76126f6
 title: "Höhe und HRV: Was sich verändert und was sie nicht vorhersagen kann"
 metaTitle: "Höhe und HRV: Was Studien zeigen"
-metaDescription: "Wie große Höhe die Herzratenvariabilität verändert, ob die HRV Höhenkrankheit vorhersagen kann und warum Symptome, nicht eine Uhr, über den Abstieg entscheiden."
+metaDescription: "Wie große Höhe die Herzratenvariabilität verändert, ob die HRV Höhenkrankheit vorhersagt und warum Symptome, nicht die Uhr, über den Abstieg entscheiden."
 shortAnswer: >
   In den ersten Tagen in großer Höhe sinkt die Herzratenvariabilität meist;
   das zeigt eine zusammenfassende Auswertung bei gesunden Erwachsenen. Die

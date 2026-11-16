@@ -2,7 +2,7 @@
 sourceHash: 49d151756087
 title: "SDNN: was dieses HRV-Maß misst und was nicht"
 metaTitle: "SDNN: Definition, Bedeutung und Apple Health"
-metaDescription: "Die SDNN ist das HRV-Maß, das Apple Health speichert. Was sie misst, wie sie sich von der RMSSD unterscheidet und warum sich beide Zahlen nicht vergleichen lassen."
+metaDescription: "Die SDNN ist das HRV-Maß, das Apple Health speichert. Was sie misst, wie sie sich von der RMSSD unterscheidet und warum beide nicht vergleichbar sind."
 shortAnswer: >
   Die SDNN ist ein Maß der Herzfrequenzvariabilität: die Standardabweichung
   der Intervalle zwischen normalen Herzschlägen. Sie fasst die Gesamtstreuung

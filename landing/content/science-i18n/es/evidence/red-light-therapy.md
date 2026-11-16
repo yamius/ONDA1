@@ -2,7 +2,7 @@
 sourceHash: "5e9bed91397e"
 title: "Terapia de luz roja (fotobiomodulación): qué muestra la evidencia"
 metaTitle: "Terapia de luz roja: qué muestra la evidencia"
-metaDescription: "La fotobiomodulación explicada: cómo funciona la dosis, dónde la evidencia es sólida (mucositis oral, algunos dolores, caída del cabello), dónde es preliminar y cómo proteger los ojos."
+metaDescription: "La fotobiomodulación: cómo funciona la dosis, dónde la evidencia es sólida (mucositis oral, algunos dolores, caída del cabello) y cómo proteger los ojos."
 shortAnswer: >
   La terapia de luz roja, o fotobiomodulación, usa luz roja e infrarroja
   cercana de baja potencia para cambiar el comportamiento de las células, sin

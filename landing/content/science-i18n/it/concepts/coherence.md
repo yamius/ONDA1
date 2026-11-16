@@ -2,7 +2,7 @@
 sourceHash: "2744e8dc82ed"
 title: "Coerenza fisiologica: che cos'è e che cosa non è"
 metaTitle: "Coerenza fisiologica: che cos'è"
-metaDescription: "La coerenza fisiologica è un ritmo cardiaco morbido, a onda, durante il respiro lento. Cosa misura, come si distingue dall'HRV e quali affermazioni sono miti."
+metaDescription: "La coerenza fisiologica è un ritmo cardiaco morbido, a onda, con il respiro lento. Cosa misura, come si distingue dall'HRV e quali affermazioni sono miti."
 shortAnswer: >
   La coerenza fisiologica è un andamento del ritmo cardiaco: la frequenza
   cardiaca sale e scende con una forma morbida, quasi sinusoidale, a un'unica

@@ -2,7 +2,7 @@
 sourceHash: 1edd012e0c70
 title: "Praca zmianowa, jet lag i HRV: co pokazują dowody"
 metaTitle: "Praca zmianowa, jet lag i HRV"
-metaDescription: "Co nocne i długie dyżury robią ze zmiennością rytmu serca, dlaczego wyniki są niejednoznaczne, co wykazało badanie pór posiłków i dlaczego jet lag nie jest zbadany."
+metaDescription: "Co nocne i długie dyżury robią z HRV, dlaczego wyniki są niejednoznaczne, co wykazało badanie pór posiłków i dlaczego jet lag nie jest zbadany."
 shortAnswer: >
   Po długim dyżurze badania pokazują niejednoznaczne zmiany HRV, a część
   wskazuje na odejście od trybu odpoczynku i regeneracji. W dużych badaniach

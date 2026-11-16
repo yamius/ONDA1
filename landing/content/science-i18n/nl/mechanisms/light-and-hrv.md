@@ -2,7 +2,7 @@
 sourceHash: f21f1ca24c96
 title: "Licht en HRV: wat het bewijs laat zien"
 metaTitle: "Licht en HRV: het bewijs"
-metaDescription: "Hoe fel, blauw, warm en gedimd licht samenhangt met hartslagvariabiliteit, waarom alle studies een hoog risico op vertekening hebben en wat licht ’s nachts betekent."
+metaDescription: "Hoe fel, blauw, warm en gedimd licht samenhangt met HRV, waarom alle studies een hoog risico op vertekening hebben en wat licht ’s nachts betekent."
 shortAnswer: >
   In labstudies ging fel blauw licht over het algemeen samen met een lagere
   vagaal gemedieerde hartslagvariabiliteit, en gedimd warm licht met een

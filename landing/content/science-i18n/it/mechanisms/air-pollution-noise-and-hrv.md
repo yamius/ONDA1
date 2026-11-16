@@ -2,7 +2,7 @@
 sourceHash: a9e351bb7504
 title: "Inquinamento dell’aria, caldo, rumore e HRV: cosa mostra la ricerca"
 metaTitle: "Inquinamento, caldo e HRV: le evidenze"
-metaDescription: "Come particolato fine, caldo e rumore si legano alla variabilità della frequenza cardiaca nella ricerca, quanto sono piccoli gli effetti e cosa hanno mostrato gli studi sulle maschere."
+metaDescription: "Come particolato fine, caldo e rumore si legano alla HRV nella ricerca, quanto sono piccoli gli effetti e cosa hanno mostrato gli studi sulle maschere."
 shortAnswer: >
   L’esposizione breve al particolato fine dell’aria inquinata è associata, negli
   studi panel, a una variabilità della frequenza cardiaca un po’ più bassa, ma

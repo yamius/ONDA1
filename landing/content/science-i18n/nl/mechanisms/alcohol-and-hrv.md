@@ -2,7 +2,7 @@
 sourceHash: 93c36ac07742
 title: "Alcohol en HRV: wat een drankje met je nacht doet"
 metaTitle: "Alcohol en HRV: de nacht na het drinken"
-metaDescription: "Waarom je nachtelijke HRV daalt en je rusthartslag stijgt na het drinken, welke rol hoeveelheid en tijdstip spelen en wat onderzoek over alcohol nog niet weet."
+metaDescription: "Waarom je nachtelijke HRV daalt en je rusthartslag stijgt na het drinken, welke rol hoeveelheid en tijdstip spelen en wat onderzoek nog niet weet."
 shortAnswer: >
   Alcohol verhoogt acuut de nachtelijke hartslag en verlaagt de
   hartslagvariabiliteit, en hoe meer je drinkt, hoe groter de verandering.

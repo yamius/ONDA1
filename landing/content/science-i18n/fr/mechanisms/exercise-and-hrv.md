@@ -2,7 +2,7 @@
 sourceHash: faaa9b748d00
 title: "Exercice et HRV : ce que fait l’entraînement et ce que montre le guidage par la HRV"
 metaTitle: "Exercice et HRV : données sur l’entraînement guidé par la HRV"
-metaDescription: "Pourquoi la HRV baisse après un entraînement intense puis récupère, combien de temps cela prend et ce que montrent les essais d’entraînement guidé par la HRV face à un plan fixe."
+metaDescription: "Pourquoi la HRV baisse après un entraînement intense puis récupère, en combien de temps, et ce que montrent les essais d’entraînement guidé par la HRV."
 shortAnswer: >
   Après l’exercice, la variabilité de la fréquence cardiaque baisse puis
   récupère en quelques heures à quelques jours ; plus la séance est dure, plus

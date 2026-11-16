@@ -2,7 +2,7 @@
 sourceHash: b21ec4baa415
 title: "HRV y frecuencia cardíaca durante el sueño: por qué la noche es la mejor ventana"
 metaTitle: "HRV y frecuencia cardíaca durante el sueño"
-metaDescription: "Qué ocurre con la frecuencia cardíaca y la HRV a lo largo de la noche y de las fases del sueño, por qué las lecturas nocturnas son las más estables y qué pueden y no pueden decir los wearables."
+metaDescription: "Qué pasa con el pulso y la HRV durante la noche y las fases del sueño, por qué las lecturas nocturnas son las más estables y qué dicen los wearables."
 shortAnswer: >
   Durante el sueño, la frecuencia cardíaca baja y la variación latido a latido
   ligada al nervio vago suele aumentar, sobre todo en el sueño no REM profundo.

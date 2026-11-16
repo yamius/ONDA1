@@ -2,7 +2,7 @@
 sourceHash: "5e9bed91397e"
 title: "Terapia de luz vermelha (fotobiomodulação): o que as evidências mostram"
 metaTitle: "Luz vermelha: o que as evidências mostram"
-metaDescription: "Fotobiomodulação explicada: como a dose funciona, onde as evidências são sólidas (mucosite oral, algumas dores, queda de cabelo), onde são iniciais e a segurança dos olhos."
+metaDescription: "Fotobiomodulação: como a dose funciona, onde as evidências são sólidas (mucosite oral, algumas dores, queda de cabelo), onde são iniciais e os olhos."
 shortAnswer: >
   A terapia de luz vermelha, ou fotobiomodulação, usa luz vermelha e
   infravermelha próxima de baixa potência para alterar o comportamento das

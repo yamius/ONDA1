@@ -2,7 +2,7 @@
 sourceHash: 3987e60ffcf5
 title: "HRV ed età: perché il tuo valore cala con gli anni"
 metaTitle: "HRV ed età: perché cala con gli anni"
-metaDescription: "Perché la variabilità della frequenza cardiaca cala con l’età, perché l’andamento dipende dall’indice e perché la tua baseline conta più di una norma per età."
+metaDescription: "Perché la HRV cala con l’età, perché l’andamento dipende dall’indice e perché la tua baseline conta più di una norma per età."
 shortAnswer: >
   La variabilità della frequenza cardiaca cala con l’età in tutti i grandi
   gruppi di persone sane studiati, dalle registrazioni ospedaliere a milioni di

@@ -2,7 +2,7 @@
 sourceHash: "34edde49fd8a"
 title: "Neurofeedback por EEG e headsets de consumo: o que mostram as evidências"
 metaTitle: "Neurofeedback por EEG: o que mostram as evidências"
-metaDescription: "O que os headsets de EEG medem de fato, por que as pontuações de foco e calma não são medidas de laboratório e o que mostram os estudos cegos e com simulação."
+metaDescription: "O que os headsets de EEG medem de fato, por que as pontuações de foco e calma não são medidas de laboratório e o que mostram os estudos cegos."
 shortAnswer: >
   O neurofeedback por EEG é um treino em que a pessoa vê ou ouve a própria
   atividade elétrica cerebral, registrada no couro cabeludo, e tenta

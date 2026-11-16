@@ -2,7 +2,7 @@
 sourceHash: a88cc71c33c7
 title: "Summen, Chanten und Om: Was die Evidenz zeigt"
 metaTitle: "Summen, Chanten und Om: die Evidenz"
-metaDescription: "Was Studien zu Summen, Om-Chanten, Mantras und Chorsingen zeigen: Stickstoffmonoxid in der Nase, langsameres Atmen, HRV, das Gehirn und wo die Evidenz dünn ist."
+metaDescription: "Was Studien zu Summen, Om-Chanten, Mantras und Chorsingen zeigen: Stickstoffmonoxid, langsameres Atmen, HRV, Gehirn und wo die Evidenz dünn ist."
 shortAnswer: >
   Summen, Chanten und Singen sind Stimmpraktiken, die auf einer langen
   Ausatmung stattfinden. Untersucht wurden ein starker Anstieg des

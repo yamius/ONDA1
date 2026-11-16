@@ -2,7 +2,7 @@
 sourceHash: a88cc71c33c7
 title: "Cantarolar, entoar e Om: o que mostram as evidências"
 metaTitle: "Cantarolar, entoar e Om: as evidências"
-metaDescription: "O que os estudos mostram sobre cantarolar de boca fechada, entoar o Om, mantras e canto coral: óxido nítrico nasal, respiração mais lenta, HRV, cérebro e onde faltam evidências."
+metaDescription: "O que os estudos mostram sobre cantarolar, entoar o Om, mantras e canto coral: óxido nítrico nasal, respiração mais lenta, HRV, cérebro e lacunas."
 shortAnswer: >
   Cantarolar de boca fechada, entoar e cantar são práticas vocais feitas em
   uma expiração longa. Os efeitos estudados incluem um grande aumento do óxido

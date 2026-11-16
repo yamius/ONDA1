@@ -2,7 +2,7 @@
 sourceHash: b21ec4baa415
 title: "HRV en hartslag tijdens de slaap: waarom de nacht het beste meetvenster is"
 metaTitle: "HRV en hartslag tijdens de slaap"
-metaDescription: "Wat er 's nachts en in de slaapfasen gebeurt met hartslag en HRV, waarom nachtelijke metingen het stabielste venster zijn en wat wearables wel en niet zeggen."
+metaDescription: "Wat er 's nachts en in de slaapfasen gebeurt met hartslag en HRV, waarom nachtmetingen het stabielst zijn en wat wearables wel en niet zeggen."
 shortAnswer: >
   Tijdens de slaap daalt de hartslag en neemt de variatie van slag tot slag die
   met de nervus vagus samenhangt meestal toe, het duidelijkst in de diepe

@@ -2,7 +2,7 @@
 sourceHash: "d8a1a7847676"
 title: "Joga nidra i NSDR (non-sleep deep rest): co pokazują badania"
 metaTitle: "Joga nidra i NSDR: co pokazują badania"
-metaDescription: "Joga nidra i głęboki odpoczynek bez snu wyjaśnione: co dzieje się z tętnem i falami mózgowymi, co badania pokazują dla snu i stresu oraz skąd twierdzenie o dopaminie."
+metaDescription: "Joga nidra i głęboki odpoczynek bez snu: co dzieje się z tętnem i falami mózgowymi, co badania mówią o śnie i stresie i skąd mit o dopaminie."
 shortAnswer: >
   Joga nidra to prowadzony relaks w pozycji leżącej, obejmujący skanowanie
   ciała, uważność na oddech i osobiste postanowienie; non-sleep deep rest

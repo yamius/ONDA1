@@ -2,7 +2,7 @@
 sourceHash: a88cc71c33c7
 title: "Humming, canto e Om: che cosa mostrano le evidenze"
 metaTitle: "Humming, canto e Om: le evidenze"
-metaDescription: "Che cosa mostrano gli studi su humming, canto dell'Om, mantra e canto corale: ossido nitrico nasale, respiro più lento, HRV, cervello e dove le evidenze sono scarse."
+metaDescription: "Cosa mostrano gli studi su humming, canto dell'Om, mantra e canto corale: ossido nitrico nasale, respiro più lento, HRV, cervello e prove scarse."
 shortAnswer: >
   Humming (canticchiare a bocca chiusa), canto ripetitivo e canto sono pratiche
   vocali svolte su una lunga espirazione. Gli effetti studiati includono un

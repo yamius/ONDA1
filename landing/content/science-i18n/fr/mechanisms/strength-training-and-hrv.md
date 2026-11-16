@@ -2,7 +2,7 @@
 sourceHash: 073b60b66be6
 title: "Musculation et HRV : baisse aiguë, gains lents et lacunes assumées"
 metaTitle: "Musculation et HRV : ce que disent les études"
-metaDescription: "Ce qu’une séance de musculation fait à la HRV, ce que l’on sait de l’entraînement au long cours chez les personnes âgées et pourquoi une hausse chez les jeunes n’a pas été démontrée."
+metaDescription: "Ce qu’une séance de musculation fait à la HRV, ce que l’on sait de l’entraînement prolongé chez les seniors et pourquoi rien n’est prouvé chez les jeunes."
 shortAnswer: >
   Juste après une séance de musculation, la variabilité de la fréquence
   cardiaque s’écarte pendant un temps de son profil de repos, et dans une

@@ -2,7 +2,7 @@
 sourceHash: f08d4393c77e
 title: "Kann man der HRV von Smartwatch oder Ring trauen?"
 metaTitle: "HRV von Wearables: Kann man Uhr oder Ring trauen?"
-metaDescription: "Die HRV von Smartwatch und Ring ist eine Schätzung aus dem Pulssignal, keine EKG-Messung. Wo beide übereinstimmen, wo sie abweichen und wie du deine Werte liest."
+metaDescription: "Die HRV von Smartwatch und Ring ist eine Schätzung aus dem Pulssignal, kein EKG. Wo beide übereinstimmen, wo sie abweichen und wie du Werte liest."
 shortAnswer: >
   Die HRV von Wearables kann nützlich sein, ist aber nicht automatisch die
   Messung, die ein EKG liefern würde. Die meisten Smartwatches und Ringe

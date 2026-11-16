@@ -2,7 +2,7 @@
 sourceHash: a98dc321b8c4
 title: "Fréquence cardiaque au repos : ce qu’elle reflète et comment la mesurer"
 metaTitle: "Fréquence cardiaque au repos : sens et mesure"
-metaDescription: "Fréquence cardiaque au repos : comment la mesurer, ce que « normal » veut dire, ce qui la fait varier, et pourquoi votre tendance compte plus qu’un chiffre."
+metaDescription: "Fréquence cardiaque au repos : comment la mesurer, ce que « normal » veut dire, ce qui la fait varier, et pourquoi la tendance compte plus qu’un chiffre."
 shortAnswer: >
   La fréquence cardiaque au repos est le plus petit nombre de battements par
   minute lorsque vous êtes éveillé, calme et immobile, ou la fréquence stable la

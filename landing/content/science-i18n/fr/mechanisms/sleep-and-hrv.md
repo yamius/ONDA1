@@ -2,7 +2,7 @@
 sourceHash: b21ec4baa415
 title: "HRV et fréquence cardiaque pendant le sommeil : pourquoi la nuit est la meilleure fenêtre"
 metaTitle: "HRV et fréquence cardiaque pendant le sommeil"
-metaDescription: "Ce qui arrive à la fréquence cardiaque et à la HRV au fil de la nuit et des stades de sommeil, pourquoi les mesures nocturnes sont les plus stables et ce que les objets connectés peuvent dire ou non."
+metaDescription: "Ce qui arrive au pouls et à la HRV la nuit et selon les stades du sommeil, pourquoi les mesures nocturnes sont les plus stables, ce que disent les montres."
 shortAnswer: >
   Pendant le sommeil, la fréquence cardiaque baisse et la variation d’un
   battement à l’autre liée au nerf vague augmente généralement, surtout en

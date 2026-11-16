@@ -2,7 +2,7 @@
 sourceHash: db6fe338f25e
 title: "Realidad virtual y estrés: qué muestra la evidencia"
 metaTitle: "Realidad virtual y estrés"
-metaDescription: "Qué muestra la investigación sobre la realidad virtual para el estrés: menos estrés percibido en ensayos, evidencia más débil sobre HRV y marcadores corporales."
+metaDescription: "Qué muestra la investigación sobre la realidad virtual para el estrés: menos estrés percibido en ensayos, evidencia más débil sobre HRV y el cuerpo."
 shortAnswer: >
   La relajación con realidad virtual, casi siempre una escena de naturaleza
   virtual, redujo el estrés percibido en un metaanálisis de ensayos

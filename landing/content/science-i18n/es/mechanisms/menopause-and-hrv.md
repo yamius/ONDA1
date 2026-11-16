@@ -3,7 +3,7 @@ sourceHash: b3ced0e29258
 publishAfter: "2026-12-10"
 title: "Menopausia y HRV: qué muestran los estudios y qué sigue sin saberse"
 metaTitle: "Menopausia y HRV"
-metaDescription: "Qué muestra la investigación sobre la variabilidad de la frecuencia cardíaca en la menopausia: sofocos, edad, terapia hormonal y por qué edad y menopausia se confunden."
+metaDescription: "Qué muestra la investigación sobre la HRV en la menopausia: sofocos, edad, terapia hormonal y por qué la edad y la menopausia se confunden."
 shortAnswer: >
   La variabilidad de la frecuencia cardíaca (HRV, o VFC) baja con la edad en
   mujeres y hombres, y las diferencias entre ellos se desvanecen en las

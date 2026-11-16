@@ -3,7 +3,7 @@ sourceHash: b3ced0e29258
 publishAfter: "2026-12-14"
 title: "Menopausa e HRV: cosa mostrano gli studi e cosa resta sconosciuto"
 metaTitle: "Menopausa e HRV"
-metaDescription: "Cosa mostra la ricerca sulla variabilità della frequenza cardiaca in menopausa: vampate, età, terapia ormonale e perché età e menopausa sono difficili da separare."
+metaDescription: "Cosa mostra la ricerca sulla HRV in menopausa: vampate, età, terapia ormonale e perché età e menopausa sono difficili da separare."
 shortAnswer: >
   La variabilità della frequenza cardiaca diminuisce con l'età in donne e
   uomini, e le differenze tra loro svaniscono nei decenni più avanzati. È

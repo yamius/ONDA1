@@ -2,7 +2,7 @@
 sourceHash: b21ec4baa415
 title: "HRV und Herzfrequenz im Schlaf: Warum die Nacht das beste Messfenster ist"
 metaTitle: "HRV und Herzfrequenz im Schlaf"
-metaDescription: "Was mit Herzfrequenz und HRV über die Nacht und die Schlafstadien passiert, warum Nachtwerte das stabilste Fenster sind und was Wearables sagen können und was nicht."
+metaDescription: "Was nachts und in den Schlafphasen mit Puls und HRV passiert, warum Nachtwerte das stabilste Fenster sind und was Wearables sagen können und was nicht."
 shortAnswer: >
   Im Schlaf sinkt die Herzfrequenz, und die mit dem Vagusnerv verbundene
   Schwankung von Schlag zu Schlag steigt meist an, am deutlichsten im tiefen

@@ -2,7 +2,7 @@
 sourceHash: b9b35e9ef773
 title: "Depressie, angst en HRV: wat onderzoek laat zien"
 metaTitle: "Depressie, angst en HRV: het bewijs"
-metaDescription: "Hoe hartslagvariabiliteit in onderzoek samenhangt met depressie, angst en PTSS, waarom die verbanden klein zijn en waarom HRV ze niet kan diagnosticeren of voorspellen."
+metaDescription: "Hoe HRV in onderzoek samenhangt met depressie, angst en PTSS, waarom die verbanden klein zijn en waarom HRV ze niet kan vaststellen of voorspellen."
 shortAnswer: >
   Gemiddeld hebben groepen mensen met sommige psychische stoornissen een
   lagere hartslagvariabiliteit dan gezonde groepen. Voor depressie en

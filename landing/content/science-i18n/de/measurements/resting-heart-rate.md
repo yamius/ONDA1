@@ -2,7 +2,7 @@
 sourceHash: a98dc321b8c4
 title: "Ruhepuls: Was er widerspiegelt und wie er gemessen wird"
 metaTitle: "Ruhepuls: Bedeutung und Messung"
-metaDescription: "Der Ruhepuls ist deine niedrigste Herzfrequenz in Ruhe. Wie er gemessen wird, was normal heißt, was ihn bewegt und warum dein Verlauf mehr sagt als ein Wert."
+metaDescription: "Der Ruhepuls ist deine niedrigste Herzfrequenz in Ruhe. Wie er gemessen wird, was normal ist, was ihn bewegt und warum der Verlauf mehr sagt als ein Wert."
 shortAnswer: >
   Der Ruhepuls ist die niedrigste Zahl an Herzschlägen pro Minute, während du
   wach, ruhig und still bist – oder die niedrigste stabile Frequenz, die ein

@@ -2,7 +2,7 @@
 sourceHash: 0ebcc189e11a
 title: "Taichí, qigong y HRV: qué muestra la evidencia"
 metaTitle: "Taichí y qigong: evidencia"
-metaDescription: "Qué muestran los estudios sobre el taichí, el qigong y otros ejercicios tradicionales chinos: mejoras moderadas y breves de la HRV en principiantes y ensayos de presión arterial."
+metaDescription: "Qué muestran los estudios sobre taichí, qigong y otros ejercicios chinos: mejoras moderadas y breves de la HRV en principiantes y ensayos de presión."
 shortAnswer: >
   En principiantes, el taichí y el qigong se asocian con mejoras moderadas y a
   corto plazo de las medidas temporales de la variabilidad de la frecuencia

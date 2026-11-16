@@ -2,7 +2,7 @@
 sourceHash: a9e351bb7504
 title: "Luftverschmutzung, Hitze, Lärm und HRV: Was die Forschung zeigt"
 metaTitle: "Luftverschmutzung, Hitze und HRV: Studienlage"
-metaDescription: "Wie Feinstaub, Hitze und Lärm in der Forschung mit der Herzfrequenzvariabilität zusammenhängen, wie klein die Effekte sind und was Studien mit Atemschutzmasken zeigten."
+metaDescription: "Wie Feinstaub, Hitze und Lärm mit der Herzfrequenzvariabilität zusammenhängen, wie klein die Effekte sind und was Studien mit Atemschutzmasken zeigten."
 shortAnswer: >
   Kurzfristige Belastung mit Feinstaub hängt in Panelstudien mit einer etwas
   niedrigeren Herzfrequenzvariabilität zusammen, doch die Veränderungen sind

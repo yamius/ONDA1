@@ -2,7 +2,7 @@
 sourceHash: 4d330d1d9902
 title: "Dolore cronico e HRV: cosa mostrano le evidenze"
 metaTitle: "Dolore cronico e HRV: le evidenze"
-metaDescription: "Come il dolore muscoloscheletrico cronico si collega alla variabilità della frequenza cardiaca, perché conta il protocollo e cosa hanno trovato gli studi di fisioterapia."
+metaDescription: "Come il dolore muscoloscheletrico cronico si lega alla HRV, perché conta il protocollo di misura e cosa hanno trovato gli studi di fisioterapia."
 shortAnswer: >
   In media, le persone con dolore muscoloscheletrico cronico hanno una
   variabilità della frequenza cardiaca a riposo più bassa delle persone senza

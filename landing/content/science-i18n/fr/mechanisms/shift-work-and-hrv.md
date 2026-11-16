@@ -2,7 +2,7 @@
 sourceHash: 1edd012e0c70
 title: "Travail posté, décalage horaire et HRV : ce que montrent les données"
 metaTitle: "Travail posté, décalage horaire et HRV"
-metaDescription: "Ce que les gardes de nuit et les longues gardes font à la variabilité de la fréquence cardiaque, pourquoi les résultats sont mitigés, ce qu’un essai sur l’heure des repas a trouvé et pourquoi le décalage horaire reste inexploré."
+metaDescription: "Ce que les gardes de nuit et longues font à la HRV, pourquoi les résultats sont mitigés, ce qu’un essai sur les repas a trouvé, et le décalage horaire."
 shortAnswer: >
   Après une longue garde, les études montrent des variations mitigées de la
   HRV (ou VFC), certaines indiquant un éloignement du mode repos et

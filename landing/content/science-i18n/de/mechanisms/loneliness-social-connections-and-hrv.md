@@ -2,7 +2,7 @@
 sourceHash: e7c29c2801a2
 title: "Einsamkeit, soziale Beziehungen, Natur und HRV: Was die Evidenz zeigt"
 metaTitle: "Einsamkeit, soziale Beziehungen, Natur und HRV"
-metaDescription: "Wie Einsamkeit, soziale Unterstützung und Zeit in der Natur mit der Herzratenvariabilität zusammenhängen, warum die Zusammenhänge klein sind und was unbekannt ist."
+metaDescription: "Wie Einsamkeit, soziale Unterstützung und Zeit in der Natur mit der HRV zusammenhängen, warum die Effekte klein sind und was unbekannt ist."
 shortAnswer: >
   In Bevölkerungsstudien gehen unterstützende soziale Beziehungen mit einer
   etwas höheren Herzratenvariabilität einher, doch diese Zusammenhänge werden

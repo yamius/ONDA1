@@ -2,7 +2,7 @@
 sourceHash: 922442f38ab8
 title: "Respiração quadrada: o que os ensaios realmente mostram"
 metaTitle: "Respiração quadrada: evidências"
-metaDescription: "O que ensaios randomizados mostram sobre a respiração quadrada: menos batimentos e ansiedade no estresse agudo, sem mudança clara da HRV e resultados mistos após o exercício."
+metaDescription: "O que ensaios mostram sobre a respiração quadrada: menos batimentos e ansiedade no estresse agudo, sem mudança clara da HRV e resultados mistos."
 shortAnswer: >
   A respiração quadrada consiste em fases iguais de inspirar, segurar,
   expirar e segurar. Nos ensaios, ela reduz algumas respostas agudas ao

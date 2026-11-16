@@ -2,7 +2,7 @@
 sourceHash: 542338be7f2d
 title: "Ademfrequentie in rust: wat ze weerspiegelt en hoe je haar meet"
 metaTitle: "Ademfrequentie: betekenis en meting"
-metaDescription: "Je ademfrequentie is het aantal ademhalingen per minuut in rust. Hoe je haar meet, wat haar beïnvloedt en waarom je eigen nachttrend meer zegt dan één meting."
+metaDescription: "Je ademfrequentie is het aantal ademhalingen per minuut in rust. Hoe je haar meet, wat haar beïnvloedt en waarom je nachttrend meer zegt dan één meting."
 shortAnswer: >
   De ademfrequentie in rust is het aantal ademhalingen per minuut terwijl je
   kalm en stil bent, of de frequentie die een wearable tijdens de slaap schat.

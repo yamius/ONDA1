@@ -2,7 +2,7 @@
 sourceHash: af5d6a3da844
 title: "Kälteexposition: Was die Evidenz zeigt und wo es riskant wird"
 metaTitle: "Kälteexposition: Evidenz und Risiken"
-metaDescription: "Eisbad, kalte Dusche, Gesichtskühlung: was Studien zu Stress, Krankheit, Erholung und Stoffwechsel zeigen, was Dopamin-Mythen auslassen und wo Risiken liegen."
+metaDescription: "Eisbad, kalte Dusche, Gesichtskühlung: was Studien zu Stress, Krankheit, Erholung und Stoffwechsel zeigen, was Dopamin-Mythen auslassen, welche Risiken."
 shortAnswer: >
   Kälteexposition umfasst Verschiedenes: Kaltwasserimmersion, kalte Duschen,
   Gesichtskühlung und Ganzkörper-Kryotherapie. Plötzliche Kälte löst eine

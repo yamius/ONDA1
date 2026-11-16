@@ -2,7 +2,7 @@
 sourceHash: 49beca2392b4
 title: "Ciclo menstrual y HRV: por qué se mueve tu línea base"
 metaTitle: "Ciclo menstrual y HRV: qué cambia y por qué"
-metaDescription: "Cómo varía la variabilidad de la frecuencia cardíaca a lo largo del ciclo menstrual, por qué cada mujer tiene su propio patrón y qué cambian la anticoncepción hormonal y la menopausia."
+metaDescription: "Cómo varía la HRV a lo largo del ciclo menstrual, por qué cada mujer tiene su propio patrón y qué cambian la anticoncepción hormonal y la menopausia."
 shortAnswer: >
   En promedio, la variabilidad de la frecuencia cardíaca es algo más alta al
   inicio del ciclo menstrual y algo más baja hacia el final, y la diferencia es

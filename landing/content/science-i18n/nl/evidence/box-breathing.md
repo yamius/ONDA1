@@ -2,7 +2,7 @@
 sourceHash: 922442f38ab8
 title: "Box breathing: wat de trials echt laten zien"
 metaTitle: "Box breathing: bewijs"
-metaDescription: "Wat gerandomiseerde trials laten zien over box breathing: lagere hartslag en angst bij acute stress, geen duidelijke HRV-verandering en wisselende resultaten na inspanning."
+metaDescription: "Wat trials laten zien over box breathing: lagere hartslag en angst bij acute stress, geen duidelijke HRV-verandering en wisselende resultaten na sport."
 shortAnswer: >
   Box breathing bestaat uit even lange fasen van inademen, vasthouden,
   uitademen en vasthouden. In trials verlaagt het sommige acute

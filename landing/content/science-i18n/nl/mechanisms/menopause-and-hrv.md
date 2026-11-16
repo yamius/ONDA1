@@ -3,7 +3,7 @@ sourceHash: b3ced0e29258
 publishAfter: "2026-12-14"
 title: "Menopauze en HRV: wat studies laten zien en wat nog onbekend is"
 metaTitle: "Menopauze en HRV"
-metaDescription: "Wat onderzoek laat zien over hartslagvariabiliteit rond de menopauze: opvliegers, leeftijd, hormoontherapie en waarom leeftijd en menopauze moeilijk te scheiden zijn."
+metaDescription: "Wat onderzoek laat zien over HRV rond de menopauze: opvliegers, leeftijd, hormoontherapie en waarom leeftijd en menopauze moeilijk te scheiden zijn."
 shortAnswer: >
   Hartslagvariabiliteit daalt met de leeftijd bij vrouwen en mannen, en de
   verschillen tussen hen vervagen in latere decennia. Of de menopauze zelf

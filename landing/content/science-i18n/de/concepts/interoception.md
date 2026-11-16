@@ -2,7 +2,7 @@
 sourceHash: "088e2861f077"
 title: "Interozeption: Wie das Gehirn den Körper wahrnimmt"
 metaTitle: "Interozeption: Wie das Gehirn den Körper wahrnimmt"
-metaDescription: "Was Interozeption ist, wie ihre getrennten Dimensionen gemessen werden, was das Gehirn mit Körpersignalen tut und was Trainingsstudien zeigen und was nicht."
+metaDescription: "Was Interozeption ist, wie ihre Dimensionen gemessen werden, was das Gehirn mit Körpersignalen tut und was Trainingsstudien zeigen."
 shortAnswer: >
   Interozeption ist die Wahrnehmung des inneren Körperzustands durch das
   Nervensystem – Herzschlag, Atmung, Hunger, Temperatur und die Organe. Mit dem

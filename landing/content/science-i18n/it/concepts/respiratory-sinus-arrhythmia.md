@@ -2,7 +2,7 @@
 sourceHash: "c3660007032f"
 title: "Aritmia sinusale respiratoria: come il respiro modella il ritmo del cuore"
 metaTitle: "Aritmia sinusale respiratoria (RSA) spiegata"
-metaDescription: "L'aritmia sinusale respiratoria è la normale accelerazione del cuore quando inspiri e il rallentamento quando espiri: come nasce, cosa la modula, i suoi limiti."
+metaDescription: "L'aritmia sinusale respiratoria è la normale accelerazione del cuore quando inspiri e il rallentamento quando espiri: come nasce, cosa la modula, i limiti."
 shortAnswer: >
   L'aritmia sinusale respiratoria (RSA) è il normale aumento della frequenza
   cardiaca a ogni inspirazione e la sua diminuzione a ogni espirazione. Nonostante

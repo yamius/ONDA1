@@ -2,7 +2,7 @@
 sourceHash: 49beca2392b4
 title: "Menstruatiecyclus en HRV: waarom je baseline verschuift"
 metaTitle: "Menstruatiecyclus en HRV: wat verandert er en waarom"
-metaDescription: "Hoe hartslagvariabiliteit verschuift tijdens de menstruatiecyclus, waarom elke vrouw haar eigen patroon heeft en wat hormonale anticonceptie en de menopauze veranderen."
+metaDescription: "Hoe HRV verschuift tijdens de menstruatiecyclus, waarom elke vrouw haar eigen patroon heeft en wat hormonale anticonceptie en de menopauze veranderen."
 shortAnswer: >
   Gemiddeld is de hartslagvariabiliteit aan het begin van de menstruatiecyclus
   iets hoger en tegen het einde iets lager, en het verschil is klein. Wanneer

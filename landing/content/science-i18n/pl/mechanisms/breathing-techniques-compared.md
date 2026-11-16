@@ -2,7 +2,7 @@
 sourceHash: 1bd1c09d1be0
 title: "Techniki oddechowe w porównaniu: co pokazują badania bezpośrednie"
 metaTitle: "Oddychanie pudełkowe czy cykliczne wzdychanie"
-metaDescription: "Co wykazały bezpośrednie porównania cyklicznego wzdychania, oddychania pudełkowego, techniki cztery-siedem-osiem i wolnego oddechu, a czego nigdy nie porównano."
+metaDescription: "Co wykazały bezpośrednie porównania cyklicznego wzdychania, oddechu pudełkowego, techniki cztery-siedem-osiem i wolnego oddechu, a czego nie porównano."
 shortAnswer: >
   Niewiele nazwanych technik oddechowych porównano ze sobą bezpośrednio.
   W jednym badaniu z randomizacją codzienne cykliczne wzdychanie, czyli wzorzec

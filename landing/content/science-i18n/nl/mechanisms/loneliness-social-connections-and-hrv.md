@@ -2,7 +2,7 @@
 sourceHash: e7c29c2801a2
 title: "Eenzaamheid, sociale banden, natuur en HRV: wat het bewijs laat zien"
 metaTitle: "Eenzaamheid, sociale banden, natuur en HRV"
-metaDescription: "Hoe eenzaamheid, sociale steun en tijd in de natuur samenhangen met hartslagvariabiliteit, waarom de verbanden klein zijn of verdwijnen en wat nog onbekend is."
+metaDescription: "Hoe eenzaamheid, sociale steun en tijd in de natuur samenhangen met HRV, waarom de verbanden klein zijn of verdwijnen en wat nog onbekend is."
 shortAnswer: >
   In bevolkingsonderzoek gaan steunende sociale banden samen met een iets
   hogere hartslagvariabiliteit, maar die verbanden worden kleiner of

@@ -3,7 +3,7 @@ sourceHash: b3ced0e29258
 publishAfter: "2026-12-12"
 title: "Ménopause et HRV : ce que montrent les études et ce qui reste inconnu"
 metaTitle: "Ménopause et HRV"
-metaDescription: "Ce que montre la recherche sur la variabilité de la fréquence cardiaque autour de la ménopause : bouffées de chaleur, âge, traitement hormonal, et l'âge qui brouille tout."
+metaDescription: "Ce que montre la recherche sur la HRV autour de la ménopause : bouffées de chaleur, âge, traitement hormonal, et pourquoi l’âge brouille tout."
 shortAnswer: >
   La variabilité de la fréquence cardiaque (HRV, ou VFC) baisse avec l'âge
   chez les femmes comme chez les hommes, et les différences entre eux

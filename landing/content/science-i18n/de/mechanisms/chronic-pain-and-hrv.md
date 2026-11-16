@@ -2,7 +2,7 @@
 sourceHash: 4d330d1d9902
 title: "Chronische Schmerzen und HRV: Was die Evidenz zeigt"
 metaTitle: "Chronische Schmerzen und HRV"
-metaDescription: "Wie chronische muskuloskelettale Schmerzen mit der Herzratenvariabilität zusammenhängen, warum das Messprotokoll zählt und was Physiotherapie-Studien fanden."
+metaDescription: "Wie chronische Muskel- und Gelenkschmerzen mit der HRV zusammenhängen, warum das Messprotokoll zählt und was Physiotherapie-Studien fanden."
 shortAnswer: >
   Im Durchschnitt haben Menschen mit chronischen muskuloskelettalen Schmerzen
   eine niedrigere Ruhe-Herzratenvariabilität als Menschen ohne Schmerzen, vor

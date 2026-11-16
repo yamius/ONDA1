@@ -2,7 +2,7 @@
 sourceHash: "6f02fd56c607"
 title: "Respiración lenta: qué muestra la evidencia"
 metaTitle: "Respiración lenta: qué muestra la evidencia"
-metaDescription: "Qué muestra la investigación sobre la respiración lenta sin retroalimentación —HRV, presión arterial, estrés, sueño, dolor— y qué se sabe de las técnicas populares."
+metaDescription: "Qué muestra la investigación sobre la respiración lenta sin biofeedback —HRV, presión, estrés, sueño, dolor— y qué se sabe de las técnicas populares."
 shortAnswer: >
   La respiración lenta consiste en respirar bastante por debajo de la
   frecuencia habitual en reposo, a menudo cerca del rango de resonancia. Se usa

@@ -2,7 +2,7 @@
 sourceHash: 0ebcc189e11a
 title: "Tai-chi, qi gong et HRV : ce que montrent les données"
 metaTitle: "Tai-chi et qi gong : données"
-metaDescription: "Ce que montrent les études sur le tai-chi, le qi gong et d’autres exercices traditionnels chinois : hausses modérées et brèves de la HRV chez les débutants et essais sur la tension."
+metaDescription: "Ce que montrent les études sur le tai-chi, le qi gong et d’autres exercices chinois : hausses modérées et brèves de la HRV chez les débutants."
 shortAnswer: >
   Chez les débutants, le tai-chi et le qi gong sont associés à des
   améliorations modérées et à court terme des indices temporels de la

@@ -2,7 +2,7 @@
 sourceHash: "e0527269fba5"
 title: "¿Funciona de verdad la estimulación del nervio vago? Qué muestra la evidencia"
 metaTitle: "Estimulación del nervio vago: qué muestra la evidencia"
-metaDescription: "La estimulación del nervio vago tiene usos médicos autorizados por la FDA y resultados dispares. Qué respalda cada nivel de evidencia y qué afirmaciones lo exceden."
+metaDescription: "La estimulación del nervio vago tiene usos médicos autorizados por la FDA y resultados dispares. Qué respalda cada nivel de evidencia y qué se exagera."
 shortAnswer: >
   La estimulación del nervio vago no es una sola cosa. Abarca una terapia
   quirúrgica implantada, dispositivos médicos de cuello autorizados para

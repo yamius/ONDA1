@@ -2,7 +2,7 @@
 sourceHash: 68efe2df22d2
 title: "COVID persistente, POTS y HRV: qué muestra la evidencia"
 metaTitle: "COVID persistente, POTS y HRV"
-metaDescription: "Cómo se relacionan el COVID persistente y el POTS con la variabilidad de la frecuencia cardiaca, por qué los datos combinados son inciertos y por qué la HRV no diagnostica el COVID persistente."
+metaDescription: "Cómo se relacionan el COVID persistente y el POTS con la HRV, por qué los datos combinados son inciertos y por qué la HRV no diagnostica el COVID."
 shortAnswer: >
   Los estudios combinados muestran solo una tendencia a una variabilidad de la
   frecuencia cardiaca (HRV, o VFC) más baja en personas con COVID persistente,

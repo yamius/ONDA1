@@ -2,7 +2,7 @@
 sourceHash: faaa9b748d00
 title: "Exercício e HRV: o que o treino faz e o que mostra o treino guiado pela HRV"
 metaTitle: "Exercício e HRV: evidências sobre o treino guiado pela HRV"
-metaDescription: "Por que a HRV cai depois de um treino pesado e se recupera, quanto tempo isso leva e o que estudos de treino guiado pela HRV mostram em comparação com um plano fixo."
+metaDescription: "Por que a HRV cai depois de um treino pesado e se recupera, quanto tempo leva e o que estudos de treino guiado pela HRV mostram frente a um plano fixo."
 shortAnswer: >
   Depois do exercício, a variabilidade da frequência cardíaca cai e depois se
   recupera ao longo de horas a dias; quanto mais pesada a sessão, mais longa

@@ -2,7 +2,7 @@
 sourceHash: 8c1f6bec521e
 title: "HRV-Baseline: Warum dein eigenes Normal mehr zählt als jede Norm"
 metaTitle: "HRV-Baseline: dein eigenes Normal statt einer Norm"
-metaDescription: "Deine HRV-Baseline ist dein eigener typischer Bereich, kein Bevölkerungsdurchschnitt. Warum sie Altersnormen schlägt, wie ONDA sie bildet und was eine Abweichung bedeutet."
+metaDescription: "Deine HRV-Baseline ist dein eigener typischer Bereich, kein Bevölkerungsschnitt. Warum sie Altersnormen schlägt und wie ONDA sie bildet."
 shortAnswer: >
   Eine HRV-Baseline ist dein persönliches typisches Niveau der
   Herzfrequenzvariabilität samt ihrer normalen Streuung, gebildet aus vielen

@@ -2,7 +2,7 @@
 sourceHash: "9bfcf8e49dbe"
 title: "Thérapie PEMF (champs électromagnétiques pulsés) : ce que montrent les données"
 metaTitle: "Thérapie PEMF : ce que montrent les données"
-metaDescription: "La thérapie par champs électromagnétiques pulsés expliquée : stimulateurs osseux médicaux et tapis à domicile, où les essais montrent un soulagement de la douleur, et qui doit s’abstenir."
+metaDescription: "La thérapie par champs électromagnétiques pulsés : stimulateurs osseux médicaux et tapis à domicile, où elle soulage la douleur et qui doit s’abstenir."
 shortAnswer: >
   La thérapie PEMF applique au corps des champs magnétiques faibles et pulsés,
   produits par des bobines placées dans un tapis, un coussin ou un applicateur.

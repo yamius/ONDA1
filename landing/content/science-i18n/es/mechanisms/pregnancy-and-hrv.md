@@ -3,7 +3,7 @@ sourceHash: d8304a42c781
 publishAfter: "2026-11-16"
 title: "Embarazo y HRV: qué cambia y qué no puede decirte"
 metaTitle: "Embarazo y HRV"
-metaDescription: "Cómo cambia la variabilidad de la frecuencia cardíaca en el embarazo, qué muestran los estudios en la preeclampsia y por qué la HRV no detecta complicaciones."
+metaDescription: "Cómo cambia la HRV en el embarazo, qué muestran los estudios en la preeclampsia y por qué la HRV no detecta complicaciones ni predice resultados."
 shortAnswer: >
   En la mayoría de los estudios sobre embarazos sanos, la variabilidad de la
   frecuencia cardíaca (HRV, o VFC) baja del primer al tercer trimestre. En la

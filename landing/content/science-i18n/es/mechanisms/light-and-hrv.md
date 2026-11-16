@@ -2,7 +2,7 @@
 sourceHash: f21f1ca24c96
 title: "Luz y HRV: qué muestra la evidencia"
 metaTitle: "Luz y HRV: la evidencia"
-metaDescription: "Cómo se relacionan la luz intensa, azul, cálida y tenue con la variabilidad de la frecuencia cardiaca, por qué todos los estudios tienen alto riesgo de sesgo y qué implica la luz nocturna."
+metaDescription: "Cómo se relacionan la luz intensa, azul, cálida y tenue con la HRV, por qué todos los estudios tienen alto riesgo de sesgo y qué implica la luz nocturna."
 shortAnswer: >
   En estudios de laboratorio, la luz azul intensa se ha asociado en general
   con una variabilidad de la frecuencia cardiaca (HRV, o VFC) vagal más baja,

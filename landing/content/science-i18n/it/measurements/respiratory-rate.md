@@ -2,7 +2,7 @@
 sourceHash: 542338be7f2d
 title: "Frequenza respiratoria a riposo: cosa riflette e come si misura"
 metaTitle: "Frequenza respiratoria: significato e misura"
-metaDescription: "La frequenza respiratoria è il numero di respiri al minuto a riposo. Come si misura, cosa la sposta e perché la tua tendenza notturna vale più di una lettura."
+metaDescription: "La frequenza respiratoria è il numero di respiri al minuto a riposo. Come si misura, cosa la sposta e perché il tuo andamento notturno conta di più."
 shortAnswer: >
   La frequenza respiratoria a riposo è il numero di respiri al minuto quando sei
   calmo e fermo, oppure la frequenza che un dispositivo indossabile stima durante

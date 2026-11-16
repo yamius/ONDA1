@@ -2,7 +2,7 @@
 sourceHash: b9b35e9ef773
 title: "Dépression, anxiété et HRV : ce que montre la recherche"
 metaTitle: "Dépression, anxiété et HRV : les données"
-metaDescription: "Comment la variabilité de la fréquence cardiaque est liée à la dépression, à l’anxiété et au TSPT dans la recherche, pourquoi ces liens sont faibles et pourquoi elle ne peut pas les diagnostiquer."
+metaDescription: "Comment la HRV est liée à la dépression, à l’anxiété et au TSPT, pourquoi ces liens sont faibles et pourquoi elle ne peut pas les diagnostiquer."
 shortAnswer: >
   En moyenne, les groupes de personnes atteintes de certains troubles mentaux
   ont une variabilité de la fréquence cardiaque plus basse que les groupes en

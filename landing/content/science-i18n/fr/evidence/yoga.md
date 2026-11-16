@@ -2,7 +2,7 @@
 sourceHash: 93d8f8c1c062
 title: "Yoga et respiration yogique : ce que montrent les données"
 metaTitle: "Yoga et HRV : données"
-metaDescription: "Ce que montrent les études sur le yoga et le pranayama pour la HRV et l’anxiété : petites analyses groupées, effets surtout face à des contrôles passifs, respiration lente et rapide."
+metaDescription: "Ce que montrent les études sur le yoga et le pranayama pour la HRV et l’anxiété : petites analyses, effets surtout face à des contrôles passifs."
 shortAnswer: >
   Le yoga est un terme qui regroupe postures, respiration et méditation, et
   les études les combinent de façons différentes. Une petite méta-analyse chez

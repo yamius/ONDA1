@@ -2,7 +2,7 @@
 sourceHash: 8c1f6bec521e
 title: "Linha de base da HRV: por que o seu próprio normal importa mais do que qualquer norma"
 metaTitle: "Linha de base da HRV: o seu normal, não uma norma"
-metaDescription: "Sua linha de base da HRV é a sua faixa típica, não uma média populacional: por que supera as normas por idade, como o ONDA a constrói e o que uma mudança indica."
+metaDescription: "Sua linha de base da HRV é a sua faixa típica, não uma média: por que supera as normas por idade, como o ONDA a constrói e o que uma mudança indica."
 shortAnswer: >
   A linha de base pessoal da HRV é o seu nível típico de variabilidade da
   frequência cardíaca e a dispersão normal em torno dele, construídos a partir

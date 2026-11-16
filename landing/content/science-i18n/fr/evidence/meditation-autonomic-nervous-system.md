@@ -2,7 +2,7 @@
 sourceHash: 948e8a39ec33
 title: "Méditation et système nerveux autonome : ce que montrent les données"
 metaTitle: "Méditation et système nerveux : les données"
-metaDescription: "Les effets de la méditation sur la HRV, la fréquence cardiaque au repos, la tension et le cortisol, et pourquoi la respiration lente brouille les résultats."
+metaDescription: "Les effets de la méditation sur la HRV, le pouls au repos, la tension et le cortisol, et pourquoi la respiration lente brouille les résultats."
 shortAnswer: >
   La méditation est une famille de pratiques, pas un traitement unique, et ses
   effets sur le système nerveux autonome diffèrent selon le style. Les essais

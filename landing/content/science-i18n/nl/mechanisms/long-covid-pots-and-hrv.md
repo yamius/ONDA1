@@ -2,7 +2,7 @@
 sourceHash: 68efe2df22d2
 title: "Long covid, POTS en HRV: wat het bewijs laat zien"
 metaTitle: "Long covid, POTS en HRV"
-metaDescription: "Hoe long covid en POTS samenhangen met hartslagvariabiliteit, waarom gepoolde resultaten onzeker zijn, wat wearables vonden en waarom HRV long covid niet kan vaststellen."
+metaDescription: "Hoe long covid en POTS samenhangen met HRV, waarom gepoolde resultaten onzeker zijn, wat wearables vonden en waarom HRV long covid niet vaststelt."
 shortAnswer: >
   Gepoolde studies laten bij mensen met long covid alleen een trend naar een
   lagere hartslagvariabiliteit zien, en de meeste van die studies hebben een

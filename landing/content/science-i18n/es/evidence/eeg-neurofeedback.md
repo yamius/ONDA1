@@ -2,7 +2,7 @@
 sourceHash: "34edde49fd8a"
 title: "Neurofeedback con EEG y cascos de consumo: qué muestra la evidencia"
 metaTitle: "Neurofeedback con EEG: qué muestra la evidencia"
-metaDescription: "Qué miden de verdad los cascos de EEG, por qué las puntuaciones de concentración y calma no son métricas de laboratorio y qué muestran los ensayos ciegos y con simulación."
+metaDescription: "Qué miden de verdad los cascos de EEG, por qué las puntuaciones de concentración y calma no son métricas de laboratorio y qué muestran los ensayos ciegos."
 shortAnswer: >
   El neurofeedback con EEG es un entrenamiento en el que una persona ve u oye
   su propia actividad de ondas cerebrales, registrada desde el cuero cabelludo,

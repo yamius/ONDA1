@@ -2,7 +2,7 @@
 sourceHash: "e0527269fba5"
 title: "Werkt nervus-vagusstimulatie echt? Wat het bewijs laat zien"
 metaTitle: "Nervus-vagusstimulatie: wat het bewijs laat zien"
-metaDescription: "Nervus-vagusstimulatie heeft door de FDA vrijgegeven medische toepassingen en wisselende resultaten. Wat elk bewijsniveau steunt en welke claims verder gaan."
+metaDescription: "Nervus-vagusstimulatie heeft door de FDA vrijgegeven toepassingen en wisselende resultaten. Wat elk bewijsniveau steunt en welke claims verder gaan."
 shortAnswer: >
   Nervus-vagusstimulatie is niet één ding. Het omvat een geïmplanteerde
   chirurgische therapie, medische apparaten voor de hals die zijn vrijgegeven

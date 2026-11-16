@@ -2,7 +2,7 @@
 sourceHash: 0a5bb76126f6
 title: "Altitude e HRV: o que muda e o que ela não consegue prever"
 metaTitle: "Altitude e HRV: o que os estudos mostram"
-metaDescription: "Como a altitude elevada muda a variabilidade da frequência cardíaca, se a HRV pode prever o mal da altitude e por que são os sintomas, não um relógio, que decidem quando descer."
+metaDescription: "Como a altitude elevada muda a HRV, se ela pode prever o mal da altitude e por que são os sintomas, não um relógio, que decidem quando descer."
 shortAnswer: >
   Nos primeiros dias em altitude elevada, a variabilidade da frequência
   cardíaca costuma cair, um achado agrupado em adultos saudáveis. A

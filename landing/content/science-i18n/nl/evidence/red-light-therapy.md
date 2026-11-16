@@ -2,7 +2,7 @@
 sourceHash: "5e9bed91397e"
 title: "Roodlichttherapie (fotobiomodulatie): wat het bewijs laat zien"
 metaTitle: "Roodlichttherapie: wat het bewijs laat zien"
-metaDescription: "Fotobiomodulatie uitgelegd: hoe de dosis werkt, waar het bewijs stevig is (orale mucositis, sommige pijn, haaruitval), waar het nog pril is, en oogveiligheid."
+metaDescription: "Fotobiomodulatie uitgelegd: hoe de dosis werkt, waar het bewijs stevig is (orale mucositis, sommige pijn, haaruitval), waar pril, en oogveiligheid."
 shortAnswer: >
   Roodlichttherapie, of fotobiomodulatie, gebruikt rood en nabij-infrarood
   licht met een laag vermogen om het gedrag van cellen te veranderen, zonder

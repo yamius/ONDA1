@@ -2,7 +2,7 @@
 sourceHash: 1edd012e0c70
 title: "Trabalho em turnos, jet lag e HRV: o que mostram as evidências"
 metaTitle: "Trabalho em turnos, jet lag e HRV"
-metaDescription: "O que plantões noturnos e longos fazem com a variabilidade da frequência cardíaca, por que os dados são mistos, o que um ensaio sobre horário das refeições encontrou e por que o jet lag não foi estudado."
+metaDescription: "O que plantões noturnos e longos fazem com a HRV, por que os dados são mistos, o que um ensaio sobre horário das refeições achou e o jet lag sem estudo."
 shortAnswer: >
   Depois de um plantão longo, os estudos mostram mudanças mistas na HRV (ou
   VFC), e alguns apontam para um afastamento do modo de descanso e

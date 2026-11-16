@@ -2,7 +2,7 @@
 sourceHash: a9e351bb7504
 title: "Pollution de l’air, chaleur, bruit et HRV : ce que montre la recherche"
 metaTitle: "Pollution de l’air, chaleur et HRV : les données"
-metaDescription: "Comment les particules fines, la chaleur et le bruit sont liés à la variabilité de la fréquence cardiaque, la faible taille des effets et ce qu’ont montré les essais de masques."
+metaDescription: "Comment les particules fines, la chaleur et le bruit sont liés à la HRV, la faible taille des effets et ce qu’ont montré les essais de masques."
 shortAnswer: >
   L’exposition de courte durée aux particules fines de la pollution de l’air est
   liée, dans les études de panel, à une variabilité de la fréquence cardiaque un

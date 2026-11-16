@@ -2,7 +2,7 @@
 sourceHash: "9bfcf8e49dbe"
 title: "Terapia PEMF (campos eletromagnéticos pulsados): o que as evidências mostram"
 metaTitle: "Terapia PEMF: o que as evidências mostram"
-metaDescription: "A terapia com campos eletromagnéticos pulsados explicada: estimuladores ósseos médicos e tapetes de uso doméstico, onde os ensaios mostram alívio da dor e quem deve evitá-la."
+metaDescription: "Terapia com campos eletromagnéticos pulsados: estimuladores ósseos médicos e tapetes domésticos, onde os ensaios mostram alívio da dor e quem deve evitar."
 shortAnswer: >
   A terapia PEMF aplica ao corpo campos magnéticos fracos e pulsados por meio
   de bobinas em um tapete, uma almofada ou um aplicador. As versões médicas

@@ -2,7 +2,7 @@
 sourceHash: b9b35e9ef773
 title: "Depression, Angst und HRV: Was die Forschung zeigt"
 metaTitle: "Depression, Angst und HRV: Studienlage"
-metaDescription: "Wie die Herzfrequenzvariabilität in der Forschung mit Depression, Angst und PTBS zusammenhängt, warum die Zusammenhänge klein sind und warum die HRV nichts davon diagnostiziert."
+metaDescription: "Wie die HRV mit Depression, Angst und PTBS zusammenhängt, warum die Zusammenhänge klein sind und warum die HRV nichts davon diagnostiziert."
 shortAnswer: >
   Im Durchschnitt haben Gruppen von Menschen mit einigen psychischen
   Erkrankungen eine niedrigere Herzfrequenzvariabilität als gesunde Gruppen.

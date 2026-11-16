@@ -2,7 +2,7 @@
 sourceHash: f21f1ca24c96
 title: "Luce e HRV: cosa mostrano le evidenze"
 metaTitle: "Luce e HRV: le evidenze"
-metaDescription: "Come luce intensa, blu, calda e soffusa si collega alla variabilità della frequenza cardiaca, perché tutti gli studi hanno un alto rischio di bias e cosa significa la luce notturna."
+metaDescription: "Come luce intensa, blu, calda e soffusa si lega alla HRV, perché tutti gli studi hanno un alto rischio di bias e cosa significa la luce notturna."
 shortAnswer: >
   Negli studi di laboratorio la luce blu intensa si è associata in generale a
   una variabilità della frequenza cardiaca vagale più bassa, e la luce calda

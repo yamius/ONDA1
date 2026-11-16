@@ -2,7 +2,7 @@
 sourceHash: "ec462a9554b9"
 title: "Variabilité de la fréquence cardiaque : ce qu’elle est, ce qu’elle reflète, ce qu’elle n’est pas"
 metaTitle: "Variabilité cardiaque : définition et données"
-metaDescription: "La variabilité de la fréquence cardiaque est la variation naturelle du rythme d’un battement à l’autre : ce qui la façonne, ce qu’elle reflète, ce qu’elle tait."
+metaDescription: "La variabilité de la fréquence cardiaque est la variation naturelle du rythme d’un battement à l’autre : ce qui la façonne et ce qu’elle reflète vraiment."
 shortAnswer: >
   La variabilité de la fréquence cardiaque (HRV, ou VFC) est la variation
   naturelle du temps qui sépare deux battements cardiaques consécutifs. Le

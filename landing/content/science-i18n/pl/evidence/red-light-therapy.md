@@ -2,7 +2,7 @@
 sourceHash: "5e9bed91397e"
 title: "Terapia światłem czerwonym (fotobiomodulacja): co pokazują badania"
 metaTitle: "Terapia światłem czerwonym: co pokazują badania"
-metaDescription: "Fotobiomodulacja wyjaśniona: jak działa dawka, gdzie dowody są solidne (zapalenie błony śluzowej jamy ustnej, część bólu, łysienie), gdzie są wstępne, i bezpieczeństwo oczu."
+metaDescription: "Fotobiomodulacja: jak działa dawka, gdzie dowody są solidne (zapalenie śluzówki jamy ustnej, część bólu, łysienie), gdzie wstępne, i ochrona oczu."
 shortAnswer: >
   Terapia światłem czerwonym, czyli fotobiomodulacja, wykorzystuje czerwone
   światło i bliską podczerwień o małej mocy, aby zmienić zachowanie komórek

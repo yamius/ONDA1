@@ -2,7 +2,7 @@
 sourceHash: 0a5bb76126f6
 title: "Altitude et HRV : ce qui change et ce qu’elle ne peut pas prédire"
 metaTitle: "Altitude et HRV : ce que montrent les études"
-metaDescription: "Comment la haute altitude modifie la variabilité de la fréquence cardiaque, si la HRV peut prédire le mal des montagnes et pourquoi ce sont les symptômes, pas une montre, qui décident quand redescendre."
+metaDescription: "Comment la haute altitude modifie la HRV, si elle peut prédire le mal des montagnes et pourquoi les symptômes, pas une montre, font redescendre."
 shortAnswer: >
   Dans les premiers jours en haute altitude, la variabilité de la fréquence
   cardiaque baisse généralement, un résultat regroupé chez des adultes en bonne

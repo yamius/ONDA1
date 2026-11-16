@@ -2,7 +2,7 @@
 sourceHash: 1641802b55a4
 title: "Wypalenie, stres w pracy i HRV: co pokazują dowody"
 metaTitle: "Wypalenie, stres w pracy i HRV"
-metaDescription: "Jak wypalenie i stres w pracy wiążą się ze zmiennością rytmu serca, dlaczego związki są słabe, co wykazały badania w miejscu pracy i dlaczego HRV nie wykrywa wypalenia."
+metaDescription: "Jak wypalenie i stres w pracy wiążą się z HRV, dlaczego związki są słabe, co wykazały badania w miejscu pracy i dlaczego HRV nie wykrywa wypalenia."
 shortAnswer: >
   Związki zmienności rytmu serca z wypaleniem są słabe, a w jednym badaniu w
   dużej mierze wyjaśniały je wiek i płeć. U lekarzy HRV różni się w okresach

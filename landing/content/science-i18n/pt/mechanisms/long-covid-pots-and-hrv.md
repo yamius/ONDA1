@@ -2,7 +2,7 @@
 sourceHash: 68efe2df22d2
 title: "Covid longa, POTS e HRV: o que mostram as evidências"
 metaTitle: "Covid longa, POTS e HRV"
-metaDescription: "Como a covid longa e a POTS se relacionam com a variabilidade da frequência cardíaca, por que os dados agrupados são incertos e por que a HRV não diagnostica covid longa."
+metaDescription: "Como a covid longa e a POTS se relacionam com a HRV, por que os dados agrupados são incertos e por que a HRV não diagnostica covid longa."
 shortAnswer: >
   Estudos agrupados mostram apenas uma tendência a uma variabilidade da
   frequência cardíaca (HRV, ou VFC) mais baixa em pessoas com covid longa, e a

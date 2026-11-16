@@ -2,7 +2,7 @@
 sourceHash: 0847ebf97cd1
 title: "Snel ademen: wat het bewijs laat zien en de echte risico’s"
 metaTitle: "Snel ademen: bewijs en echte risico’s"
-metaDescription: "Wim Hof-ademhaling, holotropisch ademwerk, tummo en cyclische hyperventilatie: wat studies laten zien voor ontsteking, stemming en sport, en waarom water verboden terrein is."
+metaDescription: "Wim Hof-ademhaling, holotropisch ademwerk, tummo en cyclische hyperventilatie: wat studies tonen voor ontsteking, stemming en sport. Nooit in het water."
 shortAnswer: >
   Onder snel ademen vallen praktijken zoals Wim Hof-ademhaling, holotropisch
   ademwerk, tummo en cyclische hyperventilatie. Sneller en dieper ademen dan het

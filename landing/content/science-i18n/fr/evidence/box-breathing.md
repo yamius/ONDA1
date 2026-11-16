@@ -2,7 +2,7 @@
 sourceHash: 922442f38ab8
 title: "Respiration carrée : ce que montrent vraiment les essais"
 metaTitle: "Respiration carrée : données"
-metaDescription: "Ce que montrent les essais randomisés sur la respiration carrée : pouls et anxiété plus bas face au stress aigu, pas de changement net de la HRV et des résultats mitigés après l’effort."
+metaDescription: "Ce que montrent les essais sur la respiration carrée : pouls et anxiété plus bas face au stress aigu, pas de changement net de la HRV, résultats mitigés."
 shortAnswer: >
   La respiration carrée consiste en phases égales d’inspiration, de rétention,
   d’expiration et de rétention. Dans les essais, elle réduit certaines

@@ -2,7 +2,7 @@
 sourceHash: 93d8f8c1c062
 title: "Ioga e respiração iogue: o que mostram as evidências"
 metaTitle: "Ioga e HRV: evidências"
-metaDescription: "O que os estudos mostram sobre ioga e pranayama para HRV e ansiedade: pequenas análises agrupadas, efeitos sobretudo contra controles passivos, respiração lenta e rápida."
+metaDescription: "O que os estudos mostram sobre ioga e pranayama para HRV e ansiedade: pequenas análises, efeitos sobretudo contra controles passivos."
 shortAnswer: >
   Ioga é um termo que reúne posturas, respiração e meditação, e os estudos
   combinam esses elementos de formas diferentes. Uma pequena meta-análise com

@@ -2,7 +2,7 @@
 sourceHash: "986eda6f4234"
 title: "Sauna i ekspozycja na ciepło: co pokazują badania"
 metaTitle: "Sauna i ekspozycja na ciepło: badania i ryzyko"
-metaDescription: "Sauna fińska, kabiny na podczerwień, gorące kąpiele i kliniczna terapia ciepłem: co badania mówią o sercu, ciśnieniu krwi i nastroju oraz jakie są realne ryzyka."
+metaDescription: "Sauna fińska, podczerwień, gorące kąpiele i kliniczna terapia ciepłem: co badania mówią o sercu, ciśnieniu i nastroju oraz jakie są realne ryzyka."
 shortAnswer: >
   Ekspozycja na ciepło to kilka różnych rzeczy: tradycyjna sauna fińska,
   kabiny na podczerwień, zanurzenie w gorącej wodzie i kliniczna terapia

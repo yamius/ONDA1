@@ -2,7 +2,7 @@
 sourceHash: "1dcd3faa7b29"
 title: "HRV-Biofeedback: Was die Evidenz zeigt"
 metaTitle: "HRV-Biofeedback: Was die Evidenz zeigt"
-metaDescription: "Was die Forschung zu HRV-Biofeedback zeigt – Stress, Stimmung, Blutdruck, Schlaf, Leistung – und wie viel das Feedback über langsames Atmen hinaus beiträgt."
+metaDescription: "Was die Forschung zu HRV-Biofeedback zeigt – Stress, Stimmung, Blutdruck, Schlaf, Leistung – und was Feedback über langsames Atmen hinaus bringt."
 shortAnswer: >
   HRV-Biofeedback ist ein Training im langsamen Atmen, meist nahe der
   persönlichen Resonanzfrequenz, bei dem man den Herzrhythmus in Echtzeit auf

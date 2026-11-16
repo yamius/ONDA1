@@ -2,7 +2,7 @@
 sourceHash: a9e351bb7504
 title: "Luchtvervuiling, hitte, lawaai en HRV: wat onderzoek laat zien"
 metaTitle: "Luchtvervuiling, hitte en HRV: het bewijs"
-metaDescription: "Hoe fijnstof, hitte en lawaai in onderzoek samenhangen met hartslagvariabiliteit, hoe klein de effecten zijn en wat studies met mondkapjes met filter lieten zien."
+metaDescription: "Hoe fijnstof, hitte en lawaai samenhangen met hartslagvariabiliteit, hoe klein de effecten zijn en wat studies met mondkapjes met filter lieten zien."
 shortAnswer: >
   Kortdurende blootstelling aan fijnstof hangt in panelstudies samen met een
   iets lagere hartslagvariabiliteit, maar de veranderingen zijn klein en gelden

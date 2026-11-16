@@ -2,7 +2,7 @@
 sourceHash: e7c29c2801a2
 title: "Solitude, liens sociaux, nature et HRV : ce que montrent les données"
 metaTitle: "Solitude, liens sociaux, nature et HRV"
-metaDescription: "Comment la solitude, le soutien social et le temps passé dans la nature sont liés à la variabilité de la fréquence cardiaque, pourquoi ces liens sont faibles et ce qui reste inconnu."
+metaDescription: "Comment la solitude, le soutien social et le temps dans la nature sont liés à la HRV, pourquoi ces liens sont faibles et ce qui reste inconnu."
 shortAnswer: >
   Dans les études de population, des liens sociaux soutenants vont de pair avec
   une variabilité de la fréquence cardiaque (HRV, ou VFC) un peu plus élevée,

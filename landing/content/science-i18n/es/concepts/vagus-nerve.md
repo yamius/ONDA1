@@ -2,7 +2,7 @@
 sourceHash: faee58737375
 title: "El nervio vago: qué hace y qué es mito"
 metaTitle: "El nervio vago: qué hace y qué es mito"
-metaDescription: "Qué hace de verdad el nervio vago —corazón, intestino, vías respiratorias, garganta, señales al cerebro— y qué ideas populares sobre el tono vagal se exceden."
+metaDescription: "Qué hace de verdad el nervio vago —corazón, intestino, vías respiratorias, garganta, señales al cerebro— y qué ideas sobre el tono vagal se exceden."
 shortAnswer: >
   El nervio vago es el décimo par craneal y recorre el cuerpo desde el tronco
   encefálico, a través del cuello y el tórax, hasta el abdomen. El cuerpo lo usa

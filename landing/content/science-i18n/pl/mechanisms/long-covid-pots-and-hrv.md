@@ -2,7 +2,7 @@
 sourceHash: 68efe2df22d2
 title: "Długi covid, POTS i HRV: co pokazują dowody"
 metaTitle: "Długi covid, POTS i HRV"
-metaDescription: "Jak długi covid i POTS wiążą się ze zmiennością rytmu serca, dlaczego zbiorcze wyniki są niepewne, co wykazały urządzenia noszone i dlaczego HRV nie diagnozuje długiego covidu."
+metaDescription: "Jak długi covid i POTS wiążą się z HRV, dlaczego zbiorcze wyniki są niepewne, co wykazały urządzenia noszone i dlaczego HRV nie diagnozuje długiego covidu."
 shortAnswer: >
   Zbiorcze badania pokazują u osób z długim covidem tylko tendencję do
   niższej zmienności rytmu serca, a większość tych badań ma wysokie ryzyko

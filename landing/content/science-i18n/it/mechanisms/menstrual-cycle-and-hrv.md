@@ -2,7 +2,7 @@
 sourceHash: 49beca2392b4
 title: "Ciclo mestruale e HRV: perché la tua baseline si sposta"
 metaTitle: "Ciclo mestruale e HRV: che cosa cambia e perché"
-metaDescription: "Come varia la variabilità della frequenza cardiaca nel corso del ciclo mestruale, perché ogni donna ha il proprio andamento e che cosa cambiano la contraccezione ormonale e la menopausa."
+metaDescription: "Come varia la HRV nel corso del ciclo mestruale, perché ogni donna ha il suo andamento e cosa cambiano contraccezione ormonale e menopausa."
 shortAnswer: >
   In media la variabilità della frequenza cardiaca è un po' più alta all'inizio
   del ciclo mestruale e un po' più bassa verso la fine, e la differenza è

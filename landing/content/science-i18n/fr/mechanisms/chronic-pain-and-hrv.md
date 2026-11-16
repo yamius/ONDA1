@@ -2,7 +2,7 @@
 sourceHash: 4d330d1d9902
 title: "Douleur chronique et HRV : ce que montrent les données"
 metaTitle: "Douleur chronique et HRV"
-metaDescription: "Comment la douleur musculosquelettique chronique est liée à la variabilité de la fréquence cardiaque, pourquoi le protocole compte et ce qu’ont trouvé les essais de kinésithérapie."
+metaDescription: "Comment la douleur musculosquelettique chronique est liée à la HRV, pourquoi le protocole compte et ce qu’ont trouvé les essais de kinésithérapie."
 shortAnswer: >
   En moyenne, les personnes souffrant de douleur musculosquelettique chronique
   ont une variabilité de la fréquence cardiaque (HRV, ou VFC) au repos plus

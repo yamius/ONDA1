@@ -2,7 +2,7 @@
 sourceHash: e7c29c2801a2
 title: "Solitudine, legami sociali, natura e HRV: cosa mostrano le evidenze"
 metaTitle: "Solitudine, legami sociali, natura e HRV"
-metaDescription: "Come solitudine, supporto sociale e tempo nella natura si collegano alla variabilità della frequenza cardiaca, perché i legami sono piccoli e cosa resta sconosciuto."
+metaDescription: "Come solitudine, supporto sociale e tempo nella natura si legano alla HRV, perché i legami sono piccoli e cosa resta sconosciuto."
 shortAnswer: >
   Negli studi di popolazione, legami sociali di supporto si associano a una
   variabilità della frequenza cardiaca un po’ più alta, ma queste associazioni

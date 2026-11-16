@@ -2,7 +2,7 @@
 sourceHash: 93c36ac07742
 title: "Alkohol und HRV: Was ein Drink mit deiner Nacht macht"
 metaTitle: "Alkohol und HRV: die Nacht nach dem Trinken"
-metaDescription: "Warum die nächtliche HRV nach Alkohol sinkt und der Ruhepuls steigt, welche Rolle Menge und Zeitpunkt spielen und was die Forschung zu Alkohol noch nicht weiß."
+metaDescription: "Warum die nächtliche HRV nach Alkohol sinkt und der Ruhepuls steigt, welche Rolle Menge und Zeitpunkt spielen und was die Forschung noch nicht weiß."
 shortAnswer: >
   Alkohol erhöht kurzfristig die nächtliche Herzfrequenz und senkt die
   Herzfrequenzvariabilität, und je mehr du trinkst, desto größer ist die

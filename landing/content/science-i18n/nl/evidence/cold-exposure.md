@@ -2,7 +2,7 @@
 sourceHash: af5d6a3da844
 title: "Blootstelling aan kou: wat het bewijs laat zien en waar het riskant wordt"
 metaTitle: "Blootstelling aan kou: bewijs en risico's"
-metaDescription: "IJsbaden, koude douches en gezichtskoeling: wat studies laten zien over stress, ziekte, herstel en stofwisseling, wat dopamineclaims weglaten en de risico's."
+metaDescription: "IJsbaden, koude douches en gezichtskoeling: wat studies zeggen over stress, ziekte, herstel en stofwisseling, wat dopamineclaims weglaten en de risico's."
 shortAnswer: >
   Blootstelling aan kou omvat verschillende dingen: onderdompeling in koud
   water, koude douches, gezichtskoeling en cryotherapie van het hele lichaam.

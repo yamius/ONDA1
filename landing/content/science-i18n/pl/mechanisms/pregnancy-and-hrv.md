@@ -3,7 +3,7 @@ sourceHash: d8304a42c781
 publishAfter: "2026-11-22"
 title: "Ciąża a HRV: co się zmienia i czego to nie powie"
 metaTitle: "Ciąża a HRV"
-metaDescription: "Jak zmienia się zmienność rytmu serca w ciąży, co badania pokazują w stanie przedrzucawkowym i dlaczego HRV nie wykrywa powikłań ani nie przewiduje wyników."
+metaDescription: "Jak zmienia się HRV w ciąży, co badania pokazują w stanie przedrzucawkowym i dlaczego HRV nie wykrywa powikłań ani nie przewiduje wyników."
 shortAnswer: >
   W większości badań zdrowej ciąży zmienność rytmu serca spada od
   pierwszego do trzeciego trymestru. W stanie przedrzucawkowym ogólne HRV

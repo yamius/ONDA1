@@ -3,7 +3,7 @@ sourceHash: 4d9dfa249538
 publishAfter: "2026-12-06"
 title: "Pressão alta e HRV: o que os estudos mostram e o que o exercício faz"
 metaTitle: "Pressão alta e HRV"
-metaDescription: "Por que a variabilidade da frequência cardíaca costuma estar baixa na pressão alta, o que o exercício faz e por que a HRV não substitui o medidor de pressão."
+metaDescription: "Por que a HRV costuma estar baixa na pressão alta, o que o exercício faz e por que a HRV não substitui o medidor de pressão."
 shortAnswer: >
   Em um grande estudo populacional, a variabilidade da frequência cardíaca
   (HRV, ou VFC) foi menor em homens e mulheres com pressão alta, e em homens

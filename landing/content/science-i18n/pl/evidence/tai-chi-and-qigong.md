@@ -2,7 +2,7 @@
 sourceHash: 0ebcc189e11a
 title: "Tai chi, qigong a HRV: co pokazują dowody"
 metaTitle: "Tai chi i qigong: dowody"
-metaDescription: "Co badania pokazują o tai chi, qigongu i innych tradycyjnych chińskich ćwiczeniach: umiarkowany krótkotrwały wzrost HRV u początkujących i badania nad ciśnieniem."
+metaDescription: "Co badania pokazują o tai chi, qigongu i innych chińskich ćwiczeniach: umiarkowany krótkotrwały wzrost HRV u początkujących i badania nad ciśnieniem."
 shortAnswer: >
   U początkujących tai chi i qigong wiążą się z umiarkowaną krótkoterminową
   poprawą czasowych wskaźników zmienności rytmu serca, większą u osób, których

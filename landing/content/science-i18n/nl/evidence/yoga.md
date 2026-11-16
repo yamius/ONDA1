@@ -2,7 +2,7 @@
 sourceHash: 93d8f8c1c062
 title: "Yoga en yoga-ademhaling: wat het bewijs laat zien"
 metaTitle: "Yoga en HRV: bewijs"
-metaDescription: "Wat onderzoek laat zien over yoga en pranayama voor HRV en angst: kleine gepoolde analyses, effecten vooral tegenover passieve controles, langzaam en snel ademen."
+metaDescription: "Wat onderzoek zegt over yoga en pranayama voor HRV en angst: kleine gepoolde analyses, effecten vooral tegenover passieve controles, trage en snelle adem."
 shortAnswer: >
   Yoga is een verzamelnaam voor houdingen, ademhaling en meditatie, en
   studies combineren die op verschillende manieren. Een kleine meta-analyse

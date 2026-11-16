@@ -2,7 +2,7 @@
 sourceHash: db6fe338f25e
 title: "Realidade virtual e estresse: o que mostram as evidências"
 metaTitle: "Realidade virtual e estresse"
-metaDescription: "O que a pesquisa mostra sobre realidade virtual contra o estresse: menos estresse percebido nos ensaios, evidência mais fraca sobre HRV e marcadores do corpo."
+metaDescription: "O que a pesquisa mostra sobre realidade virtual contra o estresse: menos estresse percebido, evidência mais fraca sobre HRV e marcadores do corpo."
 shortAnswer: >
   O relaxamento em realidade virtual, quase sempre uma cena de natureza
   virtual, reduziu o estresse percebido em uma meta-análise de ensaios

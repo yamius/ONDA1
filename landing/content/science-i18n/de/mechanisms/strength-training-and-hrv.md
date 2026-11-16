@@ -2,7 +2,7 @@
 sourceHash: 073b60b66be6
 title: "Krafttraining und HRV: kurzer Abfall, langsame Effekte, ehrliche Lücken"
 metaTitle: "Krafttraining und HRV: Was die Evidenz zeigt"
-metaDescription: "Was eine einzelne Krafteinheit mit der HRV macht, was über langfristiges Training bei älteren Menschen bekannt ist und warum ein Anstieg bei jungen Menschen nicht gezeigt ist."
+metaDescription: "Was eine Krafteinheit mit der HRV macht, was über langfristiges Training bei Älteren bekannt ist und warum ein Anstieg bei Jüngeren nicht gezeigt ist."
 shortAnswer: >
   Direkt nach einer Krafteinheit weicht die Herzfrequenzvariabilität für eine
   Weile von ihrem Ruhemuster ab; in einer Studie war diese Verschiebung bei

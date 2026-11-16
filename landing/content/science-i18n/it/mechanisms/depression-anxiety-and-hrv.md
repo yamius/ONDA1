@@ -2,7 +2,7 @@
 sourceHash: b9b35e9ef773
 title: "Depressione, ansia e HRV: cosa mostra la ricerca"
 metaTitle: "Depressione, ansia e HRV: le evidenze"
-metaDescription: "Come la variabilità della frequenza cardiaca si lega a depressione, ansia e PTSD nella ricerca, perché i legami sono piccoli e perché la HRV non può diagnosticarli né prevederli."
+metaDescription: "Come la HRV si lega a depressione, ansia e PTSD nella ricerca, perché i legami sono piccoli e perché la HRV non può diagnosticarli né prevederli."
 shortAnswer: >
   In media, i gruppi di persone con alcuni disturbi mentali hanno una
   variabilità della frequenza cardiaca più bassa dei gruppi sani. Per la

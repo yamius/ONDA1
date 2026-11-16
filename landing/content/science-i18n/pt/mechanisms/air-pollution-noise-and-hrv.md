@@ -2,7 +2,7 @@
 sourceHash: a9e351bb7504
 title: "Poluição do ar, calor, ruído e HRV: o que mostra a pesquisa"
 metaTitle: "Poluição do ar, calor e HRV: as evidências"
-metaDescription: "Como partículas finas, calor e ruído se relacionam com a variabilidade da frequência cardíaca, quão pequenos são os efeitos e o que mostraram os estudos com respiradores."
+metaDescription: "Como partículas finas, calor e ruído se relacionam com a HRV, quão pequenos são os efeitos e o que mostraram os estudos com respiradores."
 shortAnswer: >
   A exposição curta a partículas finas da poluição do ar está associada, em
   estudos de painel, a uma variabilidade da frequência cardíaca um pouco mais

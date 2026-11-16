@@ -2,7 +2,7 @@
 sourceHash: 922442f38ab8
 title: "Oddychanie kwadratowe: co naprawdę pokazują badania"
 metaTitle: "Oddychanie kwadratowe: dowody"
-metaDescription: "Co badania z randomizacją pokazują o oddychaniu kwadratowym: niższe tętno i lęk w ostrym stresie, brak wyraźnej zmiany HRV i niejednoznaczne wyniki po wysiłku."
+metaDescription: "Co badania z randomizacją mówią o oddychaniu kwadratowym: niższe tętno i lęk w ostrym stresie, brak wyraźnej zmiany HRV i mieszane wyniki po wysiłku."
 shortAnswer: >
   Oddychanie kwadratowe to równe fazy wdechu, zatrzymania, wydechu i
   zatrzymania. W badaniach zmniejsza niektóre ostre reakcje na stres, takie
