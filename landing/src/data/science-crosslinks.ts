@@ -40,5 +40,34 @@ export const ARTICLE_SCIENCE_LINKS: Record<string, readonly string[]> = {
   'zone-2-training-aerobic-base': ['mechanisms/exercise-and-hrv', 'mechanisms/strength-training-and-hrv'],
 }
 
+/** Glossary term → ONDA Science pages (same block on the term page). Added 2026-11-16 for science
+ *  pages that no article covers (pregnancy, menopause, menstrual cycle, chronic pain, noise, method). */
+export const GLOSSARY_SCIENCE_LINKS: Record<string, readonly string[]> = {
+  'hormones': ['mechanisms/menstrual-cycle-and-hrv', 'mechanisms/pregnancy-and-hrv', 'mechanisms/menopause-and-hrv'],
+  'gonads': ['mechanisms/menstrual-cycle-and-hrv', 'mechanisms/menopause-and-hrv'],
+  'free-hormonal-index': ['mechanisms/menstrual-cycle-and-hrv', 'mechanisms/menopause-and-hrv'],
+  'endocrine-system': ['mechanisms/pregnancy-and-hrv', 'mechanisms/type-2-diabetes-and-hrv'],
+  'endorphins': ['mechanisms/chronic-pain-and-hrv'],
+  'interoception': ['mechanisms/chronic-pain-and-hrv'],
+  'psychoneuroimmunology': ['mechanisms/illness-and-hrv', 'mechanisms/chronic-pain-and-hrv'],
+  'allostatic-load': ['mechanisms/air-pollution-noise-and-hrv', 'mechanisms/burnout-work-stress-and-hrv'],
+  'heart-rate-variability': ['measurements/how-we-evaluate-research', 'mechanisms/hrv-and-age', 'mechanisms/sleep-and-hrv'],
+  'rmssd': ['measurements/how-we-evaluate-research'],
+  'sdnn': ['measurements/how-we-evaluate-research'],
+  'hrv-baseline': ['mechanisms/illness-and-hrv', 'mechanisms/alcohol-and-hrv'],
+  'cortisol': ['mechanisms/acute-stress-and-hrv', 'mechanisms/burnout-work-stress-and-hrv'],
+  'adrenaline': ['mechanisms/acute-stress-and-hrv'],
+  'blue-light': ['mechanisms/light-and-hrv'],
+  'circadian-rhythm': ['mechanisms/light-and-hrv', 'mechanisms/shift-work-and-hrv'],
+  'melatonin': ['mechanisms/light-and-hrv', 'mechanisms/shift-work-and-hrv'],
+  'deep-sleep': ['mechanisms/sleep-and-hrv'],
+  'insulin-sensitivity': ['mechanisms/type-2-diabetes-and-hrv'],
+  'glucose-spikes': ['mechanisms/type-2-diabetes-and-hrv'],
+  'vasomotricity': ['mechanisms/hypertension-and-hrv'],
+  'co-regulation': ['mechanisms/loneliness-social-connections-and-hrv'],
+  'sarcopenia': ['mechanisms/strength-training-and-hrv', 'mechanisms/hrv-and-age'],
+  'co2-tolerance': ['mechanisms/altitude-and-hrv'],
+}
+
 /** Every science key referenced above (the generator emits titles only for these). */
-export const CROSSLINKED_SCIENCE_KEYS: string[] = [...new Set(Object.values(ARTICLE_SCIENCE_LINKS).flat())]
+export const CROSSLINKED_SCIENCE_KEYS: string[] = [...new Set([...Object.values(ARTICLE_SCIENCE_LINKS), ...Object.values(GLOSSARY_SCIENCE_LINKS)].flat())]

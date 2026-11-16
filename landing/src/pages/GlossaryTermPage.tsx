@@ -14,6 +14,7 @@ import { TERM_ARTICLES } from '../generated/term-articles'
 import { getArticleMeta } from '../lib/article-content'
 import { langFromPath, langHref, homePathFor } from '../i18n'
 import { ui } from '../data/ui-i18n'
+import { GlossaryScienceLinks } from '../components/ArticleScienceLinks'
 import { glossaryCardPath, glossaryCardAlt, GLOSSARY_CARD_W, GLOSSARY_CARD_H } from '../data/glossary-cards'
 
 const SITE_URL = 'https://onda-life.com'
@@ -324,6 +325,8 @@ export function GlossaryTermPage() {
           {injectGlossaryLinks(tContent, term.slug, langPrefix)}
         </Markdown>
       </article>
+
+      <GlossaryScienceLinks slug={term.slug} lang={lang} />
 
       <AppStoreCTA layout="line" ct={storeCt('gl', term.slug, lang)} variant="glossary" lang={lang} />
 
