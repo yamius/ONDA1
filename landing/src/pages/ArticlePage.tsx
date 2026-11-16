@@ -13,6 +13,7 @@ import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { getPrimaryHubForArticle } from '../data/article-topics'
 import { ui } from '../data/ui-i18n'
+import { ArticleScienceLinks } from '../components/ArticleScienceLinks'
 import { langFromPath, langHref, homePathFor } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
@@ -1125,6 +1126,8 @@ export function ArticlePage() {
           </ol>
         </section>
       )}
+
+      <ArticleScienceLinks slug={article.slug} lang={lang} />
 
       {relatedTerms.length > 0 && (
         <div className="mt-16 border-t border-white/5 pt-10">

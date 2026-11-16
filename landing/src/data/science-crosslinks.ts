@@ -1,0 +1,44 @@
+/**
+ * Article → ONDA Science pages ("The science behind this topic" block at the end of an article).
+ * Added 2026-11-16: most /science pages had zero inbound links from the rest of the site
+ * (scripts/science-inbound.mjs). Keys are article slugs, values are science keys "<kind>/<slug>".
+ * Labels come from src/generated/science-link-titles.ts (built by generate-science-pages.ts,
+ * only for keys used here, only languages where that page is published).
+ */
+export const ARTICLE_SCIENCE_LINKS: Record<string, readonly string[]> = {
+  'anxiety-panic-breathing-hrv': ['mechanisms/depression-anxiety-and-hrv', 'mechanisms/acute-stress-and-hrv', 'evidence/box-breathing'],
+  'bhastrika-pranayama-brain-anxiety': ['evidence/yoga', 'evidence/fast-breathing'],
+  'box-breathing-how-it-works': ['evidence/box-breathing', 'evidence/slow-breathing'],
+  'breathing-altitude-acclimatization': ['mechanisms/altitude-and-hrv'],
+  'breathing-exercises-older-adults': ['mechanisms/hrv-and-age', 'evidence/tai-chi-and-qigong'],
+  'breathing-lowers-stress-hormones': ['mechanisms/acute-stress-and-hrv', 'mechanisms/burnout-work-stress-and-hrv'],
+  'caffeine-half-life-sleep-pressure': ['mechanisms/caffeine-and-hrv', 'mechanisms/sleep-and-hrv'],
+  'caffeine-hrv-resting-heart-rate': ['mechanisms/caffeine-and-hrv'],
+  'cardiac-coherence-insomnia-sleep': ['mechanisms/sleep-and-hrv'],
+  'chronic-stress-nervous-system-never-off': ['mechanisms/burnout-work-stress-and-hrv', 'mechanisms/acute-stress-and-hrv'],
+  'chronotherapy-light-dark-timing': ['mechanisms/light-and-hrv', 'mechanisms/shift-work-and-hrv'],
+  'circadian-lighting-dark-therapy': ['mechanisms/light-and-hrv'],
+  'circadian-reset-mastering-light': ['mechanisms/light-and-hrv', 'mechanisms/shift-work-and-hrv'],
+  'dysautonomia-long-covid-breathing': ['mechanisms/long-covid-pots-and-hrv'],
+  'endocrine-social-drive-oxytocin-testosterone': ['mechanisms/loneliness-social-connections-and-hrv'],
+  'forest-bathing-shinrin-yoku-science': ['evidence/virtual-reality-and-stress'],
+  'heart-rate-recovery-fitness-marker': ['mechanisms/exercise-and-hrv'],
+  'high-blood-pressure-slow-breathing': ['mechanisms/hypertension-and-hrv'],
+  'how-long-does-alcohol-stay-in-your-system': ['mechanisms/alcohol-and-hrv'],
+  'how-much-alcohol-lowers-hrv': ['mechanisms/alcohol-and-hrv'],
+  'how-much-sleep-do-you-need': ['mechanisms/sleep-and-hrv'],
+  'normal-hrv-by-age': ['mechanisms/hrv-and-age'],
+  'overtraining-hrv-resting-heart-rate': ['mechanisms/exercise-and-hrv', 'mechanisms/illness-and-hrv'],
+  'resting-heart-rate-by-age': ['mechanisms/hrv-and-age'],
+  'social-jet-lag-irregular-sleep': ['mechanisms/shift-work-and-hrv', 'mechanisms/sleep-and-hrv'],
+  'sudarshan-kriya-yoga-breathing': ['evidence/yoga'],
+  'what-to-do-after-low-hrv-reading': ['mechanisms/illness-and-hrv', 'mechanisms/alcohol-and-hrv', 'mechanisms/sleep-and-hrv'],
+  'why-is-my-apple-watch-hrv-low': ['mechanisms/illness-and-hrv', 'mechanisms/alcohol-and-hrv', 'mechanisms/sleep-and-hrv'],
+  'yoga-breathing-diabetes-blood-sugar': ['mechanisms/type-2-diabetes-and-hrv', 'evidence/yoga'],
+  'yoga-nidra-sleep-science': ['evidence/yoga-nidra-nsdr', 'evidence/yoga'],
+  'yoga-poses-heart-rate-blood-pressure': ['evidence/yoga', 'mechanisms/hypertension-and-hrv'],
+  'zone-2-training-aerobic-base': ['mechanisms/exercise-and-hrv', 'mechanisms/strength-training-and-hrv'],
+}
+
+/** Every science key referenced above (the generator emits titles only for these). */
+export const CROSSLINKED_SCIENCE_KEYS: string[] = [...new Set(Object.values(ARTICLE_SCIENCE_LINKS).flat())]
