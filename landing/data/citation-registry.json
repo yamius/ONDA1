@@ -10838,6 +10838,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-08"
   },
+  "doi:10.14814/phy2.70907": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A systematic review of heart rate variability and menopausal vasomotor symptoms",
+   "firstAuthor": "Hira",
+   "authors": [
+    "Hira",
+    "Uppal",
+    "Deol",
+    "Porter",
+    "Exner",
+    "Raj",
+    "Baker"
+   ],
+   "year": 2026,
+   "journal": "Physiological Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-11-16"
+  },
   "doi:10.1503/cmaj.150535": {
    "kind": "doi",
    "valid": true,
@@ -24626,6 +24645,26 @@
    "doi": "10.1016/j.cpnec.2026.100349",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:42121335": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A systematic review of heart rate variability and menopausal vasomotor symptoms.",
+   "firstAuthor": "Hira",
+   "authors": [
+    "Hira",
+    "Uppal",
+    "Deol",
+    "Porter",
+    "Exner",
+    "Raj",
+    "Baker"
+   ],
+   "year": 2026,
+   "journal": "Physiol Rep",
+   "doi": "10.14814/phy2.70907",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-16"
   },
   "pmid:42151374": {
    "kind": "pmid",
