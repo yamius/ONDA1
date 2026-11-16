@@ -6156,6 +6156,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1080/02640414.2024.2388984": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effect of exercise training on heart rate variability in patients with hypertension: A systematic review and meta-analysis",
+   "firstAuthor": "Deng",
+   "authors": [
+    "Deng",
+    "Zeng",
+    "Tang",
+    "Hou",
+    "Zhang",
+    "Shi"
+   ],
+   "year": 2024,
+   "journal": "Journal of Sports Sciences",
+   "source": "crossref",
+   "verifiedAt": "2026-11-16"
+  },
   "doi:10.1080/02656736.2023.2179672": {
    "kind": "doi",
    "valid": true,
@@ -7118,6 +7136,24 @@
    "journal": "Journal of Nursing Research",
    "source": "crossref",
    "verifiedAt": "2026-11-14"
+  },
+  "doi:10.1097/mbp.0000000000000599": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Influence of family history of hypertension on blood pressure and heart rate variability in young adults: a meta-analysis",
+   "firstAuthor": "Queiroz",
+   "authors": [
+    "Queiroz",
+    "Prado",
+    "Alves-Santos",
+    "Araújo",
+    "Damazo",
+    "Cambri"
+   ],
+   "year": 2022,
+   "journal": "Blood Pressure Monitoring",
+   "source": "crossref",
+   "verifiedAt": "2026-11-16"
   },
   "doi:10.1097/md.0000000000021449": {
    "kind": "doi",
@@ -8805,6 +8841,24 @@
    "journal": "Hypertension",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1161/01.hyp.32.2.293": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Reduced Heart Rate Variability and New-Onset Hypertension",
+   "firstAuthor": "Singh",
+   "authors": [
+    "Singh",
+    "Larson",
+    "Tsuji",
+    "Evans",
+    "O’Donnell",
+    "Levy"
+   ],
+   "year": 1998,
+   "journal": "Hypertension",
+   "source": "crossref",
+   "verifiedAt": "2026-11-16"
   },
   "doi:10.1161/circulationaha.105.545459": {
    "kind": "doi",
@@ -21098,6 +21152,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:35438084": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Influence of family history of hypertension on blood pressure and heart rate variability in young adults: a meta-analysis.",
+   "firstAuthor": "Queiroz",
+   "authors": [
+    "Queiroz",
+    "Prado",
+    "Alves-Santos ÉT",
+    "Araújo",
+    "Damazo",
+    "Cambri"
+   ],
+   "year": 2022,
+   "journal": "Blood Press Monit",
+   "doi": "10.1097/MBP.0000000000000599",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-16"
+  },
   "pmid:35458875": {
    "kind": "pmid",
    "valid": true,
@@ -22303,6 +22376,25 @@
    "doi": "10.1038/s41598-024-64254-7",
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
+  },
+  "pmid:39115012": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effect of exercise training on heart rate variability in patients with hypertension: A systematic review and meta-analysis.",
+   "firstAuthor": "Deng",
+   "authors": [
+    "Deng",
+    "Zeng",
+    "Tang",
+    "Hou",
+    "Zhang",
+    "Shi"
+   ],
+   "year": 2024,
+   "journal": "J Sports Sci",
+   "doi": "10.1080/02640414.2024.2388984",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-16"
   },
   "pmid:39175400": {
    "kind": "pmid",
@@ -25748,6 +25840,25 @@
    "doi": "10.1016/s0735-1097(97)00554-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:9719057": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Reduced heart rate variability and new-onset hypertension: insights into pathogenesis of hypertension: the Framingham Heart Study.",
+   "firstAuthor": "Singh",
+   "authors": [
+    "Singh",
+    "Larson",
+    "Tsuji",
+    "Evans",
+    "O'Donnell",
+    "Levy"
+   ],
+   "year": 1998,
+   "journal": "Hypertension",
+   "doi": "10.1161/01.hyp.32.2.293",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-16"
   },
   "pmid:9858756": {
    "kind": "pmid",
