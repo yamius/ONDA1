@@ -1,8 +1,8 @@
 ---
 sourceHash: "fc1adc20f09d"
 title: "¿Por qué tengo la HRV baja? Causas frecuentes y qué dice la evidencia"
-metaTitle: "¿Por qué tengo la HRV baja? Causas y qué significan"
-metaDescription: "¿HRV baja? Casi siempre es una reacción al sueño, el alcohol, una enfermedad, el estrés o el entrenamiento, no un diagnóstico. Cada causa con su evidencia y cuándo ir al médico."
+metaTitle: "¿Por qué tengo la HRV baja? Causas reales"
+metaDescription: "¿HRV baja? Suele ser una reacción al sueño, el alcohol, una enfermedad, el estrés o el entrenamiento, no un diagnóstico. Causas y cuándo ir al médico."
 shortAnswer: >
   Una variabilidad de la frecuencia cardíaca baja suele ser una reacción
   normal a algo concreto, como dormir poco, el alcohol, una infección, el

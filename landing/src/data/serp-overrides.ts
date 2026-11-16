@@ -7,6 +7,10 @@
  * the page itself (price, score, verdict). Re-check against GSC after ~4 weeks.
  */
 export const SERP_OVERRIDES: Record<string, { title?: string; description?: string }> = {
+  // --- round 3 (2026-11-16, GSC 10-18..11-14): query "is insight timer better than calm?" at pos ~5 ---
+  '/reviews/vs/calm-vs-insight-timer': {
+    title: 'Calm vs Insight Timer: Which Is Better? | ONDA Life',
+  },
   // --- CGM reviews ---
   '/reviews/lingo': {
     title: 'Lingo Review 2026: $54 CGM, No Prescription | ONDA Life',

@@ -1,8 +1,8 @@
 ---
 sourceHash: 49d151756087
 title: "SDNN: qué mide esta métrica de HRV y qué no"
-metaTitle: "SDNN: definición, significado y Apple"
-metaDescription: "El SDNN es la métrica de HRV que guarda Apple Health. Qué mide, en qué se diferencia del RMSSD y por qué los dos números no se pueden comparar."
+metaTitle: "SDNN: qué es y por qué lo usa Apple Health"
+metaDescription: "Qué es el SDNN, la métrica de HRV que guarda Apple Health: qué mide, en qué se diferencia del RMSSD y por qué no se pueden comparar."
 shortAnswer: >
   El SDNN es una métrica de la variabilidad de la frecuencia cardíaca: la
   desviación estándar de los intervalos entre latidos normales. Se usa para
