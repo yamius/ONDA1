@@ -1,7 +1,7 @@
 ---
 sourceHash: 49beca2392b4
 title: "Cykl menstruacyjny a HRV: dlaczego Twoja linia bazowa się przesuwa"
-metaTitle: "Cykl menstruacyjny a HRV: co się zmienia i dlaczego"
+metaTitle: "Cykl menstruacyjny a HRV: co się zmienia"
 metaDescription: "Jak HRV zmienia się w cyklu menstruacyjnym, dlaczego każda kobieta ma własny wzorzec i co zmieniają antykoncepcja hormonalna oraz menopauza."
 shortAnswer: >
   Średnio zmienność rytmu serca jest nieco wyższa na początku cyklu

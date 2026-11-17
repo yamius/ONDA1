@@ -1,7 +1,7 @@
 ---
 sourceHash: "c3660007032f"
 title: "Oddechowa niemiarowość zatokowa: jak oddech kształtuje rytm serca"
-metaTitle: "Oddechowa niemiarowość zatokowa (RSA) — wyjaśnienie"
+metaTitle: "Oddechowa niemiarowość zatokowa (RSA)"
 metaDescription: "Oddechowa niemiarowość zatokowa to naturalne przyspieszanie serca na wdechu i zwalnianie na wydechu: skąd się bierze, co na nią wpływa i jakie ma granice."
 shortAnswer: >
   Oddechowa niemiarowość zatokowa (RSA) to naturalny wzrost częstości serca

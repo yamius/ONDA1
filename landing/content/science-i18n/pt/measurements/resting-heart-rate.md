@@ -1,7 +1,7 @@
 ---
 sourceHash: a98dc321b8c4
 title: "Frequência cardíaca de repouso: o que reflete e como é medida"
-metaTitle: "Frequência cardíaca de repouso: o que é e como medir"
+metaTitle: "Frequência cardíaca de repouso: o que é"
 metaDescription: "A frequência cardíaca de repouso é a mais baixa em repouso. Como medir, o que é normal, o que a altera e por que sua tendência vale mais que um número."
 shortAnswer: >
   A frequência cardíaca de repouso é o menor número de batimentos por minuto

@@ -1,7 +1,7 @@
 ---
 sourceHash: faaa9b748d00
 title: "Wysiłek a HRV: co robi trening i co pokazuje trening sterowany HRV"
-metaTitle: "Wysiłek a HRV: dowody dla treningu sterowanego HRV"
+metaTitle: "Wysiłek a HRV: trening sterowany HRV"
 metaDescription: "Dlaczego HRV spada po ciężkim treningu i wraca do normy, ile to trwa i co pokazują badania treningu sterowanego HRV w porównaniu ze stałym planem."
 shortAnswer: >
   Po wysiłku zmienność rytmu serca spada, a następnie wraca do normy w ciągu

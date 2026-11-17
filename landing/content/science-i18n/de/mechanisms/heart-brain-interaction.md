@@ -1,7 +1,7 @@
 ---
 sourceHash: "c8cdf6f30c93"
 title: "Herz-Hirn-Interaktion: Wie Herz und Gehirn miteinander kommunizieren"
-metaTitle: "Herz und Gehirn: wie sie miteinander kommunizieren"
+metaTitle: "Herz und Gehirn: wie sie kommunizieren"
 metaDescription: "Wie das Gehirn den Herzschlag steuert und jeder Schlag ans Gehirn zurückmeldet: was gesichert ist, was ein Modell ist und welche Aussagen Mythen sind."
 shortAnswer: >
   Herz und Gehirn kommunizieren in beide Richtungen. Das Gehirn passt die

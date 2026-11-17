@@ -1,7 +1,7 @@
 ---
 sourceHash: "45dd01994151"
 title: "Odruch z baroreceptorów: jak organizm utrzymuje stałe ciśnienie krwi"
-metaTitle: "Odruch z baroreceptorów: ciśnienie krwi pod kontrolą"
+metaTitle: "Odruch z baroreceptorów: ciśnienie pod kontrolą"
 metaDescription: "Jak odruch z baroreceptorów stabilizuje ciśnienie krwi z uderzenia na uderzenie, czym jest jego wrażliwość i jak wpływają na nią wolny oddech i trening."
 shortAnswer: >
   Odruch z baroreceptorów (baroreflex) to szybka pętla regulacji ciśnienia

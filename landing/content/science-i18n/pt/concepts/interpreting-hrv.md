@@ -1,7 +1,7 @@
 ---
 sourceHash: 4718cfe6151f
 title: "O que um único valor de HRV pode e não pode dizer"
-metaTitle: "Como interpretar a HRV: o que um valor isolado diz"
+metaTitle: "Como interpretar a HRV: o que um valor diz"
 metaDescription: "O que uma leitura de HRV mostra, por que um valor baixo não é diagnóstico, por que alto nem sempre é bom e por que comparar sua HRV com a de outros engana."
 shortAnswer: >
   Um único valor de HRV é um retrato de quanto a influência vagal moldou o ritmo

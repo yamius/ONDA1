@@ -1,7 +1,7 @@
 ---
 sourceHash: 8c1f6bec521e
 title: "Linha de base da HRV: por que o seu próprio normal importa mais do que qualquer norma"
-metaTitle: "Linha de base da HRV: o seu normal, não uma norma"
+metaTitle: "Linha de base da HRV: o seu normal, não norma"
 metaDescription: "Sua linha de base da HRV é a sua faixa típica, não uma média: por que supera as normas por idade, como o ONDA a constrói e o que uma mudança indica."
 shortAnswer: >
   A linha de base pessoal da HRV é o seu nível típico de variabilidade da

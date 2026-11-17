@@ -1,7 +1,7 @@
 ---
 sourceHash: "8f8acb125420"
 title: "Cómo la respiración cambia la HRV y por qué la respiración lenta la aumenta"
-metaTitle: "Respiración y HRV: por qué respirar lento la aumenta"
+metaTitle: "Respiración y HRV: el efecto de respirar lento"
 metaDescription: "Por qué la HRV aumenta al respirar despacio: el ritmo cardíaco ligado a la respiración, el barorreflejo y la resonancia; lo establecido y lo debatido."
 shortAnswer: >
   La respiración cambia la variabilidad de la frecuencia cardíaca porque cada

@@ -1,7 +1,7 @@
 ---
 sourceHash: faaa9b748d00
 title: "Ejercicio y HRV: qué hace el entrenamiento y qué muestra el entrenamiento guiado por HRV"
-metaTitle: "Ejercicio y HRV: evidencia del entrenamiento guiado por HRV"
+metaTitle: "Ejercicio y HRV: entrenamiento guiado por HRV"
 metaDescription: "Por qué la HRV baja tras un entrenamiento duro y se recupera, cuánto tarda y qué muestran los ensayos de entrenamiento guiado por HRV frente a un plan."
 shortAnswer: >
   Tras el ejercicio, la variabilidad de la frecuencia cardíaca baja y luego se

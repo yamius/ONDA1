@@ -1,7 +1,7 @@
 ---
 sourceHash: faaa9b748d00
 title: "Training en HRV: wat inspanning doet en wat HRV-gestuurd trainen laat zien"
-metaTitle: "Training en HRV: bewijs voor HRV-gestuurd trainen"
+metaTitle: "Training en HRV: HRV-gestuurd trainen"
 metaDescription: "Waarom HRV na een zware training daalt en weer herstelt, hoe lang dat duurt en wat studies naar HRV-gestuurd trainen tonen tegenover een vast schema."
 shortAnswer: >
   Na inspanning daalt de hartslagvariabiliteit en herstelt die in de loop van

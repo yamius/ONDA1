@@ -1,7 +1,7 @@
 ---
 sourceHash: 3fd0384f4bba
 title: "Warum sich die HRV von Tag zu Tag verändert"
-metaTitle: "Warum die HRV täglich schwankt: Ursachen und Evidenz"
+metaTitle: "Warum die HRV täglich schwankt: Ursachen"
 metaDescription: "Warum die Herzfrequenzvariabilität von Tag zu Tag schwankt: Rauschen, Schlaf, Alkohol, Training, Krankheit, Stress und Zyklus – Mechanismen und Evidenz."
 shortAnswer: >
   Die Herzfrequenzvariabilität verändert sich von Tag zu Tag, selbst wenn

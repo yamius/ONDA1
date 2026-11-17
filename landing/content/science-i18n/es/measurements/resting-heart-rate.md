@@ -1,7 +1,7 @@
 ---
 sourceHash: a98dc321b8c4
 title: "Frecuencia cardíaca en reposo: qué refleja y cómo se mide"
-metaTitle: "Frecuencia cardíaca en reposo: significado y medición"
+metaTitle: "Frecuencia cardíaca en reposo: qué es y medición"
 metaDescription: "La frecuencia cardíaca en reposo es tu pulso más bajo en calma. Cómo se mide, qué es normal, qué la cambia y por qué tu tendencia vale más que un dato."
 shortAnswer: >
   La frecuencia cardíaca en reposo es el número más bajo de latidos por minuto

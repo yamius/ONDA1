@@ -1,7 +1,7 @@
 ---
 sourceHash: "c8cdf6f30c93"
 title: "Interaction cœur–cerveau : comment le cœur et le cerveau dialoguent"
-metaTitle: "Interaction cœur–cerveau : comment ils dialoguent"
+metaTitle: "Cœur et cerveau : comment ils dialoguent"
 metaDescription: "Comment le cerveau règle le cœur et comment chaque battement lui répond : ce qui est établi, ce qui relève d’un modèle et quelles idées sont des mythes."
 shortAnswer: >
   Le cœur et le cerveau communiquent dans les deux sens. Le cerveau ajuste la

@@ -1,7 +1,7 @@
 ---
 sourceHash: "45dd01994151"
 title: "O barorreflexo: como o corpo mantém a pressão arterial estável"
-metaTitle: "Barorreflexo: a pressão arterial, batimento a batimento"
+metaTitle: "Barorreflexo: a pressão a cada batimento"
 metaDescription: "Como o barorreflexo estabiliza a pressão arterial a cada batimento, o que é a sensibilidade do barorreflexo e como a respiração lenta e o treino a afetam."
 shortAnswer: >
   O barorreflexo é o circuito rápido de controle da pressão arterial do corpo.

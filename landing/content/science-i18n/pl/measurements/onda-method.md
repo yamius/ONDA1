@@ -1,7 +1,7 @@
 ---
 sourceHash: a4f05e49ea69
 title: "Jak ONDA mierzy i interpretuje sygnały twojego ciała"
-metaTitle: "Jak ONDA mierzy i odczytuje sygnały twojego ciała"
+metaTitle: "Jak ONDA mierzy i odczytuje sygnały ciała"
 metaDescription: "Skąd ONDA bierze dane, jak buduje twoją osobistą linię bazową i sygnały, co zostaje w telefonie i jakie są granice każdej pokazywanej liczby."
 shortAnswer: >
   ONDA odczytuje z Apple Health zmienność rytmu serca, tętno spoczynkowe i

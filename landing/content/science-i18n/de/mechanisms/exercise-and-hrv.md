@@ -1,7 +1,7 @@
 ---
 sourceHash: faaa9b748d00
 title: "Training und HRV: Was Belastung bewirkt und was HRV-gesteuertes Training zeigt"
-metaTitle: "Training und HRV: Evidenz zum HRV-gesteuerten Training"
+metaTitle: "Training und HRV: HRV-gesteuertes Training"
 metaDescription: "Warum die HRV nach hartem Training sinkt und sich erholt, wie lange das dauert und was Studien zu HRV-gesteuertem Training gegenüber festen Plänen zeigen."
 shortAnswer: >
   Nach dem Training sinkt die Herzfrequenzvariabilität und erholt sich dann

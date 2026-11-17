@@ -1,7 +1,7 @@
 ---
 sourceHash: "45dd01994151"
 title: "Le baroréflexe : comment le corps stabilise la pression artérielle"
-metaTitle: "Le baroréflexe : la tension, battement par battement"
+metaTitle: "Le baroréflexe : la tension à chaque battement"
 metaDescription: "Comment le baroréflexe stabilise la pression artérielle à chaque battement, ce qu’est sa sensibilité et ce qu’y changent respiration lente et entraînement."
 shortAnswer: >
   Le baroréflexe est la boucle de régulation rapide de la pression artérielle.

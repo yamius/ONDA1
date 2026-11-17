@@ -1,7 +1,7 @@
 ---
 sourceHash: 3fd0384f4bba
 title: "Dlaczego HRV zmienia się z dnia na dzień"
-metaTitle: "Dlaczego HRV zmienia się z dnia na dzień: przyczyny"
+metaTitle: "Dlaczego HRV zmienia się z dnia na dzień"
 metaDescription: "Dlaczego HRV zmienia się z dnia na dzień: naturalny szum, sen, alkohol, trening, choroba, stres i cykl — mechanizmy i dane naukowe."
 shortAnswer: >
   Zmienność rytmu serca zmienia się z dnia na dzień nawet wtedy, gdy nic

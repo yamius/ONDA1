@@ -1,7 +1,7 @@
 ---
 sourceHash: 49beca2392b4
 title: "Cycle menstruel et HRV : pourquoi votre référence bouge"
-metaTitle: "Cycle menstruel et HRV : ce qui change et pourquoi"
+metaTitle: "Cycle menstruel et HRV : ce qui change"
 metaDescription: "Comment la HRV évolue au fil du cycle menstruel, pourquoi chaque femme a son propre profil et ce que changent la contraception hormonale et la ménopause."
 shortAnswer: >
   En moyenne, la variabilité de la fréquence cardiaque est un peu plus élevée

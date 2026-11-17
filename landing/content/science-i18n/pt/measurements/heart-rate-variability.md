@@ -1,7 +1,7 @@
 ---
 sourceHash: f08d4393c77e
 title: "Dá para confiar na HRV de um relógio ou anel inteligente?"
-metaTitle: "HRV de wearables: dá para confiar no relógio ou anel?"
+metaTitle: "HRV de wearables: dá para confiar no relógio?"
 metaDescription: "A HRV de relógios e anéis é uma estimativa a partir do sinal do pulso, não um ECG. Onde os dois concordam, onde divergem e como ler seus números."
 shortAnswer: >
   A HRV de dispositivos vestíveis pode ser útil, mas não é automaticamente a

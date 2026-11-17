@@ -1,7 +1,7 @@
 ---
 sourceHash: "ec462a9554b9"
 title: "Variabilidad de la frecuencia cardíaca: qué es, qué refleja y qué no es"
-metaTitle: "Variabilidad de la frecuencia cardíaca: definición"
+metaTitle: "Variabilidad de la frecuencia cardíaca (HRV)"
 metaDescription: "La variabilidad de la frecuencia cardíaca es la variación natural del ritmo del corazón latido a latido. Qué la moldea, qué refleja y qué no te dice."
 shortAnswer: >
   La variabilidad de la frecuencia cardíaca (HRV o VFC) es la variación natural

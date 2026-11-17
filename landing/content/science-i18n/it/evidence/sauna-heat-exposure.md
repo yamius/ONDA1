@@ -1,7 +1,7 @@
 ---
 sourceHash: "986eda6f4234"
 title: "Sauna ed esposizione al calore: che cosa mostrano le evidenze"
-metaTitle: "Sauna ed esposizione al calore: evidenze e rischi"
+metaTitle: "Sauna e calore: prove scientifiche e rischi"
 metaDescription: "Sauna finlandese, cabine a infrarossi, bagni caldi e terapia del calore clinica: che cosa mostrano gli studi su cuore, pressione e umore, e i rischi reali."
 shortAnswer: >
   L’esposizione al calore comprende cose diverse: la sauna finlandese

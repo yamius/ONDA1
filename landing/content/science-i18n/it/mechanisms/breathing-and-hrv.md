@@ -1,7 +1,7 @@
 ---
 sourceHash: "8f8acb125420"
 title: "Come il respiro cambia l'HRV — e perché la respirazione lenta la aumenta"
-metaTitle: "Respiro e HRV: perché respirare lentamente la aumenta"
+metaTitle: "Respiro e HRV: perché il respiro lento la alza"
 metaDescription: "Perché la variabilità della frequenza cardiaca aumenta quando respiri lentamente: il ritmo cardiaco legato al respiro, il baroriflesso e la risonanza."
 shortAnswer: >
   Il respiro cambia la variabilità della frequenza cardiaca perché ogni respiro

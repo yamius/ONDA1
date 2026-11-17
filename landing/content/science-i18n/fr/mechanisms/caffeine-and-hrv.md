@@ -1,7 +1,7 @@
 ---
 sourceHash: 79cf13031244
 title: "Caféine et HRV : ce que le café fait et ne fait pas"
-metaTitle: "Caféine et HRV : le café fait-il baisser votre HRV ?"
+metaTitle: "Caféine et HRV : le café baisse-t-il la HRV ?"
 metaDescription: "Café et HRV au repos et après l’effort : ce que montre la recherche, en quoi les boissons énergisantes diffèrent, et le rôle de la caféine tardive."
 shortAnswer: >
   Chez les buveurs de café réguliers, il n’a pas été montré que des doses

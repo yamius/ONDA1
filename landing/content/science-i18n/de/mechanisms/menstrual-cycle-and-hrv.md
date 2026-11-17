@@ -1,7 +1,7 @@
 ---
 sourceHash: 49beca2392b4
 title: "Menstruationszyklus und HRV: warum sich deine Baseline verschiebt"
-metaTitle: "Menstruationszyklus und HRV: was sich ändert und warum"
+metaTitle: "Menstruationszyklus und HRV: was sich ändert"
 metaDescription: "Wie sich die HRV über den Menstruationszyklus verändert, warum jede Frau ihr eigenes Muster hat und was hormonelle Verhütung und Menopause ändern."
 shortAnswer: >
   Im Durchschnitt ist die Herzfrequenzvariabilität zu Beginn des

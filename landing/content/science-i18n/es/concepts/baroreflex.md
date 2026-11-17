@@ -1,7 +1,7 @@
 ---
 sourceHash: "45dd01994151"
 title: "El barorreflejo: cómo el cuerpo mantiene estable la presión arterial"
-metaTitle: "El barorreflejo: la presión arterial, latido a latido"
+metaTitle: "El barorreflejo: la presión, latido a latido"
 metaDescription: "Cómo el barorreflejo estabiliza la presión arterial latido a latido, qué significa su sensibilidad y cómo influyen la respiración lenta y el entrenamiento."
 shortAnswer: >
   El barorreflejo es el circuito rápido con el que el cuerpo controla la

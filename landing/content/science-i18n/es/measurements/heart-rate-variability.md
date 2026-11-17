@@ -1,7 +1,7 @@
 ---
 sourceHash: f08d4393c77e
 title: "¿Puedes fiarte de la HRV de un reloj o un anillo inteligente?"
-metaTitle: "HRV en wearables: ¿puedes fiarte de un reloj o anillo?"
+metaTitle: "HRV en wearables: ¿fiable un reloj o anillo?"
 metaDescription: "La HRV de un reloj o anillo inteligente se estima a partir del pulso, no es un ECG. Dónde coincide, dónde difiere y cómo leer tus números."
 shortAnswer: >
   La HRV de un wearable puede ser útil, pero no es automáticamente la medición

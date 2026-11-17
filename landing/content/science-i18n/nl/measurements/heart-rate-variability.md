@@ -1,7 +1,7 @@
 ---
 sourceHash: f08d4393c77e
 title: "Kun je HRV van een smartwatch of ring vertrouwen?"
-metaTitle: "HRV van wearables: horloge of ring te vertrouwen?"
+metaTitle: "HRV van wearables: horloge of ring betrouwbaar?"
 metaDescription: "HRV van een smartwatch of ring is een schatting uit het polssignaal, geen ecg. Waar ze overeenkomen, waar ze uiteenlopen en hoe je je getallen leest."
 shortAnswer: >
   HRV van een wearable kan nuttig zijn, maar het is niet vanzelf de meting die

@@ -1,7 +1,7 @@
 ---
 sourceHash: "fc1adc20f09d"
 title: "Waarom is mijn HRV laag? Veelvoorkomende oorzaken en wat het bewijs laat zien"
-metaTitle: "Waarom is mijn HRV laag? Oorzaken en wat ze betekenen"
+metaTitle: "Waarom is mijn HRV laag? De oorzaken"
 metaDescription: "Lage HRV? Meestal een reactie op slaap, alcohol, ziekte, stress of training, geen diagnose. Elke oorzaak met het bewijs, en wanneer je naar de dokter gaat."
 shortAnswer: >
   Een lage hartslagvariabiliteit is meestal een normale reactie op iets

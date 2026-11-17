@@ -1,7 +1,7 @@
 ---
 sourceHash: 8c1f6bec521e
 title: "Référence personnelle de HRV : pourquoi votre propre normalité compte plus que toute norme"
-metaTitle: "Référence de HRV : votre normalité, pas une norme"
+metaTitle: "Référence de HRV : votre normal, pas une norme"
 metaDescription: "Votre référence de HRV est votre propre plage habituelle, pas une moyenne. Pourquoi elle prime sur les normes d’âge et comment ONDA la construit."
 shortAnswer: >
   Une référence personnelle (baseline) de HRV est votre niveau habituel de

@@ -1,7 +1,7 @@
 ---
 sourceHash: "8f8acb125420"
 title: "Hoe ademhaling HRV verandert — en waarom langzaam ademen die verhoogt"
-metaTitle: "Ademhaling en HRV: waarom langzaam ademen HRV verhoogt"
+metaTitle: "Ademhaling en HRV: waarom traag ademen helpt"
 metaDescription: "Waarom HRV stijgt als je langzaam ademt: het met de adem verbonden hartritme, de baroreflex en resonantie — wat vaststaat en wat omstreden is."
 shortAnswer: >
   Ademhaling verandert de hartslagvariabiliteit omdat elke ademhaling het hart

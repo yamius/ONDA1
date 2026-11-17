@@ -1,7 +1,7 @@
 ---
 sourceHash: "088e2861f077"
 title: "Intéroception : comment le cerveau perçoit le corps"
-metaTitle: "Intéroception : comment le cerveau perçoit le corps"
+metaTitle: "Intéroception : comment le cerveau sent le corps"
 metaDescription: "Ce qu’est l’intéroception, comment on mesure ses dimensions, ce que le cerveau fait des signaux du corps et ce que montrent les études d’entraînement."
 shortAnswer: >
   L’intéroception est la perception, par le système nerveux, de l’état interne

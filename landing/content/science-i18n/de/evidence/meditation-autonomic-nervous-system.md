@@ -1,7 +1,7 @@
 ---
 sourceHash: 948e8a39ec33
 title: "Meditation und das autonome Nervensystem: Was die Evidenz zeigt"
-metaTitle: "Meditation und Nervensystem: Was die Evidenz zeigt"
+metaTitle: "Meditation und Nervensystem: die Evidenz"
 metaDescription: "Was Meditation laut Forschung mit HRV, Ruhepuls, Blutdruck und Cortisol macht – und warum langsames Atmen das Bild verzerrt."
 shortAnswer: >
   Meditation ist eine Familie von Übungen, keine einzelne Behandlung, und ihre

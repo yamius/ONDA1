@@ -1,7 +1,7 @@
 ---
 sourceHash: "8f8acb125420"
 title: "Como a respiração muda a HRV — e por que a respiração lenta a eleva"
-metaTitle: "Respiração e HRV: por que respirar devagar a eleva"
+metaTitle: "Respiração e HRV: por que respirar devagar ajuda"
 metaDescription: "Por que a HRV sobe quando você respira devagar: o ritmo cardíaco ligado à respiração, o barorreflexo e a ressonância — o estabelecido e o debatido."
 shortAnswer: >
   A respiração muda a variabilidade da frequência cardíaca porque cada

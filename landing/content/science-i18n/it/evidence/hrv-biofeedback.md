@@ -1,7 +1,7 @@
 ---
 sourceHash: "1dcd3faa7b29"
 title: "Biofeedback dell'HRV: che cosa mostrano le evidenze"
-metaTitle: "Biofeedback dell'HRV: che cosa dicono le evidenze"
+metaTitle: "Biofeedback dell'HRV: cosa dicono le prove"
 metaDescription: "Che cosa mostra la ricerca sul biofeedback dell'HRV — stress, umore, pressione, sonno, prestazioni — e quanto aggiunge il feedback alla respirazione lenta."
 shortAnswer: >
   Il biofeedback dell'HRV è un allenamento alla respirazione lenta, di solito
