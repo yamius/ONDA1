@@ -7,17 +7,6 @@
  * the page itself (price, score, verdict). Re-check against GSC after ~4 weeks.
  */
 export const SERP_OVERRIDES: Record<string, { title?: string; description?: string }> = {
-  // --- psychology pages (2026-11-17): descriptions over 155 chars were cut; anxiety title promised only breathing ---
-  '/science/psychology/anxiety': {
-    title: 'Anxiety Self-Help: What Actually Works? | ONDA Life',
-    description: 'What research says about self-help for anxiety: guided self-help, exercise, breathing, mindfulness, yoga and apps, and when to seek professional care.',
-  },
-  '/science/psychology/breathing-ans': {
-    description: 'Do breathing exercises reduce stress? What meta-analyses show for slow breathing, breathwork and HRV biofeedback, and where the evidence stops.',
-  },
-  '/science/psychology/stress-emotion-regulation': {
-    description: 'How to regulate emotions under stress: what research shows for reappraisal, suppression, stress mindsets and naming feelings, and where it stops.',
-  },
   // --- round 3 (2026-11-16, GSC 10-18..11-14): query "is insight timer better than calm?" at pos ~5 ---
   '/reviews/vs/calm-vs-insight-timer': {
     title: 'Calm vs Insight Timer: Which Is Better? | ONDA Life',
