@@ -69,5 +69,47 @@ export const GLOSSARY_SCIENCE_LINKS: Record<string, readonly string[]> = {
   'co2-tolerance': ['mechanisms/altitude-and-hrv'],
 }
 
+/** Article / glossary → psychology pages (/science/psychology/<topic>, EN only; pages come from onda-psych at
+ *  build time). Added 2026-11-17: no page outside the section linked to them. A topic that is not published
+ *  (no ONDA_PSYCH_TOKEN, or not merged yet) is simply skipped, never a build error. */
+export const ARTICLE_PSYCH_LINKS: Record<string, readonly string[]> = {
+  'anxiety-panic-breathing-hrv': ['anxiety', 'breathing-ans'],
+  'breathing-lowers-stress-hormones': ['breathing-ans', 'stress-emotion-regulation'],
+  'box-breathing-how-it-works': ['breathing-ans'],
+  'chronic-stress-nervous-system-never-off': ['burnout', 'stress-emotion-regulation'],
+  'calm-your-nervous-system-down': ['stress-emotion-regulation'],
+  'how-to-regulate-emotions': ['stress-emotion-regulation', 'cbt-self-help'],
+  'how-much-sleep-do-you-need': ['sleep'],
+  'cardiac-coherence-insomnia-sleep': ['sleep'],
+  'wind-down-before-sleep-breathing': ['sleep', 'rumination'],
+  'attention-trainable-skill-meditation': ['mindfulness'],
+  'meditation-vs-breathwork': ['mindfulness', 'breathing-ans'],
+  'does-dopamine-detox-work': ['motivation-habits', 'procrastination'],
+  'endocrine-social-drive-oxytocin-testosterone': ['loneliness'],
+}
+export const GLOSSARY_PSYCH_LINKS: Record<string, readonly string[]> = {
+  'amygdala': ['anxiety'],
+  'emotions': ['stress-emotion-regulation', 'rumination'],
+  'feelings': ['stress-emotion-regulation', 'gestalt'],
+  'sensations': ['gestalt', 'mindfulness'],
+  'thoughts': ['rumination', 'cbt-self-help'],
+  'cognitive-reappraisal': ['cbt-self-help', 'stress-emotion-regulation'],
+  'neural-reframing': ['cbt-self-help'],
+  'default-mode-network': ['rumination', 'mindfulness'],
+  'interoception': ['mindfulness'],
+  'social-sensing': ['loneliness'],
+  'co-regulation': ['loneliness', 'self-compassion'],
+  'oxytocin': ['loneliness', 'gratitude'],
+  'dopamine': ['motivation-habits', 'procrastination'],
+  'motivational-salience': ['motivation-habits'],
+  'prefrontal-cortex': ['procrastination', 'motivation-habits'],
+  'cortisol': ['burnout'],
+  'allostatic-load': ['burnout'],
+  'deep-sleep': ['sleep'],
+  'melatonin': ['sleep'],
+  'adenosine': ['sleep'],
+  'anterior-cingulate-cortex': ['self-compassion', 'mindfulness'],
+}
+
 /** Every science key referenced above (the generator emits titles only for these). */
 export const CROSSLINKED_SCIENCE_KEYS: string[] = [...new Set([...Object.values(ARTICLE_SCIENCE_LINKS), ...Object.values(GLOSSARY_SCIENCE_LINKS)].flat())]

@@ -7,7 +7,8 @@
  */
 import { Link } from 'react-router-dom'
 import { langHref, type Lang } from '../i18n'
-import { ARTICLE_SCIENCE_LINKS, GLOSSARY_SCIENCE_LINKS } from '../data/science-crosslinks'
+import { ARTICLE_SCIENCE_LINKS, GLOSSARY_SCIENCE_LINKS, ARTICLE_PSYCH_LINKS, GLOSSARY_PSYCH_LINKS } from '../data/science-crosslinks'
+import PSYCH_INDEX from '../generated/psych-index.json'
 import { SCIENCE_LINK_TITLES } from '../generated/science-link-titles'
 
 const HEADING: Record<string, string> = {
@@ -26,16 +27,20 @@ const HEADING: Record<string, string> = {
 }
 
 export function ArticleScienceLinks({ slug, lang }: { slug: string; lang: Lang }) {
-  return <ScienceLinksBlock keys={ARTICLE_SCIENCE_LINKS[slug]} lang={lang} />
+  return <ScienceLinksBlock keys={ARTICLE_SCIENCE_LINKS[slug]} psych={ARTICLE_PSYCH_LINKS[slug]} lang={lang} />
 }
 
 export function GlossaryScienceLinks({ slug, lang }: { slug: string; lang: Lang }) {
-  return <ScienceLinksBlock keys={GLOSSARY_SCIENCE_LINKS[slug]} lang={lang} />
+  return <ScienceLinksBlock keys={GLOSSARY_SCIENCE_LINKS[slug]} psych={GLOSSARY_PSYCH_LINKS[slug]} lang={lang} />
 }
 
-function ScienceLinksBlock({ keys, lang }: { keys: readonly string[] | undefined; lang: Lang }) {
-  if (!keys?.length) return null
-  const items = keys
+const PSYCH_TITLES: Record<string, string> = Object.fromEntries((PSYCH_INDEX as { topic: string; title: string }[]).map((p) => [p.topic, p.title]))
+
+function ScienceLinksBlock({ keys, psych, lang }: { keys: readonly string[] | undefined; psych?: readonly string[]; lang: Lang }) {
+  // Psychology pages are EN-only; a topic missing from the build-time index is skipped.
+  const psychItems = (psych ?? []).filter((t) => PSYCH_TITLES[t]).map((t) => ({ key: `psychology/${t}`, label: PSYCH_TITLES[t], href: `/science/psychology/${t}` }))
+  if (!keys?.length && !psychItems.length) return null
+  const items = (keys ?? [])
     .map((k) => {
       const t = SCIENCE_LINK_TITLES[k]
       if (!t) return null
@@ -43,6 +48,7 @@ function ScienceLinksBlock({ keys, lang }: { keys: readonly string[] | undefined
       return { key: k, label: local ?? t.en, href: local ? langHref(`/science/${k}`, lang) : `/science/${k}` }
     })
     .filter((x): x is { key: string; label: string; href: string } => !!x && !!x.label)
+    .concat(psychItems)
   if (!items.length) return null
   return (
     <div className="mt-16 border-t border-white/5 pt-10">
