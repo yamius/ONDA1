@@ -10,6 +10,7 @@ import { renderToString } from 'react-dom/server'
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs'
 import { resolveFactsDeep, type FactLang } from '../src/data/science/facts'
 import { SCIENCE_INDEX, SCIENCE_KINDS, SCIENCE_LANGS } from '../src/generated/science-pages'
+import { PSYCH_HUB, PSYCH_HUB_LANGS, PSYCH_PAGES, psychLangsOf, psychPath } from '../src/lib/psych'
 import { execSync, spawn } from 'child_process'
 import { cpus, totalmem } from 'os'
 import { join, dirname } from 'path'
@@ -495,6 +496,9 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/tools/chronotype': [...SUPPORTED_LANGS],
   '/tools/baseline': [...SUPPORTED_LANGS],
   '/tools/caffeine': [...SUPPORTED_LANGS],
+  // Psychology (onda-psych): hub in every language with pages; each topic in the languages it is translated into.
+  ...(PSYCH_HUB_LANGS.length > 1 ? { [PSYCH_HUB]: PSYCH_HUB_LANGS as Lang[] } : {}),
+  ...Object.fromEntries(PSYCH_PAGES.filter((p) => psychLangsOf(p.topic).length > 1).map((p) => [psychPath(p.topic), psychLangsOf(p.topic) as Lang[]])),
   // ONDA Science: hub and kind lists in every live science language; each page in the languages it is translated into.
   '/science': SCIENCE_LANGS as Lang[],
   ...Object.fromEntries(SCIENCE_KINDS.map((k) => [`/science/${k}`, SCIENCE_LANGS.filter((l) => SCIENCE_INDEX.some((p) => p.kind === k && p.langs.includes(l))) as Lang[]])),

@@ -240,6 +240,8 @@ const routeElements = (
             <Route path="/science/:kind/:slug"   element={<SciencePage />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => [
               <Route key={`sci-${l}`} path={`/${l}/science`} element={<SciencePage />} />,
+            <Route key={`psyh-${l}`} path={`/${l}/science/psychology`} element={<PsychologyPage />} />,
+            <Route key={`psyt-${l}`} path={`/${l}/science/psychology/:topic`} element={<PsychologyPage />} />,
               <Route key={`scik-${l}`} path={`/${l}/science/:kind`} element={<SciencePage />} />,
               <Route key={`scip-${l}`} path={`/${l}/science/:kind/:slug`} element={<SciencePage />} />,
             ])}

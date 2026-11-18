@@ -1,22 +1,23 @@
 /**
- * /science/psychology/ hub and /science/psychology/<topic>/ (task 108, EN only). Data + meta: src/lib/psych.ts.
+ * /science/psychology/ hub and /science/psychology/<topic>/ (task 108) and their /<lang>/ translations. Data + meta: src/lib/psych.ts.
  * Content is rendered as-is from onda-psych (approved or auto-checked claims); [<claim-id>] markers in the body link to the claim.
  */
 import { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
 import { NotFoundPage } from './NotFoundPage'
-import { scienceUi } from '../data/science/i18n'
+import { SCIENCE_LIVE_LANGS, scienceUi } from '../data/science/i18n'
+import { psychUi } from '../data/psych-i18n'
 import { SITE_URL } from '../lib/science-meta'
-import { PSYCH_HUB, PSYCH_HUB_DESC, PSYCH_HUB_TITLE, PSYCH_PAGES, psychMeta, psychOwnerReviewed, psychPage, psychPath, psychSiblings, psychSourceHref, psychSources, sourceNo, type PsychPage } from '../lib/psych'
+import { parsePsychRoute, psychHubPath, psychMeta, psychOwnerReviewed, psychPage, psychPagesFor, psychPath, psychSiblings, psychSourceHref, psychSources, sourceNo, type PsychPage } from '../lib/psych'
 
-const ui = scienceUi('en')
 const H2 = 'mb-4 mt-12 text-xl font-bold md:text-2xl'
 const P = 'font-mono text-sm leading-relaxed text-white/70'
-const STUDY: Record<string, string> = { 'sr-ma': 'Systematic review / meta-analysis', rct: 'Randomised controlled trial', guideline: 'Guideline', cohort: 'Cohort study', review: 'Review' }
-const fmtDate = (d: string) => new Date(`${d}T12:00:00Z`).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })
+const LOCALE: Record<string, string> = { en: 'en-GB', zh: 'zh-CN', pt: 'pt-BR' }
+const fmtDate = (d: string, lang: string) => new Date(`${d}T12:00:00Z`).toLocaleDateString(LOCALE[lang] ?? lang, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })
+const sciHome = (lang: string) => (lang !== 'en' && SCIENCE_LIVE_LANGS.includes(lang) ? `/${lang}/science` : '/science')
 
 function setMeta(name: string, content: string, isProperty = false) {
   const attr = isProperty ? 'property' : 'name'
@@ -50,24 +51,26 @@ function Crumbs({ items }: { items: { to?: string; label: string }[] }) {
   )
 }
 
-function ClassBadge({ c }: { c: string }) {
+function ClassBadge({ c, lang }: { c: string; lang: string }) {
+  const ui = scienceUi(lang)
   const tone = c === 'established' || c === 'guideline' ? 'border-terminal-green/50 text-terminal-green' : c === 'emerging' || c === 'debated' ? 'border-amber-400/50 text-amber-300' : 'border-sky-400/50 text-sky-300'
   return <span className={`inline-block whitespace-nowrap rounded border px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-wider ${tone}`}>{ui.classes[c as keyof typeof ui.classes] ?? c}</span>
 }
 
-function Hub() {
-  usePsychMeta(PSYCH_HUB)
+function Hub({ lang }: { lang: string }) {
+  usePsychMeta(psychHubPath(lang))
+  const ui = scienceUi(lang), pu = psychUi(lang)
   return (
     <main className="mx-auto max-w-4xl px-4 pb-24 md:px-6">
       <header className="border-b border-white/10 pt-6 pb-8">
-        <Crumbs items={[{ to: '/science', label: ui.science }, { label: 'Psychology' }]} />
-        <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">{PSYCH_HUB_TITLE}</h1>
-        <p className={P}>{PSYCH_HUB_DESC} Educational information, not medical advice.</p>
+        <Crumbs items={[{ to: sciHome(lang), label: ui.science }, { label: pu.psychology }]} />
+        <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">{pu.hubTitle}</h1>
+        <p className={P}>{pu.hubDesc} {pu.notAdvice}</p>
       </header>
       <div className="mt-8 grid gap-3 md:grid-cols-2">
-        {PSYCH_PAGES.map((p) => (
-          <Link key={p.topic} to={psychPath(p.topic)} className="block rounded border border-white/10 p-4 transition-colors hover:border-terminal-green/40">
-            <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-terminal-green/70">Psychology</div>
+        {psychPagesFor(lang).map((p) => (
+          <Link key={p.topic} to={psychPath(p.topic, lang)} className="block rounded border border-white/10 p-4 transition-colors hover:border-terminal-green/40">
+            <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-terminal-green/70">{pu.psychology}</div>
             <div className="mb-2 font-semibold text-white/90">{p.title}</div>
             <p className="font-mono text-xs leading-relaxed text-white/55">{p.summary}</p>
           </Link>
@@ -99,18 +102,22 @@ const mdComponents = {
 }
 
 function Topic({ p }: { p: PsychPage }) {
-  usePsychMeta(psychPath(p.topic))
+  const lang = p.lang
+  usePsychMeta(psychPath(p.topic, lang))
+  const ui = scienceUi(lang), pu = psychUi(lang)
+  const STUDY = pu.study as Record<string, string>
   const sources = psychSources(p)
   return (
     <main className="mx-auto max-w-3xl px-4 pb-24 md:px-6">
       <article>
         <header className="border-b border-white/10 pt-6 pb-8">
-          <Crumbs items={[{ to: '/science', label: ui.science }, { to: PSYCH_HUB, label: 'Psychology' }, { label: p.title.split(':')[0] }]} />
+          <Crumbs items={[{ to: sciHome(lang), label: ui.science }, { to: psychHubPath(lang), label: pu.psychology }, { label: p.title.split(/[:：]/)[0] }]} />
           <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">{p.title}</h1>
-          <p className="font-mono text-xs text-white/45">Updated <time dateTime={p.updated}>{fmtDate(p.updated)}</time> · every claim quoted from its source</p>
+          <p className="font-mono text-xs text-white/45">{pu.updated} <time dateTime={p.updated}>{fmtDate(p.updated, lang)}</time> · {pu.quoted}</p>
           <p className="font-mono text-xs text-white/45">{psychOwnerReviewed(p)
-            ? <>Drafted with AI, facts reviewed by <Link to="/people/yakiv-bilenko" className="underline">Yakiv Bilenko</Link></>
-            : <>Drafted with AI, claims automatically checked against cited sources</>}</p>
+            ? <>{pu.reviewedBy} <Link to="/people/yakiv-bilenko" className="underline">Yakiv Bilenko</Link></>
+            : <>{pu.autoChecked}</>}</p>
+          {lang !== 'en' ? <p className="font-mono text-xs text-white/45">{ui.translationNote}</p> : null}
         </header>
 
         <section aria-label={ui.shortAnswer} className="mt-8 rounded border border-terminal-green/30 bg-terminal-green/5 p-5">
@@ -123,20 +130,20 @@ function Topic({ p }: { p: PsychPage }) {
         </div>
 
         {p.uncertainty ? (
-          <section aria-label="Uncertainty" className="mt-8 rounded border border-white/15 p-5">
-            <div className="mb-2 font-mono text-[10px] uppercase tracking-widest text-white/50">How certain is this?</div>
+          <section aria-label={pu.certainty} className="mt-8 rounded border border-white/15 p-5">
+            <div className="mb-2 font-mono text-[10px] uppercase tracking-widest text-white/50">{pu.certainty}</div>
             <p className={P}>{p.uncertainty}</p>
           </section>
         ) : null}
 
-        <section aria-label="Claims and evidence">
-          <h2 className={H2}>Claims and evidence</h2>
+        <section aria-label={pu.claims}>
+          <h2 className={H2}>{pu.claims}</h2>
           <ol className="space-y-4">
             {p.claims.map((c, i) => (
               <li key={c.id} id={`claim-${c.id}`} className="scroll-mt-24 rounded border border-white/10 p-4">
                 <div className="mb-2 flex flex-wrap items-center gap-2">
                   <span className="font-mono text-xs text-terminal-green/70">[C{i + 1}]</span>
-                  <ClassBadge c={c.evidence_class} />
+                  <ClassBadge c={c.evidence_class} lang={lang} />
                 </div>
                 <p className="mb-3 text-sm leading-relaxed text-white/85">{c.text}</p>
                 {(c.sources ?? []).map((s, j) => (
@@ -144,7 +151,7 @@ function Topic({ p }: { p: PsychPage }) {
                     <blockquote className="font-mono text-xs italic leading-relaxed text-white/60">“{s.quote}”</blockquote>
                     <p className="mt-1 font-mono text-[11px] text-white/45">
                       <a href={`#source-${sourceNo(p, s)}`} className="text-terminal-green/70">[S{sourceNo(p, s)}]</a> · {STUDY[s.study_type] ?? s.study_type}
-                      {' · '}Conflicts of interest: {s.coi}{s.industry ? ' · industry-funded' : ''}
+                      {' · '}{pu.coi}: {s.coi}{s.industry ? ` · ${pu.industry}` : ''}
                     </p>
                   </div>
                 ))}
@@ -170,9 +177,9 @@ function Topic({ p }: { p: PsychPage }) {
           </ol>
         </section>
 
-        {p.related?.length ? (
+        {lang === 'en' && p.related?.length ? (
           <section aria-labelledby="related-onda" className="mt-12 border-t border-white/10 pt-8">
-            <h2 id="related-onda" className={H2}>Related on ONDA</h2>
+            <h2 id="related-onda" className={H2}>{pu.related}</h2>
             <ul className={`${P} space-y-2`}>
               {p.related.map((l) => (
                 <li key={l.href}>
@@ -186,17 +193,17 @@ function Topic({ p }: { p: PsychPage }) {
 
         {psychSiblings(p).length ? (
           <section aria-labelledby="more-psych" className="mt-8">
-            <h2 id="more-psych" className="mb-3 text-lg font-semibold">More in psychology</h2>
+            <h2 id="more-psych" className="mb-3 text-lg font-semibold">{pu.moreIn}</h2>
             <ul className={`${P} space-y-2`}>
               {psychSiblings(p).map((o) => (
-                <li key={o.topic}><Link to={psychPath(o.topic)} className="text-terminal-green hover:underline">{o.title}</Link></li>
+                <li key={o.topic}><Link to={psychPath(o.topic, lang)} className="text-terminal-green hover:underline">{o.title}</Link></li>
               ))}
             </ul>
           </section>
         ) : null}
 
-        <p className="mt-12 font-mono text-xs text-white/40">Educational information, not medical advice. If anxiety or low mood is severe or persistent, or you have thoughts of self-harm, contact a qualified professional or local emergency services.</p>
-        <p className="mt-3 font-mono text-xs text-white/40"><Link to={PSYCH_HUB} className="hover:text-white/70">More psychology topics</Link> · <Link to="/science" className="hover:text-white/70">ONDA Science</Link></p>
+        <p className="mt-12 font-mono text-xs text-white/40">{pu.disclaimer}</p>
+        <p className="mt-3 font-mono text-xs text-white/40"><Link to={psychHubPath(lang)} className="hover:text-white/70">{pu.moreTopics}</Link> · <Link to={sciHome(lang)} className="hover:text-white/70">ONDA Science</Link></p>
       </article>
     </main>
   )
@@ -204,8 +211,9 @@ function Topic({ p }: { p: PsychPage }) {
 
 export function PsychologyPage() {
   const { topic } = useParams()
-  if (!PSYCH_PAGES.length) return <NotFoundPage />
-  if (!topic) return <Hub />
-  const p = psychPage(topic)
+  const lang = parsePsychRoute(useLocation().pathname)?.lang ?? 'en'
+  if (!psychPagesFor(lang).length) return <NotFoundPage />
+  if (!topic) return <Hub lang={lang} />
+  const p = psychPage(topic, lang)
   return p ? <Topic p={p} /> : <NotFoundPage />
 }

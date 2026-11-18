@@ -990,7 +990,7 @@ const nonLocalizedStaticPaths = [
     const pages = SCIENCE_INDEX.filter((p) => p.langs.includes(l))
     return [`${pre}/science`, ...SCIENCE_KINDS.filter((k) => pages.some((p) => p.kind === k)).map((k) => `${pre}/science/${k}`), ...pages.map((p) => `${pre}/science/${p.kind}/${p.slug}`)]
   }),
-  // /science/psychology — psychology pages from onda-psych (task 108, scripts/fetch-psych.ts). EN only, no hreflang.
+  // /science/psychology — psychology pages from onda-psych (task 108, scripts/fetch-psych.ts): EN + every /<lang>/ translation whose claims match EN; hreflang in scripts/prerender.ts.
   ...psychRoutes(),
   // /measurements + /how-it-works — GEO/AI citability pages: exactly what
   // ONDA measures vs derives vs estimates, and the biofeedback method. EN-only.

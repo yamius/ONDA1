@@ -6,26 +6,49 @@
  */
 import PAGES from '../generated/psych-pages.json'
 import { SITE_URL } from './science-meta'
+import { psychUi } from '../data/psych-i18n'
+import { SCIENCE_LIVE_LANGS, scienceUi } from '../data/science/i18n'
 
 export interface PsychSource { pmid?: string; doi?: string; quote: string; study_type: string; coi: string; industry?: boolean }
 export interface PsychClaim { id: string; kind?: string; text: string; evidence_class: string; sources?: PsychSource[]; limitation?: string; status?: string }
 export interface PsychRelatedLink { href: string; label: string; kind: 'article' | 'tool' | 'glossary' }
 export interface PsychPage { key: string; topic: string; lang: string; angle?: string; title: string; seo_title?: string; meta_description?: string; summary: string; related?: PsychRelatedLink[]; hubs?: string[]; updated: string; uncertainty?: string; claims: PsychClaim[]; body: string; preview?: boolean }
 
-/** EN, main angle only (translations and angles come later through the normal queue). */
-export const PSYCH_PAGES: PsychPage[] = (PAGES as PsychPage[]).filter((p) => p.lang === 'en' && !p.angle)
+const LANG_ORDER = ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt']
+const ALL = (PAGES as PsychPage[]).filter((p) => !p.angle)
+/** EN, main angle only. */
+export const PSYCH_PAGES: PsychPage[] = ALL.filter((p) => p.lang === 'en')
+/** A translation is shown only while its claims match the EN page (same ids, same order). */
+const matchesEn = (t: PsychPage) => {
+  const en = PSYCH_PAGES.find((p) => p.topic === t.topic)
+  return !!en && en.claims.map((c) => c.id).join() === t.claims.map((c) => c.id).join()
+}
+const TRANSLATIONS = ALL.filter((p) => p.lang !== 'en' && LANG_ORDER.includes(p.lang) && matchesEn(p))
+/** Pages of one language (EN = all published pages). */
+export const psychPagesFor = (lang: string): PsychPage[] => (lang === 'en' ? PSYCH_PAGES : TRANSLATIONS.filter((p) => p.lang === lang))
+/** Languages a topic exists in (EN first). */
+export const psychLangsOf = (topic: string): string[] => LANG_ORDER.filter((l) => (l === 'en' ? PSYCH_PAGES : TRANSLATIONS).some((p) => p.topic === topic && p.lang === l))
+/** Languages with a psychology hub (at least one page). */
+export const PSYCH_HUB_LANGS: string[] = LANG_ORDER.filter((l) => psychPagesFor(l).length > 0)
 /** Every claim reviewed by the owner (otherwise auto-checked by the onda-psych pipeline, no human review). */
 export const psychOwnerReviewed = (p: PsychPage) => p.claims.every((c) => c.status === 'approved')
 export const PSYCH_HUB = '/science/psychology'
-export const psychPath = (topic: string) => `${PSYCH_HUB}/${topic}`
-export const psychPage = (topic: string) => PSYCH_PAGES.find((p) => p.topic === topic)
-/** Routes to prerender (hub only when at least one page exists). */
-export const psychRoutes = (): string[] => (PSYCH_PAGES.length ? [PSYCH_HUB, ...PSYCH_PAGES.map((p) => psychPath(p.topic))] : [])
-/** Served but not indexed: preview-only pages, and the hub while it has no released page. */
+const pre = (lang: string) => (lang === 'en' ? '' : `/${lang}`)
+export const psychHubPath = (lang = 'en') => `${pre(lang)}${PSYCH_HUB}`
+export const psychPath = (topic: string, lang = 'en') => `${pre(lang)}${PSYCH_HUB}/${topic}`
+export const psychPage = (topic: string, lang = 'en') => psychPagesFor(lang).find((p) => p.topic === topic)
+/** Routes to prerender: hub + pages in every language that has them. */
+export const psychRoutes = (): string[] => PSYCH_HUB_LANGS.flatMap((l) => [psychHubPath(l), ...psychPagesFor(l).map((p) => psychPath(p.topic, l))])
+/** /science/psychology[/<topic>] or /<lang>/science/psychology[/<topic>] → { lang, topic }. */
+export function parsePsychRoute(route: string): { lang: string; topic?: string } | undefined {
+  const m = route.replace(/\/$/, '').match(/^(?:\/([a-z]{2}))?\/science\/psychology(?:\/([a-z0-9-]+))?$/)
+  return m ? { lang: m[1] ?? 'en', topic: m[2] } : undefined
+}
+/** Served but not indexed: preview-only pages, and a hub with no released page. */
 export function isNoindexPsychRoute(route: string): boolean {
-  const m = route.replace(/\/$/, '').match(/^\/science\/psychology(?:\/([a-z0-9-]+))?$/)
-  if (!m) return false
-  return m[1] ? !!psychPage(m[1])?.preview : !PSYCH_PAGES.some((p) => !p.preview)
+  const r = parsePsychRoute(route)
+  if (!r) return false
+  return r.topic ? !!psychPage(r.topic, r.lang)?.preview : !psychPagesFor(r.lang).some((p) => !p.preview)
 }
 
 /** Unique sources of a page in first-cited order: S1, S2, … */
@@ -40,7 +63,7 @@ export const sourceNo = (p: PsychPage, s: PsychSource) => psychSources(p).find((
 export const psychSourceHref = (s: PsychSource) => (s.doi ? `https://doi.org/${s.doi}` : s.pmid ? `https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/` : null)
 
 /** Other psychology pages (same section), for the "More in psychology" links. */
-export const psychSiblings = (p: PsychPage) => PSYCH_PAGES.filter((o) => o.topic !== p.topic && !o.preview)
+export const psychSiblings = (p: PsychPage) => psychPagesFor(p.lang).filter((o) => o.topic !== p.topic && !o.preview)
 
 /** Plain text of a Markdown fragment: claim markers [topic-c1], links, emphasis and code removed. */
 export const psychPlain = (md: string) => md
@@ -68,23 +91,26 @@ export const PSYCH_HUB_DESC = 'Evidence summaries on psychological topics such a
 export interface PsychMeta { title: string; description: string; ogType: 'website' | 'article'; jsonLd: Record<string, unknown>[]; breadcrumbs: { name: string; url: string }[]; noindex?: boolean; faq?: { question: string; answer: string }[] }
 
 export function psychMeta(route: string): PsychMeta | undefined {
-  const m = route.replace(/\/$/, '').match(/^\/science\/psychology(?:\/([a-z0-9-]+))?$/)
-  if (!m || !PSYCH_PAGES.length) return undefined
+  const r = parsePsychRoute(route)
+  if (!r || !psychPagesFor(r.lang).length) return undefined
+  const { lang } = r
+  const ui = psychUi(lang)
   const isPartOf = { '@type': 'WebSite', '@id': `${SITE_URL}#website`, name: 'ONDA Life', url: SITE_URL }
-  const crumbs = [{ name: 'Home', url: SITE_URL }, { name: 'Science', url: `${SITE_URL}/science` }, { name: 'Psychology', url: `${SITE_URL}${PSYCH_HUB}` }]
+  const sciHome = SCIENCE_LIVE_LANGS.includes(lang) ? `${pre(lang)}/science` : '/science'
+  const crumbs = [{ name: 'Home', url: SITE_URL }, { name: scienceUi(lang).science, url: `${SITE_URL}${sciHome}` }, { name: ui.psychology, url: `${SITE_URL}${psychHubPath(lang)}` }]
   const noindex = isNoindexPsychRoute(route) || undefined
-  if (!m[1]) {
+  if (!r.topic) {
     return {
-      title: `${PSYCH_HUB_TITLE} | ONDA Life`, description: PSYCH_HUB_DESC, ogType: 'website', breadcrumbs: crumbs, noindex,
+      title: `${ui.hubTitle} | ONDA Life`, description: ui.hubDesc, ogType: 'website', breadcrumbs: crumbs, noindex,
       jsonLd: [{
-        '@context': 'https://schema.org', '@type': 'CollectionPage', url: `${SITE_URL}${PSYCH_HUB}`, name: PSYCH_HUB_TITLE, description: PSYCH_HUB_DESC, inLanguage: 'en', isPartOf,
-        hasPart: PSYCH_PAGES.filter((p) => !p.preview).map((p) => ({ '@type': 'Article', name: p.title, url: `${SITE_URL}${psychPath(p.topic)}` })),
+        '@context': 'https://schema.org', '@type': 'CollectionPage', url: `${SITE_URL}${psychHubPath(lang)}`, name: ui.hubTitle, description: ui.hubDesc, inLanguage: lang, isPartOf,
+        hasPart: psychPagesFor(lang).filter((p) => !p.preview).map((p) => ({ '@type': 'Article', name: p.title, url: `${SITE_URL}${psychPath(p.topic, lang)}` })),
       }],
     }
   }
-  const p = psychPage(m[1])
+  const p = psychPage(r.topic, lang)
   if (!p) return undefined
-  const url = `${SITE_URL}${psychPath(p.topic)}`
+  const url = `${SITE_URL}${psychPath(p.topic, lang)}`
   // PMID → PubMed URL, DOI → doi.org (both in sameAs when a source has both)
   const refs = psychSources(p).map((s) => {
     const urls = [s.pmid && `https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/`, s.doi && `https://doi.org/${s.doi}`].filter(Boolean) as string[]
@@ -97,7 +123,7 @@ export function psychMeta(route: string): PsychMeta | undefined {
     breadcrumbs: [...crumbs, { name: p.title.split(':')[0], url }],
     jsonLd: [{
       '@context': 'https://schema.org', '@type': 'Article', '@id': `${url}#article`, url, mainEntityOfPage: url, headline: p.title, description: p.summary, abstract: p.summary,
-      inLanguage: 'en', dateModified: p.updated, author: { '@type': 'Organization', name: 'ONDA Life editorial team', url: SITE_URL }, editor, isPartOf,
+      inLanguage: lang, dateModified: p.updated, author: { '@type': 'Organization', name: 'ONDA Life editorial team', url: SITE_URL }, editor, isPartOf,
       publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
       citation: refs, isBasedOn: refs,
     }],
