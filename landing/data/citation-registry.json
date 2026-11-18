@@ -4060,6 +4060,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.smrv.2025.102139": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Oximetry-based devices in diagnosis of obstructive sleep apnea: A systematic review and meta-analysis",
+   "firstAuthor": "da Silva Dantas",
+   "authors": [
+    "da Silva Dantas",
+    "Stelzer",
+    "Bernardo",
+    "Eckeli"
+   ],
+   "year": 2025,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
+  },
   "doi:10.1016/j.smrv.2026.102284": {
    "kind": "doi",
    "valid": true,
@@ -7934,6 +7950,30 @@
    "journal": "Journal of Anatomy",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1111/jsr.13708": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability changes in patients with obstructive sleep apnea: A systematic review and meta‐analysis",
+   "firstAuthor": "Wang",
+   "authors": [
+    "Wang",
+    "Jiang",
+    "Xiao",
+    "Chen",
+    "Zhang",
+    "Li",
+    "Yi",
+    "Min",
+    "Su",
+    "Liu",
+    "Zou"
+   ],
+   "year": 2022,
+   "yearAlt": 2023,
+   "journal": "Journal of Sleep Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
   },
   "doi:10.1111/jsr.13935": {
    "kind": "doi",
@@ -13752,6 +13792,40 @@
    "source": "crossref",
    "verifiedAt": "2026-10-08"
   },
+  "doi:10.5664/jcsm.7128": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Consumer Sleep Technology: An American Academy of Sleep Medicine Position Statement",
+   "firstAuthor": "Khosla",
+   "authors": [
+    "Khosla",
+    "Deak",
+    "Gault",
+    "Goldstein",
+    "Hwang",
+    "Kwon",
+    "O'Hearn",
+    "Schutte-Rodin",
+    "Yurcheshen",
+    "Rosen",
+    "Kirsch",
+    "Chervin",
+    "Carden",
+    "Ramar",
+    "Aurora",
+    "Kristo",
+    "Malhotra",
+    "Martin",
+    "Olson",
+    "Rosen",
+    "Rowley",
+    "for the American Academy of Sleep Medicine Board of Directors"
+   ],
+   "year": 2018,
+   "journal": "Journal of Clinical Sleep Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
+  },
   "doi:10.5664/jcsm.8356": {
    "kind": "doi",
    "valid": true,
@@ -19361,6 +19435,40 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-10"
   },
+  "pmid:29734997": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Consumer Sleep Technology: An American Academy of Sleep Medicine Position Statement.",
+   "firstAuthor": "Khosla",
+   "authors": [
+    "Khosla",
+    "Deak",
+    "Gault",
+    "Goldstein",
+    "Hwang",
+    "Kwon",
+    "O'Hearn",
+    "Schutte-Rodin",
+    "Yurcheshen",
+    "Rosen",
+    "Kirsch",
+    "Chervin",
+    "Carden",
+    "Ramar",
+    "Aurora",
+    "Kristo",
+    "Malhotra",
+    "Martin",
+    "Olson",
+    "Rosen",
+    "Rowley"
+   ],
+   "year": 2018,
+   "journal": "J Clin Sleep Med",
+   "doi": "10.5664/jcsm.7128",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-18"
+  },
   "pmid:29755366": {
    "kind": "pmid",
    "valid": true,
@@ -21928,6 +22036,31 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:36070876": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability changes in patients with obstructive sleep apnea: A systematic review and meta-analysis.",
+   "firstAuthor": "Wang",
+   "authors": [
+    "Wang",
+    "Jiang",
+    "Xiao",
+    "Chen",
+    "Zhang",
+    "Li",
+    "Yi",
+    "Min",
+    "Su",
+    "Liu",
+    "Zou"
+   ],
+   "year": 2023,
+   "yearAlt": 2022,
+   "journal": "J Sleep Res",
+   "doi": "10.1111/jsr.13708",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-18"
+  },
   "pmid:36137565": {
    "kind": "pmid",
    "valid": true,
@@ -23844,6 +23977,23 @@
    "doi": "10.36131/cnfioritieditore20250301",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:40749523": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Oximetry-based devices in diagnosis of obstructive sleep apnea: A systematic review and meta-analysis.",
+   "firstAuthor": "da Silva Dantas",
+   "authors": [
+    "da Silva Dantas",
+    "Stelzer",
+    "Bernardo",
+    "Eckeli"
+   ],
+   "year": 2025,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2025.102139",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-18"
   },
   "pmid:40768584": {
    "kind": "pmid",
