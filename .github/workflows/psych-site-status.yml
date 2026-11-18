@@ -1,56 +1,74 @@
 name: psych site status
 
-# When Vercel finishes a PRODUCTION build of onda-life.com (deployment_status from the onda_life project), report to
-# every recently merged yamius/onda-psych PR that has no "site:" comment yet whether its pages are live:
-# success -> each English page opens and shows its `updated` date -> "site: ✅" / "site: ❌ <page>: <why>";
-# failure / error -> "site: ❌ build failed". Mistral reads that comment before its next task (onda-psych START.md).
+# Report to every yamius/onda-psych PR merged in the last 24 h that has no "site:" comment yet whether its
+# English pages are live on onda-life.com (each page must show the PR's `updated` date):
+#   all pages live            -> "site: ✅ published"
+#   not live, merged < 2 h    -> wait (no comment; the next run checks again)
+#   not live, merged >= 2 h   -> "site: ❌ <page>: <why>"
+# Runs every 20 min + after every Vercel production build + manually. It does NOT depend on deployment timestamps:
+# deploy-hook builds send no GitHub deployment_status event, which is how PR #53 (journaling) was missed.
+# Mistral/Qwen reads the comment before its next task (onda-psych START.md).
 # Secret ONDA_PSYCH_PR_TOKEN: fine-grained token, onda-psych only, Contents read + Pull requests read/write (owner).
-on: deployment_status
+on:
+  schedule:
+    - cron: '*/20 * * * *'
+  deployment_status:
+  workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: psych-site-status
+  cancel-in-progress: false
+
 jobs:
   report:
     if: >-
-      startsWith(github.event.deployment.environment, 'Production') &&
-      contains(github.event.deployment.environment, 'onda_life') &&
-      contains(fromJSON('["success","failure","error"]'), github.event.deployment_status.state)
+      github.event_name != 'deployment_status' ||
+      (contains(github.event.deployment.environment, 'onda_life') && github.event.deployment_status.state == 'success')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
       GH_TOKEN: ${{ secrets.ONDA_PSYCH_PR_TOKEN }}
       R: yamius/onda-psych
-      STATE: ${{ github.event.deployment_status.state }}
-      DEPLOY_CREATED: ${{ github.event.deployment.created_at }}
+      GRACE_MIN: 120
     steps:
       - name: Report to onda-psych PRs
         run: |
           [ -n "$GH_TOKEN" ] || { echo "ONDA_PSYCH_PR_TOKEN not set - skipping"; exit 0; }
-          SINCE=$(date -u -d "$DEPLOY_CREATED - 6 hours" +%Y-%m-%dT%H:%M:%SZ)
-          # PRs merged BEFORE this build started (so the build contains them), within the last 6 h.
-          PRS=$(gh api "repos/$R/pulls?state=closed&sort=updated&direction=desc&per_page=30" \
-            --jq ".[] | select(.merged_at != null and .merged_at > \"$SINCE\" and .merged_at < \"$DEPLOY_CREATED\") | .number")
-          for n in $PRS; do
-            if gh api "repos/$R/issues/$n/comments" --jq '.[].body' | grep -q '^site:'; then continue; fi
-            if [ "$STATE" != success ]; then
-              gh pr comment "$n" -R "$R" --body "site: ❌ the onda-life.com build failed (Vercel: $STATE). Stop and tell the owner (Vercel build log). Do not start the next task."
-              continue
+          NOW=$(date -u +%s)
+          SINCE=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+          PRS=$(gh api "repos/$R/pulls?state=closed&sort=updated&direction=desc&per_page=50" \
+            --jq ".[] | select(.merged_at != null and .merged_at > \"$SINCE\") | \"\(.number) \(.merged_at)\"")
+          found=0; done_ok=0; done_bad=0; waiting=0; skipped=0
+          while read -r n merged; do
+            [ -n "$n" ] || continue
+            found=$((found+1))
+            if gh api "repos/$R/issues/$n/comments" --jq '.[].body' | grep -q '^site:'; then
+              echo "#$n: already has a site: comment"; skipped=$((skipped+1)); continue
             fi
-            BAD=""; OK=""
+            age=$(( (NOW - $(date -u -d "$merged" +%s)) / 60 ))
+            BAD=""; OK=""; pages=0
             for f in $(gh api "repos/$R/pulls/$n/files" --jq '.[] | select(.status != "removed") | .filename' | grep -E '^content/[a-z0-9-]+/[a-z]{2}(--[a-z0-9-]+)?\.md$'); do
               topic=$(echo "$f" | cut -d/ -f2)
               if [ "$(basename "$f" .md)" != en ]; then OK="$OK"$'\n'"- $f: not checked (only English pages have a fixed URL)"; continue; fi
+              pages=$((pages+1))
               url="https://onda-life.com/science/psychology/$topic"
               upd=$(gh api "repos/$R/contents/$f?ref=main" -H 'Accept: application/vnd.github.raw' | grep -m1 -E '^updated:' | sed -E "s/updated: *//; s/[\"' ]//g")
-              html=$(curl -fsS "$url" || true)
-              if [ -z "$html" ]; then BAD="$BAD"$'\n'"- $url: page does not open (the site skipped it)"
+              html=$(curl -fsS -m 30 "$url?v=$NOW" || true)
+              if [ -z "$html" ]; then BAD="$BAD"$'\n'"- $url: page does not open"
               elif [ -n "$upd" ] && ! grep -q "datetime=\"$upd\"" <<<"$html"; then BAD="$BAD"$'\n'"- $url: still the old version (no 'updated $upd' on the page)"
               else OK="$OK"$'\n'"- $url ✓ (updated $upd)"; fi
             done
-            if [ -n "$BAD" ]; then
-              gh pr comment "$n" -R "$R" --body "site: ❌ the build is live, but:$BAD"$'\n\n'"Stop and tell the owner. Do not start the next task."
-            else
+            if [ -z "$BAD" ]; then
               gh pr comment "$n" -R "$R" --body "site: ✅ published$OK"$'\n\n'"You can start the next task."
+              echo "#$n: published ($pages English page(s))"; done_ok=$((done_ok+1))
+            elif [ "$age" -lt "$GRACE_MIN" ]; then
+              echo "#$n: not live yet, merged ${age} min ago - will check again:$BAD"; waiting=$((waiting+1))
+            else
+              gh pr comment "$n" -R "$R" --body "site: ❌ not live ${age} min after merge:$BAD"$'\n\n'"Stop and tell the owner (check the Vercel build). Do not start the next task."
+              echo "#$n: FAILED after ${age} min:$BAD"; done_bad=$((done_bad+1))
             fi
-          done
+          done <<<"$PRS"
+          echo "summary: merged in 24h=$found, already reported=$skipped, published=$done_ok, failed=$done_bad, waiting=$waiting"
