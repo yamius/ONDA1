@@ -7628,6 +7628,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1111/ejn.16087": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sex and stress hormone dysregulation as clinical manifestations of hypothalamic function in migraine disorder: A meta‐analysis",
+   "firstAuthor": "Beech",
+   "authors": [
+    "Beech",
+    "Riddell",
+    "Murphy",
+    "Crewther"
+   ],
+   "year": 2023,
+   "journal": "European Journal of Neuroscience",
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
+  },
   "doi:10.1111/ene.70561": {
    "kind": "doi",
    "valid": true,
@@ -7667,6 +7683,21 @@
    "journal": "Headache: The Journal of Head and Face Pain",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1111/head.70265": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Clinical performance and applicability of prediction models using wearable‐derived physiologic signals to anticipate migraine or headache attacks: A systematic review",
+   "firstAuthor": "Díaz‐Aldana",
+   "authors": [
+    "Díaz‐Aldana",
+    "Maldonado‐Rico",
+    "Morales‐Olivera"
+   ],
+   "year": 2026,
+   "journal": "Headache: The Journal of Head and Face Pain",
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
   },
   "doi:10.1111/j.1365-2362.2003.01277.x": {
    "kind": "doi",
@@ -9497,6 +9528,33 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1177/0333102417738202": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Headache Classification Committee of the International Headache Society (IHS) The International Classification of Headache Disorders, 3rd edition",
+   "authors": [],
+   "year": 2018,
+   "journal": "Cephalalgia",
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
+  },
+  "doi:10.1177/03331024261492220": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Migraine attack prediction using wearable biosensor data",
+   "firstAuthor": "Andruškevičius",
+   "authors": [
+    "Andruškevičius",
+    "Kapustynska",
+    "Abromavičius",
+    "Schytz",
+    "Ryliškienė"
+   ],
+   "year": 2026,
+   "journal": "Cephalalgia",
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
+  },
   "doi:10.1177/039463200802100113": {
    "kind": "doi",
    "valid": true,
@@ -9960,6 +10018,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1186/s10194-024-01758-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Reconceptualizing autonomic function testing in migraine: a systematic review and meta-analysis",
+   "firstAuthor": "Pavelić",
+   "authors": [
+    "Pavelić",
+    "Zebenholzer",
+    "Wöber"
+   ],
+   "year": 2024,
+   "journal": "The Journal of Headache and Pain",
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
+  },
   "doi:10.1186/s12199-020-00912-2": {
    "kind": "doi",
    "valid": true,
@@ -10275,6 +10348,28 @@
    "journal": "The Journal of Clinical Endocrinology &amp; Metabolism",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1212/wnl.0000000000006697": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Red and orange flags for secondary headaches in clinical practice",
+   "firstAuthor": "Do",
+   "authors": [
+    "Do",
+    "Remmers",
+    "Schytz",
+    "Schankin",
+    "Nelson",
+    "Obermann",
+    "Hansen",
+    "Sinclair",
+    "Gantenbein",
+    "Schoonman"
+   ],
+   "year": 2019,
+   "journal": "Neurology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
   },
   "doi:10.1212/wnl.0b013e3181a71193": {
    "kind": "doi",
@@ -13111,6 +13206,27 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.3390/jcm15103802": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Wearable Nocturnal Autonomic and Sleep Biomarkers for Predicting Next-Day Headache and Identifying Nociplastic Pain in Patients with Migraine",
+   "firstAuthor": "Tomalin",
+   "authors": [
+    "Tomalin",
+    "Kummer",
+    "Campbell",
+    "Erekat",
+    "Wandner",
+    "Cohen",
+    "Clauw",
+    "Robinson-Papp",
+    "Mueller"
+   ],
+   "year": 2026,
+   "journal": "Journal of Clinical Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
+  },
   "doi:10.3390/jcm7120503": {
    "kind": "doi",
    "valid": true,
@@ -13720,6 +13836,18 @@
    "journal": "Medical Journal of Australia",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.64898/2026.09.13.26362930": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Contactless Camera-Based Home Measurement of Pre-Attack Physiology in Migraine: A Longitudinal Feasibility Study",
+   "firstAuthor": "Van Gils",
+   "authors": [
+    "Van Gils"
+   ],
+   "year": 2026,
+   "source": "crossref",
+   "verifiedAt": "2026-11-18"
   },
   "doi:10.70252/ehdr7442": {
    "kind": "doi",
@@ -18995,6 +19123,18 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:29368949": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Headache Classification Committee of the International Headache Society (IHS) The International Classification of Headache Disorders, 3rd edition.",
+   "firstAuthor": "",
+   "authors": [],
+   "year": 2018,
+   "journal": "Cephalalgia",
+   "doi": "10.1177/0333102417738202",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-18"
+  },
   "pmid:29433969": {
    "kind": "pmid",
    "valid": true,
@@ -19579,6 +19719,30 @@
    "doi": "10.1016/j.jbtep.2018.12.002",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:30587518": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Red and orange flags for secondary headaches in clinical practice: SNNOOP10 list.",
+   "firstAuthor": "Do",
+   "authors": [
+    "Do",
+    "Remmers",
+    "Schytz",
+    "Schankin",
+    "Nelson",
+    "Obermann",
+    "Hansen",
+    "Sinclair",
+    "Gantenbein",
+    "Schoonman"
+   ],
+   "year": 2019,
+   "yearAlt": 2018,
+   "journal": "Neurology",
+   "doi": "10.1212/WNL.0000000000006697",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-18"
   },
   "pmid:30732832": {
    "kind": "pmid",
@@ -22281,6 +22445,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:37452646": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sex and stress hormone dysregulation as clinical manifestations of hypothalamic function in migraine disorder: A meta-analysis.",
+   "firstAuthor": "Beech",
+   "authors": [
+    "Beech",
+    "Riddell",
+    "Murphy",
+    "Crewther"
+   ],
+   "year": 2023,
+   "journal": "Eur J Neurosci",
+   "doi": "10.1111/ejn.16087",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-18"
+  },
   "pmid:37770648": {
    "kind": "pmid",
    "valid": true,
@@ -22710,6 +22891,22 @@
    "doi": "10.2174/011573403X289842240307114736",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:38600467": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Reconceptualizing autonomic function testing in migraine: a systematic review and meta-analysis.",
+   "firstAuthor": "Pavelić",
+   "authors": [
+    "Pavelić",
+    "Zebenholzer",
+    "Wöber"
+   ],
+   "year": 2024,
+   "journal": "J Headache Pain",
+   "doi": "10.1186/s10194-024-01758-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-18"
   },
   "pmid:38663342": {
    "kind": "pmid",
@@ -25241,6 +25438,28 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:42194763": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Wearable Nocturnal Autonomic and Sleep Biomarkers for Predicting Next-Day Headache and Identifying Nociplastic Pain in Patients with Migraine.",
+   "firstAuthor": "Tomalin",
+   "authors": [
+    "Tomalin",
+    "Kummer",
+    "Campbell",
+    "Erekat",
+    "Wandner",
+    "Cohen",
+    "Clauw",
+    "Robinson-Papp",
+    "Mueller"
+   ],
+   "year": 2026,
+   "journal": "J Clin Med",
+   "doi": "10.3390/jcm15103802",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-18"
+  },
   "pmid:42238641": {
    "kind": "pmid",
    "valid": true,
@@ -25899,6 +26118,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:42789370": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Migraine attack prediction using wearable biosensor data.",
+   "firstAuthor": "Andruškevičius",
+   "authors": [
+    "Andruškevičius",
+    "Kapustynska",
+    "Abromavičius",
+    "Schytz",
+    "Ryliškienė"
+   ],
+   "year": 2026,
+   "journal": "Cephalalgia",
+   "doi": "10.1177/03331024261492220",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-18"
+  },
   "pmid:42804102": {
    "kind": "pmid",
    "valid": true,
@@ -25973,6 +26210,22 @@
    "doi": "10.1152/ajpheart.90182.2026",
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
+  },
+  "pmid:43000936": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Clinical performance and applicability of prediction models using wearable-derived physiologic signals to anticipate migraine or headache attacks: A systematic review.",
+   "firstAuthor": "Díaz-Aldana",
+   "authors": [
+    "Díaz-Aldana",
+    "Maldonado-Rico",
+    "Morales-Olivera"
+   ],
+   "year": 2026,
+   "journal": "Headache",
+   "doi": "10.1111/head.70265",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-18"
   },
   "pmid:6013341": {
    "kind": "pmid",
