@@ -2392,6 +2392,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 768
   },
+  "/images/science/evidence-afib-watch-notifications.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/evidence-afib-watch-notifications.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/evidence-afib-watch-notifications.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/evidence-box-breathing.avif": {
     "width": 1376,
     "height": 768

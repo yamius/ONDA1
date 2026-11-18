@@ -1400,6 +1400,13 @@ New sources of the questions hub (task 064); all other hub sources (S1–S11, S1
 | Queiroz 2022 | Queiroz et al. Family history of hypertension, BP and HRV in young adults: MA. *Blood Press Monit* 2022 | meta-analysis of observational / emerging | DOI 10.1097/mbp.0000000000000599 · PMID 35438084 | Units inconsistency in abstract; mechanisms/hypertension-and-hrv. P334 |
 | Deng 2024 | Deng et al. Exercise training and HRV in hypertension: SR/MA of RCTs. *J Sports Sci* 2024 | meta-analysis / surrogate | DOI 10.1080/02640414.2024.2388984 · PMID 39115012 | vs non-exercise; mechanisms/hypertension-and-hrv. P333 |
 | Hira 2026 | Hira et al. HRV and menopausal vasomotor symptoms: SR/MA. *Physiol Rep* 2026 | meta-analysis (3 studies) / null | DOI 10.14814/phy2.70907 · PMID 42121335 | I² 97%; mechanisms/menopause-and-hrv. P335 |
+| Van Gelder 2024 | Van Gelder et al. 2024 ESC Guidelines for the management of AF. *Eur Heart J* 2024 | guideline | DOI 10.1093/eurheartj/ehae176 · PMID 39210723 | §3.2 ECG required, non-ECG wearables excluded (3rd sentence not verified, not used); evidence/afib-watch-notifications. P340 |
+| Joglar 2024 | Joglar et al. 2023 ACC/AHA/ACCP/HRS AF Guideline. *Circulation* 2024 | guideline | DOI 10.1161/CIR.0000000000001193 · PMID 38033089 | §4.2.2 PPG not reliable for diagnosis; has correction; evidence/afib-watch-notifications |
+| Perez 2019 | Perez et al. Apple Heart Study. *NEJM* 2019 | observational / manufacturer-supported | DOI 10.1056/NEJMoa1901183 · PMID 31722151 | later-patch yield vs simultaneous PPV kept separate; evidence/afib-watch-notifications |
+| Lubitz 2022 | Lubitz et al. Fitbit Heart Study. *Circulation* 2022 | observational / manufacturer-supported | DOI 10.1161/CIRCULATIONAHA.122.060291 · PMID 36148649 | later-patch yield vs simultaneous PPV; evidence/afib-watch-notifications |
+| Bin Rashid 2026 | Bin Rashid et al. Wearables for AF: ECG and PPG SR. *Future Cardiol* 2026 | systematic review | DOI 10.1080/14796678.2026.2689050 · PMID 42332956 | PPG = screening, ECG confirms; evidence/afib-watch-notifications |
+| Iqhrammullah 2025 | Iqhrammullah et al. Smartwatch ECG for AF: SR/MA. *J Arrhythm* 2025 | meta-analysis | DOI 10.1002/joa3.70087 · PMID 40406413 | watch ECG separate from PPG alert; evidence/afib-watch-notifications |
+| Barrera 2025 | Barrera et al. Smartwatch AF accuracy: diagnostic MA. *JACC Adv* 2025 | meta-analysis / very heterogeneous | DOI 10.1016/j.jacadv.2025.102133 · PMID 41182224 | has correction; I² 95–99%; no numbers used; evidence/afib-watch-notifications |
 
 ---
 
