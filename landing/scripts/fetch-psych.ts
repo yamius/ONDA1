@@ -33,6 +33,8 @@ import { PSYCH_RELATED_DEFAULT, PSYCH_RELATED_MAX, PSYCH_RELATED_RULES, type Psy
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const OUT_DIR = join(ROOT, 'content', 'psych')
 const OUT_JSON = join(ROOT, 'src', 'generated', 'psych-pages.json')
+const OUT_FULL = join(ROOT, 'src', 'generated', 'psych-full.json')
+const OUT_PUBLIC = join(ROOT, 'public', '_psych') // own folder: generate-article-chunks wipes public/_content
 /** Light index (topic, title, summary, hubs) for the Library topic hubs' back-links — keeps page bodies out of that chunk. */
 const OUT_INDEX = join(ROOT, 'src', 'generated', 'psych-index.json')
 const REPO = process.env.ONDA_PSYCH_REPO || 'yamius/onda-psych'
@@ -48,7 +50,17 @@ interface PsychPage { key: string; topic: string; lang: string; angle?: string; 
 
 function writeOut(pages: PsychPage[]) {
   mkdirSync(dirname(OUT_JSON), { recursive: true })
-  writeFileSync(OUT_JSON, JSON.stringify(pages, null, 1))
+  // Light index for the client bundle (no body / claim text — that is what made the psych chunk 344 KB gzip with
+  // 11 translations); the full pages go to psych-full.json (SSR + build scripts) and one JSON per page in
+  // public/_psych/<lang>/<topic>.json (fetched by the client, src/lib/psych.ts loadPsychFull).
+  writeFileSync(OUT_JSON, JSON.stringify(pages.map(({ body: _b, claims, related: _r, uncertainty: _u, ...light }) => ({ ...light, claimIds: claims.map((c) => c.id), ownerReviewed: claims.every((c) => c.status === 'approved') }))))
+  writeFileSync(OUT_FULL, JSON.stringify(pages))
+  rmSync(OUT_PUBLIC, { recursive: true, force: true })
+  for (const p of pages.filter((x) => !x.angle)) {
+    const f = join(OUT_PUBLIC, p.lang, `${p.topic}.json`)
+    mkdirSync(dirname(f), { recursive: true })
+    writeFileSync(f, JSON.stringify(p))
+  }
   writeFileSync(OUT_INDEX, JSON.stringify(pages.filter((p) => p.lang === 'en' && !p.angle).map((p) => ({ topic: p.topic, title: p.title, summary: p.summary, hubs: p.hubs ?? [] }))))
 }
 

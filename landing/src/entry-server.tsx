@@ -97,8 +97,11 @@ import { ARTICLE_CITATIONS } from './data/article-citations'
 import { registerServerArticleSource } from './lib/article-content'
 import { registerServerScienceSource } from './lib/science-content'
 import { SCIENCE_FULL } from './generated/science-full'
+import PSYCH_FULL from './generated/psych-full.json'
+import { registerPsychFull, type PsychFull } from './lib/psych-load'
 
 registerServerScienceSource((lang, kind, slug) => SCIENCE_FULL[lang]?.find((p) => p.kind === kind && p.slug === slug))
+registerPsychFull(PSYCH_FULL as PsychFull[])
 
 // Prerender renders from the full in-memory registry (the browser fetches one article at a time).
 registerServerArticleSource((slug) => {

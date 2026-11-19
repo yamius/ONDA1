@@ -515,6 +515,8 @@ const termMatch = window.location.pathname.match(/^\/(?:[a-z]{2}\/)?glossary\/([
 // Science pages: the page's JSON (one language).
 const scienceMatch = window.location.pathname.match(/^\/(?:([a-z]{2})\/)?science\/(?!psychology\/)([a-z]+)\/([^/]+)\/?$/)
 if (scienceMatch) preloads.push(loadSciencePage(scienceMatch[1] ?? 'en', scienceMatch[2], scienceMatch[3]))
+const psychMatch = window.location.pathname.match(/^\/(?:([a-z]{2})\/)?science\/psychology\/([a-z0-9-]+)\/?$/)
+if (psychMatch) preloads.push(import('./lib/psych-load').then((m) => m.loadPsychFull(psychMatch[1] ?? 'en', psychMatch[2])))
 if (termMatch) preloads.push(loadEntry('glossary', termMatch[1], langFromPath(window.location.pathname)))
 if (reviewMatch && reviewMatch[2] !== 'methodology') {
   const collection = reviewMatch[1] === 'compare' ? 'comparisons' : reviewMatch[1] === 'vs' ? 'h2h' : 'reviews'

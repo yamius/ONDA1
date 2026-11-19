@@ -51,10 +51,10 @@ jobs:
             age=$(( (NOW - $(date -u -d "$merged" +%s)) / 60 ))
             BAD=""; OK=""; pages=0
             for f in $(gh api "repos/$R/pulls/$n/files" --jq '.[] | select(.status != "removed") | .filename' | grep -E '^content/[a-z0-9-]+/[a-z]{2}(--[a-z0-9-]+)?\.md$'); do
-              topic=$(echo "$f" | cut -d/ -f2)
-              if [ "$(basename "$f" .md)" != en ]; then OK="$OK"$'\n'"- $f: not checked (only English pages have a fixed URL)"; continue; fi
+              topic=$(echo "$f" | cut -d/ -f2); lang=$(basename "$f" .md)
+              case "$lang" in *--*) OK="$OK"$'\n'"- $f: not checked (angle pages are not published)"; continue;; esac
               pages=$((pages+1))
-              url="https://onda-life.com/science/psychology/$topic"
+              if [ "$lang" = en ]; then url="https://onda-life.com/science/psychology/$topic"; else url="https://onda-life.com/$lang/science/psychology/$topic"; fi
               upd=$(gh api "repos/$R/contents/$f?ref=main" -H 'Accept: application/vnd.github.raw' | grep -m1 -E '^updated:' | sed -E "s/updated: *//; s/[\"' ]//g")
               html=$(curl -fsS -m 30 "$url?v=$NOW" || true)
               if [ -z "$html" ]; then BAD="$BAD"$'\n'"- $url: page does not open"

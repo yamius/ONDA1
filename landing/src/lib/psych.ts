@@ -1,10 +1,12 @@
 /**
- * Psychology pages (task 108): /science/psychology/ hub and /science/psychology/<topic>/ — EN only for now.
+ * Psychology pages (task 108): /science/psychology/ hub and /science/psychology/<topic>/ and /<lang>/ translations.
  * Data: src/generated/psych-pages.json, written at build time by scripts/fetch-psych.ts from the private repo
  * yamius/onda-psych (claims approved or auto-checked, render-only, never part of the fact registry; published on the next build after merge, no release queue; `preview` = legacy flag, unused since v3 →
  * noindex, not in the sitemap). Used by the page (client) and by meta-inject (static JSON-LD).
  */
 import PAGES from '../generated/psych-pages.json'
+import { peekPsychFull as peekFull, type PsychFull } from './psych-load'
+export { loadPsychFull, readPsychFull, registerPsychFull, type PsychFull } from './psych-load'
 import { SITE_URL } from './science-meta'
 import { psychUi } from '../data/psych-i18n'
 import { SCIENCE_LIVE_LANGS, scienceUi } from '../data/science/i18n'
@@ -12,7 +14,7 @@ import { SCIENCE_LIVE_LANGS, scienceUi } from '../data/science/i18n'
 export interface PsychSource { pmid?: string; doi?: string; quote: string; study_type: string; coi: string; industry?: boolean }
 export interface PsychClaim { id: string; kind?: string; text: string; evidence_class: string; sources?: PsychSource[]; limitation?: string; status?: string }
 export interface PsychRelatedLink { href: string; label: string; kind: 'article' | 'tool' | 'glossary' }
-export interface PsychPage { key: string; topic: string; lang: string; angle?: string; title: string; seo_title?: string; meta_description?: string; summary: string; related?: PsychRelatedLink[]; hubs?: string[]; updated: string; uncertainty?: string; claims: PsychClaim[]; body: string; preview?: boolean }
+export interface PsychPage { key: string; topic: string; lang: string; angle?: string; title: string; seo_title?: string; meta_description?: string; summary: string; hubs?: string[]; updated: string; preview?: boolean; claimIds: string[]; ownerReviewed: boolean }
 
 const LANG_ORDER = ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt']
 const ALL = (PAGES as PsychPage[]).filter((p) => !p.angle)
@@ -21,7 +23,7 @@ export const PSYCH_PAGES: PsychPage[] = ALL.filter((p) => p.lang === 'en')
 /** A translation is shown only while its claims match the EN page (same ids, same order). */
 const matchesEn = (t: PsychPage) => {
   const en = PSYCH_PAGES.find((p) => p.topic === t.topic)
-  return !!en && en.claims.map((c) => c.id).join() === t.claims.map((c) => c.id).join()
+  return !!en && en.claimIds.join() === t.claimIds.join()
 }
 const TRANSLATIONS = ALL.filter((p) => p.lang !== 'en' && LANG_ORDER.includes(p.lang) && matchesEn(p))
 /** Pages of one language (EN = all published pages). */
@@ -31,7 +33,7 @@ export const psychLangsOf = (topic: string): string[] => LANG_ORDER.filter((l) =
 /** Languages with a psychology hub (at least one page). */
 export const PSYCH_HUB_LANGS: string[] = LANG_ORDER.filter((l) => psychPagesFor(l).length > 0)
 /** Every claim reviewed by the owner (otherwise auto-checked by the onda-psych pipeline, no human review). */
-export const psychOwnerReviewed = (p: PsychPage) => p.claims.every((c) => c.status === 'approved')
+export const psychOwnerReviewed = (p: PsychPage) => p.ownerReviewed
 export const PSYCH_HUB = '/science/psychology'
 const pre = (lang: string) => (lang === 'en' ? '' : `/${lang}`)
 export const psychHubPath = (lang = 'en') => `${pre(lang)}${PSYCH_HUB}`
@@ -51,15 +53,16 @@ export function isNoindexPsychRoute(route: string): boolean {
   return r.topic ? !!psychPage(r.topic, r.lang)?.preview : !psychPagesFor(r.lang).some((p) => !p.preview)
 }
 
+
 /** Unique sources of a page in first-cited order: S1, S2, … */
-export function psychSources(p: PsychPage): (PsychSource & { n: number })[] {
+export function psychSources(p: PsychFull): (PsychSource & { n: number })[] {
   const out: (PsychSource & { n: number })[] = []
   for (const c of p.claims) for (const s of c.sources ?? []) {
     if (!out.some((o) => (s.pmid && o.pmid === s.pmid) || (s.doi && o.doi?.toLowerCase() === s.doi.toLowerCase()))) out.push({ ...s, n: out.length + 1 })
   }
   return out
 }
-export const sourceNo = (p: PsychPage, s: PsychSource) => psychSources(p).find((o) => (s.pmid && o.pmid === s.pmid) || (s.doi && o.doi?.toLowerCase() === s.doi?.toLowerCase()))?.n
+export const sourceNo = (p: PsychFull, s: PsychSource) => psychSources(p).find((o) => (s.pmid && o.pmid === s.pmid) || (s.doi && o.doi?.toLowerCase() === s.doi?.toLowerCase()))?.n
 export const psychSourceHref = (s: PsychSource) => (s.doi ? `https://doi.org/${s.doi}` : s.pmid ? `https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/` : null)
 
 /** Other psychology pages (same section), for the "More in psychology" links. */
@@ -72,7 +75,7 @@ export const psychPlain = (md: string) => md
 
 /** FAQ of a page: H2 "FAQ" (onda-psych system.md section 9), Q = each H3, A = its text without claim markers.
  *  The clinician sentence after the last answer is dropped. Pages without that section → []. */
-export function psychFaq(p: PsychPage): { question: string; answer: string }[] {
+export function psychFaq(p: PsychFull): { question: string; answer: string }[] {
   const m = p.body.match(/^## +FAQ\s*$/m)
   if (!m || m.index === undefined) return []
   const rest = p.body.slice(m.index + m[0].length)
@@ -111,15 +114,16 @@ export function psychMeta(route: string): PsychMeta | undefined {
   const p = psychPage(r.topic, lang)
   if (!p) return undefined
   const url = `${SITE_URL}${psychPath(p.topic, lang)}`
+  const f = peekFull(lang, p.topic)
   // PMID → PubMed URL, DOI → doi.org (both in sameAs when a source has both)
-  const refs = psychSources(p).map((s) => {
+  const refs = (f ? psychSources(f) : []).map((s) => {
     const urls = [s.pmid && `https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/`, s.doi && `https://doi.org/${s.doi}`].filter(Boolean) as string[]
     return { '@type': 'ScholarlyArticle', url: urls[0], ...(urls.length > 1 ? { sameAs: urls.slice(1) } : {}), identifier: [s.pmid && `pmid:${s.pmid}`, s.doi && `doi:${s.doi}`].filter(Boolean) }
   })
   const editor = { '@type': 'Person', name: 'Yakiv Bilenko', url: `${SITE_URL}/people/yakiv-bilenko` }
   return {
     title: `${p.seo_title || p.title} | ONDA Life`, description: p.meta_description || (p.summary.length > 160 ? `${p.summary.slice(0, 157).replace(/\s+\S*$/, '')}…` : p.summary), ogType: 'article', noindex,
-    ...(psychFaq(p).length ? { faq: psychFaq(p) } : {}),
+    ...(f && psychFaq(f).length ? { faq: psychFaq(f) } : {}),
     breadcrumbs: [...crumbs, { name: p.title.split(':')[0], url }],
     jsonLd: [{
       '@context': 'https://schema.org', '@type': 'Article', '@id': `${url}#article`, url, mainEntityOfPage: url, headline: p.title, description: p.summary, abstract: p.summary,

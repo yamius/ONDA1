@@ -11,7 +11,7 @@ import { NotFoundPage } from './NotFoundPage'
 import { SCIENCE_LIVE_LANGS, scienceUi } from '../data/science/i18n'
 import { psychUi } from '../data/psych-i18n'
 import { SITE_URL } from '../lib/science-meta'
-import { parsePsychRoute, psychHubPath, psychMeta, psychOwnerReviewed, psychPage, psychPagesFor, psychPath, psychSiblings, psychSourceHref, psychSources, sourceNo, type PsychPage } from '../lib/psych'
+import { parsePsychRoute, psychHubPath, psychMeta, psychOwnerReviewed, psychPage, psychPagesFor, psychPath, psychSiblings, psychSourceHref, psychSources, readPsychFull, sourceNo, type PsychFull, type PsychPage } from '../lib/psych'
 
 const H2 = 'mb-4 mt-12 text-xl font-bold md:text-2xl'
 const P = 'font-mono text-sm leading-relaxed text-white/70'
@@ -81,7 +81,7 @@ function Hub({ lang }: { lang: string }) {
 }
 
 /** [anxiety-c1] / [anxiety-c1][anxiety-c3] → links to the claim cards. */
-function linkClaims(md: string, p: PsychPage): string {
+function linkClaims(md: string, p: PsychFull): string {
   const ids = new Set(p.claims.map((c) => c.id))
   return md.replace(/\[([a-z0-9-]+-c\d+)\](?!\()/g, (m, id: string) => {
     if (!ids.has(id)) return m
@@ -106,7 +106,9 @@ function Topic({ p }: { p: PsychPage }) {
   usePsychMeta(psychPath(p.topic, lang))
   const ui = scienceUi(lang), pu = psychUi(lang)
   const STUDY = pu.study as Record<string, string>
-  const sources = psychSources(p)
+  const f = readPsychFull(lang, p.topic)
+  if (!f) return <NotFoundPage />
+  const sources = psychSources(f)
   return (
     <main className="mx-auto max-w-3xl px-4 pb-24 md:px-6">
       <article>
@@ -126,20 +128,20 @@ function Topic({ p }: { p: PsychPage }) {
         </section>
 
         <div className="mt-4">
-          <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={mdComponents as never}>{linkClaims(p.body, p)}</Markdown>
+          <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={mdComponents as never}>{linkClaims(f.body, f)}</Markdown>
         </div>
 
-        {p.uncertainty ? (
+        {f.uncertainty ? (
           <section aria-label={pu.certainty} className="mt-8 rounded border border-white/15 p-5">
             <div className="mb-2 font-mono text-[10px] uppercase tracking-widest text-white/50">{pu.certainty}</div>
-            <p className={P}>{p.uncertainty}</p>
+            <p className={P}>{f.uncertainty}</p>
           </section>
         ) : null}
 
         <section aria-label={pu.claims}>
           <h2 className={H2}>{pu.claims}</h2>
           <ol className="space-y-4">
-            {p.claims.map((c, i) => (
+            {f.claims.map((c, i) => (
               <li key={c.id} id={`claim-${c.id}`} className="scroll-mt-24 rounded border border-white/10 p-4">
                 <div className="mb-2 flex flex-wrap items-center gap-2">
                   <span className="font-mono text-xs text-terminal-green/70">[C{i + 1}]</span>
@@ -150,7 +152,7 @@ function Topic({ p }: { p: PsychPage }) {
                   <div key={j} className="mb-3 border-l-2 border-white/15 pl-3">
                     <blockquote className="font-mono text-xs italic leading-relaxed text-white/60">“{s.quote}”</blockquote>
                     <p className="mt-1 font-mono text-[11px] text-white/45">
-                      <a href={`#source-${sourceNo(p, s)}`} className="text-terminal-green/70">[S{sourceNo(p, s)}]</a> · {STUDY[s.study_type] ?? s.study_type}
+                      <a href={`#source-${sourceNo(f, s)}`} className="text-terminal-green/70">[S{sourceNo(f, s)}]</a> · {STUDY[s.study_type] ?? s.study_type}
                       {' · '}{pu.coi}: {s.coi}{s.industry ? ` · ${pu.industry}` : ''}
                     </p>
                   </div>
@@ -177,11 +179,11 @@ function Topic({ p }: { p: PsychPage }) {
           </ol>
         </section>
 
-        {lang === 'en' && p.related?.length ? (
+        {lang === 'en' && f.related?.length ? (
           <section aria-labelledby="related-onda" className="mt-12 border-t border-white/10 pt-8">
             <h2 id="related-onda" className={H2}>{pu.related}</h2>
             <ul className={`${P} space-y-2`}>
-              {p.related.map((l) => (
+              {f.related.map((l) => (
                 <li key={l.href}>
                   <span className="mr-2 text-[10px] uppercase tracking-widest text-white/35">{l.kind}</span>
                   <Link to={l.href} className="text-terminal-green hover:underline">{l.label}</Link>
