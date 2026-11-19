@@ -2,7 +2,7 @@ import { useState, useEffect, useLayoutEffect, useRef, Suspense, useMemo } from 
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
-import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, langHref, type Lang } from '../i18n'
+import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, langHref, ensureNamespace, type Lang } from '../i18n'
 import { storeUrl, pageTypeFromPath } from '../lib/storeCt'
 import { emotonCtaUrl } from '../config/appStore'
 import { rdtTrack } from '../lib/redditPixel'
@@ -50,6 +50,8 @@ export function Layout() {
     if (i18n.language !== currentLang) {
       void i18n.changeLanguage(currentLang)
     }
+    // Only EN 'home' is in the entry chunk; fetch this language's (re-render via bindI18nStore 'added').
+    void ensureNamespace(currentLang, 'home')
     if (typeof document !== 'undefined') {
       document.documentElement.lang = currentLang
     }

@@ -1,24 +1,14 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import { LOCALIZED_COVERAGE } from './data/localized-coverage.generated'
-// Only the 'home' namespace is statically imported — it is the one namespace
+// Only the EN 'home' namespace is statically imported (other languages' 'home' is fetched before hydration
+// in main.tsx and by the lazy route factories — 35 KB gzip off the entry chunk) — it is the one namespace
 // the eager entry chunk needs (Layout nav + the homepage). Every other
 // namespace (about, bio, level, part, glossary, articles, reviews, …) is left
 // out of the bundle and loaded on demand via ensureNamespace() below, gated
 // through the lazy route factory in main.tsx. The SSR/prerender path registers
 // all of them from disk before rendering (see scripts/prerender.ts).
 import en from '../public/locales/en/home.json'
-import es from '../public/locales/es/home.json'
-import ru from '../public/locales/ru/home.json'
-import uk from '../public/locales/uk/home.json'
-import zh from '../public/locales/zh/home.json'
-import de from '../public/locales/de/home.json'
-import fr from '../public/locales/fr/home.json'
-import it from '../public/locales/it/home.json'
-import nl from '../public/locales/nl/home.json'
-import ja from '../public/locales/ja/home.json'
-import pl from '../public/locales/pl/home.json'
-import pt from '../public/locales/pt/home.json'
 
 export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
@@ -61,17 +51,6 @@ if (!i18n.isInitialized) {
     supportedLngs: SUPPORTED_LANGS as unknown as string[],
     resources: {
       en: { home: en },
-      es: { home: es },
-      ru: { home: ru },
-      uk: { home: uk },
-      zh: { home: zh },
-      de: { home: de },
-      fr: { home: fr },
-      it: { home: it },
-      nl: { home: nl },
-      ja: { home: ja },
-      pl: { home: pl },
-      pt: { home: pt },
     },
     ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles', 'reviews', 'emoton', 'onda-guides'],
     defaultNS: 'home',
@@ -140,6 +119,7 @@ export function ensureNamespace(lng: Lang, ns: string): Promise<void> {
   const target = ns === 'glossary-light' ? 'glossary' : ns
   return Promise.all(
     langs.map((l) => {
+      if (ns === 'home' && i18n.hasResourceBundle(l, 'home')) return Promise.resolve() // EN home is bundled
       const key = `${l}:${ns}`
       let p = _nsCache.get(key)
       if (!p) {

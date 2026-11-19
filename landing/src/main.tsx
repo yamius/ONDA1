@@ -43,7 +43,7 @@ function makeLazy(load: () => Promise<ComponentType>): Preloadable {
 
 // Plain lazy route (namespace already in the eager bundle, e.g. 'home').
 function lazy(load: () => Promise<{ default: ComponentType }>): Preloadable {
-  return makeLazy(() => load().then((m) => m.default))
+  return makeLazy(() => Promise.all([load(), ensureNamespace(langFromPath(window.location.pathname), 'home')]).then(([m]) => m.default))
 }
 
 // Lazy route whose loader also fetches its i18n namespace(s) for the active
@@ -53,7 +53,7 @@ function lazyNs(ns: string | string[], load: () => Promise<{ default: ComponentT
   const list = Array.isArray(ns) ? ns : [ns]
   return makeLazy(() => {
     const lang = langFromPath(window.location.pathname)
-    return Promise.all([load(), ...list.map((n) => ensureNamespace(lang, n))]).then(([m]) => m.default)
+    return Promise.all([load(), ...[...list, 'home'].map((n) => ensureNamespace(lang, n))]).then(([m]) => m.default)
   })
 }
 
@@ -514,6 +514,8 @@ const reviewMatch = window.location.pathname.match(/^\/(?:[a-z]{2}\/)?reviews\/(
 const termMatch = window.location.pathname.match(/^\/(?:[a-z]{2}\/)?glossary\/([^/]+)\/?$/)
 // Science pages: the page's JSON (one language).
 const scienceMatch = window.location.pathname.match(/^\/(?:([a-z]{2})\/)?science\/(?!psychology\/)([a-z]+)\/([^/]+)\/?$/)
+// 'home' (Layout nav + homepage) of the URL's language: only EN is in the entry chunk.
+preloads.push(ensureNamespace(langFromPath(window.location.pathname), 'home'))
 if (scienceMatch) preloads.push(loadSciencePage(scienceMatch[1] ?? 'en', scienceMatch[2], scienceMatch[3]))
 const psychMatch = window.location.pathname.match(/^\/(?:([a-z]{2})\/)?science\/psychology\/([a-z0-9-]+)\/?$/)
 if (psychMatch) preloads.push(import('./lib/psych-load').then((m) => m.loadPsychFull(psychMatch[1] ?? 'en', psychMatch[2])))
