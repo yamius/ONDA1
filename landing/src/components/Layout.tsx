@@ -1,6 +1,5 @@
 import { useState, useEffect, useLayoutEffect, useRef, Suspense, useMemo } from 'react'
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
-import { AndroidWaitlist } from './AndroidWaitlist'
 import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
 import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, langHref, type Lang } from '../i18n'
@@ -9,9 +8,18 @@ import { emotonCtaUrl } from '../config/appStore'
 import { rdtTrack } from '../lib/redditPixel'
 import { gtmPageView, gtmAppStoreClick, gtmNavClick } from '../lib/gtm'
 import { connectNav } from '../data/connect-nav'
-import { ConsentBanner, CookieSettingsLink } from './ConsentBanner'
+// Client-only bits loaded as separate chunks after mount (keeps the entry under budget). They render null on the
+// server anyway; plain state + dynamic import, no lazy/Suspense (a suspending lazy during hydration = React #419).
+type Lazy = { AndroidWaitlist: typeof import('./AndroidWaitlist').AndroidWaitlist; ConsentBanner: typeof import('./ConsentBanner').ConsentBanner; CookieSettingsLink: typeof import('./ConsentBanner').CookieSettingsLink }
 
 export function Layout() {
+  // Lazy client-only bits (waitlist, consent): mount after hydration so SSR never meets an unresolved lazy boundary.
+  const [lz, setLz] = useState<Lazy | null>(null)
+  useEffect(() => {
+    void Promise.all([import('./AndroidWaitlist'), import('./ConsentBanner')])
+      .then(([w, c]) => setLz({ AndroidWaitlist: w.AndroidWaitlist, ConsentBanner: c.ConsentBanner, CookieSettingsLink: c.CookieSettingsLink }))
+      .catch(() => {})
+  }, [])
   const location = useLocation()
   const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false)
@@ -353,7 +361,7 @@ export function Layout() {
           </Suspense>
         </div>
         {/* Android-only waitlist capture on tool pages (app is iOS-only). Self-hides off Android. */}
-        {/(^|\/)tools(\/|$)/.test(location.pathname) && !/\/tools\/vibration-breathing\/?$/.test(location.pathname) && <AndroidWaitlist />}
+        {/(^|\/)tools(\/|$)/.test(location.pathname) && !/\/tools\/vibration-breathing\/?$/.test(location.pathname) && lz && <lz.AndroidWaitlist />}
       </main>
 
       <footer data-nav-area="footer" className="border-t border-white/5 bg-[#1a1b26]/70 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-xl">
@@ -430,14 +438,14 @@ export function Layout() {
               >
                 {t('footer.terms')}
               </Link>
-              <CookieSettingsLink lang={currentLang}
+              {lz && <lz.CookieSettingsLink lang={currentLang}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
-              />
+              />}
             </div>
           </div>
         </div>
       </footer>
-      <ConsentBanner lang={currentLang} />
+      {lz && <lz.ConsentBanner lang={currentLang} />}
     </div>
   )
 }
