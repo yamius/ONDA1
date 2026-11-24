@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "ignoreCommand": "bash scripts/vercel-ignore-build.sh",
+  "git": { "deploymentEnabled": { "main": false } },
   "rewrites": [
     {
       "source": "/mcp",
