@@ -1,0 +1,3 @@
+# Touch this file to force a production build of the site (the Ignored Build Step skips commits with no landing/ changes).
+# Psychology pages are fetched from onda-psych at build time, so any build also publishes merged onda-psych PRs.
+2026-11-24 onda-psych merge rebuild
