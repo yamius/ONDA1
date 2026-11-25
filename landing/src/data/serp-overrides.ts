@@ -11,6 +11,10 @@ export const SERP_OVERRIDES: Record<string, { title?: string; description?: stri
   '/reviews/vs/calm-vs-insight-timer': {
     title: 'Calm vs Insight Timer: Which Is Better? | ONDA Life',
   },
+  // --- round 4 (2026-11-25, GSC 10-27..11-23): query "polyvagal theory" pos ~5.5, 0 clicks ---
+  '/science/concepts/polyvagal-theory': {
+    title: 'Polyvagal Theory Explained: Evidence & Critique | ONDA Life',
+  },
   // --- CGM reviews ---
   '/reviews/lingo': {
     title: 'Lingo Review 2026: $54 CGM, No Prescription | ONDA Life',

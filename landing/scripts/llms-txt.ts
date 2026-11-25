@@ -140,20 +140,12 @@ function buildIndex(lang: Lang = 'en'): string {
   for (const [num, level] of Object.entries(levelsData)) {
     levelLines.push(`- [Level ${num} — ${level.name}](${SITE_URL}/level/${num})`)
   }
-  sections.push(`## Levels (8 stages of biocomputer architecture)
-
-${levelLines.join('\n')}
-`)
 
   const partLines: string[] = []
   for (const [slug, part] of Object.entries(parts)) {
     const title = `${part.title} ${part.titleHighlight}`.trim()
     partLines.push(`- [${title}](${SITE_URL}/part/${slug}): ${part.subtitle ?? part.metaDescription ?? ''}`)
   }
-  sections.push(`## Parts (24 protocol stages)
-
-${partLines.join('\n')}
-`)
 
   // Articles, grouped by category
   const byCategory = new Map<string, typeof articles>()
@@ -264,6 +256,11 @@ ${reviewLines.join('\n')}
 - [Privacy Policy](${SITE_URL}/privacy)
 - [Terms of Service](${SITE_URL}/terms)
 - [Full text dump (markdown)](${SITE_URL}/llms-full.txt)
+
+### ONDA Path (philosophy layer: an experiential framework, not clinically validated states)
+
+${levelLines.join('\n')}
+${partLines.join('\n')}
 `)
 
   return sections.join('\n')
