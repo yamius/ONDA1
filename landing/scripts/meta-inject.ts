@@ -410,8 +410,6 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'The brain is a hydraulic machine — arteries act as pistons, CSF flushes metabolic waste, posture controls pressure. The ONDA hydraulic protocol primes vascular elasticity, gravity, and breath for full nightly purge.',
   'anti-entropy-neural-architecture':
     'Aging is accumulated entropy. The ONDA Anti-Entropy Protocol layers glymphatic clearance, autophagy-sync fasting, and thermal regulation to halt beta-amyloid drift before it crosses the irreversibility threshold.',
-  'neural-bridge-alpha-flow-gateway':
-    'Alpha waves are an 8–12 Hz brain rhythm that grows when you close your eyes or turn attention inward. What they do, what they do not, and what really helps.',
   'spinal-harddrive-cpg-autonomous-scripts':
     'CPGs are spinal neural circuits that execute complex movement without brain input. The ONDA Harddrive Protocol uses sensory priming, rhythmic entrainment, and eyes-closed drills to free the prefrontal cortex for strategic thought.',
   'rhythmic-entrainment-system-frequencies':
@@ -3084,7 +3082,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }
-                          : slug === 'neural-bridge-alpha-flow-gateway'
+                          : slug === 'alpha-brain-waves'
                             ? {
                                 keywords: [
                                   'Alpha Brain Waves',

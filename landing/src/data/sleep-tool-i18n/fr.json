@@ -93,5 +93,12 @@
     "chronotype": "Test de chronotype",
     "caffeine": "Heure limite pour la caféine",
     "breathing": "Minuteur de respiration pour dormir"
+  },
+  "table": {
+    "title": "Tableau : à quelle heure se coucher selon l'heure du réveil",
+    "intro": "Heures de coucher pour 6 et 5 cycles complets de 90 minutes, avec environ 15 minutes pour s'endormir. Vos cycles peuvent durer de 70 à 120 minutes.",
+    "wake": "Réveil à",
+    "bed6": "Coucher (6 cycles, 9 h)",
+    "bed5": "Coucher (5 cycles, 7 h 30)"
   }
 }

@@ -1,5 +1,5 @@
 ---
-sourceHash: "34edde49fd8a"
+sourceHash: "87b823e6a848"
 title: "EEG-neurofeedback en consumentenheadsets: wat het onderzoek laat zien"
 metaTitle: "EEG-neurofeedback: wat het onderzoek laat zien"
 metaDescription: "Wat EEG-headsets echt meten, waarom focus- en rustscores geen labmetingen zijn en wat geblindeerde en schijngecontroleerde neurofeedbackstudies laten zien."
@@ -68,7 +68,7 @@ Het zwakke punt zit in de middelste stap van de redenering. Weinig experimenten 
 
 ## Hoe wordt het gemeten?
 
-**Frequentiebanden.** Software verdeelt het EEG in banden naar snelheid. Tragere **theta**-activiteit, het **alfa**ritme dat sterker wordt als de ogen dicht zijn (zie [alfa-hersengolven](/articles/neural-bridge-alpha-flow-gateway)), snellere **bèta**-activiteit bij actief denken, en de snelste **gamma**-activiteit (zie [gamma en meditatie-ervaring](/articles/meditation-gamma-waves-experience)). Elke band verandert door veel dingen tegelijk — ogen open of dicht, slaperigheid, spierspanning, de taak — dus een band staat niet voor één mentale toestand. De verklarende woordenlijst geeft korte definities van de [alfatoestand](/glossary/alpha-state) en de [thetatoestand](/glossary/theta-state).
+**Frequentiebanden.** Software verdeelt het EEG in banden naar snelheid. Tragere **theta**-activiteit, het **alfa**ritme dat sterker wordt als de ogen dicht zijn (zie [alfa-hersengolven](/articles/alpha-brain-waves)), snellere **bèta**-activiteit bij actief denken, en de snelste **gamma**-activiteit (zie [gamma en meditatie-ervaring](/articles/meditation-gamma-waves-experience)). Elke band verandert door veel dingen tegelijk — ogen open of dicht, slaperigheid, spierspanning, de taak — dus een band staat niet voor één mentale toestand. De verklarende woordenlijst geeft korte definities van de [alfatoestand](/glossary/alpha-state) en de [thetatoestand](/glossary/theta-state).
 
 **Wat consumentenheadsets kunnen registreren.** In een laboratoriumtaak ving een goedkope hoofdband klassieke event-related potentials op: hersenreacties die over veel herhaalde pogingen worden gemiddeld [S7]. Dat laat zien dat de hardware echte hersenactiviteit registreert. Het laat niet zien dat een live score van moment tot moment de aandacht volgt.
 

@@ -60,7 +60,7 @@ The science of what meditation actually does at the nervous-system level.
 
 - [Rhythmic entrainment and system frequencies](/articles/rhythmic-entrainment-system-frequencies) — why paced audio and breath protocols compound with practice
 - [Physiological concentration: flow-state hardwiring](/articles/physiological-concentration-flow-state-hardwired) — what neurochemistry the flow state actually requires
-- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
+- [Alpha brain waves: calm, creativity and flow](/articles/alpha-brain-waves) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 `,
   references: [
     { label: 'Waking Up — official site', url: 'https://www.wakingup.com' },

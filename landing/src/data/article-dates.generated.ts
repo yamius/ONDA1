@@ -456,10 +456,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-24T10:43:38Z",
     "modified": "2026-10-06T14:45:35+02:00"
   },
-  "neural-bridge-alpha-flow-gateway": {
-    "published": "2026-03-31T16:32:31Z",
-    "modified": "2026-10-06T14:45:35+02:00"
-  },
   "neural-entrainment-meditation-2": {
     "published": "2026-02-28T20:22:39+01:00",
     "modified": "2026-10-08T01:19:54+02:00"
@@ -1622,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-11-15T17:45:45+01:00"
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
@@ -1682,23 +1678,23 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/science": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-11-02T14:26:02+01:00"
+    "modified": "2026-11-18T20:44:36+01:00"
   },
   "page:/science/psychology": {
     "published": "2026-11-02T14:26:02+01:00",
-    "modified": "2026-11-02T23:10:42+01:00"
+    "modified": "2026-11-19T20:43:14+01:00"
   },
   "page:/science/psychology/:topic": {
     "published": "2026-11-02T14:26:02+01:00",
-    "modified": "2026-11-02T23:10:42+01:00"
+    "modified": "2026-11-19T20:43:14+01:00"
   },
   "page:/science/:kind": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-11-02T14:26:02+01:00"
+    "modified": "2026-11-18T20:44:36+01:00"
   },
   "page:/science/:kind/:slug": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-11-02T14:26:02+01:00"
+    "modified": "2026-11-18T20:44:36+01:00"
   },
   "page:/ai-apps": {
     "published": "2026-10-03T19:24:51+02:00",
@@ -1734,11 +1730,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/connect": {
     "published": "2026-10-11T01:10:33+02:00",
-    "modified": "2026-11-07T14:03:55+01:00"
+    "modified": "2026-11-07T16:18:15+01:00"
   },
   "page:/connect/:device": {
     "published": "2026-10-11T01:10:33+02:00",
-    "modified": "2026-11-07T14:03:55+01:00"
+    "modified": "2026-11-07T16:18:15+01:00"
   },
   "page:/hrv-vs-coherence": {
     "published": "2026-09-07T20:12:03+02:00",
@@ -1770,7 +1766,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-11-07T14:23:01+01:00"
+    "modified": "2026-11-10T11:38:46+01:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

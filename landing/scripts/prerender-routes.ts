@@ -150,7 +150,6 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'longevity-protocol-biological-clock-reset', publishOn: '2026-07-06' },
   { slug: 'mitochondrial-biogenesis-cellular-power-grid', publishOn: '2026-07-06' },
   { slug: 'mitochondrial-dna-red-light', publishOn: '2026-07-06' },
-  { slug: 'neural-bridge-alpha-flow-gateway', publishOn: '2026-07-06' },
   { slug: 'neural-hydraulics-csf-flow', publishOn: '2026-07-06' },
   { slug: 'neural-optimizer-estrogen', publishOn: '2026-07-06' },
   { slug: 'neural-signal-to-noise-cleaning-system-channel', publishOn: '2026-07-06' },
@@ -308,7 +307,6 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'phase-locked-acoustic-sleep', publishOn: '2026-10-05' },
   { slug: 'hpa-axis-control-cortisol-aggression', publishOn: '2026-10-05' },
   { slug: 'adrenal-governor-thermal-runaway', publishOn: '2026-10-05' },
-  { slug: 'neural-bridge-alpha-flow-gateway', publishOn: '2026-10-05' },
   { slug: 'physiological-concentration-flow-state-hardwired', publishOn: '2026-10-05' },
   // Metabolism / mitochondria / longevity / hormones pillars — RE-TRANSLATED
   // from current EN (old bodies stale); full link parity. Batch 2026-10-12.

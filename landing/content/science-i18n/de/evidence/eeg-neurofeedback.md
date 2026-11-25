@@ -1,5 +1,5 @@
 ---
-sourceHash: "34edde49fd8a"
+sourceHash: "87b823e6a848"
 title: "EEG-Neurofeedback und Consumer-Headsets: Was die Evidenz zeigt"
 metaTitle: "EEG-Neurofeedback: Was die Evidenz zeigt"
 metaDescription: "Was EEG-Headsets wirklich messen, warum Fokus- und Ruhewerte keine Labormaße sind und was verblindete und scheinkontrollierte Neurofeedback-Studien zeigen."
@@ -69,7 +69,7 @@ Die Schwachstelle ist der mittlere Schritt der Argumentation. Nur wenige Experim
 
 ## Wie wird es gemessen?
 
-**Frequenzbänder.** Software zerlegt das EEG nach Geschwindigkeit in Bänder: langsamere **Theta**-Aktivität, den **Alpha**-Rhythmus, der bei geschlossenen Augen zunimmt (siehe [Alpha-Gehirnwellen](/articles/neural-bridge-alpha-flow-gateway)), schnellere **Beta**-Aktivität beim aktiven Denken und die schnellste **Gamma**-Aktivität (siehe [Gamma und Meditationserleben](/articles/meditation-gamma-waves-experience)). Jedes Band verändert sich mit vielem zugleich – Augen offen oder geschlossen, Schläfrigkeit, Muskelanspannung, Aufgabe –, daher entspricht ein Band nicht einem einzelnen mentalen Zustand. Die Glossareinträge zum [Alpha-Zustand](/glossary/alpha-state) und zum [Theta-Zustand](/glossary/theta-state) geben kurze Definitionen.
+**Frequenzbänder.** Software zerlegt das EEG nach Geschwindigkeit in Bänder: langsamere **Theta**-Aktivität, den **Alpha**-Rhythmus, der bei geschlossenen Augen zunimmt (siehe [Alpha-Gehirnwellen](/articles/alpha-brain-waves)), schnellere **Beta**-Aktivität beim aktiven Denken und die schnellste **Gamma**-Aktivität (siehe [Gamma und Meditationserleben](/articles/meditation-gamma-waves-experience)). Jedes Band verändert sich mit vielem zugleich – Augen offen oder geschlossen, Schläfrigkeit, Muskelanspannung, Aufgabe –, daher entspricht ein Band nicht einem einzelnen mentalen Zustand. Die Glossareinträge zum [Alpha-Zustand](/glossary/alpha-state) und zum [Theta-Zustand](/glossary/theta-state) geben kurze Definitionen.
 
 **Was Consumer-Headsets aufzeichnen können.** In einer Laboraufgabe erfasste ein preisgünstiges Stirnband klassische ereigniskorrelierte Potenziale, also Hirnreaktionen, die über viele wiederholte Durchgänge gemittelt werden [S7]. Das zeigt, dass die Hardware echte Hirnaktivität aufzeichnet. Es zeigt nicht, dass ein laufender Wert von Moment zu Moment die Aufmerksamkeit abbildet.
 

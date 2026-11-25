@@ -35,7 +35,7 @@ const article: Article = {
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Curious what alpha brain waves really do for calm and focus? See what the research shows.',
-    link: '/articles/neural-bridge-alpha-flow-gateway',
+    link: '/articles/alpha-brain-waves',
     linkText: 'Alpha Brain Waves: Calm, Creativity and Flow',
   },
   content: `

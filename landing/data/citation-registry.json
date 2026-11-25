@@ -241,6 +241,57 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1001/jamanetworkopen.2022.36676": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Interventions Associated With Reduced Loneliness and Social Isolation in Older Adults",
+   "firstAuthor": "Hoang",
+   "authors": [
+    "Hoang",
+    "King",
+    "Moore",
+    "Moore",
+    "Reich",
+    "Sidhu",
+    "Tan",
+    "Whaley",
+    "McMillan"
+   ],
+   "year": 2022,
+   "journal": "JAMA Network Open",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1001/jamapsychiatry.2016.0076": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of Mindfulness-Based Cognitive Therapy in Prevention of Depressive Relapse",
+   "firstAuthor": "Kuyken",
+   "authors": [
+    "Kuyken",
+    "Warren",
+    "Taylor",
+    "Whalley",
+    "Crane",
+    "Bondolfi",
+    "Hayes",
+    "Huijbers",
+    "Ma",
+    "Schweizer",
+    "Segal",
+    "Speckens",
+    "Teasdale",
+    "Van Heeringen",
+    "Williams",
+    "Byford",
+    "Byng",
+    "Dalgleish"
+   ],
+   "year": 2016,
+   "journal": "JAMA Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1001/jamapsychiatry.2016.1031": {
    "kind": "doi",
    "valid": true,
@@ -268,6 +319,92 @@
    "journal": "JAMA Psychiatry",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1001/jamapsychiatry.2020.4364": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Internet-Based Cognitive Behavioral Therapy for Depression",
+   "firstAuthor": "Karyotaki",
+   "authors": [
+    "Karyotaki",
+    "Efthimiou",
+    "Miguel",
+    "Maas genannt Bermpohl",
+    "Furukawa",
+    "Cuijpers",
+    "Individual Patient Data Meta-Analyses for Depression (IPDMA-DE) Collaboration",
+    "Riper",
+    "Patel",
+    "Mira",
+    "Gemmil",
+    "Yeung",
+    "Lange",
+    "Williams",
+    "Mackinnon",
+    "Geraedts",
+    "van Straten",
+    "Meyer",
+    "Björkelund",
+    "Knaevelsrud",
+    "Beevers",
+    "Botella",
+    "Strunk",
+    "Mohr",
+    "Ebert",
+    "Kessler",
+    "Richards",
+    "Littlewood",
+    "Forsell",
+    "Feng",
+    "Wang",
+    "Andersson",
+    "Hadjistavropoulos",
+    "Christensen",
+    "Ezawa",
+    "Choi",
+    "Rosso",
+    "Klein",
+    "Shumake",
+    "Garcia-Campayo",
+    "Milgrom",
+    "Smith",
+    "Montero-Marin",
+    "Newby",
+    "Bretón-López",
+    "Schneider",
+    "Vernmark",
+    "Bücker",
+    "Sheeber",
+    "Warmerdam",
+    "Farrer",
+    "Heinrich",
+    "Huibers",
+    "Kivi",
+    "Kraepelien",
+    "Forand",
+    "Pugh",
+    "Lindefors",
+    "Lintvedt",
+    "Zagorscak",
+    "Carlbring",
+    "Phillips",
+    "Johansson",
+    "Kessler",
+    "Brabyn",
+    "Perini",
+    "Rauch",
+    "Gilbody",
+    "Moritz",
+    "Berger",
+    "Pop",
+    "Kaldo",
+    "Spek",
+    "Forsell"
+   ],
+   "year": 2021,
+   "journal": "JAMA Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1001/jamapsychiatry.2024.3702": {
    "kind": "doi",
@@ -552,6 +689,72 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1002/cpp.1921": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Dialogical Exposure with Traumatically Bereaved Bosnian Women: Findings from a Controlled Trial",
+   "firstAuthor": "Hagl",
+   "authors": [
+    "Hagl",
+    "Powell",
+    "Rosner",
+    "Butollo"
+   ],
+   "year": 2014,
+   "yearAlt": 2015,
+   "journal": "Clinical Psychology &amp; Psychotherapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1002/cpp.2005": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Protection or Vulnerability? A Meta‐Analysis of the Relations Between the Positive and Negative Components of Self‐Compassion and Psychopathology",
+   "firstAuthor": "Muris",
+   "authors": [
+    "Muris",
+    "Petrocchi"
+   ],
+   "year": 2016,
+   "yearAlt": 2017,
+   "journal": "Clinical Psychology &amp; Psychotherapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1002/cpp.2586": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effectiveness of self‐compassion‐related interventions for reducing self‐criticism: A systematic review and meta‐analysis",
+   "firstAuthor": "Wakelin",
+   "authors": [
+    "Wakelin",
+    "Perman",
+    "Simonds"
+   ],
+   "year": 2021,
+   "yearAlt": 2022,
+   "journal": "Clinical Psychology &amp; Psychotherapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1002/cpp.2966": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Perfectionistic Self‐Presentation and Psychopathology: A Systematic Review and Meta‐Analysis",
+   "firstAuthor": "Casale",
+   "authors": [
+    "Casale",
+    "Svicher",
+    "Fioravanti",
+    "Hewitt",
+    "Flett",
+    "Pozza"
+   ],
+   "year": 2024,
+   "journal": "Clinical Psychology &amp; Psychotherapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1002/da.20127": {
    "kind": "doi",
    "valid": true,
@@ -567,6 +770,25 @@
    "journal": "Depression and Anxiety",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1002/da.22762": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga for anxiety: A systematic review and meta-analysis of randomized controlled trials",
+   "firstAuthor": "Cramer",
+   "authors": [
+    "Cramer",
+    "Lauche",
+    "Anheyer",
+    "Pilkington",
+    "de Manincor",
+    "Dobos",
+    "Ward"
+   ],
+   "year": 2018,
+   "journal": "Depression and Anxiety",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1002/dmrr.1239": {
    "kind": "doi",
@@ -593,6 +815,20 @@
    "source": "crossref",
    "verifiedAt": "2026-11-15"
   },
+  "doi:10.1002/eat.24166": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A meta‐analysis of disordered eating and its association with self‐criticism and self‐compassion",
+   "firstAuthor": "Paranjothy",
+   "authors": [
+    "Paranjothy",
+    "Wade"
+   ],
+   "year": 2024,
+   "journal": "International Journal of Eating Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1002/eat.70064": {
    "kind": "doi",
    "valid": true,
@@ -607,6 +843,21 @@
    "journal": "International Journal of Eating Disorders",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1002/ejp.70235": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Therapeutic Writing Interventions for Adults With Chronic Pain: Experiences and Health Effects—A Systematic Review With a Narrative Synthesis",
+   "firstAuthor": "Salikka",
+   "authors": [
+    "Salikka",
+    "Kylmä",
+    "Fröjd"
+   ],
+   "year": 2026,
+   "journal": "European Journal of Pain",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1002/ejsc.70172": {
    "kind": "doi",
@@ -642,6 +893,23 @@
    "journal": "Journal of Bone and Mineral Research",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1002/jclp.22435": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Relationship Between Perfectionism and Psychopathology: A Meta‐Analysis",
+   "firstAuthor": "Limburg",
+   "authors": [
+    "Limburg",
+    "Watson",
+    "Hagger",
+    "Egan"
+   ],
+   "year": 2016,
+   "yearAlt": 2017,
+   "journal": "Journal of Clinical Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1002/joa3.70087": {
    "kind": "doi",
@@ -705,6 +973,27 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1002/nop2.1897": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of expressive writing versus positive writing in different populations: Systematic review and meta‐analysis",
+   "firstAuthor": "Lai",
+   "authors": [
+    "Lai",
+    "Song",
+    "Wang",
+    "Ren",
+    "Li",
+    "Xiao",
+    "Liao",
+    "Xie",
+    "Zhuang"
+   ],
+   "year": 2023,
+   "journal": "Nursing Open",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1002/oto2.70294": {
    "kind": "doi",
    "valid": true,
@@ -767,6 +1056,23 @@
    "journal": "Stress and Health",
    "source": "crossref",
    "verifiedAt": "2026-11-14"
+  },
+  "doi:10.1002/wps.20151": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Guided Internet-based vs. face-to-face cognitive behavior therapy for psychiatric and somatic disorders: a systematic review and meta-analysis",
+   "firstAuthor": "Andersson",
+   "authors": [
+    "Andersson",
+    "Cuijpers",
+    "Carlbring",
+    "Riper",
+    "Hedman"
+   ],
+   "year": 2014,
+   "journal": "World Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1002/wps.20229": {
    "kind": "doi",
@@ -892,6 +1198,23 @@
    "journal": "Diabetologia",
    "source": "crossref",
    "verifiedAt": "2026-11-15"
+  },
+  "doi:10.1007/s00127-024-02722-1": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Social connection interventions and depression in young adults: a systematic review and meta-analysis",
+   "firstAuthor": "Alvarez",
+   "authors": [
+    "Alvarez",
+    "Mirza",
+    "Das-Munshi",
+    "Oswald"
+   ],
+   "year": 2024,
+   "yearAlt": 2025,
+   "journal": "Social Psychiatry and Psychiatric Epidemiology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1007/s00246-025-03770-3": {
    "kind": "doi",
@@ -1330,6 +1653,24 @@
    "source": "crossref",
    "verifiedAt": "2026-11-11"
   },
+  "doi:10.1007/s10484-023-09582-6": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Methods for Heart Rate Variability Biofeedback (HRVB): A Systematic Review and Guidelines",
+   "firstAuthor": "Lalanza",
+   "authors": [
+    "Lalanza",
+    "Lorente",
+    "Bullich",
+    "García",
+    "Losilla",
+    "Capdevila"
+   ],
+   "year": 2023,
+   "journal": "Applied Psychophysiology and Biofeedback",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1007/s10484-023-09584-4": {
    "kind": "doi",
    "valid": true,
@@ -1480,6 +1821,46 @@
    "source": "crossref",
    "verifiedAt": "2026-10-09"
   },
+  "doi:10.1007/s10877-021-00734-9": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effectiveness of consumer-grade contactless vital signs monitors: a systematic review and meta-analysis",
+   "firstAuthor": "Pham",
+   "authors": [
+    "Pham",
+    "Poorzargar",
+    "Nagappa",
+    "Saripella",
+    "Parotto",
+    "Englesakis",
+    "Lee",
+    "Chung"
+   ],
+   "year": 2021,
+   "yearAlt": 2022,
+   "journal": "Journal of Clinical Monitoring and Computing",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1007/s11325-023-02905-1": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Association of sleep duration and risk of mental disorder: a systematic review and meta-analysis",
+   "firstAuthor": "Zhang",
+   "authors": [
+    "Zhang",
+    "He",
+    "Wang",
+    "Jiang",
+    "Huang",
+    "Liang"
+   ],
+   "year": 2023,
+   "yearAlt": 2024,
+   "journal": "Sleep and Breathing",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1007/s11325-026-03685-0": {
    "kind": "doi",
    "valid": true,
@@ -1496,6 +1877,24 @@
    "journal": "Sleep and Breathing",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1007/s11325-026-03723-x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of fully automated digital cognitive behavioral therapy for insomnia in adults: a systematic review and meta-analysis",
+   "firstAuthor": "Gao",
+   "authors": [
+    "Gao",
+    "Zhao",
+    "Zhang",
+    "Su",
+    "Jia",
+    "Xu"
+   ],
+   "year": 2026,
+   "journal": "Sleep and Breathing",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1007/s12160-009-9101-z": {
    "kind": "doi",
@@ -1547,6 +1946,35 @@
    "journal": "Indian Journal of Clinical Biochemistry",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1007/s12671-023-02148-x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Self-Compassion Interventions on Reducing Depressive Symptoms, Anxiety, and Stress: A Meta-Analysis",
+   "firstAuthor": "Han",
+   "authors": [
+    "Han",
+    "Kim"
+   ],
+   "year": 2023,
+   "journal": "Mindfulness",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1007/s12671-023-02294-2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Effect of Slow-Paced Breathing on Cardiovascular and Emotion Functions: A Meta-Analysis and Systematic Review",
+   "firstAuthor": "Shao",
+   "authors": [
+    "Shao",
+    "Man",
+    "Lee"
+   ],
+   "year": 2024,
+   "journal": "Mindfulness",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1007/s13300-023-01385-6": {
    "kind": "doi",
@@ -1698,6 +2126,23 @@
    "source": "crossref",
    "verifiedAt": "2026-11-13"
   },
+  "doi:10.1007/s40596-026-02408-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy and Acceptability of Digital and Web-Based Interventions for Stress and Burnout Among Physicians: A Systematic Review and Meta-analysis",
+   "firstAuthor": "O’Rourke",
+   "authors": [
+    "O’Rourke",
+    "Murphy",
+    "Montagna",
+    "O’Rourke",
+    "O’Tuathaigh"
+   ],
+   "year": 2026,
+   "journal": "Academic Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1007/s41465-021-00218-3": {
    "kind": "doi",
    "valid": true,
@@ -1770,6 +2215,37 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.actpsy.2025.105419": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Social jet lag and mental health outcomes: A systematic review and meta-analysis",
+   "firstAuthor": "Gao",
+   "authors": [
+    "Gao",
+    "Gao",
+    "Zeng"
+   ],
+   "year": 2025,
+   "journal": "Acta Psychologica",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.amjmed.2023.10.003": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Systematic Review and Meta-Analysis of Randomized Trials Testing Interventions to Reduce Physician Burnout",
+   "firstAuthor": "Haslam",
+   "authors": [
+    "Haslam",
+    "Tuia",
+    "Miller",
+    "Prasad"
+   ],
+   "year": 2024,
+   "journal": "The American Journal of Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1016/j.amjoto.2024.104545": {
    "kind": "doi",
    "valid": true,
@@ -1800,6 +2276,24 @@
    "journal": "Annals of Emergency Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1016/j.apnr.2026.152125": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effectiveness of mindfulness-based interventions in enhancing resilience and mitigating occupational burnout among nurses: A meta-analysis of randomized controlled trials",
+   "firstAuthor": "Lin",
+   "authors": [
+    "Lin",
+    "Wu",
+    "Tseng",
+    "Jimba",
+    "Lin",
+    "Chang"
+   ],
+   "year": 2026,
+   "journal": "Applied Nursing Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1016/j.arr.2022.101786": {
    "kind": "doi",
@@ -1844,6 +2338,42 @@
    "journal": "Brain, Behavior, and Immunity",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1016/j.beth.2017.08.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Treating Procrastination Using Cognitive Behavior Therapy: A Pragmatic Randomized Controlled Trial Comparing Treatment Delivered via the Internet or in Groups",
+   "firstAuthor": "Rozental",
+   "authors": [
+    "Rozental",
+    "Forsström",
+    "Lindner",
+    "Nilsson",
+    "Mårtensson",
+    "Rizzo",
+    "Andersson",
+    "Carlbring"
+   ],
+   "year": 2018,
+   "journal": "Behavior Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.beth.2024.12.004": {
+   "kind": "doi",
+   "valid": true,
+   "title": "An Internet-Delivered Rumination-Focused CBT Intervention for Adults With Depression and Anxiety: A Randomized Controlled Trial",
+   "firstAuthor": "Tulbure",
+   "authors": [
+    "Tulbure",
+    "Dudău",
+    "Marian",
+    "Watkins"
+   ],
+   "year": 2025,
+   "journal": "Behavior Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1016/j.biopsych.2010.02.017": {
    "kind": "doi",
@@ -1998,6 +2528,19 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.biopsycho.2023.108728": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Putting back respiration into respiratory sinus arrhythmia or high-frequency heart rate variability: Implications for interpretation, respiratory rhythmicity, and health",
+   "firstAuthor": "Ritz",
+   "authors": [
+    "Ritz"
+   ],
+   "year": 2024,
+   "journal": "Biological Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1016/j.biopsycho.2024.108963": {
    "kind": "doi",
    "valid": true,
@@ -2149,6 +2692,116 @@
    "journal": "Biological Psychiatry: Cognitive Neuroscience and Neuroimaging",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.bpsgos.2023.08.012": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Rumination-Focused Cognitive Behavioral Therapy Reduces Rumination and Targeted Cross-network Connectivity in Youth With a History of Depression: Replication in a Preregistered Randomized Clinical Trial",
+   "firstAuthor": "Langenecker",
+   "authors": [
+    "Langenecker",
+    "Westlund Schreiner",
+    "Bessette",
+    "Roberts",
+    "Thomas",
+    "Dillahunt",
+    "Pocius",
+    "Feldman",
+    "Jago",
+    "Farstead",
+    "Pazdera",
+    "Kaufman",
+    "Galloway",
+    "Kerig",
+    "Bakian",
+    "Welsh",
+    "Jacobs",
+    "Crowell",
+    "Watkins"
+   ],
+   "year": 2024,
+   "journal": "Biological Psychiatry Global Open Science",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.brat.2010.12.006": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Rumination as a transdiagnostic factor in depression and anxiety",
+   "firstAuthor": "McLaughlin",
+   "authors": [
+    "McLaughlin",
+    "Nolen-Hoeksema"
+   ],
+   "year": 2011,
+   "journal": "Behaviour Research and Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.brat.2015.03.004": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Affect labeling enhances exposure effectiveness for public speaking anxiety",
+   "firstAuthor": "Niles",
+   "authors": [
+    "Niles",
+    "Craske",
+    "Lieberman",
+    "Hur"
+   ],
+   "year": 2015,
+   "journal": "Behaviour Research and Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.brat.2024.104620": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A parallel-arm, randomized trial of Behavioral Activation Therapy for anhedonia versus mindfulness-based cognitive therapy for adults with anhedonia",
+   "firstAuthor": "Cernasov",
+   "authors": [
+    "Cernasov",
+    "Walsh",
+    "Nagy",
+    "Kinard",
+    "Kelley",
+    "Phillips",
+    "Pisoni",
+    "Diehl",
+    "Haworth",
+    "West",
+    "Freeman",
+    "Pfister",
+    "Scott",
+    "Daughters",
+    "Gaylord",
+    "Dichter",
+    "Smoski"
+   ],
+   "year": 2024,
+   "journal": "Behaviour Research and Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.brat.2026.105026": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cognitive behavioral therapy effects on global functioning, domain-specific functioning, and quality of life in adult ADHD: A comprehensive meta-analysis",
+   "firstAuthor": "López-Pinar",
+   "authors": [
+    "López-Pinar",
+    "Selaskowski",
+    "Schulze",
+    "Oscarsson",
+    "Fenollar-Cortés",
+    "Sibley",
+    "Philipsen",
+    "Hirvikoski"
+   ],
+   "year": 2026,
+   "journal": "Behaviour Research and Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1016/j.brs.2014.07.031": {
    "kind": "doi",
@@ -2380,6 +3033,167 @@
    "source": "crossref",
    "verifiedAt": "2026-10-09"
   },
+  "doi:10.1016/j.cpr.2011.05.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effect of mindfulness-based cognitive therapy for prevention of relapse in recurrent major depressive disorder: A systematic review and meta-analysis",
+   "firstAuthor": "Piet",
+   "authors": [
+    "Piet",
+    "Hougaard"
+   ],
+   "year": 2011,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.cpr.2012.06.003": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Exploring compassion: A meta-analysis of the association between self-compassion and psychopathology",
+   "firstAuthor": "MacBeth",
+   "authors": [
+    "MacBeth",
+    "Gumley"
+   ],
+   "year": 2012,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.cpr.2013.05.005": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Mindfulness-based therapy: A comprehensive meta-analysis",
+   "firstAuthor": "Khoury",
+   "authors": [
+    "Khoury",
+    "Lecomte",
+    "Fortin",
+    "Masse",
+    "Therien",
+    "Bouchard",
+    "Chapleau",
+    "Paquin",
+    "Hofmann"
+   ],
+   "year": 2013,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.cpr.2014.01.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Psychological treatment of generalized anxiety disorder: A meta-analysis",
+   "firstAuthor": "Cuijpers",
+   "authors": [
+    "Cuijpers",
+    "Sijbrandij",
+    "Koole",
+    "Huibers",
+    "Berking",
+    "Andersson"
+   ],
+   "year": 2014,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.cpr.2015.01.006": {
+   "kind": "doi",
+   "valid": true,
+   "title": "How do mindfulness-based cognitive therapy and mindfulness-based stress reduction improve mental health and wellbeing? A systematic review and meta-analysis of mediation studies",
+   "firstAuthor": "Gu",
+   "authors": [
+    "Gu",
+    "Strauss",
+    "Bond",
+    "Cavanagh"
+   ],
+   "year": 2015,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.cpr.2017.10.011": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Mindfulness-based interventions for psychiatric disorders: A systematic review and meta-analysis",
+   "firstAuthor": "Goldberg",
+   "authors": [
+    "Goldberg",
+    "Tucker",
+    "Greene",
+    "Davidson",
+    "Wampold",
+    "Kearney",
+    "Simpson"
+   ],
+   "year": 2018,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.cpr.2024.102518": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Do the effects of internet-delivered cognitive-behavioral therapy (i-CBT) last after a year and beyond? A meta-analysis of 154 randomized controlled trials (RCTs)",
+   "firstAuthor": "Zainal",
+   "authors": [
+    "Zainal",
+    "Soh",
+    "Van Doren",
+    "Benjet"
+   ],
+   "year": 2024,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.cpr.2025.102590": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Using the experience sampling methodology to measure anhedonia and its correlates in mental health research: A systematic review",
+   "firstAuthor": "Beames",
+   "authors": [
+    "Beames",
+    "Uyttebroek",
+    "Edwards",
+    "Eisele",
+    "Kemme",
+    "Collier",
+    "van Roekel",
+    "Kwapil",
+    "Kirtley",
+    "Myin-Germeys"
+   ],
+   "year": 2025,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.cpr.2026.102801": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Burnout and secondary traumatic stress in child protection workers: Untangling the role of personal and work-related factors using meta-analysis",
+   "firstAuthor": "Roest",
+   "authors": [
+    "Roest",
+    "Vang",
+    "Stams",
+    "Turkanović",
+    "Ratling",
+    "Verkennis",
+    "Dekker",
+    "van Miert",
+    "Kuiper"
+   ],
+   "year": 2026,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1016/j.ctcp.2017.04.001": {
    "kind": "doi",
    "valid": true,
@@ -2542,6 +3356,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.ebiom.2024.105208": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effectiveness of self-guided interventions in adults with depressive symptoms: a systematic review and meta-analysis",
+   "firstAuthor": "Tong",
+   "authors": [
+    "Tong",
+    "Panagiotopoulou",
+    "Cuijpers",
+    "Karyotaki"
+   ],
+   "year": 2024,
+   "journal": "eBioMedicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1016/j.ejim.2023.03.025": {
    "kind": "doi",
    "valid": true,
@@ -2675,6 +3505,34 @@
    "source": "crossref",
    "verifiedAt": "2026-11-13"
   },
+  "doi:10.1016/j.ijnurstu.2021.104099": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Burnout and depression in nurses: A systematic review and meta-analysis",
+   "firstAuthor": "Chen",
+   "authors": [
+    "Chen",
+    "Meier"
+   ],
+   "year": 2021,
+   "journal": "International Journal of Nursing Studies",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.ijnurstu.2026.105391": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Interventions for preventing or reducing nurse burnout: A systematic review and meta-analysis",
+   "firstAuthor": "Jiménez-García",
+   "authors": [
+    "Jiménez-García",
+    "Flor-Martínez"
+   ],
+   "year": 2026,
+   "journal": "International Journal of Nursing Studies",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1016/j.ijpsycho.2011.02.004": {
    "kind": "doi",
    "valid": true,
@@ -2741,6 +3599,39 @@
    "journal": "International Journal of Psychophysiology",
    "source": "crossref",
    "verifiedAt": "2026-11-11"
+  },
+  "doi:10.1016/j.invent.2017.07.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Reducing procrastination using a smartphone-based treatment program: A randomized controlled pilot study",
+   "firstAuthor": "Lukas",
+   "authors": [
+    "Lukas",
+    "Berking"
+   ],
+   "year": 2018,
+   "journal": "Internet Interventions",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.invent.2025.100856": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Digital bridges to social connection: A systematic review and meta-analysis of digital interventions for loneliness and social isolation",
+   "firstAuthor": "Hansen",
+   "authors": [
+    "Hansen",
+    "Johansen",
+    "Kirkøen",
+    "Stene-Larsen",
+    "Straiton",
+    "Tornes",
+    "Reneflot"
+   ],
+   "year": 2025,
+   "journal": "Internet Interventions",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1016/j.jaac.2016.03.007": {
    "kind": "doi",
@@ -2950,6 +3841,40 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.jad.2017.04.046": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Can smartphone mental health interventions reduce symptoms of anxiety? A meta-analysis of randomized controlled trials",
+   "firstAuthor": "Firth",
+   "authors": [
+    "Firth",
+    "Torous",
+    "Nicholas",
+    "Carney",
+    "Rosenbaum",
+    "Sarris"
+   ],
+   "year": 2017,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.jad.2023.01.010": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effectiveness of compassion focused therapy with clinical populations: A systematic review and meta-analysis",
+   "firstAuthor": "Millard",
+   "authors": [
+    "Millard",
+    "Wan",
+    "Smith",
+    "Wittkowski"
+   ],
+   "year": 2023,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1016/j.jad.2023.05.048": {
    "kind": "doi",
    "valid": true,
@@ -2967,6 +3892,125 @@
    "journal": "Journal of Affective Disorders",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jad.2024.09.017": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cognitive behavioral therapy for insomnia to treat major depressive disorder with comorbid insomnia: A systematic review and meta-analysis",
+   "firstAuthor": "Furukawa",
+   "authors": [
+    "Furukawa",
+    "Nagaoka",
+    "Sato",
+    "Toyomoto",
+    "Takashina",
+    "Kobayashi",
+    "Sakata",
+    "Nakajima",
+    "Ito",
+    "Yamamoto",
+    "Hara",
+    "Sakakibara",
+    "Perlis",
+    "Kasai"
+   ],
+   "year": 2024,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.jad.2025.03.118": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The empirical status of implicit emotion regulation in mood and anxiety disorders: A meta-analytic review",
+   "firstAuthor": "Dalton",
+   "authors": [
+    "Dalton",
+    "Cooper",
+    "Jennings",
+    "Cheeta"
+   ],
+   "year": 2025,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.jad.2025.04.070": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Are cognitive behavioural therapy, cognitive therapy, and behavioural activation for depression effective in primary care? A systematic review and meta-analysis",
+   "firstAuthor": "Carey",
+   "authors": [
+    "Carey",
+    "Kerr-Gaffney",
+    "Strawbridge",
+    "Hieronymus",
+    "McCutcheon",
+    "Young",
+    "Jauhar"
+   ],
+   "year": 2025,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.jad.2025.120165": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Evaluating the efficacy of psychotherapeutic and pharmacological treatments for depression on anhedonia: A systematic review and meta-analysis",
+   "firstAuthor": "Pugh",
+   "authors": [
+    "Pugh",
+    "Saunders",
+    "Jones",
+    "Dunn",
+    "Buckman"
+   ],
+   "year": 2026,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.jad.2025.121107": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A meta-analysis of the intervention effect of cognitive behavioral therapy on adult ADHD",
+   "firstAuthor": "Liu",
+   "authors": [
+    "Liu",
+    "Zhu",
+    "Yu",
+    "Song",
+    "Luo",
+    "Xu",
+    "Lin",
+    "Ha",
+    "Kuang",
+    "Xie",
+    "Chen",
+    "Ren"
+   ],
+   "year": 2026,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.jad.2026.121331": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Reducing social media use decreases loneliness regardless of gender or level of social comparisons in youth with anxiety and depression: A randomized controlled trial",
+   "firstAuthor": "Goldfield",
+   "authors": [
+    "Goldfield",
+    "Lopes",
+    "Mahboob",
+    "Perry",
+    "Davis"
+   ],
+   "year": 2026,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1016/j.jad.2026.121388": {
    "kind": "doi",
@@ -3039,6 +4083,22 @@
    "journal": "Journal of Behavior Therapy and Experimental Psychiatry",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jen.2025.02.007": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Burnout Among Physicians and Nurses Working in Intensive Care Units and Emergency Departments: A Systematic Review and Meta-Analysis",
+   "firstAuthor": "Lin",
+   "authors": [
+    "Lin",
+    "Selvanayagam",
+    "Patnaik",
+    "Kuo"
+   ],
+   "year": 2025,
+   "journal": "Journal of Emergency Nursing",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1016/j.jep.2013.11.008": {
    "kind": "doi",
@@ -3127,6 +4187,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.jpsychires.2019.12.015": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Global prevalence of burnout symptoms among nurses: A systematic review and meta-analysis",
+   "firstAuthor": "Woo",
+   "authors": [
+    "Woo",
+    "Ho",
+    "Tang",
+    "Tam"
+   ],
+   "year": 2020,
+   "journal": "Journal of Psychiatric Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1016/j.jpsychires.2026.03.034": {
    "kind": "doi",
    "valid": true,
@@ -3158,6 +4234,39 @@
    "journal": "Journal of Psychosomatic Research",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jpsychores.2020.110165": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A systematic review of gratitude interventions: Effects on physical health and health behaviors",
+   "firstAuthor": "Boggiss",
+   "authors": [
+    "Boggiss",
+    "Consedine",
+    "Brenton-Peters",
+    "Hofman",
+    "Serlachius"
+   ],
+   "year": 2020,
+   "journal": "Journal of Psychosomatic Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.jpsychores.2023.111328": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effects of positive psychology interventions on well-being and distress in patients with cardiovascular diseases: A systematic review and Meta-analysis",
+   "firstAuthor": "Tönis",
+   "authors": [
+    "Tönis",
+    "Kraiss",
+    "Linssen",
+    "Bohlmeijer"
+   ],
+   "year": 2023,
+   "journal": "Journal of Psychosomatic Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1016/j.jsams.2021.04.012": {
    "kind": "doi",
@@ -3777,6 +4886,19 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.psychres.2026.116947": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Burnout as an occupational phenomenon: Navigating the Twilight Zone",
+   "firstAuthor": "De Beer",
+   "authors": [
+    "De Beer"
+   ],
+   "year": 2026,
+   "journal": "Psychiatry Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1016/j.psyneuen.2008.10.026": {
    "kind": "doi",
    "valid": true,
@@ -4040,6 +5162,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-08"
   },
+  "doi:10.1016/j.smrv.2022.101697": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Go to bed! A systematic review and meta-analysis of bedtime procrastination correlates and sleep outcomes",
+   "firstAuthor": "Hill",
+   "authors": [
+    "Hill",
+    "Rebar",
+    "Ferguson",
+    "Shriane",
+    "Vincent"
+   ],
+   "year": 2022,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1016/j.smrv.2023.101764": {
    "kind": "doi",
    "valid": true,
@@ -4060,6 +5199,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.smrv.2025.102109": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of sleep hygiene education for insomnia: A systematic review and meta-analysis",
+   "firstAuthor": "Ruan",
+   "authors": [
+    "Ruan",
+    "Liu",
+    "Chung",
+    "Ho",
+    "Yeung"
+   ],
+   "year": 2025,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1016/j.smrv.2025.102139": {
    "kind": "doi",
    "valid": true,
@@ -4075,6 +5231,39 @@
    "journal": "Sleep Medicine Reviews",
    "source": "crossref",
    "verifiedAt": "2026-11-18"
+  },
+  "doi:10.1016/j.smrv.2025.102203": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sleep regularity as an important component of sleep hygiene: a systematic review",
+   "firstAuthor": "Kalkanis",
+   "authors": [
+    "Kalkanis",
+    "Lenkens",
+    "Steiropoulos",
+    "Testelmans"
+   ],
+   "year": 2025,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1016/j.smrv.2026.102232": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sleep well, feel well and vice versa? A meta-analysis of daily bidirectional within-person associations between sleep and affect",
+   "firstAuthor": "Bourke",
+   "authors": [
+    "Bourke",
+    "Harrison",
+    "Staton",
+    "Rossa",
+    "Smith"
+   ],
+   "year": 2026,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1016/j.smrv.2026.102284": {
    "kind": "doi",
@@ -4772,6 +5961,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1017/s0033291721000143": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparative efficacy and acceptability of expressive writing treatments compared with psychotherapy, other writing treatments, and waiting list control for adult trauma survivors: a systematic review and network meta-analysis",
+   "firstAuthor": "Gerger",
+   "authors": [
+    "Gerger",
+    "Werner",
+    "Gaab",
+    "Cuijpers"
+   ],
+   "year": 2021,
+   "yearAlt": 2022,
+   "journal": "Psychological Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1017/s0033291721004396": {
    "kind": "doi",
    "valid": true,
@@ -4791,6 +5997,39 @@
    "journal": "Psychological Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1017/s0033291725000017": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of cognitive behavioral therapy in treating repetitive negative thinking, rumination, and worry – a transdiagnostic meta-analysis",
+   "firstAuthor": "Stenzel",
+   "authors": [
+    "Stenzel",
+    "Keller",
+    "Kirchner",
+    "Rief",
+    "Berg"
+   ],
+   "year": 2025,
+   "journal": "Psychological Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1017/s1092852900027279": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Self-Help and Internet-Guided Interventions in Depression and Anxiety Disorders: A Systematic Review of Meta-Analyses",
+   "firstAuthor": "Hof",
+   "authors": [
+    "Hof",
+    "Cuijpers",
+    "Stein"
+   ],
+   "year": 2009,
+   "yearAlt": 2014,
+   "journal": "CNS Spectrums",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1023/a:1009554825745": {
    "kind": "doi",
@@ -4836,6 +6075,35 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1037/a0027600": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Dealing with feeling: A meta-analysis of the effectiveness of strategies derived from the process model of emotion regulation.",
+   "firstAuthor": "Webb",
+   "authors": [
+    "Webb",
+    "Miles",
+    "Sheeran"
+   ],
+   "year": 2012,
+   "journal": "Psychological Bulletin",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1037/a0035540": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A habit-goal framework of depressive rumination.",
+   "firstAuthor": "Watkins",
+   "authors": [
+    "Watkins",
+    "Nolen-Hoeksema"
+   ],
+   "year": 2014,
+   "journal": "Journal of Abnormal Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1037/amp0000118": {
    "kind": "doi",
    "valid": true,
@@ -4849,6 +6117,113 @@
    "journal": "American Psychologist",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1037/bul0000138": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Perfectionism is increasing over time: A meta-analysis of birth cohort differences from 1989 to 2016.",
+   "firstAuthor": "Curran",
+   "authors": [
+    "Curran",
+    "Hill"
+   ],
+   "year": 2019,
+   "journal": "Psychological Bulletin",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1037/bul0000395": {
+   "kind": "doi",
+   "valid": true,
+   "title": "How do cognitive behavioral therapy and interpersonal psychotherapy improve youth depression? Applying meta-analytic structural equation modeling to three decades of randomized trials.",
+   "firstAuthor": "Ng",
+   "authors": [
+    "Ng",
+    "DiVasto",
+    "Gonzalez",
+    "Cootner",
+    "Lipsey",
+    "Weisz"
+   ],
+   "year": 2023,
+   "journal": "Psychological Bulletin",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1037/ccp0000023": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Internet-based cognitive—behavior therapy for procrastination: A randomized controlled trial.",
+   "firstAuthor": "Rozental",
+   "authors": [
+    "Rozental",
+    "Forsell",
+    "Svensson",
+    "Andersson",
+    "Carlbring"
+   ],
+   "year": 2015,
+   "journal": "Journal of Consulting and Clinical Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1037/ccp0000654": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cognitive restructuring, behavioral activation and cognitive-behavioral therapy in the treatment of adult depression: A network meta-analysis.",
+   "firstAuthor": "Ciharova",
+   "authors": [
+    "Ciharova",
+    "Furukawa",
+    "Efthimiou",
+    "Karyotaki",
+    "Miguel",
+    "Noma",
+    "Cipriani",
+    "Riper",
+    "Cuijpers"
+   ],
+   "year": 2021,
+   "journal": "Journal of Consulting and Clinical Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1037/cou0000107": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Thankful for the little things: A meta-analysis of gratitude interventions.",
+   "firstAuthor": "Davis",
+   "authors": [
+    "Davis",
+    "Choe",
+    "Meyers",
+    "Wade",
+    "Varjas",
+    "Gifford",
+    "Quinn",
+    "Hook",
+    "Van Tongeren",
+    "Griffin",
+    "Worthington"
+   ],
+   "year": 2016,
+   "journal": "Journal of Counseling Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1037/xge0000050": {
+   "kind": "doi",
+   "valid": true,
+   "title": "An investigation of the efficacy of acceptance-based behavioral therapy for academic procrastination.",
+   "firstAuthor": "Glick",
+   "authors": [
+    "Glick",
+    "Orsillo"
+   ],
+   "year": 2015,
+   "journal": "Journal of Experimental Psychology: General",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1038/35013070": {
    "kind": "doi",
@@ -5213,6 +6588,30 @@
    "source": "crossref",
    "verifiedAt": "2026-11-10"
   },
+  "doi:10.1038/s41398-026-04119-x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Emotion regulation impairment across psychiatric disorders: a systematic review and meta-analysis",
+   "firstAuthor": "Sloan",
+   "authors": [
+    "Sloan",
+    "Stellern",
+    "Xiao",
+    "Germeyer",
+    "Gill",
+    "Laputsina",
+    "Mulsant",
+    "Ngoy",
+    "Nguyen",
+    "Tang",
+    "Sanches",
+    "Gowin"
+   ],
+   "year": 2026,
+   "journal": "Translational Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1038/s41467-025-57846-y": {
    "kind": "doi",
    "valid": true,
@@ -5264,6 +6663,43 @@
    "journal": "Nature Biomedical Engineering",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1038/s41562-025-02168-8": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Emotion regulation and mental health across cultures: a systematic review and meta-analysis",
+   "firstAuthor": "Chen",
+   "authors": [
+    "Chen",
+    "Cai",
+    "Omari",
+    "Sanghvi",
+    "Lyu",
+    "Bonanno"
+   ],
+   "year": 2025,
+   "journal": "Nature Human Behaviour",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1038/s41562-025-02369-1": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A systematic review and network meta-analysis of randomized controlled trials of well-being-focused interventions",
+   "firstAuthor": "Wilkie",
+   "authors": [
+    "Wilkie",
+    "Fisher",
+    "Geidel",
+    "Goodall",
+    "Kamil",
+    "Davies",
+    "Kemp"
+   ],
+   "year": 2026,
+   "journal": "Nature Human Behaviour",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1038/s41565-023-01513-0": {
    "kind": "doi",
@@ -5494,6 +6930,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1038/s41598-024-58408-w": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effectiveness of stress arousal reappraisal and stress-is-enhancing mindset interventions on task performance outcomes: a meta-analysis of randomized controlled trials",
+   "firstAuthor": "Bosshard",
+   "authors": [
+    "Bosshard",
+    "Gomez"
+   ],
+   "year": 2024,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1038/s41598-024-64254-7": {
    "kind": "doi",
    "valid": true,
@@ -5543,6 +6993,24 @@
    "journal": "Scientific Reports",
    "source": "crossref",
    "verifiedAt": "2026-11-11"
+  },
+  "doi:10.1038/s41598-025-90984-3": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effects of social media abstinence on affective well-being and life satisfaction: a systematic review and meta-analysis",
+   "firstAuthor": "Lemahieu",
+   "authors": [
+    "Lemahieu",
+    "Vander Zwalmen",
+    "Mennes",
+    "Koster",
+    "Vanden Abeele",
+    "Poels"
+   ],
+   "year": 2025,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1038/s41598-026-44902-w": {
    "kind": "doi",
@@ -5632,6 +7100,40 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1038/s41746-023-00800-3": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Digital cognitive behavioral therapy for insomnia on depression and anxiety: a systematic review and meta-analysis",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Oh",
+    "Park",
+    "Lee",
+    "Lee"
+   ],
+   "year": 2023,
+   "journal": "npj Digital Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1038/s41746-025-01514-4": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Systematic review and meta-analysis on fully automated digital cognitive behavioral therapy for insomnia",
+   "firstAuthor": "Hwang",
+   "authors": [
+    "Hwang",
+    "Lee",
+    "Woo",
+    "Kim",
+    "Kwon"
+   ],
+   "year": 2025,
+   "journal": "npj Digital Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1038/s41746-025-02238-1": {
    "kind": "doi",
    "valid": true,
@@ -5669,6 +7171,48 @@
    "journal": "npj Digital Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-09"
+  },
+  "doi:10.1038/s44220-023-00081-5": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Systematic review and individual participant data meta-analysis of randomized controlled trials assessing mindfulness-based programs for mental health promotion",
+   "firstAuthor": "Galante",
+   "authors": [
+    "Galante",
+    "Friedrich",
+    "Collaboration of Mindfulness Trials (CoMinT)",
+    "Aeamla-Or",
+    "Arts-de Jong",
+    "Barrett",
+    "Bögels",
+    "Buitelaar",
+    "Checovich",
+    "Christopher",
+    "Davidson",
+    "Errazuriz",
+    "Goldberg",
+    "Greven",
+    "Hirshberg",
+    "Huang",
+    "Hunsinger",
+    "Hwang",
+    "Jones",
+    "Medvedev",
+    "Rosenkranz",
+    "Schellekens",
+    "Siebelink",
+    "Singh",
+    "Speckens",
+    "Tang",
+    "Tomfohr-Madsen",
+    "Dalgleish",
+    "Jones",
+    "White"
+   ],
+   "year": 2023,
+   "journal": "Nature Mental Health",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1038/srep31724": {
    "kind": "doi",
@@ -6248,6 +7792,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1073/pnas.2425193122": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A meta-analysis of the effectiveness of gratitude interventions on well-being across cultures",
+   "firstAuthor": "Choi",
+   "authors": [
+    "Choi",
+    "Cha",
+    "McCullough",
+    "Coles",
+    "Oishi"
+   ],
+   "year": 2025,
+   "journal": "Proceedings of the National Academy of Sciences",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1080/02640414.2024.2388984": {
    "kind": "doi",
    "valid": true,
@@ -6332,6 +7893,19 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1080/07420528.2017.1299162": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Social jet lag: Sleep-corrected formula",
+   "firstAuthor": "Jankowski",
+   "authors": [
+    "Jankowski"
+   ],
+   "year": 2017,
+   "journal": "Chronobiology International",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1080/07420528.2026.2679138": {
    "kind": "doi",
    "valid": true,
@@ -6368,6 +7942,22 @@
    "journal": "Disability and Rehabilitation",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1080/10503307.2019.1571688": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Development and validation of the Gestalt Therapy Fidelity Scale",
+   "firstAuthor": "Fogarty",
+   "authors": [
+    "Fogarty",
+    "Bhar",
+    "Theiler"
+   ],
+   "year": 2019,
+   "yearAlt": 2020,
+   "journal": "Psychotherapy Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1080/10615806.2026.2659809": {
    "kind": "doi",
@@ -6423,6 +8013,60 @@
    "journal": "Future Cardiology",
    "source": "crossref",
    "verifiedAt": "2026-11-18"
+  },
+  "doi:10.1080/16506073.2023.2277121": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The relationships between perfectionism and symptoms of depression, anxiety and obsessive-compulsive disorder in adults: a systematic review and meta-analysis",
+   "firstAuthor": "Callaghan",
+   "authors": [
+    "Callaghan",
+    "Greene",
+    "Shafran",
+    "Lunn",
+    "Egan"
+   ],
+   "year": 2023,
+   "yearAlt": 2024,
+   "journal": "Cognitive Behaviour Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1080/16506073.2025.2552929": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Perceived mental health literacy as a mediator between cognitive behavioural therapy (CBT) and depressive symptoms: a secondary data analysis of CoBalT trial data",
+   "firstAuthor": "Archer",
+   "authors": [
+    "Archer",
+    "Hammerton",
+    "Kessler",
+    "Campbell",
+    "Kuyken",
+    "Lewis",
+    "Lewis",
+    "Williams",
+    "Wiles"
+   ],
+   "year": 2025,
+   "journal": "Cognitive Behaviour Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1080/17437199.2019.1705872": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Self-compassion, physical health, and health behaviour: a meta-analysis",
+   "firstAuthor": "Phillips",
+   "authors": [
+    "Phillips",
+    "Hine"
+   ],
+   "year": 2019,
+   "yearAlt": 2021,
+   "journal": "Health Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1080/17437199.2020.1760727": {
    "kind": "doi",
@@ -6570,6 +8214,57 @@
    "journal": "The Journal of Alternative and Complementary Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1089/cyber.2021.0324": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Taking a One-Week Break from Social Media Improves Well-Being, Depression, and Anxiety: A Randomized Controlled Trial",
+   "firstAuthor": "Lambert",
+   "authors": [
+    "Lambert",
+    "Barnstable",
+    "Minter",
+    "Cooper",
+    "McEwan"
+   ],
+   "year": 2022,
+   "journal": "Cyberpsychology, Behavior, and Social Networking",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1089/cyber.2023.0742": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Improving Well-Being Through Digital Detoxification Among Social Media Users: A Systematic Review and Meta-Analysis",
+   "firstAuthor": "Ansari",
+   "authors": [
+    "Ansari",
+    "Iqbal",
+    "Azeem",
+    "Danyal"
+   ],
+   "year": 2024,
+   "journal": "Cyberpsychology, Behavior, and Social Networking",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1089/cyber.2024.0001": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Social Media Use and Well-Being: A Systematic Review and Meta-Analysis",
+   "firstAuthor": "Ansari",
+   "authors": [
+    "Ansari",
+    "Iqbal",
+    "Asif",
+    "Hashim",
+    "Farooqi",
+    "Alimoradi"
+   ],
+   "year": 2024,
+   "journal": "Cyberpsychology, Behavior, and Social Networking",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1089/dia.2022.0011": {
    "kind": "doi",
@@ -6818,6 +8513,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1093/ehjopen/oeag006": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of behavioural sleep interventions on blood pressure, heart rate, and heart rate variability in adults with poor sleep health: a systematic review, meta-analysis, and meta-regression analysis",
+   "firstAuthor": "Mostafa",
+   "authors": [
+    "Mostafa",
+    "Hanif",
+    "Balanos",
+    "Nirantharakumar",
+    "Ellis",
+    "Tahrani"
+   ],
+   "year": 2026,
+   "journal": "European Heart Journal Open",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1093/eurheartj/ehae176": {
    "kind": "doi",
    "valid": true,
@@ -6999,6 +8712,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1093/fampra/cmx122": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sleep hygiene education as a treatment of insomnia: a systematic review and meta-analysis",
+   "firstAuthor": "Chung",
+   "authors": [
+    "Chung",
+    "Lee",
+    "Yeung",
+    "Chan",
+    "Chung",
+    "Lin"
+   ],
+   "year": 2017,
+   "yearAlt": 2018,
+   "journal": "Family Practice",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1093/occmed/kqaf101": {
    "kind": "doi",
    "valid": true,
@@ -7033,6 +8765,24 @@
    "journal": "Physical Therapy",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1093/scan/nsw121": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The role of language in the experience and perception of emotion: a neuroimaging meta-analysis",
+   "firstAuthor": "Brooks",
+   "authors": [
+    "Brooks",
+    "Shablack",
+    "Gendron",
+    "Satpute",
+    "Parrish",
+    "Lindquist"
+   ],
+   "year": 2016,
+   "journal": "Social Cognitive and Affective Neuroscience",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1093/scan/nsw154": {
    "kind": "doi",
@@ -7085,6 +8835,26 @@
    "journal": "Sleep",
    "source": "crossref",
    "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1093/sleep/zsad253": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sleep regularity is a stronger predictor of mortality risk than sleep duration: A prospective cohort study",
+   "firstAuthor": "Windred",
+   "authors": [
+    "Windred",
+    "Burns",
+    "Lane",
+    "Saxena",
+    "Rutter",
+    "Cain",
+    "Phillips"
+   ],
+   "year": 2023,
+   "yearAlt": 2024,
+   "journal": "SLEEP",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1093/sleep/zsad325": {
    "kind": "doi",
@@ -7439,6 +9209,29 @@
    "source": "crossref",
    "verifiedAt": "2026-10-10"
   },
+  "doi:10.1097/psy.0000000000000316": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Pilot Randomized Study of a Gratitude Journaling Intervention on Heart Rate Variability and Inflammatory Biomarkers in Patients With Stage B Heart Failure",
+   "firstAuthor": "Redwine",
+   "authors": [
+    "Redwine",
+    "Henry",
+    "Pung",
+    "Wilson",
+    "Chinh",
+    "Knight",
+    "Jain",
+    "Rutledge",
+    "Greenberg",
+    "Maisel",
+    "Mills"
+   ],
+   "year": 2016,
+   "journal": "Psychosomatic Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1097/psy.0000000000000507": {
    "kind": "doi",
    "valid": true,
@@ -7587,6 +9380,36 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1111/ane.12362": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Studies with lucid dreaming as add-on therapy to Gestalt therapy",
+   "firstAuthor": "Holzinger",
+   "authors": [
+    "Holzinger",
+    "Klösch",
+    "Saletu"
+   ],
+   "year": 2015,
+   "journal": "Acta Neurologica Scandinavica",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1111/aphw.12051": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Relationship Between Self‐Compassion and Well‐Being: A Meta‐Analysis",
+   "firstAuthor": "Zessin",
+   "authors": [
+    "Zessin",
+    "Dickhäuser",
+    "Garbade"
+   ],
+   "year": 2015,
+   "journal": "Applied Psychology: Health and Well-Being",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1111/aphw.12571": {
    "kind": "doi",
    "valid": true,
@@ -7606,6 +9429,22 @@
    "journal": "Applied Psychology: Health and Well-Being",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1111/aphw.12612": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The temporal trajectories of habit decay in daily life: An intensive longitudinal study on four health‐risk behaviors",
+   "firstAuthor": "Edgren",
+   "authors": [
+    "Edgren",
+    "Baretta",
+    "Inauen"
+   ],
+   "year": 2024,
+   "yearAlt": 2025,
+   "journal": "Applied Psychology: Health and Well-Being",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1111/aphw.70107": {
    "kind": "doi",
@@ -7643,6 +9482,116 @@
    "journal": "Applied Psychology: Health and Well-Being",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1111/aphw.70204": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Not all cues are equal: A systematic review and three‐level meta‐analysis of context consistency, physical activity and habit strength",
+   "firstAuthor": "Zhu",
+   "authors": [
+    "Zhu",
+    "Tao",
+    "Zhou",
+    "Ma",
+    "Kaushal",
+    "Ma",
+    "Guo",
+    "Zhao",
+    "Oguntuase",
+    "Li",
+    "Zhang"
+   ],
+   "year": 2026,
+   "journal": "Applied Psychology: Health and Well-Being",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1111/bjc.12408": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The delayed, durable effect of expressive writing on depression, anxiety and stress: A meta‐analytic review of studies with long‐term follow‐ups",
+   "firstAuthor": "Guo",
+   "authors": [
+    "Guo"
+   ],
+   "year": 2022,
+   "yearAlt": 2023,
+   "journal": "British Journal of Clinical Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1111/bjhp.12658": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Procrastination and health: A longitudinal test of the roles of stress and health behaviours",
+   "firstAuthor": "Sirois",
+   "authors": [
+    "Sirois",
+    "Stride",
+    "Pychyl"
+   ],
+   "year": 2023,
+   "journal": "British Journal of Health Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1111/bjhp.12761": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Self‐compassion and psychological distress in chronic illness: A meta‐analysis",
+   "firstAuthor": "Baxter",
+   "authors": [
+    "Baxter",
+    "Sirois"
+   ],
+   "year": 2024,
+   "yearAlt": 2025,
+   "journal": "British Journal of Health Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1111/bjhp.70099": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Procrastination, stress, and self‐rated health: A multi‐sample meta‐analysis",
+   "firstAuthor": "Sirois",
+   "authors": [
+    "Sirois",
+    "Monaghan"
+   ],
+   "year": 2026,
+   "journal": "British Journal of Health Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1111/bjso.12243": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Giving in when feeling less good: Procrastination, action control, and social temptations",
+   "firstAuthor": "Sirois",
+   "authors": [
+    "Sirois",
+    "Giguère"
+   ],
+   "year": 2018,
+   "journal": "British Journal of Social Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1111/cpsp.12224": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of expressive writing on depressive symptoms-A meta-analysis",
+   "firstAuthor": "Reinhold",
+   "authors": [
+    "Reinhold",
+    "Bürkner",
+    "Holling"
+   ],
+   "year": 2018,
+   "journal": "Clinical Psychology: Science and Practice",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1111/ejn.16087": {
    "kind": "doi",
@@ -7951,6 +9900,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1111/jon199554209": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Changes in Cerebral Blood Flow as Monitored by Transcranial Doppler During Voluntary Hyperventilation and Their Effect on the Electroencephalogram",
+   "firstAuthor": "Duarte",
+   "authors": [
+    "Duarte",
+    "Markus",
+    "Harrison"
+   ],
+   "year": 1995,
+   "yearAlt": 2016,
+   "journal": "Journal of Neuroimaging",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1111/jsr.13708": {
    "kind": "doi",
    "valid": true,
@@ -7998,6 +9963,47 @@
    "source": "crossref",
    "verifiedAt": "2026-11-12"
   },
+  "doi:10.1111/jsr.70089": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Prevalence of Insomnia Disorder in the General Population: A Meta‐Analysis",
+   "firstAuthor": "van Straten",
+   "authors": [
+    "van Straten",
+    "Weinreich",
+    "Fábián",
+    "Reesen",
+    "Grigori",
+    "Luik",
+    "Harrer",
+    "Lancee"
+   ],
+   "year": 2025,
+   "journal": "Journal of Sleep Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1111/nyas.70046": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Systematic review and meta‐analysis of mechanistic loneliness interventions for older adults",
+   "firstAuthor": "Coppola",
+   "authors": [
+    "Coppola",
+    "Ibrahim",
+    "Bloch",
+    "Sah",
+    "Mehta",
+    "Goel",
+    "Calkins",
+    "Hernandez",
+    "Lee"
+   ],
+   "year": 2025,
+   "journal": "Annals of the New York Academy of Sciences",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1111/nyas.70149": {
    "kind": "doi",
    "valid": true,
@@ -8013,6 +10019,40 @@
    "journal": "Annals of the New York Academy of Sciences",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1111/obr.13664": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Social jetlag and obesity: A systematic review and meta‐analysis",
+   "firstAuthor": "Arab",
+   "authors": [
+    "Arab",
+    "Karimi",
+    "Garaulet",
+    "Scheer"
+   ],
+   "year": 2023,
+   "yearAlt": 2024,
+   "journal": "Obesity Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1111/pcn.13356": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability in patients with anxiety disorders: A systematic review and meta‐analysis",
+   "firstAuthor": "Cheng",
+   "authors": [
+    "Cheng",
+    "Su",
+    "Liu",
+    "Huang",
+    "Huang"
+   ],
+   "year": 2022,
+   "journal": "Psychiatry and Clinical Neurosciences",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1111/php.12864": {
    "kind": "doi",
@@ -8583,6 +10623,73 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1136/bjsports-2022-106195": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews",
+   "firstAuthor": "Singh",
+   "authors": [
+    "Singh",
+    "Olds",
+    "Curtis",
+    "Dumuid",
+    "Virgara",
+    "Watson",
+    "Szeto",
+    "O'Connor",
+    "Ferguson",
+    "Eglitis",
+    "Miatke",
+    "Simpson",
+    "Maher"
+   ],
+   "year": 2023,
+   "journal": "British Journal of Sports Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1136/bmj-2021-067068": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The prevalence of loneliness across 113 countries: systematic review and meta-analysis",
+   "firstAuthor": "Surkalim",
+   "authors": [
+    "Surkalim",
+    "Luo",
+    "Eres",
+    "Gebel",
+    "van Buskirk",
+    "Bauman",
+    "Ding"
+   ],
+   "year": 2022,
+   "journal": "BMJ",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1136/bmj-2022-070442": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Associations of physician burnout with career engagement and quality of patient care: systematic review and meta-analysis",
+   "firstAuthor": "Hodkinson",
+   "authors": [
+    "Hodkinson",
+    "Zhou,",
+    "Johnson",
+    "Geraghty",
+    "Riley",
+    "Zhou",
+    "Panagopoulou",
+    "Chew-Graham",
+    "Peters",
+    "Esmail",
+    "Panagioti,"
+   ],
+   "year": 2022,
+   "journal": "BMJ",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1136/bmj-2023-075847": {
    "kind": "doi",
    "valid": true,
@@ -8632,6 +10739,42 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1136/bmjment-2026-302843": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Research agenda to advance anhedonia assessment, understanding and treatment: an ECNP-GALENOS expert meeting report",
+   "firstAuthor": "Penninx",
+   "authors": [
+    "Penninx",
+    "Kas",
+    "Dawson",
+    "Correll",
+    "Harmer",
+    "Buhl",
+    "De Prisco",
+    "Downs",
+    "Hernaus",
+    "Hopkins",
+    "Husain",
+    "Johnson",
+    "Mckernan",
+    "Ostinelli",
+    "Pizzagalli",
+    "Pryce",
+    "Reif",
+    "Schreiber",
+    "Serretti",
+    "Siafis",
+    "Tunbridge",
+    "Umbricht",
+    "Vinkers",
+    "Cipriani"
+   ],
+   "year": 2026,
+   "journal": "BMJ Mental Health",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1136/bmjopen-2019-031142": {
    "kind": "doi",
    "valid": true,
@@ -8651,6 +10794,22 @@
    "journal": "BMJ Open",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1136/fmch-2021-001154": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of journaling in the management of mental illness: a systematic review and meta-analysis",
+   "firstAuthor": "Sohal",
+   "authors": [
+    "Sohal",
+    "Singh",
+    "Dhillon",
+    "Gill"
+   ],
+   "year": 2022,
+   "journal": "Family Medicine and Community Health",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1136/heartjnl-2017-312731": {
    "kind": "doi",
@@ -8700,6 +10859,30 @@
    "journal": "Thorax",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1139/apnm-2020-0032": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sleep timing, sleep consistency, and health in adults: a systematic review",
+   "firstAuthor": "Chaput",
+   "authors": [
+    "Chaput",
+    "Dutil",
+    "Featherstone",
+    "Ross",
+    "Giangregorio",
+    "Saunders",
+    "Janssen",
+    "Poitras",
+    "Kho",
+    "Ross-White",
+    "Zankar",
+    "Carrier"
+   ],
+   "year": 2020,
+   "journal": "Applied Physiology, Nutrition, and Metabolism",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1146/annurev-bioeng-103020-040136": {
    "kind": "doi",
@@ -8932,6 +11115,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1152/japplphysiol.00637.2013": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Hyperventilation, cerebral perfusion, and syncope",
+   "firstAuthor": "Immink",
+   "authors": [
+    "Immink",
+    "Pott",
+    "Secher",
+    "van Lieshout"
+   ],
+   "year": 2014,
+   "journal": "Journal of Applied Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1152/japplphysiol.90991.2008": {
    "kind": "doi",
    "valid": true,
@@ -9065,6 +11264,23 @@
    "journal": "Evidence-Based Complementary and Alternative Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1159/000440726": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A Randomized Controlled Clinical Trial of Dialogical Exposure Therapy versus Cognitive Processing Therapy for Adult Outpatients Suffering from PTSD after Type I Trauma in Adulthood",
+   "firstAuthor": "Butollo",
+   "authors": [
+    "Butollo",
+    "Karl",
+    "König",
+    "Rosner"
+   ],
+   "year": 2015,
+   "yearAlt": 2016,
+   "journal": "Psychotherapy and Psychosomatics",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1159/000549416": {
    "kind": "doi",
@@ -9213,6 +11429,29 @@
    "journal": "Circulation",
    "source": "crossref",
    "verifiedAt": "2026-11-18"
+  },
+  "doi:10.1161/cir.0000000000001388": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Role of Circadian Health in Cardiometabolic Health and Disease Risk: A Scientific Statement From the American Heart Association",
+   "firstAuthor": "Knutson",
+   "authors": [
+    "Knutson",
+    "Dixon",
+    "Grandner",
+    "Jackson",
+    "Kline",
+    "Maher",
+    "Makarem",
+    "Martino",
+    "St-Onge",
+    "Johnson",
+    "on behalf of the American Heart Association Council on Lifestyle and Cardiometabolic Health; Council on Cardiovascular and Stroke Nursing; Council on Clinical Cardiology; and Council on Lifelong Congenital Heart Disease and Heart Health in the Young"
+   ],
+   "year": 2025,
+   "journal": "Circulation",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1161/circulationaha.105.545459": {
    "kind": "doi",
@@ -9531,6 +11770,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1177/0020764018776349": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effect of loneliness on depression: A meta-analysis",
+   "firstAuthor": "Erzen",
+   "authors": [
+    "Erzen",
+    "Çikrikci"
+   ],
+   "year": 2018,
+   "journal": "International Journal of Social Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1177/0194599814559383": {
    "kind": "doi",
    "valid": true,
@@ -9765,6 +12018,21 @@
    "source": "crossref",
    "verifiedAt": "2026-11-11"
   },
+  "doi:10.1177/1088868315596286": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Multidimensional Perfectionism and Burnout",
+   "firstAuthor": "Hill",
+   "authors": [
+    "Hill",
+    "Curran"
+   ],
+   "year": 2015,
+   "yearAlt": 2016,
+   "journal": "Personality and Social Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1177/1088868316628405": {
    "kind": "doi",
    "valid": true,
@@ -9821,6 +12089,42 @@
    "journal": "High Altitude Medicine &amp; Biology",
    "source": "crossref",
    "verifiedAt": "2026-10-10"
+  },
+  "doi:10.1177/1745691612447309": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Self-Determination Theory Applied to Health Contexts",
+   "firstAuthor": "Ng",
+   "authors": [
+    "Ng",
+    "Ntoumanis",
+    "Thøgersen-Ntoumani",
+    "Deci",
+    "Ryan",
+    "Duda",
+    "Williams"
+   ],
+   "year": 2012,
+   "journal": "Perspectives on Psychological Science",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1177/1745691614568352": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Loneliness and Social Isolation as Risk Factors for Mortality",
+   "firstAuthor": "Holt-Lunstad",
+   "authors": [
+    "Holt-Lunstad",
+    "Smith",
+    "Baker",
+    "Harris",
+    "Stephenson"
+   ],
+   "year": 2015,
+   "journal": "Perspectives on Psychological Science",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1177/1745691615600138": {
    "kind": "doi",
@@ -10099,6 +12403,56 @@
    "source": "crossref",
    "verifiedAt": "2026-11-11"
   },
+  "doi:10.1186/s12888-018-1739-2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effect of positive psychology interventions on well-being and distress in clinical samples with psychiatric or somatic disorders: a systematic review and meta-analysis",
+   "firstAuthor": "Chakhssi",
+   "authors": [
+    "Chakhssi",
+    "Kraiss",
+    "Sommers-Spijkerman",
+    "Bohlmeijer"
+   ],
+   "year": 2018,
+   "journal": "BMC Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1186/s12888-020-2442-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Emotion dysregulation in adults with attention deficit hyperactivity disorder: a meta-analysis",
+   "firstAuthor": "Beheshti",
+   "authors": [
+    "Beheshti",
+    "Chavanon",
+    "Christiansen"
+   ],
+   "year": 2020,
+   "journal": "BMC Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1186/s12888-025-07065-y": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Evaluating the efficacy of rumination-focused cognitive-behavioral therapy in alleviating depression, negative affect, and rumination among patients with recurrent major depressive disorder: a randomized, multicenter clinical trial",
+   "firstAuthor": "Hasani",
+   "authors": [
+    "Hasani",
+    "Zenoozian",
+    "Ahmadi",
+    "Khakpoor",
+    "Saberi",
+    "Pirzeh",
+    "Saed"
+   ],
+   "year": 2025,
+   "journal": "BMC Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1186/s12889-026-27255-x": {
    "kind": "doi",
    "valid": true,
@@ -10162,6 +12516,35 @@
    "journal": "BMC Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1186/s12960-021-00564-5": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Outcomes, mechanisms and contextual factors of positive psychology interventions for health workers: a systematic review of global evidence",
+   "firstAuthor": "Kletter",
+   "authors": [
+    "Kletter",
+    "Harris",
+    "Brown"
+   ],
+   "year": 2021,
+   "journal": "Human Resources for Health",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1186/s12966-026-01915-y": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A systematic review and meta-analysis on the effectiveness of if-then plans – in a strict sense – to facilitate fruit and vegetable consumption in adults",
+   "firstAuthor": "Melum",
+   "authors": [
+    "Melum",
+    "Martiny-Huenger"
+   ],
+   "year": 2026,
+   "journal": "International Journal of Behavioral Nutrition and Physical Activity",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1186/s12970-017-0177-8": {
    "kind": "doi",
@@ -10261,6 +12644,23 @@
    "journal": "BMC Psychology",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1186/s40359-025-03348-x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effectiveness of mindfulness-based cognitive therapy on rumination and related psychological indicators: a systematic review and meta-analysis",
+   "firstAuthor": "Wei",
+   "authors": [
+    "Wei",
+    "Qin",
+    "Yu",
+    "Cao",
+    "Li"
+   ],
+   "year": 2025,
+   "journal": "BMC Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1192/j.eurpsy.2020.3": {
    "kind": "doi",
@@ -10895,6 +13295,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1371/journal.pone.0212854": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The efficacy of stress reappraisal interventions on stress responsivity: A meta-analysis and systematic review of existing evidence",
+   "firstAuthor": "Liu",
+   "authors": [
+    "Liu",
+    "Ein",
+    "Gervasio",
+    "Vickers"
+   ],
+   "year": 2019,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.1371/journal.pone.0215053": {
    "kind": "doi",
    "valid": true,
@@ -10921,6 +13337,21 @@
    "journal": "PLOS ONE",
    "source": "crossref",
    "verifiedAt": "2026-10-10"
+  },
+  "doi:10.1371/journal.pone.0216588": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Meta-analyses of positive psychology interventions: The effects are much smaller than previously reported",
+   "firstAuthor": "White",
+   "authors": [
+    "White",
+    "Uttl",
+    "Holder"
+   ],
+   "year": 2019,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1371/journal.pone.0227709": {
    "kind": "doi",
@@ -10997,6 +13428,21 @@
    "journal": "PLOS ONE",
    "source": "crossref",
    "verifiedAt": "2026-10-11"
+  },
+  "doi:10.1371/journal.pone.0280131": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Evidence of emotion dysregulation as a core symptom of adult ADHD: A systematic review",
+   "firstAuthor": "Soler-Gutiérrez",
+   "authors": [
+    "Soler-Gutiérrez",
+    "Pérez-González",
+    "Mayas"
+   ],
+   "year": 2023,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.1371/journal.pone.0286023": {
    "kind": "doi",
@@ -11728,6 +14174,41 @@
    "source": "crossref",
    "verifiedAt": "2026-11-15"
   },
+  "doi:10.2196/44922": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Impact of Social Media Use Interventions on Mental Well-Being: Systematic Review",
+   "firstAuthor": "Plackett",
+   "authors": [
+    "Plackett",
+    "Blyth",
+    "Schartau"
+   ],
+   "year": 2023,
+   "journal": "Journal of Medical Internet Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.2196/49772": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Association Between Physical Activity and the Risk of Burnout in Health Care Workers: Systematic Review",
+   "firstAuthor": "Mincarone",
+   "authors": [
+    "Mincarone",
+    "Bodini",
+    "Tumolo",
+    "Sabina",
+    "Colella",
+    "Mannini",
+    "Sabato",
+    "Leo"
+   ],
+   "year": 2024,
+   "journal": "JMIR Public Health and Surveillance",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.2196/67110": {
    "kind": "doi",
    "valid": true,
@@ -11741,6 +14222,22 @@
    "journal": "JMIR Cardio",
    "source": "crossref",
    "verifiedAt": "2026-11-07"
+  },
+  "doi:10.2196/68054": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effectiveness of Digital Behavioral Activation Interventions for Depression and Anxiety: Systematic Review and Meta-Analysis",
+   "firstAuthor": "Jia",
+   "authors": [
+    "Jia",
+    "Macon",
+    "Doering",
+    "Abraham"
+   ],
+   "year": 2025,
+   "journal": "Journal of Medical Internet Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.2196/78212": {
    "kind": "doi",
@@ -12769,6 +15266,72 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3389/fpsyg.2020.00560": {
+   "kind": "doi",
+   "valid": true,
+   "title": "How to Form Good Habits? A Longitudinal Field Study on the Role of Self-Control in Habit Formation",
+   "firstAuthor": "van der Weiden",
+   "authors": [
+    "van der Weiden",
+    "Benjamins",
+    "Gillebaart",
+    "Ybema",
+    "de Ridder"
+   ],
+   "year": 2020,
+   "journal": "Frontiers in Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.3389/fpsyg.2023.1243598": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The impact of gratitude interventions on patients with cardiovascular disease: a systematic review",
+   "firstAuthor": "Wang",
+   "authors": [
+    "Wang",
+    "Song"
+   ],
+   "year": 2023,
+   "journal": "Frontiers in Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.3389/fpsyg.2023.1304726": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Common mental disorders in Gestalt therapy treatment: a multiple case study comparing patients with moderate and low integrated personality structures",
+   "firstAuthor": "Kaisler",
+   "authors": [
+    "Kaisler",
+    "Fede",
+    "Diltsch",
+    "Probst",
+    "Schaffler"
+   ],
+   "year": 2023,
+   "journal": "Frontiers in Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.3389/fpsyg.2024.1412928": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A systematic review of brief respiratory, embodiment, cognitive, and mindfulness interventions to reduce state anxiety",
+   "firstAuthor": "Chin",
+   "authors": [
+    "Chin",
+    "Gorman",
+    "Beck",
+    "Russell",
+    "Stephan",
+    "Harrison"
+   ],
+   "year": 2024,
+   "journal": "Frontiers in Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.3389/fpsyg.2026.1792917": {
    "kind": "doi",
    "valid": true,
@@ -12808,6 +15371,22 @@
    "journal": "Frontiers in Psychology",
    "source": "crossref",
    "verifiedAt": "2026-11-13"
+  },
+  "doi:10.3389/fpsyt.2014.00080": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Anxiety Disorders are Associated with Reduced Heart Rate Variability: A Meta-Analysis",
+   "firstAuthor": "Chalmers",
+   "authors": [
+    "Chalmers",
+    "Quintana",
+    "Abbott",
+    "Kemp"
+   ],
+   "year": 2014,
+   "journal": "Frontiers in Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.3389/fpsyt.2018.00044": {
    "kind": "doi",
@@ -12880,6 +15459,25 @@
    "source": "crossref",
    "verifiedAt": "2026-11-14"
   },
+  "doi:10.3389/fpsyt.2025.1624094": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The association between procrastination and negative emotions in healthy individuals: a systematic review and meta-analysis",
+   "firstAuthor": "Nie",
+   "authors": [
+    "Nie",
+    "Wang",
+    "Zhou",
+    "Wang",
+    "Li",
+    "Liu",
+    "Gao"
+   ],
+   "year": 2025,
+   "journal": "Frontiers in Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.3389/fpsyt.2026.1813993": {
    "kind": "doi",
    "valid": true,
@@ -12898,6 +15496,24 @@
    "journal": "Frontiers in Psychiatry",
    "source": "crossref",
    "verifiedAt": "2026-11-13"
+  },
+  "doi:10.3389/fpsyt.2026.1838523": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Association of sleep quality and sleep duration with anxiety symptoms in older adults: a systematic review and meta-analysis",
+   "firstAuthor": "Zhang",
+   "authors": [
+    "Zhang",
+    "Zhu",
+    "Zhang",
+    "Shen",
+    "Shi",
+    "Min"
+   ],
+   "year": 2026,
+   "journal": "Frontiers in Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.3389/fpubh.2017.00222": {
    "kind": "doi",
@@ -12961,6 +15577,42 @@
    "journal": "Frontiers in Public Health",
    "source": "crossref",
    "verifiedAt": "2026-11-11"
+  },
+  "doi:10.3389/fpubh.2026.1950356": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Behavior plan and the intention–behavior gap in physical activity among adolescents and college students: a systematic review and meta-analysis",
+   "firstAuthor": "Yin",
+   "authors": [
+    "Yin",
+    "Sun",
+    "He",
+    "Qi",
+    "Li"
+   ],
+   "year": 2026,
+   "journal": "Frontiers in Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.3389/fragi.2025.1594513": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effectiveness of social support interventions on loneliness among older people in the community: a meta-analysis of randomised controlled trials",
+   "firstAuthor": "Huang",
+   "authors": [
+    "Huang",
+    "Yang",
+    "Yao",
+    "Li",
+    "Wu",
+    "Zhou",
+    "Wang"
+   ],
+   "year": 2026,
+   "journal": "Frontiers in Aging",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.3389/fspor.2021.700757": {
    "kind": "doi",
@@ -13078,6 +15730,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3390/bs7040070": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Aesthetic Diagnosis in Gestalt Therapy",
+   "firstAuthor": "Roubal",
+   "authors": [
+    "Roubal",
+    "Francesetti",
+    "Gecele"
+   ],
+   "year": 2017,
+   "journal": "Behavioral Sciences",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.3390/clockssleep8030052": {
    "kind": "doi",
    "valid": true,
@@ -13127,6 +15794,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.3390/ejihpe15110222": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Reducing Social Media Use Decreases Depression Symptoms: A Meta-Analysis of Randomised Controlled Trials",
+   "firstAuthor": "May",
+   "authors": [
+    "May",
+    "Malouff",
+    "Meynadier"
+   ],
+   "year": 2025,
+   "journal": "European Journal of Investigation in Health, Psychology and Education",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.3390/healthcare10091755": {
    "kind": "doi",
    "valid": true,
@@ -13160,6 +15842,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.3390/healthcare12232488": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Time to Form a Habit: A Systematic Review and Meta-Analysis of Health Behaviour Habit Formation and Its Determinants",
+   "firstAuthor": "Singh",
+   "authors": [
+    "Singh",
+    "Murphy",
+    "Maher",
+    "Smith"
+   ],
+   "year": 2024,
+   "journal": "Healthcare",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.3390/ijerph182211778": {
    "kind": "doi",
    "valid": true,
@@ -13175,6 +15873,24 @@
    "journal": "International Journal of Environmental Research and Public Health",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.3390/ijerph19063260": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A Single-Case Design Investigation for Measuring the Efficacy of Gestalt Therapy to Treat Depression in Older Adults with Dementia in Italy and in Mexico: A Research Protocol",
+   "firstAuthor": "Merizzi",
+   "authors": [
+    "Merizzi",
+    "Biasi",
+    "Zamudio",
+    "Spagnuolo Lobb",
+    "Di Rosa",
+    "Santini"
+   ],
+   "year": 2022,
+   "journal": "International Journal of Environmental Research and Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.3390/ijerph19063380": {
    "kind": "doi",
@@ -13353,6 +16069,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3390/nu13124543": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Social Jetlag and Related Risks for Human Health: A Timely Review",
+   "firstAuthor": "Caliandro",
+   "authors": [
+    "Caliandro",
+    "Streng",
+    "van Kerkhof",
+    "van der Horst",
+    "Chaves"
+   ],
+   "year": 2021,
+   "journal": "Nutrients",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.3390/nu17091470": {
    "kind": "doi",
    "valid": true,
@@ -13451,6 +16184,26 @@
    "journal": "Sensors",
    "source": "crossref",
    "verifiedAt": "2026-10-10"
+  },
+  "doi:10.3390/s22114097": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Continuous Monitoring of Vital Signs Using Cameras: A Systematic Review",
+   "firstAuthor": "Selvaraju",
+   "authors": [
+    "Selvaraju",
+    "Spicher",
+    "Wang",
+    "Ganapathy",
+    "Warnecke",
+    "Leonhardt",
+    "Swaminathan",
+    "Deserno"
+   ],
+   "year": 2022,
+   "journal": "Sensors",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.3390/s22186723": {
    "kind": "doi",
@@ -13626,6 +16379,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-09"
   },
+  "doi:10.3928/02793695-20260209-01": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Meta-Analysis of the Correlation Between Rumination and Depression Among Adolescents",
+   "firstAuthor": "Tao",
+   "authors": [
+    "Tao",
+    "Xiong",
+    "Guo",
+    "Mao",
+    "Wu"
+   ],
+   "year": 2026,
+   "journal": "Journal of Psychosocial Nursing and Mental Health Services",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.3949/ccjm.76.s2.17": {
    "kind": "doi",
    "valid": true,
@@ -13638,6 +16408,22 @@
    "journal": "Cleveland Clinic Journal of Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.4102/safp.v68i1.6235": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Burnout in healthcare professionals",
+   "firstAuthor": "Maluleka",
+   "authors": [
+    "Maluleka",
+    "Bulo",
+    "Nair",
+    "von Pressentin"
+   ],
+   "year": 2026,
+   "journal": "South African Family Practice",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.4103/0973-6131.133872": {
    "kind": "doi",
@@ -13738,6 +16524,40 @@
    "journal": "Biology of Sport",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.5114/cipp/225999": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Does mental contrasting with implementation intentions (MCII) help to increase physical activity?",
+   "firstAuthor": "Kędra",
+   "authors": [
+    "Kędra",
+    "Łaguna"
+   ],
+   "year": 2026,
+   "journal": "Current Issues in Personality Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
+  "doi:10.52225/narra.v4i2.786": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Impacts of digital social media detox for mental health: A systematic review and meta-analysis",
+   "firstAuthor": "Ramadhan",
+   "authors": [
+    "Ramadhan",
+    "Rampengan",
+    "Yumnanisha",
+    "Setiono",
+    "Tjandra",
+    "Ariyanto",
+    "Idrisov",
+    "Empitu"
+   ],
+   "year": 2024,
+   "journal": "Narra J",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.5664/jcsm.1476": {
    "kind": "doi",
@@ -13850,6 +16670,30 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.5664/jcsm.8986": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline",
+   "firstAuthor": "Edinger",
+   "authors": [
+    "Edinger",
+    "Arnedt",
+    "Bertisch",
+    "Carney",
+    "Harrington",
+    "Lichstein",
+    "Sateia",
+    "Troxel",
+    "Zhou",
+    "Kazmi",
+    "Heald",
+    "Martin"
+   ],
+   "year": 2021,
+   "journal": "Journal of Clinical Sleep Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
+  },
   "doi:10.5665/sleep.3230": {
    "kind": "doi",
    "valid": true,
@@ -13954,6 +16798,25 @@
    "journal": "Annals of Internal Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.7326/annals-25-00469": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of Individual-Level Interventions to Mitigate the Risk for Burnout Among Health Care Professionals",
+   "firstAuthor": "Collett",
+   "authors": [
+    "Collett",
+    "Gupta",
+    "Eltayeb",
+    "Korszun",
+    "Sharples",
+    "Rice",
+    "Gupta"
+   ],
+   "year": 2026,
+   "journal": "Annals of Internal Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-25"
   },
   "doi:10.7326/m15-2175": {
    "kind": "doi",
@@ -14531,6 +17394,21 @@
    "doi": "10.1038/nrn894",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:12173682": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Journaling about stressful events: effects of cognitive processing and emotional expression.",
+   "firstAuthor": "Ullrich",
+   "authors": [
+    "Ullrich",
+    "Lutgendorf"
+   ],
+   "year": 2002,
+   "journal": "Ann Behav Med",
+   "doi": "10.1207/S15324796ABM2403_10",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:12186352": {
    "kind": "pmid",
@@ -15645,6 +18523,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:19238128": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Self-help and Internet-guided interventions in depression and anxiety disorders: a systematic review of meta-analyses.",
+   "firstAuthor": "Van't Hof",
+   "authors": [
+    "Van't Hof",
+    "Cuijpers",
+    "Stein"
+   ],
+   "year": 2009,
+   "journal": "CNS Spectr",
+   "doi": "10.1017/s1092852900027279",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:19246382": {
    "kind": "pmid",
    "valid": false,
@@ -16082,6 +18976,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:21238951": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Rumination as a transdiagnostic factor in depression and anxiety.",
+   "firstAuthor": "McLaughlin",
+   "authors": [
+    "McLaughlin",
+    "Nolen-Hoeksema"
+   ],
+   "year": 2011,
+   "yearAlt": 2010,
+   "journal": "Behav Res Ther",
+   "doi": "10.1016/j.brat.2010.12.006",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:21300408": {
    "kind": "pmid",
    "valid": true,
@@ -16221,6 +19131,21 @@
    "doi": "10.1002/dmrr.1239",
    "source": "pubmed",
    "verifiedAt": "2026-11-15"
+  },
+  "pmid:21802618": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effect of mindfulness-based cognitive therapy for prevention of relapse in recurrent major depressive disorder: a systematic review and meta-analysis.",
+   "firstAuthor": "Piet",
+   "authors": [
+    "Piet",
+    "Hougaard"
+   ],
+   "year": 2011,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2011.05.002",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:21876150": {
    "kind": "pmid",
@@ -16455,6 +19380,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:22582737": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Dealing with feeling: a meta-analysis of the effectiveness of strategies derived from the process model of emotion regulation.",
+   "firstAuthor": "Webb",
+   "authors": [
+    "Webb",
+    "Miles",
+    "Sheeran"
+   ],
+   "year": 2012,
+   "journal": "Psychol Bull",
+   "doi": "10.1037/a0027600",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:22654764": {
    "kind": "pmid",
    "valid": true,
@@ -16468,6 +19409,21 @@
    "doi": "10.3389/fphys.2012.00148",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:22796446": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Exploring compassion: a meta-analysis of the association between self-compassion and psychopathology.",
+   "firstAuthor": "MacBeth",
+   "authors": [
+    "MacBeth",
+    "Gumley"
+   ],
+   "year": 2012,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2012.06.003",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:22866996": {
    "kind": "pmid",
@@ -16903,6 +19859,28 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:23796855": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Mindfulness-based therapy: a comprehensive meta-analysis.",
+   "firstAuthor": "Khoury",
+   "authors": [
+    "Khoury",
+    "Lecomte",
+    "Fortin",
+    "Masse",
+    "Therien",
+    "Bouchard",
+    "Chapleau",
+    "Paquin",
+    "Hofmann"
+   ],
+   "year": 2013,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2013.05.005",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:23797150": {
    "kind": "pmid",
    "valid": true,
@@ -17200,6 +20178,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:24265279": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Hyperventilation, cerebral perfusion, and syncope.",
+   "firstAuthor": "Immink",
+   "authors": [
+    "Immink",
+    "Pott",
+    "Secher",
+    "van Lieshout"
+   ],
+   "year": 2014,
+   "yearAlt": 2013,
+   "journal": "J Appl Physiol (1985)",
+   "doi": "10.1152/japplphysiol.00637.2013",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:24286286": {
    "kind": "pmid",
    "valid": true,
@@ -17278,6 +20274,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:24487344": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Psychological treatment of generalized anxiety disorder: a meta-analysis.",
+   "firstAuthor": "Cuijpers",
+   "authors": [
+    "Cuijpers",
+    "Sijbrandij",
+    "Koole",
+    "Huibers",
+    "Berking",
+    "Andersson"
+   ],
+   "year": 2014,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2014.01.002",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:24636500": {
    "kind": "pmid",
    "valid": true,
@@ -17292,6 +20307,21 @@
    "doi": "10.1016/j.psyneuen.2013.12.017",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:24661156": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A habit-goal framework of depressive rumination.",
+   "firstAuthor": "Watkins",
+   "authors": [
+    "Watkins",
+    "Nolen-Hoeksema"
+   ],
+   "year": 2014,
+   "journal": "J Abnorm Psychol",
+   "doi": "10.1037/a0035540",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:24799686": {
    "kind": "pmid",
@@ -17362,6 +20392,23 @@
    "doi": "10.1371/journal.pone.0102990",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:25071612": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Anxiety Disorders are Associated with Reduced Heart Rate Variability: A Meta-Analysis.",
+   "firstAuthor": "Chalmers",
+   "authors": [
+    "Chalmers",
+    "Quintana",
+    "Abbott",
+    "Kemp"
+   ],
+   "year": 2014,
+   "journal": "Front Psychiatry",
+   "doi": "10.3389/fpsyt.2014.00080",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:25101026": {
    "kind": "pmid",
@@ -17438,6 +20485,42 @@
    "doi": "10.1016/j.brs.2014.07.031",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:25256361": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Dialogical Exposure with Traumatically Bereaved Bosnian Women: Findings from a Controlled Trial.",
+   "firstAuthor": "Hagl",
+   "authors": [
+    "Hagl",
+    "Powell",
+    "Rosner",
+    "Butollo"
+   ],
+   "year": 2015,
+   "yearAlt": 2014,
+   "journal": "Clin Psychol Psychother",
+   "doi": "10.1002/cpp.1921",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:25273302": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Guided Internet-based vs. face-to-face cognitive behavior therapy for psychiatric and somatic disorders: a systematic review and meta-analysis.",
+   "firstAuthor": "Andersson",
+   "authors": [
+    "Andersson",
+    "Cuijpers",
+    "Carlbring",
+    "Riper",
+    "Hedman"
+   ],
+   "year": 2014,
+   "journal": "World Psychiatry",
+   "doi": "10.1002/wps.20151",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:25324790": {
    "kind": "pmid",
@@ -17525,6 +20608,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:25639732": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Studies with lucid dreaming as add-on therapy to Gestalt therapy.",
+   "firstAuthor": "Holzinger",
+   "authors": [
+    "Holzinger",
+    "Klösch",
+    "Saletu"
+   ],
+   "year": 2015,
+   "journal": "Acta Neurol Scand",
+   "doi": "10.1111/ane.12362",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:25653628": {
    "kind": "pmid",
    "valid": true,
@@ -17541,6 +20640,38 @@
    "doi": "10.3389/fpsyg.2014.01551",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:25688905": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "An investigation of the efficacy of acceptance-based behavioral therapy for academic procrastination.",
+   "firstAuthor": "Glick",
+   "authors": [
+    "Glick",
+    "Orsillo"
+   ],
+   "year": 2015,
+   "journal": "J Exp Psychol Gen",
+   "doi": "10.1037/xge0000050",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:25689576": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "How do mindfulness-based cognitive therapy and mindfulness-based stress reduction improve mental health and wellbeing? A systematic review and meta-analysis of mediation studies.",
+   "firstAuthor": "Gu",
+   "authors": [
+    "Gu",
+    "Strauss",
+    "Bond",
+    "Cavanagh"
+   ],
+   "year": 2015,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2015.01.006",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:25694852": {
    "kind": "pmid",
@@ -17594,6 +20725,23 @@
    "doi": "10.1007/s00125-015-3534-7",
    "source": "pubmed",
    "verifiedAt": "2026-11-15"
+  },
+  "pmid:25795524": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Affect labeling enhances exposure effectiveness for public speaking anxiety.",
+   "firstAuthor": "Niles",
+   "authors": [
+    "Niles",
+    "Craske",
+    "Lieberman",
+    "Hur"
+   ],
+   "year": 2015,
+   "journal": "Behav Res Ther",
+   "doi": "10.1016/j.brat.2015.03.004",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:25818837": {
    "kind": "pmid",
@@ -17666,6 +20814,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:25910392": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Loneliness and social isolation as risk factors for mortality: a meta-analytic review.",
+   "firstAuthor": "Holt-Lunstad",
+   "authors": [
+    "Holt-Lunstad",
+    "Smith",
+    "Baker",
+    "Harris",
+    "Stephenson"
+   ],
+   "year": 2015,
+   "journal": "Perspect Psychol Sci",
+   "doi": "10.1177/1745691614568352",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:25914789": {
    "kind": "pmid",
    "valid": true,
@@ -17681,6 +20847,24 @@
    "doi": "10.4330/wjc.v7.i4.204",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:25939016": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Internet-based cognitive-behavior therapy for procrastination: A randomized controlled trial.",
+   "firstAuthor": "Rozental",
+   "authors": [
+    "Rozental",
+    "Forsell",
+    "Svensson",
+    "Andersson",
+    "Carlbring"
+   ],
+   "year": 2015,
+   "journal": "J Consult Clin Psychol",
+   "doi": "10.1037/ccp0000023",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:25996093": {
    "kind": "pmid",
@@ -17759,6 +20943,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:26168470": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Self-Determination Theory Applied to Health Contexts: A Meta-Analysis.",
+   "firstAuthor": "Ng",
+   "authors": [
+    "Ng",
+    "Ntoumanis",
+    "Thøgersen-Ntoumani",
+    "Deci",
+    "Ryan",
+    "Duda",
+    "Williams"
+   ],
+   "year": 2012,
+   "journal": "Perspect Psychol Sci",
+   "doi": "10.1177/1745691612447309",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:26174323": {
    "kind": "pmid",
    "valid": true,
@@ -17780,6 +20984,22 @@
    "doi": "10.1113/JP270570",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:26231736": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Multidimensional Perfectionism and Burnout: A Meta-Analysis.",
+   "firstAuthor": "Hill",
+   "authors": [
+    "Hill",
+    "Curran"
+   ],
+   "year": 2016,
+   "yearAlt": 2015,
+   "journal": "Pers Soc Psychol Rev",
+   "doi": "10.1177/1088868315596286",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:26245965": {
    "kind": "pmid",
@@ -17818,6 +21038,22 @@
    "doi": "10.1016/j.jacc.2015.06.1084",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:26311196": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Relationship Between Self-Compassion and Well-Being: A Meta-Analysis.",
+   "firstAuthor": "Zessin",
+   "authors": [
+    "Zessin",
+    "Dickhäuser",
+    "Garbade"
+   ],
+   "year": 2015,
+   "journal": "Appl Psychol Health Well Being",
+   "doi": "10.1111/aphw.12051",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:26332547": {
    "kind": "pmid",
@@ -17918,6 +21154,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:26393777": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Can Psychological Interventions Reduce Perfectionism? A Systematic Review and Meta-analysis.",
+   "firstAuthor": "Lloyd",
+   "authors": [
+    "Lloyd",
+    "Schmidt",
+    "Khondoker",
+    "Tchanturia"
+   ],
+   "year": 2015,
+   "journal": "Behav Cogn Psychother",
+   "doi": "10.1017/S1352465814000162",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:26441373": {
    "kind": "pmid",
    "valid": true,
@@ -17961,6 +21214,31 @@
    "doi": "10.1016/j.psyneuen.2015.10.010",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:26575348": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Thankful for the little things: A meta-analysis of gratitude interventions.",
+   "firstAuthor": "Davis",
+   "authors": [
+    "Davis",
+    "Choe",
+    "Meyers",
+    "Wade",
+    "Varjas",
+    "Gifford",
+    "Quinn",
+    "Hook",
+    "Van Tongeren",
+    "Griffin",
+    "Worthington"
+   ],
+   "year": 2016,
+   "yearAlt": 2015,
+   "journal": "J Couns Psychol",
+   "doi": "10.1037/cou0000107",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:26581735": {
    "kind": "pmid",
@@ -18008,6 +21286,24 @@
    "doi": "10.1503/cmaj.150535",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:26610167": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A Randomized Controlled Clinical Trial of Dialogical Exposure Therapy versus Cognitive Processing Therapy for Adult Outpatients Suffering from PTSD after Type I Trauma in Adulthood.",
+   "firstAuthor": "Butollo",
+   "authors": [
+    "Butollo",
+    "Karl",
+    "König",
+    "Rosner"
+   ],
+   "year": 2016,
+   "yearAlt": 2015,
+   "journal": "Psychother Psychosom",
+   "doi": "10.1159/000440726",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:26747415": {
    "kind": "pmid",
@@ -18105,6 +21401,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:26891943": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Protection or Vulnerability? A Meta-Analysis of the Relations Between the Positive and Negative Components of Self-Compassion and Psychopathology.",
+   "firstAuthor": "Muris",
+   "authors": [
+    "Muris",
+    "Petrocchi"
+   ],
+   "year": 2017,
+   "yearAlt": 2016,
+   "journal": "Clin Psychol Psychother",
+   "doi": "10.1002/cpp.2005",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:27001189": {
    "kind": "pmid",
    "valid": true,
@@ -18139,6 +21451,37 @@
    "doi": "10.1253/circj.CJ-16-0051",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:27119968": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of Mindfulness-Based Cognitive Therapy in Prevention of Depressive Relapse: An Individual Patient Data Meta-analysis From Randomized Trials.",
+   "firstAuthor": "Kuyken",
+   "authors": [
+    "Kuyken",
+    "Warren",
+    "Taylor",
+    "Whalley",
+    "Crane",
+    "Bondolfi",
+    "Hayes",
+    "Huijbers",
+    "Ma",
+    "Schweizer",
+    "Segal",
+    "Speckens",
+    "Teasdale",
+    "Van Heeringen",
+    "Williams",
+    "Byford",
+    "Byng",
+    "Dalgleish"
+   ],
+   "year": 2016,
+   "journal": "JAMA Psychiatry",
+   "doi": "10.1001/jamapsychiatry.2016.0076",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:27136449": {
    "kind": "pmid",
@@ -18186,6 +21529,30 @@
    "doi": "10.1001/jamapsychiatry.2016.1031",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:27187845": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Pilot Randomized Study of a Gratitude Journaling Intervention on Heart Rate Variability and Inflammatory Biomarkers in Patients With Stage B Heart Failure.",
+   "firstAuthor": "Redwine",
+   "authors": [
+    "Redwine",
+    "Henry",
+    "Pung",
+    "Wilson",
+    "Chinh",
+    "Knight",
+    "Jain",
+    "Rutledge",
+    "Greenberg",
+    "Maisel",
+    "Mills"
+   ],
+   "year": 2016,
+   "journal": "Psychosom Med",
+   "doi": "10.1097/PSY.0000000000000316",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:27238063": {
    "kind": "pmid",
@@ -18290,6 +21657,25 @@
    "doi": "10.1038/srep31724",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:27539864": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The role of language in the experience and perception of emotion: a neuroimaging meta-analysis.",
+   "firstAuthor": "Brooks",
+   "authors": [
+    "Brooks",
+    "Shablack",
+    "Gendron",
+    "Satpute",
+    "Parrish",
+    "Lindquist"
+   ],
+   "year": 2017,
+   "journal": "Soc Cogn Affect Neurosci",
+   "doi": "10.1093/scan/nsw121",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:27557747": {
    "kind": "pmid",
@@ -18432,6 +21818,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-15"
   },
+  "pmid:28026869": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Relationship Between Perfectionism and Psychopathology: A Meta-Analysis.",
+   "firstAuthor": "Limburg",
+   "authors": [
+    "Limburg",
+    "Watson",
+    "Hagger",
+    "Egan"
+   ],
+   "year": 2017,
+   "yearAlt": 2016,
+   "journal": "J Clin Psychol",
+   "doi": "10.1002/jclp.22435",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:28033127": {
    "kind": "pmid",
    "valid": true,
@@ -18568,6 +21972,20 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28318321": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Social jet lag: Sleep-corrected formula.",
+   "firstAuthor": "Jankowski",
+   "authors": [
+    "Jankowski"
+   ],
+   "year": 2017,
+   "journal": "Chronobiol Int",
+   "doi": "10.1080/07420528.2017.1299162",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:28335000": {
    "kind": "pmid",
    "valid": true,
@@ -18619,6 +22037,25 @@
    "doi": "10.1016/j.jaad.2017.02.054",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:28456072": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Can smartphone mental health interventions reduce symptoms of anxiety? A meta-analysis of randomized controlled trials.",
+   "firstAuthor": "Firth",
+   "authors": [
+    "Firth",
+    "Torous",
+    "Nicholas",
+    "Carney",
+    "Rosenbaum",
+    "Sarris"
+   ],
+   "year": 2017,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2017.04.046",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:28467922": {
    "kind": "pmid",
@@ -19039,6 +22476,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28980487": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Are perfectionism dimensions risk factors for anxiety symptoms? A meta-analysis of 11 longitudinal studies.",
+   "firstAuthor": "Smith",
+   "authors": [
+    "Smith",
+    "Vidovic",
+    "Sherry",
+    "Stewart",
+    "Saklofske"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "Anxiety Stress Coping",
+   "doi": "10.1080/10615806.2017.1384466",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:29016171": {
    "kind": "pmid",
    "valid": true,
@@ -19068,6 +22524,22 @@
    "doi": "10.3389/fpubh.2017.00258",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:29039752": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Aesthetic Diagnosis in Gestalt Therapy.",
+   "firstAuthor": "Roubal",
+   "authors": [
+    "Roubal",
+    "Francesetti",
+    "Gecele"
+   ],
+   "year": 2017,
+   "journal": "Behav Sci (Basel)",
+   "doi": "10.3390/bs7040070",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:29048215": {
    "kind": "pmid",
@@ -19103,6 +22575,27 @@
    "doi": "10.3389/fpubh.2017.00267",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:29126747": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Mindfulness-based interventions for psychiatric disorders: A systematic review and meta-analysis.",
+   "firstAuthor": "Goldberg",
+   "authors": [
+    "Goldberg",
+    "Tucker",
+    "Greene",
+    "Davidson",
+    "Wampold",
+    "Kearney",
+    "Simpson"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2017.10.011",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:29130840": {
    "kind": "pmid",
@@ -19162,6 +22655,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:29194467": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sleep hygiene education as a treatment of insomnia: a systematic review and meta-analysis.",
+   "firstAuthor": "Chung",
+   "authors": [
+    "Chung",
+    "Lee",
+    "Yeung",
+    "Chan",
+    "Chung",
+    "Lin"
+   ],
+   "year": 2018,
+   "journal": "Fam Pract",
+   "doi": "10.1093/fampra/cmx122",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:29209423": {
    "kind": "pmid",
    "valid": true,
@@ -19177,6 +22689,22 @@
    "doi": "10.1183/20734735.009817",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:29283599": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Perfectionism is increasing over time: A meta-analysis of birth cohort differences from 1989 to 2016.",
+   "firstAuthor": "Curran",
+   "authors": [
+    "Curran",
+    "Hill"
+   ],
+   "year": 2019,
+   "yearAlt": 2017,
+   "journal": "Psychol Bull",
+   "doi": "10.1037/bul0000138",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:29321984": {
    "kind": "pmid",
@@ -19229,6 +22757,21 @@
    "doi": "10.1016/j.ijcard.2018.01.089",
    "source": "pubmed",
    "verifiedAt": "2026-11-12"
+  },
+  "pmid:29453824": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Giving in when feeling less good: Procrastination, action control, and social temptations.",
+   "firstAuthor": "Sirois",
+   "authors": [
+    "Sirois",
+    "Giguère"
+   ],
+   "year": 2018,
+   "journal": "Br J Soc Psychol",
+   "doi": "10.1111/bjso.12243",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:29467611": {
    "kind": "pmid",
@@ -19309,6 +22852,28 @@
    "doi": "10.1186/s12970-018-0215-1",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:29530258": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Treating Procrastination Using Cognitive Behavior Therapy: A Pragmatic Randomized Controlled Trial Comparing Treatment Delivered via the Internet or in Groups.",
+   "firstAuthor": "Rozental",
+   "authors": [
+    "Rozental",
+    "Forsström",
+    "Lindner",
+    "Nilsson",
+    "Mårtensson",
+    "Rizzo",
+    "Andersson",
+    "Carlbring"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "Behav Ther",
+   "doi": "10.1016/j.beth.2017.08.002",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:29549064": {
    "kind": "pmid",
@@ -19394,6 +22959,26 @@
    "doi": "10.1073/pnas.1721694115",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:29697885": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga for anxiety: A systematic review and meta-analysis of randomized controlled trials.",
+   "firstAuthor": "Cramer",
+   "authors": [
+    "Cramer",
+    "Lauche",
+    "Anheyer",
+    "Pilkington",
+    "de Manincor",
+    "Dobos",
+    "Ward"
+   ],
+   "year": 2018,
+   "journal": "Depress Anxiety",
+   "doi": "10.1002/da.22762",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:29709070": {
    "kind": "pmid",
@@ -19493,6 +23078,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:29792097": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effect of loneliness on depression: A meta-analysis.",
+   "firstAuthor": "Erzen",
+   "authors": [
+    "Erzen",
+    "Çikrikci Ö"
+   ],
+   "year": 2018,
+   "journal": "Int J Soc Psychiatry",
+   "doi": "10.1177/0020764018776349",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:29849692": {
    "kind": "pmid",
    "valid": true,
@@ -19584,6 +23184,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:29945603": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effect of positive psychology interventions on well-being and distress in clinical samples with psychiatric or somatic disorders: a systematic review and meta-analysis.",
+   "firstAuthor": "Chakhssi",
+   "authors": [
+    "Chakhssi",
+    "Kraiss",
+    "Sommers-Spijkerman",
+    "Bohlmeijer"
+   ],
+   "year": 2018,
+   "journal": "BMC Psychiatry",
+   "doi": "10.1186/s12888-018-1739-2",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:29990026": {
    "kind": "pmid",
    "valid": true,
@@ -19658,6 +23275,22 @@
    "doi": "10.1016/j.mayocp.2018.04.008",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:30135772": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Reducing procrastination using a smartphone-based treatment program: A randomized controlled pilot study.",
+   "firstAuthor": "Lukas",
+   "authors": [
+    "Lukas",
+    "Berking"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "Internet Interv",
+   "doi": "10.1016/j.invent.2017.07.002",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:30218689": {
    "kind": "pmid",
@@ -19852,6 +23485,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-18"
   },
+  "pmid:30712478": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Development and validation of the Gestalt Therapy Fidelity Scale.",
+   "firstAuthor": "Fogarty",
+   "authors": [
+    "Fogarty",
+    "Bhar",
+    "Theiler"
+   ],
+   "year": 2020,
+   "yearAlt": 2019,
+   "journal": "Psychother Res",
+   "doi": "10.1080/10503307.2019.1571688",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:30732832": {
    "kind": "pmid",
    "valid": true,
@@ -19887,6 +23537,23 @@
    "doi": "10.1038/s41587-019-0040-3",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:30811484": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The efficacy of stress reappraisal interventions on stress responsivity: A meta-analysis and systematic review of existing evidence.",
+   "firstAuthor": "Liu",
+   "authors": [
+    "Liu",
+    "Ein",
+    "Gervasio",
+    "Vickers"
+   ],
+   "year": 2019,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0212854",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:30833909": {
    "kind": "pmid",
@@ -19982,6 +23649,22 @@
    "doi": "10.3389/fcvm.2019.00062",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:31141537": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Meta-analyses of positive psychology interventions: The effects are much smaller than previously reported.",
+   "firstAuthor": "White",
+   "authors": [
+    "White",
+    "Uttl",
+    "Holder"
+   ],
+   "year": 2019,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0216588",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:31277865": {
    "kind": "pmid",
@@ -20313,6 +23996,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:31842689": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Self-compassion, physical health, and health behaviour: a meta-analysis.",
+   "firstAuthor": "Phillips",
+   "authors": [
+    "Phillips",
+    "Hine"
+   ],
+   "year": 2021,
+   "yearAlt": 2019,
+   "journal": "Health Psychol Rev",
+   "doi": "10.1080/17437199.2019.1705872",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:31985921": {
    "kind": "pmid",
    "valid": true,
@@ -20326,6 +24025,23 @@
    "journal": "",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:32007680": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Global prevalence of burnout symptoms among nurses: A systematic review and meta-analysis.",
+   "firstAuthor": "Woo",
+   "authors": [
+    "Woo",
+    "Ho",
+    "Tang",
+    "Tam"
+   ],
+   "year": 2020,
+   "journal": "J Psychiatr Res",
+   "doi": "10.1016/j.jpsychires.2019.12.015",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:3202462": {
    "kind": "pmid",
@@ -20425,6 +24141,22 @@
    "doi": "10.1192/j.eurpsy.2020.3",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:32164655": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Emotion dysregulation in adults with attention deficit hyperactivity disorder: a meta-analysis.",
+   "firstAuthor": "Beheshti",
+   "authors": [
+    "Beheshti",
+    "Chavanon",
+    "Christiansen"
+   ],
+   "year": 2020,
+   "journal": "BMC Psychiatry",
+   "doi": "10.1186/s12888-020-2442-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:32176800": {
    "kind": "pmid",
@@ -20603,6 +24335,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:32292376": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "How to Form Good Habits? A Longitudinal Field Study on the Role of Self-Control in Habit Formation.",
+   "firstAuthor": "van der Weiden",
+   "authors": [
+    "van der Weiden",
+    "Benjamins",
+    "Gillebaart",
+    "Ybema",
+    "de Ridder"
+   ],
+   "year": 2020,
+   "journal": "Front Psychol",
+   "doi": "10.3389/fpsyg.2020.00560",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:32341167": {
    "kind": "pmid",
    "valid": true,
@@ -20724,6 +24474,24 @@
    "doi": "10.1007/s10484-020-09477-w",
    "source": "pubmed",
    "verifiedAt": "2026-11-13"
+  },
+  "pmid:32590219": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A systematic review of gratitude interventions: Effects on physical health and health behaviors.",
+   "firstAuthor": "Boggiss",
+   "authors": [
+    "Boggiss",
+    "Consedine",
+    "Brenton-Peters",
+    "Hofman",
+    "Serlachius"
+   ],
+   "year": 2020,
+   "journal": "J Psychosom Res",
+   "doi": "10.1016/j.jpsychores.2020.110165",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:32620379": {
    "kind": "pmid",
@@ -20867,6 +24635,31 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:33054339": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sleep timing, sleep consistency, and health in adults: a systematic review.",
+   "firstAuthor": "Chaput",
+   "authors": [
+    "Chaput",
+    "Dutil",
+    "Featherstone",
+    "Ross",
+    "Giangregorio",
+    "Saunders",
+    "Janssen",
+    "Poitras",
+    "Kho",
+    "Ross-White",
+    "Zankar",
+    "Carrier"
+   ],
+   "year": 2020,
+   "journal": "Appl Physiol Nutr Metab",
+   "doi": "10.1139/apnm-2020-0032",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:33117119": {
    "kind": "pmid",
    "valid": true,
@@ -20881,6 +24674,31 @@
    "doi": "10.3389/fnins.2020.570400",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:33164742": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline.",
+   "firstAuthor": "Edinger",
+   "authors": [
+    "Edinger",
+    "Arnedt",
+    "Bertisch",
+    "Carney",
+    "Harrington",
+    "Lichstein",
+    "Sateia",
+    "Troxel",
+    "Zhou",
+    "Kazmi",
+    "Heald",
+    "Martin"
+   ],
+   "year": 2021,
+   "journal": "J Clin Sleep Med",
+   "doi": "10.5664/jcsm.8986",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:33208926": {
    "kind": "pmid",
@@ -21150,6 +24968,92 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:33471111": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Internet-Based Cognitive Behavioral Therapy for Depression: A Systematic Review and Individual Patient Data Network Meta-analysis.",
+   "firstAuthor": "Karyotaki",
+   "authors": [
+    "Karyotaki",
+    "Efthimiou",
+    "Miguel",
+    "Bermpohl",
+    "Furukawa",
+    "Cuijpers",
+    "Riper",
+    "Patel",
+    "Mira",
+    "Gemmil",
+    "Yeung",
+    "Lange",
+    "Williams",
+    "Mackinnon",
+    "Geraedts",
+    "van Straten",
+    "Meyer",
+    "Björkelund",
+    "Knaevelsrud",
+    "Beevers",
+    "Botella",
+    "Strunk",
+    "Mohr",
+    "Ebert",
+    "Kessler",
+    "Richards",
+    "Littlewood",
+    "Forsell",
+    "Feng",
+    "Wang",
+    "Andersson",
+    "Hadjistavropoulos",
+    "Christensen",
+    "Ezawa",
+    "Choi",
+    "Rosso",
+    "Klein",
+    "Shumake",
+    "Garcia-Campayo",
+    "Milgrom",
+    "Smith",
+    "Montero-Marin",
+    "Newby",
+    "Bretón-López",
+    "Schneider",
+    "Vernmark",
+    "Bücker",
+    "Sheeber",
+    "Warmerdam",
+    "Farrer",
+    "Heinrich",
+    "Huibers",
+    "Kivi",
+    "Kraepelien",
+    "Forand",
+    "Pugh",
+    "Lindefors",
+    "Lintvedt",
+    "Zagorscak",
+    "Carlbring",
+    "Phillips",
+    "Johansson",
+    "Kessler",
+    "Brabyn",
+    "Perini",
+    "Rauch",
+    "Gilbody",
+    "Moritz",
+    "Berger",
+    "Pop",
+    "Kaldo",
+    "Spek",
+    "Forsell"
+   ],
+   "year": 2021,
+   "journal": "JAMA Psychiatry",
+   "doi": "10.1001/jamapsychiatry.2020.4364",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:33529156": {
    "kind": "pmid",
    "valid": true,
@@ -21186,6 +25090,40 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:33634766": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Comparative efficacy and acceptability of expressive writing treatments compared with psychotherapy, other writing treatments, and waiting list control for adult trauma survivors: a systematic review and network meta-analysis.",
+   "firstAuthor": "Gerger",
+   "authors": [
+    "Gerger",
+    "Werner",
+    "Gaab",
+    "Cuijpers"
+   ],
+   "year": 2022,
+   "yearAlt": 2021,
+   "journal": "Psychol Med",
+   "doi": "10.1017/S0033291721000143",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:33639979": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Outcomes, mechanisms and contextual factors of positive psychology interventions for health workers: a systematic review of global evidence.",
+   "firstAuthor": "Kletter",
+   "authors": [
+    "Kletter",
+    "Harris",
+    "Brown"
+   ],
+   "year": 2021,
+   "journal": "Hum Resour Health",
+   "doi": "10.1186/s12960-021-00564-5",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:33691076": {
    "kind": "pmid",
    "valid": true,
@@ -21203,6 +25141,23 @@
    "doi": "10.1089/acm.2020.0466",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:33749936": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effectiveness of self-compassion-related interventions for reducing self-criticism: A systematic review and meta-analysis.",
+   "firstAuthor": "Wakelin",
+   "authors": [
+    "Wakelin",
+    "Perman",
+    "Simonds"
+   ],
+   "year": 2022,
+   "yearAlt": 2021,
+   "journal": "Clin Psychol Psychother",
+   "doi": "10.1002/cpp.2586",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:33758260": {
    "kind": "pmid",
@@ -21327,6 +25282,69 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:34240262": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effectiveness of consumer-grade contactless vital signs monitors: a systematic review and meta-analysis.",
+   "firstAuthor": "Pham",
+   "authors": [
+    "Pham",
+    "Poorzargar",
+    "Nagappa",
+    "Saripella",
+    "Parotto",
+    "Englesakis",
+    "Lee",
+    "Chung"
+   ],
+   "year": 2022,
+   "yearAlt": 2021,
+   "journal": "J Clin Monit Comput",
+   "doi": "10.1007/s10877-021-00734-9",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:34264703": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cognitive restructuring, behavioral activation and cognitive-behavioral therapy in the treatment of adult depression: A network meta-analysis.",
+   "firstAuthor": "Ciharova",
+   "authors": [
+    "Ciharova",
+    "Furukawa",
+    "Efthimiou",
+    "Karyotaki",
+    "Miguel",
+    "Noma",
+    "Cipriani",
+    "Riper",
+    "Cuijpers"
+   ],
+   "year": 2021,
+   "journal": "J Consult Clin Psychol",
+   "doi": "10.1037/ccp0000654",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:34346282": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The efficacy of randomised controlled trials of cognitive behaviour therapy for perfectionism: a systematic review and meta-analysis.",
+   "firstAuthor": "Galloway",
+   "authors": [
+    "Galloway",
+    "Watson",
+    "Greene",
+    "Shafran",
+    "Egan"
+   ],
+   "year": 2022,
+   "yearAlt": 2021,
+   "journal": "Cogn Behav Ther",
+   "doi": "10.1080/16506073.2021.1952302",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:34473846": {
    "kind": "pmid",
    "valid": true,
@@ -21416,6 +25434,21 @@
    "doi": "10.1038/s41598-021-98736-9",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:34715576": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Burnout and depression in nurses: A systematic review and meta-analysis.",
+   "firstAuthor": "Chen",
+   "authors": [
+    "Chen",
+    "Meier"
+   ],
+   "year": 2021,
+   "journal": "Int J Nurs Stud",
+   "doi": "10.1016/j.ijnurstu.2021.104099",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:34727178": {
    "kind": "pmid",
@@ -21576,6 +25609,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:34960096": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Social Jetlag and Related Risks for Human Health: A Timely Review.",
+   "firstAuthor": "Caliandro",
+   "authors": [
+    "Caliandro",
+    "Streng",
+    "van Kerkhof",
+    "van der Horst",
+    "Chaves"
+   ],
+   "year": 2021,
+   "journal": "Nutrients",
+   "doi": "10.3390/nu13124543",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:34985954": {
    "kind": "pmid",
    "valid": true,
@@ -21648,6 +25699,26 @@
    "doi": "10.1177/02692155221074052",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:35140066": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The prevalence of loneliness across 113 countries: systematic review and meta-analysis.",
+   "firstAuthor": "Surkalim",
+   "authors": [
+    "Surkalim",
+    "Luo",
+    "Eres",
+    "Gebel",
+    "van Buskirk",
+    "Bauman",
+    "Ding"
+   ],
+   "year": 2022,
+   "journal": "BMJ",
+   "doi": "10.1136/bmj-2021-067068",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:35147898": {
    "kind": "pmid",
@@ -21758,6 +25829,42 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:35304431": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of journaling in the management of mental illness: a systematic review and meta-analysis.",
+   "firstAuthor": "Sohal",
+   "authors": [
+    "Sohal",
+    "Singh",
+    "Dhillon",
+    "Gill"
+   ],
+   "year": 2022,
+   "journal": "Fam Med Community Health",
+   "doi": "10.1136/fmch-2021-001154",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:35328948": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A Single-Case Design Investigation for Measuring the Efficacy of Gestalt Therapy to Treat Depression in Older Adults with Dementia in Italy and in Mexico: A Research Protocol.",
+   "firstAuthor": "Merizzi",
+   "authors": [
+    "Merizzi",
+    "Biasi",
+    "Zamudio JFÁ",
+    "Spagnuolo Lobb",
+    "Di Rosa",
+    "Santini"
+   ],
+   "year": 2022,
+   "journal": "Int J Environ Res Public Health",
+   "doi": "10.3390/ijerph19063260",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:35329068": {
    "kind": "pmid",
    "valid": true,
@@ -21782,6 +25889,24 @@
    "doi": "10.3390/ijerph19063380",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:35340102": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability in patients with anxiety disorders: A systematic review and meta-analysis.",
+   "firstAuthor": "Cheng",
+   "authors": [
+    "Cheng",
+    "Su",
+    "Liu",
+    "Huang",
+    "Huang"
+   ],
+   "year": 2022,
+   "journal": "Psychiatry Clin Neurosci",
+   "doi": "10.1111/pcn.13356",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:35438084": {
    "kind": "pmid",
@@ -21841,6 +25966,24 @@
    "doi": "10.1007/s41782-022-00202-7",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:35512731": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Taking a One-Week Break from Social Media Improves Well-Being, Depression, and Anxiety: A Randomized Controlled Trial.",
+   "firstAuthor": "Lambert",
+   "authors": [
+    "Lambert",
+    "Barnstable",
+    "Minter",
+    "Cooper",
+    "McEwan"
+   ],
+   "year": 2022,
+   "journal": "Cyberpsychol Behav Soc Netw",
+   "doi": "10.1089/cyber.2021.0324",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:35608101": {
    "kind": "pmid",
@@ -21924,6 +26067,27 @@
    "doi": "10.1007/s10433-021-00638-2",
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
+  },
+  "pmid:35684717": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Continuous Monitoring of Vital Signs Using Cameras: A Systematic Review.",
+   "firstAuthor": "Selvaraju",
+   "authors": [
+    "Selvaraju",
+    "Spicher",
+    "Wang",
+    "Ganapathy",
+    "Warnecke",
+    "Leonhardt",
+    "Swaminathan",
+    "Deserno"
+   ],
+   "year": 2022,
+   "journal": "Sensors (Basel)",
+   "doi": "10.3390/s22114097",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:35777519": {
    "kind": "pmid",
@@ -22061,6 +26225,30 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-18"
   },
+  "pmid:36104064": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Associations of physician burnout with career engagement and quality of patient care: systematic review and meta-analysis.",
+   "firstAuthor": "Hodkinson",
+   "authors": [
+    "Hodkinson",
+    "Zhou",
+    "Johnson",
+    "Geraghty",
+    "Riley",
+    "Zhou",
+    "Panagopoulou",
+    "Chew-Graham",
+    "Peters",
+    "Esmail",
+    "Panagioti"
+   ],
+   "year": 2022,
+   "journal": "BMJ",
+   "doi": "10.1136/bmj-2022-070442",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:36137565": {
    "kind": "pmid",
    "valid": true,
@@ -22156,6 +26344,28 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:36251294": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Interventions Associated With Reduced Loneliness and Social Isolation in Older Adults: A Systematic Review and Meta-analysis.",
+   "firstAuthor": "Hoang",
+   "authors": [
+    "Hoang",
+    "King",
+    "Moore",
+    "Moore",
+    "Reich",
+    "Sidhu",
+    "Tan",
+    "Whaley",
+    "McMillan"
+   ],
+   "year": 2022,
+   "journal": "JAMA Netw Open",
+   "doi": "10.1001/jamanetworkopen.2022.36676",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:36343372": {
    "kind": "pmid",
    "valid": true,
@@ -22196,6 +26406,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:36375334": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Go to bed! A systematic review and meta-analysis of bedtime procrastination correlates and sleep outcomes.",
+   "firstAuthor": "Hill",
+   "authors": [
+    "Hill",
+    "Rebar",
+    "Ferguson",
+    "Shriane",
+    "Vincent"
+   ],
+   "year": 2022,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2022.101697",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:36427887": {
    "kind": "pmid",
    "valid": true,
@@ -22209,6 +26437,21 @@
    "doi": "10.7861/clinmed.2022-news-concept",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:36536513": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The delayed, durable effect of expressive writing on depression, anxiety and stress: A meta-analytic review of studies with long-term follow-ups.",
+   "firstAuthor": "Guo",
+   "authors": [
+    "Guo"
+   ],
+   "year": 2023,
+   "yearAlt": 2022,
+   "journal": "Br J Clin Psychol",
+   "doi": "10.1111/bjc.12408",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:36560505": {
    "kind": "pmid",
@@ -22244,6 +26487,22 @@
    "doi": "10.1136/jnnp-2022-329683",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:36608036": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Evidence of emotion dysregulation as a core symptom of adult ADHD: A systematic review.",
+   "firstAuthor": "Soler-Gutiérrez",
+   "authors": [
+    "Soler-Gutiérrez",
+    "Pérez-González",
+    "Mayas"
+   ],
+   "year": 2023,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0280131",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:36624160": {
    "kind": "pmid",
@@ -22284,6 +26543,49 @@
    "doi": "10.1016/j.xcrm.2022.100895",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:36649790": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effectiveness of compassion focused therapy with clinical populations: A systematic review and meta-analysis.",
+   "firstAuthor": "Millard",
+   "authors": [
+    "Millard",
+    "Wan",
+    "Smith",
+    "Wittkowski"
+   ],
+   "year": 2023,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2023.01.010",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:36796860": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews.",
+   "firstAuthor": "Singh",
+   "authors": [
+    "Singh",
+    "Olds",
+    "Curtis",
+    "Dumuid",
+    "Virgara",
+    "Watson",
+    "Szeto",
+    "O'Connor",
+    "Ferguson",
+    "Eglitis",
+    "Miatke",
+    "Simpson",
+    "Maher"
+   ],
+   "year": 2023,
+   "journal": "Br J Sports Med",
+   "doi": "10.1136/bjsports-2022-106195",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:36813265": {
    "kind": "pmid",
@@ -22348,6 +26650,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:36919887": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Procrastination and health: A longitudinal test of the roles of stress and health behaviours.",
+   "firstAuthor": "Sirois",
+   "authors": [
+    "Sirois",
+    "Stride",
+    "Pychyl"
+   ],
+   "year": 2023,
+   "journal": "Br J Health Psychol",
+   "doi": "10.1111/bjhp.12658",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:36920567": {
    "kind": "pmid",
    "valid": true,
@@ -22363,6 +26681,24 @@
    "doi": "10.1007/s10484-023-09584-4",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:36966184": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Digital cognitive behavioral therapy for insomnia on depression and anxiety: a systematic review and meta-analysis.",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Oh",
+    "Park",
+    "Lee",
+    "Lee"
+   ],
+   "year": 2023,
+   "journal": "NPJ Digit Med",
+   "doi": "10.1038/s41746-023-00800-3",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:36981504": {
    "kind": "pmid",
@@ -22416,6 +26752,23 @@
    "doi": "10.1007/s00421-023-05202-7",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:37098284": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effects of positive psychology interventions on well-being and distress in patients with cardiovascular diseases: A systematic review and Meta-analysis.",
+   "firstAuthor": "Tönis",
+   "authors": [
+    "Tönis",
+    "Kraiss",
+    "Linssen",
+    "Bohlmeijer"
+   ],
+   "year": 2023,
+   "journal": "J Psychosom Res",
+   "doi": "10.1016/j.jpsychores.2023.111328",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:37205669": {
    "kind": "pmid",
@@ -22525,6 +26878,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-10"
   },
+  "pmid:37362192": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Self-Compassion Interventions on Reducing Depressive Symptoms, Anxiety, and Stress: A Meta-Analysis.",
+   "firstAuthor": "Han",
+   "authors": [
+    "Han",
+    "Kim"
+   ],
+   "year": 2023,
+   "journal": "Mindfulness (N Y)",
+   "doi": "10.1007/s12671-023-02148-x",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:37372070": {
    "kind": "pmid",
    "valid": true,
@@ -22562,6 +26930,28 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:37434395": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of expressive writing versus positive writing in different populations: Systematic review and meta-analysis.",
+   "firstAuthor": "Lai",
+   "authors": [
+    "Lai",
+    "Song",
+    "Wang",
+    "Ren",
+    "Li",
+    "Xiao",
+    "Liao",
+    "Xie",
+    "Zhuang"
+   ],
+   "year": 2023,
+   "journal": "Nurs Open",
+   "doi": "10.1002/nop2.1897",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:37436518": {
    "kind": "pmid",
    "valid": true,
@@ -22595,6 +26985,62 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-18"
   },
+  "pmid:37565693": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Impact of Social Media Use Interventions on Mental Well-Being: Systematic Review.",
+   "firstAuthor": "Plackett",
+   "authors": [
+    "Plackett",
+    "Blyth",
+    "Schartau"
+   ],
+   "year": 2023,
+   "journal": "J Med Internet Res",
+   "doi": "10.2196/44922",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:37642884": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Association of sleep duration and risk of mental disorder: a systematic review and meta-analysis.",
+   "firstAuthor": "Zhang",
+   "authors": [
+    "Zhang",
+    "He",
+    "Wang",
+    "Jiang",
+    "Huang",
+    "Liang"
+   ],
+   "year": 2024,
+   "yearAlt": 2023,
+   "journal": "Sleep Breath",
+   "doi": "10.1007/s11325-023-02905-1",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:37738616": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sleep regularity is a stronger predictor of mortality risk than sleep duration: A prospective cohort study.",
+   "firstAuthor": "Windred",
+   "authors": [
+    "Windred",
+    "Burns",
+    "Lane",
+    "Saxena",
+    "Rutter",
+    "Cain",
+    "Phillips"
+   ],
+   "year": 2024,
+   "journal": "Sleep",
+   "doi": "10.1093/sleep/zsad253",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:37770648": {
    "kind": "pmid",
    "valid": true,
@@ -22617,6 +27063,21 @@
    "doi": "10.1038/s41565-023-01513-0",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:37809310": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The impact of gratitude interventions on patients with cardiovascular disease: a systematic review.",
+   "firstAuthor": "Wang",
+   "authors": [
+    "Wang",
+    "Song"
+   ],
+   "year": 2023,
+   "journal": "Front Psychol",
+   "doi": "10.3389/fpsyg.2023.1243598",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:37845341": {
    "kind": "pmid",
@@ -22659,6 +27120,42 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:37867573": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Individual participant data systematic review and meta-analysis of randomised controlled trials assessing adult mindfulness-based programmes for mental health promotion in non-clinical settings.",
+   "firstAuthor": "Galante",
+   "authors": [
+    "Galante",
+    "Friedrich",
+    "Dalgleish",
+    "Jones",
+    "White"
+   ],
+   "year": 2023,
+   "journal": "Nat Ment Health",
+   "doi": "10.1038/s44220-023-00081-5",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:37890569": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Systematic Review and Meta-Analysis of Randomized Trials Testing Interventions to Reduce Physician Burnout.",
+   "firstAuthor": "Haslam",
+   "authors": [
+    "Haslam",
+    "Tuia",
+    "Miller",
+    "Prasad"
+   ],
+   "year": 2024,
+   "yearAlt": 2023,
+   "journal": "Am J Med",
+   "doi": "10.1016/j.amjmed.2023.10.003",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:37923236": {
    "kind": "pmid",
    "valid": true,
@@ -22698,6 +27195,58 @@
    "doi": "10.1093/cercor/bhad408",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:37955236": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The relationships between perfectionism and symptoms of depression, anxiety and obsessive-compulsive disorder in adults: a systematic review and meta-analysis.",
+   "firstAuthor": "Callaghan",
+   "authors": [
+    "Callaghan",
+    "Greene",
+    "Shafran",
+    "Lunn",
+    "Egan"
+   ],
+   "year": 2024,
+   "yearAlt": 2023,
+   "journal": "Cogn Behav Ther",
+   "doi": "10.1080/16506073.2023.2277121",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:38021251": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Rumination-Focused Cognitive Behavioral Therapy Reduces Rumination and Targeted Cross-network Connectivity in Youth With a History of Depression: Replication in a Preregistered Randomized Clinical Trial.",
+   "firstAuthor": "Langenecker",
+   "authors": [
+    "Langenecker",
+    "Westlund Schreiner",
+    "Bessette",
+    "Roberts",
+    "Thomas",
+    "Dillahunt",
+    "Pocius",
+    "Feldman",
+    "Jago",
+    "Farstead",
+    "Pazdera",
+    "Kaufman",
+    "Galloway",
+    "Kerig",
+    "Bakian",
+    "Welsh",
+    "Jacobs",
+    "Crowell",
+    "Watkins"
+   ],
+   "year": 2024,
+   "yearAlt": 2023,
+   "journal": "Biol Psychiatry Glob Open Sci",
+   "doi": "10.1016/j.bpsgos.2023.08.012",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:38033089": {
    "kind": "pmid",
@@ -22747,6 +27296,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-18"
   },
+  "pmid:38072635": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Social jetlag and obesity: A systematic review and meta-analysis.",
+   "firstAuthor": "Arab",
+   "authors": [
+    "Arab",
+    "Karimi",
+    "Garaulet",
+    "Scheer"
+   ],
+   "year": 2024,
+   "yearAlt": 2023,
+   "journal": "Obes Rev",
+   "doi": "10.1111/obr.13664",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:38091317": {
    "kind": "pmid",
    "valid": true,
@@ -22765,6 +27332,21 @@
    "doi": "10.1371/journal.pone.0294678",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:38092221": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Putting back respiration into respiratory sinus arrhythmia or high-frequency heart rate variability: Implications for interpretation, respiratory rhythmicity, and health.",
+   "firstAuthor": "Ritz",
+   "authors": [
+    "Ritz"
+   ],
+   "year": 2024,
+   "yearAlt": 2023,
+   "journal": "Biol Psychol",
+   "doi": "10.1016/j.biopsycho.2023.108728",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:3812275": {
    "kind": "pmid",
@@ -22802,6 +27384,24 @@
    "doi": "10.1093/sleep/zsad325",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:38173855": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Common mental disorders in Gestalt therapy treatment: a multiple case study comparing patients with moderate and low integrated personality structures.",
+   "firstAuthor": "Kaisler",
+   "authors": [
+    "Kaisler",
+    "Fede",
+    "Diltsch",
+    "Probst",
+    "Schaffler"
+   ],
+   "year": 2023,
+   "journal": "Front Psychol",
+   "doi": "10.3389/fpsyg.2023.1304726",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:38211547": {
    "kind": "pmid",
@@ -22917,6 +27517,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:38366726": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A meta-analysis of disordered eating and its association with self-criticism and self-compassion.",
+   "firstAuthor": "Paranjothy",
+   "authors": [
+    "Paranjothy",
+    "Wade"
+   ],
+   "year": 2024,
+   "journal": "Int J Eat Disord",
+   "doi": "10.1002/eat.24166",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:38408360": {
    "kind": "pmid",
    "valid": true,
@@ -23025,6 +27640,42 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:38498040": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Association Between Physical Activity and the Risk of Burnout in Health Care Workers: Systematic Review.",
+   "firstAuthor": "Mincarone",
+   "authors": [
+    "Mincarone",
+    "Bodini",
+    "Tumolo",
+    "Sabina",
+    "Colella",
+    "Mannini",
+    "Sabato",
+    "Leo"
+   ],
+   "year": 2024,
+   "journal": "JMIR Public Health Surveill",
+   "doi": "10.2196/49772",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:38575696": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effectiveness of stress arousal reappraisal and stress-is-enhancing mindset interventions on task performance outcomes: a meta-analysis of randomized controlled trials.",
+   "firstAuthor": "Bosshard",
+   "authors": [
+    "Bosshard",
+    "Gomez"
+   ],
+   "year": 2024,
+   "journal": "Sci Rep",
+   "doi": "10.1038/s41598-024-58408-w",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:38600467": {
    "kind": "pmid",
    "valid": true,
@@ -23040,6 +27691,25 @@
    "doi": "10.1186/s10194-024-01758-7",
    "source": "pubmed",
    "verifiedAt": "2026-11-18"
+  },
+  "pmid:38600830": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Perfectionistic Self-Presentation and Psychopathology: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Casale",
+   "authors": [
+    "Casale",
+    "Svicher",
+    "Fioravanti",
+    "Hewitt",
+    "Flett",
+    "Pozza"
+   ],
+   "year": 2024,
+   "journal": "Clin Psychol Psychother",
+   "doi": "10.1002/cpp.2966",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:38663342": {
    "kind": "pmid",
@@ -23058,6 +27728,25 @@
    "doi": "10.1016/j.jtherbio.2024.103857",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:38713748": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "How do cognitive behavioral therapy and interpersonal psychotherapy improve youth depression? Applying meta-analytic structural equation modeling to three decades of randomized trials.",
+   "firstAuthor": "Ng",
+   "authors": [
+    "Ng",
+    "DiVasto",
+    "Gonzalez",
+    "Cootner",
+    "Lipsey",
+    "Weisz"
+   ],
+   "year": 2023,
+   "journal": "Psychol Bull",
+   "doi": "10.1037/bul0000395",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:38741022": {
    "kind": "pmid",
@@ -23080,6 +27769,42 @@
    "doi": "10.1038/s41593-024-01638-y",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:38876043": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effectiveness of self-guided interventions in adults with depressive symptoms: a systematic review and meta-analysis.",
+   "firstAuthor": "Tong",
+   "authors": [
+    "Tong",
+    "Panagiotopoulou",
+    "Cuijpers",
+    "Karyotaki"
+   ],
+   "year": 2024,
+   "journal": "EBioMedicine",
+   "doi": "10.1016/j.ebiom.2024.105208",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:38933581": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A systematic review of brief respiratory, embodiment, cognitive, and mindfulness interventions to reduce state anxiety.",
+   "firstAuthor": "Chin",
+   "authors": [
+    "Chin",
+    "Gorman",
+    "Beck",
+    "Russell",
+    "Stephan",
+    "Harrison"
+   ],
+   "year": 2024,
+   "journal": "Front Psychol",
+   "doi": "10.3389/fpsyg.2024.1412928",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:38935943": {
    "kind": "pmid",
@@ -23156,6 +27881,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-16"
   },
+  "pmid:39150513": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Social connection interventions and depression in young adults: a systematic review and meta-analysis.",
+   "firstAuthor": "Alvarez",
+   "authors": [
+    "Alvarez",
+    "Mirza",
+    "Das-Munshi",
+    "Oswald"
+   ],
+   "year": 2025,
+   "yearAlt": 2024,
+   "journal": "Soc Psychiatry Psychiatr Epidemiol",
+   "doi": "10.1007/s00127-024-02722-1",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:39175400": {
    "kind": "pmid",
    "valid": true,
@@ -23170,6 +27913,25 @@
    "doi": "10.1177/08830738241273347",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:39190573": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Social Media Use and Well-Being: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Ansari",
+   "authors": [
+    "Ansari",
+    "Iqbal",
+    "Asif",
+    "Hashim",
+    "Farooqi",
+    "Alimoradi"
+   ],
+   "year": 2024,
+   "journal": "Cyberpsychol Behav Soc Netw",
+   "doi": "10.1089/cyber.2024.0001",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:39210723": {
    "kind": "pmid",
@@ -23210,6 +27972,103 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-18"
   },
+  "pmid:39213738": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A parallel-arm, randomized trial of Behavioral Activation Therapy for anhedonia versus mindfulness-based cognitive therapy for adults with anhedonia.",
+   "firstAuthor": "Cernasov",
+   "authors": [
+    "Cernasov",
+    "Walsh",
+    "Nagy",
+    "Kinard",
+    "Kelley",
+    "Phillips",
+    "Pisoni",
+    "Diehl",
+    "Haworth",
+    "West",
+    "Freeman",
+    "Pfister",
+    "Scott",
+    "Daughters",
+    "Gaylord",
+    "Dichter",
+    "Smoski"
+   ],
+   "year": 2024,
+   "journal": "Behav Res Ther",
+   "doi": "10.1016/j.brat.2024.104620",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:39242039": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cognitive behavioral therapy for insomnia to treat major depressive disorder with comorbid insomnia: A systematic review and meta-analysis.",
+   "firstAuthor": "Furukawa",
+   "authors": [
+    "Furukawa",
+    "Nagaoka",
+    "Sato",
+    "Toyomoto",
+    "Takashina",
+    "Kobayashi",
+    "Sakata",
+    "Nakajima",
+    "Ito",
+    "Yamamoto",
+    "Hara",
+    "Sakakibara",
+    "Perlis",
+    "Kasai"
+   ],
+   "year": 2024,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2024.09.017",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:39279628": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The relationship between perfectionism and self-esteem in adults: a systematic review and meta-analysis.",
+   "firstAuthor": "Khossousi",
+   "authors": [
+    "Khossousi",
+    "Greene",
+    "Shafran",
+    "Callaghan",
+    "Dickinson",
+    "Egan"
+   ],
+   "year": 2024,
+   "journal": "Behav Cogn Psychother",
+   "doi": "10.1017/S1352465824000249",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:39280291": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Impacts of digital social media detox for mental health: A systematic review and meta-analysis.",
+   "firstAuthor": "Ramadhan",
+   "authors": [
+    "Ramadhan",
+    "Rampengan",
+    "Yumnanisha",
+    "Setiono",
+    "Tjandra",
+    "Ariyanto",
+    "Idrisov",
+    "Empitu"
+   ],
+   "year": 2024,
+   "journal": "Narra J",
+   "doi": "10.52225/narra.v4i2.786",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:39290618": {
    "kind": "pmid",
    "valid": true,
@@ -23244,6 +28103,23 @@
    "doi": "10.3390/jcdd11090280",
    "source": "pubmed",
    "verifiedAt": "2026-10-10"
+  },
+  "pmid:39348315": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Improving Well-Being Through Digital Detoxification Among Social Media Users: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Ansari",
+   "authors": [
+    "Ansari",
+    "Iqbal",
+    "Azeem",
+    "Danyal"
+   ],
+   "year": 2024,
+   "journal": "Cyberpsychol Behav Soc Netw",
+   "doi": "10.1089/cyber.2023.0742",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:39363568": {
    "kind": "pmid",
@@ -23283,6 +28159,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:39456116": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The temporal trajectories of habit decay in daily life: An intensive longitudinal study on four health-risk behaviors.",
+   "firstAuthor": "Edgren",
+   "authors": [
+    "Edgren",
+    "Baretta",
+    "Inauen"
+   ],
+   "year": 2025,
+   "yearAlt": 2024,
+   "journal": "Appl Psychol Health Well Being",
+   "doi": "10.1111/aphw.12612",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:39491426": {
    "kind": "pmid",
    "valid": true,
@@ -23301,6 +28194,22 @@
    "doi": "10.1016/j.concog.2023.103590",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:39511912": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Self-compassion and psychological distress in chronic illness: A meta-analysis.",
+   "firstAuthor": "Baxter",
+   "authors": [
+    "Baxter",
+    "Sirois"
+   ],
+   "year": 2025,
+   "yearAlt": 2024,
+   "journal": "Br J Health Psychol",
+   "doi": "10.1111/bjhp.12761",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:39544659": {
    "kind": "pmid",
@@ -23343,6 +28252,23 @@
    "doi": "10.3389/fnins.2024.1450163",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:39579466": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Do the effects of internet-delivered cognitive-behavioral therapy (i-CBT) last after a year and beyond? A meta-analysis of 154 randomized controlled trials (RCTs).",
+   "firstAuthor": "Zainal",
+   "authors": [
+    "Zainal",
+    "Soh",
+    "Van Doren",
+    "Benjet"
+   ],
+   "year": 2024,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2024.102518",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:39606690": {
    "kind": "pmid",
@@ -23433,6 +28359,23 @@
    "doi": "10.1016/j.biopsycho.2024.108963",
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
+  },
+  "pmid:39685110": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Time to Form a Habit: A Systematic Review and Meta-Analysis of Health Behaviour Habit Formation and Its Determinants.",
+   "firstAuthor": "Singh",
+   "authors": [
+    "Singh",
+    "Murphy",
+    "Maher",
+    "Smith"
+   ],
+   "year": 2024,
+   "journal": "Healthcare (Basel)",
+   "doi": "10.3390/healthcare12232488",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:39685636": {
    "kind": "pmid",
@@ -23601,6 +28544,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:39916353": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of cognitive behavioral therapy in treating repetitive negative thinking, rumination, and worry - a transdiagnostic meta-analysis.",
+   "firstAuthor": "Stenzel",
+   "authors": [
+    "Stenzel",
+    "Keller",
+    "Kirchner",
+    "Rief",
+    "Berg"
+   ],
+   "year": 2025,
+   "journal": "Psychol Med",
+   "doi": "10.1017/S0033291725000017",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:39996950": {
    "kind": "pmid",
    "valid": true,
@@ -23618,6 +28579,77 @@
    "doi": "10.3390/dj13020076",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:40038410": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effects of social media abstinence on affective well-being and life satisfaction: a systematic review and meta-analysis.",
+   "firstAuthor": "Lemahieu",
+   "authors": [
+    "Lemahieu",
+    "Vander Zwalmen",
+    "Mennes",
+    "Koster",
+    "Vanden Abeele",
+    "Poels"
+   ],
+   "year": 2025,
+   "journal": "Sci Rep",
+   "doi": "10.1038/s41598-025-90984-3",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:40075149": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Systematic review and meta-analysis on fully automated digital cognitive behavioral therapy for insomnia.",
+   "firstAuthor": "Hwang",
+   "authors": [
+    "Hwang",
+    "Lee",
+    "Woo",
+    "Kim",
+    "Kwon"
+   ],
+   "year": 2025,
+   "journal": "NPJ Digit Med",
+   "doi": "10.1038/s41746-025-01514-4",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:40088246": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Burnout Among Physicians and Nurses Working in Intensive Care Units and Emergency Departments: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Lin",
+   "authors": [
+    "Lin",
+    "Selvanayagam",
+    "Patnaik",
+    "Kuo"
+   ],
+   "year": 2025,
+   "journal": "J Emerg Nurs",
+   "doi": "10.1016/j.jen.2025.02.007",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:40122263": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The empirical status of implicit emotion regulation in mood and anxiety disorders: A meta-analytic review.",
+   "firstAuthor": "Dalton",
+   "authors": [
+    "Dalton",
+    "Cooper",
+    "Jennings",
+    "Cheeta"
+   ],
+   "year": 2025,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2025.03.118",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:40127035": {
    "kind": "pmid",
@@ -23721,6 +28753,45 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:40234629": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Emotion regulation and mental health across cultures: a systematic review and meta-analysis.",
+   "firstAuthor": "Chen",
+   "authors": [
+    "Chen",
+    "Cai",
+    "Omari",
+    "Sanghvi",
+    "Lyu",
+    "Bonanno"
+   ],
+   "year": 2025,
+   "journal": "Nat Hum Behav",
+   "doi": "10.1038/s41562-025-02168-8",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:40258424": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Are cognitive behavioural therapy, cognitive therapy, and behavioural activation for depression effective in primary care? A systematic review and meta-analysis.",
+   "firstAuthor": "Carey",
+   "authors": [
+    "Carey",
+    "Kerr-Gaffney",
+    "Strawbridge",
+    "Hieronymus",
+    "McCutcheon",
+    "Young",
+    "Jauhar"
+   ],
+   "year": 2025,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2025.04.070",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:40323248": {
    "kind": "pmid",
    "valid": true,
@@ -23760,6 +28831,29 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:40344862": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Using the experience sampling methodology to measure anhedonia and its correlates in mental health research: A systematic review.",
+   "firstAuthor": "Beames",
+   "authors": [
+    "Beames",
+    "Uyttebroek",
+    "Edwards",
+    "Eisele",
+    "Kemme",
+    "Collier",
+    "van Roekel",
+    "Kwapil",
+    "Kirtley",
+    "Myin-Germeys"
+   ],
+   "year": 2025,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2025.102590",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:40362779": {
    "kind": "pmid",
    "valid": true,
@@ -23778,6 +28872,27 @@
    "doi": "10.3390/nu17091470",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:40369835": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Prevalence of Insomnia Disorder in the General Population: A Meta-Analysis.",
+   "firstAuthor": "van Straten",
+   "authors": [
+    "van Straten",
+    "Weinreich",
+    "Fábián",
+    "Reesen",
+    "Grigori",
+    "Luik",
+    "Harrer",
+    "Lancee"
+   ],
+   "year": 2025,
+   "journal": "J Sleep Res",
+   "doi": "10.1111/jsr.70089",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:40373021": {
    "kind": "pmid",
@@ -23838,6 +28953,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-18"
   },
+  "pmid:40449065": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of sleep hygiene education for insomnia: A systematic review and meta-analysis.",
+   "firstAuthor": "Ruan",
+   "authors": [
+    "Ruan",
+    "Liu",
+    "Chung",
+    "Ho",
+    "Yeung"
+   ],
+   "year": 2025,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2025.102109",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:40482984": {
    "kind": "pmid",
    "valid": true,
@@ -23895,6 +29028,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-14"
   },
+  "pmid:40526910": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effectiveness of Digital Behavioral Activation Interventions for Depression and Anxiety: Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Jia",
+   "authors": [
+    "Jia",
+    "Macon",
+    "Doering",
+    "Abraham"
+   ],
+   "year": 2025,
+   "journal": "J Med Internet Res",
+   "doi": "10.2196/68054",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:40527833": {
    "kind": "pmid",
    "valid": true,
@@ -23911,6 +29061,23 @@
    "doi": "10.1097/MD.0000000000042692",
    "source": "pubmed",
    "verifiedAt": "2026-10-10"
+  },
+  "pmid:40541378": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "An Internet-Delivered Rumination-Focused CBT Intervention for Adults With Depression and Anxiety: A Randomized Controlled Trial.",
+   "firstAuthor": "Tulbure",
+   "authors": [
+    "Tulbure",
+    "Dudău",
+    "Marian Ș",
+    "Watkins"
+   ],
+   "year": 2025,
+   "journal": "Behav Ther",
+   "doi": "10.1016/j.beth.2024.12.004",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:40571137": {
    "kind": "pmid",
@@ -23945,6 +29112,64 @@
    "doi": "10.1097/jnr.0000000000000683",
    "source": "pubmed",
    "verifiedAt": "2026-11-14"
+  },
+  "pmid:40597886": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Evaluating the efficacy of rumination-focused cognitive-behavioral therapy in alleviating depression, negative affect, and rumination among patients with recurrent major depressive disorder: a randomized, multicenter clinical trial.",
+   "firstAuthor": "Hasani",
+   "authors": [
+    "Hasani",
+    "Zenoozian",
+    "Ahmadi",
+    "Khakpoor",
+    "Saberi",
+    "Pirzeh",
+    "Saed"
+   ],
+   "year": 2025,
+   "journal": "BMC Psychiatry",
+   "doi": "10.1186/s12888-025-07065-y",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:40627390": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A meta-analysis of the effectiveness of gratitude interventions on well-being across cultures.",
+   "firstAuthor": "Choi",
+   "authors": [
+    "Choi",
+    "Cha",
+    "McCullough",
+    "Coles",
+    "Oishi"
+   ],
+   "year": 2025,
+   "journal": "Proc Natl Acad Sci U S A",
+   "doi": "10.1073/pnas.2425193122",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:40698012": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Digital bridges to social connection: A systematic review and meta-analysis of digital interventions for loneliness and social isolation.",
+   "firstAuthor": "Hansen",
+   "authors": [
+    "Hansen",
+    "Johansen",
+    "Kirkøen",
+    "Stene-Larsen",
+    "Straiton",
+    "Tornes",
+    "Reneflot"
+   ],
+   "year": 2025,
+   "journal": "Internet Interv",
+   "doi": "10.1016/j.invent.2025.100856",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:40715924": {
    "kind": "pmid",
@@ -24042,6 +29267,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
   },
+  "pmid:40818420": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Social jet lag and mental health outcomes: A systematic review and meta-analysis.",
+   "firstAuthor": "Gao",
+   "authors": [
+    "Gao",
+    "Gao",
+    "Zeng"
+   ],
+   "year": 2025,
+   "journal": "Acta Psychol (Amst)",
+   "doi": "10.1016/j.actpsy.2025.105419",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:40828179": {
    "kind": "pmid",
    "valid": true,
@@ -24096,6 +29337,24 @@
    "doi": "10.1016/j.ctim.2025.103231",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:40859383": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effectiveness of mindfulness-based cognitive therapy on rumination and related psychological indicators: a systematic review and meta-analysis.",
+   "firstAuthor": "Wei",
+   "authors": [
+    "Wei",
+    "Qin",
+    "Yu",
+    "Cao",
+    "Li"
+   ],
+   "year": 2025,
+   "journal": "BMC Psychol",
+   "doi": "10.1186/s40359-025-03348-x",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:40889828": {
    "kind": "pmid",
@@ -24164,6 +29423,69 @@
    "doi": "10.3389/fpsyt.2025.1616996",
    "source": "pubmed",
    "verifiedAt": "2026-11-14"
+  },
+  "pmid:40906608": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Perceived mental health literacy as a mediator between cognitive behavioural therapy (CBT) and depressive symptoms: a secondary data analysis of CoBalT trial data.",
+   "firstAuthor": "Archer",
+   "authors": [
+    "Archer",
+    "Hammerton",
+    "Kessler",
+    "Campbell",
+    "Kuyken",
+    "Lewis",
+    "Lewis",
+    "Williams",
+    "Wiles"
+   ],
+   "year": 2025,
+   "journal": "Cogn Behav Ther",
+   "doi": "10.1080/16506073.2025.2552929",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:40915504": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Evaluating the efficacy of psychotherapeutic and pharmacological treatments for depression on anhedonia: A systematic review and meta-analysis.",
+   "firstAuthor": "Pugh",
+   "authors": [
+    "Pugh",
+    "Saunders",
+    "Jones",
+    "Dunn",
+    "Buckman"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2025.120165",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:40930084": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Systematic review and meta-analysis of mechanistic loneliness interventions for older adults.",
+   "firstAuthor": "Coppola",
+   "authors": [
+    "Coppola",
+    "Ibrahim",
+    "Bloch",
+    "Sah",
+    "Mehta",
+    "Goel",
+    "Calkins",
+    "Hernandez",
+    "Lee"
+   ],
+   "year": 2025,
+   "journal": "Ann N Y Acad Sci",
+   "doi": "10.1111/nyas.70046",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:41032498": {
    "kind": "pmid",
@@ -24281,6 +29603,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:41210118": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The association between procrastination and negative emotions in healthy individuals: a systematic review and meta-analysis.",
+   "firstAuthor": "Nie",
+   "authors": [
+    "Nie",
+    "Wang",
+    "Zhou",
+    "Wang",
+    "Li",
+    "Liu",
+    "Gao"
+   ],
+   "year": 2025,
+   "journal": "Front Psychiatry",
+   "doi": "10.3389/fpsyt.2025.1624094",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:41248139": {
    "kind": "pmid",
    "valid": true,
@@ -24295,6 +29637,44 @@
    "doi": "10.1371/journal.pone.0336615",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:41248499": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of Individual-Level Interventions to Mitigate the Risk for Burnout Among Health Care Professionals : A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+   "firstAuthor": "Collett",
+   "authors": [
+    "Collett",
+    "Gupta",
+    "Eltayeb",
+    "Korszun",
+    "Sharples",
+    "Rice",
+    "Gupta"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Ann Intern Med",
+   "doi": "10.7326/ANNALS-25-00469",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:41259946": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sleep regularity as an important component of sleep hygiene: a systematic review.",
+   "firstAuthor": "Kalkanis",
+   "authors": [
+    "Kalkanis",
+    "Lenkens",
+    "Steiropoulos",
+    "Testelmans"
+   ],
+   "year": 2025,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2025.102203",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:41264119": {
    "kind": "pmid",
@@ -24354,6 +29734,22 @@
    "doi": "10.1038/s41598-025-24704-2",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:41294782": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Reducing Social Media Use Decreases Depression Symptoms: A Meta-Analysis of Randomised Controlled Trials.",
+   "firstAuthor": "May",
+   "authors": [
+    "May",
+    "Malouff",
+    "Meynadier"
+   ],
+   "year": 2025,
+   "journal": "Eur J Investig Health Psychol Educ",
+   "doi": "10.3390/ejihpe15110222",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:41310318": {
    "kind": "pmid",
@@ -24586,6 +29982,51 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-10"
   },
+  "pmid:41482596": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A systematic review and network meta-analysis of randomized controlled trials of well-being-focused interventions.",
+   "firstAuthor": "Wilkie",
+   "authors": [
+    "Wilkie",
+    "Fisher",
+    "Geidel",
+    "Goodall",
+    "Kamil",
+    "Davies",
+    "Kemp"
+   ],
+   "year": 2026,
+   "journal": "Nat Hum Behav",
+   "doi": "10.1038/s41562-025-02369-1",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:41483880": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A meta-analysis of the intervention effect of cognitive behavioral therapy on adult ADHD.",
+   "firstAuthor": "Liu",
+   "authors": [
+    "Liu",
+    "Zhu",
+    "Yu",
+    "Song",
+    "Luo",
+    "Xu",
+    "Lin",
+    "Ha",
+    "Kuang",
+    "Xie",
+    "Chen",
+    "Ren"
+   ],
+   "year": 2026,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2025.121107",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:41501316": {
    "kind": "pmid",
    "valid": true,
@@ -24704,6 +30145,20 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:41547238": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Burnout as an occupational phenomenon: Navigating the Twilight Zone.",
+   "firstAuthor": "De Beer",
+   "authors": [
+    "De Beer"
+   ],
+   "year": 2026,
+   "journal": "Psychiatry Res",
+   "doi": "10.1016/j.psychres.2026.116947",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:41561154": {
    "kind": "pmid",
    "valid": true,
@@ -24721,6 +30176,45 @@
    "doi": "10.3389/fphys.2025.1696346",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41570755": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sleep well, feel well and vice versa? A meta-analysis of daily bidirectional within-person associations between sleep and affect.",
+   "firstAuthor": "Bourke",
+   "authors": [
+    "Bourke",
+    "Harrison",
+    "Staton",
+    "Rossa",
+    "Smith"
+   ],
+   "year": 2026,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2026.102232",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:41573241": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effectiveness of social support interventions on loneliness among older people in the community: a meta-analysis of randomised controlled trials.",
+   "firstAuthor": "Huang",
+   "authors": [
+    "Huang",
+    "Yang",
+    "Yao",
+    "Li",
+    "Wu",
+    "Zhou",
+    "Wang"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Front Aging",
+   "doi": "10.3389/fragi.2025.1594513",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:41580220": {
    "kind": "pmid",
@@ -24778,6 +30272,24 @@
    "doi": "10.1097/HCR.0000000000001017",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:41638499": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Reducing social media use decreases loneliness regardless of gender or level of social comparisons in youth with anxiety and depression: A randomized controlled trial.",
+   "firstAuthor": "Goldfield",
+   "authors": [
+    "Goldfield",
+    "Lopes",
+    "Mahboob",
+    "Perry",
+    "Davis"
+   ],
+   "year": 2026,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2026.121331",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:41648972": {
    "kind": "pmid",
@@ -24851,6 +30363,59 @@
    "doi": "10.1016/j.jad.2026.121388",
    "source": "pubmed",
    "verifiedAt": "2026-11-10"
+  },
+  "pmid:41698121": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Meta-Analysis of the Correlation Between Rumination and Depression Among Adolescents.",
+   "firstAuthor": "Tao",
+   "authors": [
+    "Tao",
+    "Xiong",
+    "Guo",
+    "Mao",
+    "Wu"
+   ],
+   "year": 2026,
+   "journal": "J Psychosoc Nurs Ment Health Serv",
+   "doi": "10.3928/02793695-20260209-01",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:41699922": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Therapeutic Writing Interventions for Adults With Chronic Pain: Experiences and Health Effects-A Systematic Review With a Narrative Synthesis.",
+   "firstAuthor": "Salikka",
+   "authors": [
+    "Salikka",
+    "Kylmä",
+    "Fröjd"
+   ],
+   "year": 2026,
+   "journal": "Eur J Pain",
+   "doi": "10.1002/ejp.70235",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:41716901": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of behavioural sleep interventions on blood pressure, heart rate, and heart rate variability in adults with poor sleep health: a systematic review, meta-analysis, and meta-regression analysis.",
+   "firstAuthor": "Mostafa",
+   "authors": [
+    "Mostafa",
+    "Hanif",
+    "Balanos",
+    "Nirantharakumar",
+    "Ellis",
+    "Tahrani"
+   ],
+   "year": 2026,
+   "journal": "Eur Heart J Open",
+   "doi": "10.1093/ehjopen/oeag006",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:41743305": {
    "kind": "pmid",
@@ -25004,6 +30569,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:41773402": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Burnout in healthcare professionals.",
+   "firstAuthor": "Maluleka",
+   "authors": [
+    "Maluleka",
+    "Bulo",
+    "Nair",
+    "Von Pressentin"
+   ],
+   "year": 2026,
+   "journal": "S Afr Fam Pract (2004)",
+   "doi": "10.4102/safp.v68i1.6235",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:41801993": {
    "kind": "pmid",
    "valid": true,
@@ -25046,6 +30628,21 @@
    "doi": "10.1111/ene.70561",
    "source": "pubmed",
    "verifiedAt": "2026-11-13"
+  },
+  "pmid:41818908": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Interventions for preventing or reducing nurse burnout: A systematic review and meta-analysis.",
+   "firstAuthor": "Jiménez-García",
+   "authors": [
+    "Jiménez-García",
+    "Flor-Martínez"
+   ],
+   "year": 2026,
+   "journal": "Int J Nurs Stud",
+   "doi": "10.1016/j.ijnurstu.2026.105391",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:41825463": {
    "kind": "pmid",
@@ -25324,6 +30921,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:41936228": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cognitive behavioral therapy effects on global functioning, domain-specific functioning, and quality of life in adult ADHD: A comprehensive meta-analysis.",
+   "firstAuthor": "López-Pinar",
+   "authors": [
+    "López-Pinar",
+    "Selaskowski",
+    "Schulze",
+    "Oscarsson",
+    "Fenollar-Cortés",
+    "Sibley",
+    "Philipsen",
+    "Hirvikoski"
+   ],
+   "year": 2026,
+   "journal": "Behav Res Ther",
+   "doi": "10.1016/j.brat.2026.105026",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:41945645": {
    "kind": "pmid",
    "valid": true,
@@ -25378,6 +30996,21 @@
    "doi": "10.3389/fphys.2026.1747092",
    "source": "pubmed",
    "verifiedAt": "2026-10-10"
+  },
+  "pmid:41987207": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A systematic review and meta-analysis on the effectiveness of if-then plans - in a strict sense - to facilitate fruit and vegetable consumption in adults.",
+   "firstAuthor": "Melum",
+   "authors": [
+    "Melum",
+    "Martiny-Huenger"
+   ],
+   "year": 2026,
+   "journal": "Int J Behav Nutr Phys Act",
+   "doi": "10.1186/s12966-026-01915-y",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:41998562": {
    "kind": "pmid",
@@ -25610,6 +31243,31 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-18"
   },
+  "pmid:42215453": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Emotion regulation impairment across psychiatric disorders: a systematic review and meta-analysis.",
+   "firstAuthor": "Sloan",
+   "authors": [
+    "Sloan",
+    "Stellern",
+    "Xiao",
+    "Germeyer",
+    "Gill",
+    "Laputsina",
+    "Mulsant",
+    "Ngoy",
+    "Nguyen",
+    "Tang",
+    "Sanches",
+    "Gowin"
+   ],
+   "year": 2026,
+   "journal": "Transl Psychiatry",
+   "doi": "10.1038/s41398-026-04119-x",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:42238641": {
    "kind": "pmid",
    "valid": true,
@@ -25628,6 +31286,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:42240717": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of fully automated digital cognitive behavioral therapy for insomnia in adults: a systematic review and meta-analysis.",
+   "firstAuthor": "Gao",
+   "authors": [
+    "Gao",
+    "Zhao",
+    "Zhang",
+    "Su",
+    "Jia",
+    "Xu"
+   ],
+   "year": 2026,
+   "journal": "Sleep Breath",
+   "doi": "10.1007/s11325-026-03723-x",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:42275859": {
    "kind": "pmid",
    "valid": true,
@@ -25643,6 +31320,25 @@
    "doi": "10.1016/j.autneu.2026.103447",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:42290997": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Association of sleep quality and sleep duration with anxiety symptoms in older adults: a systematic review and meta-analysis.",
+   "firstAuthor": "Zhang",
+   "authors": [
+    "Zhang",
+    "Zhu",
+    "Zhang",
+    "Shen",
+    "Shi",
+    "Min"
+   ],
+   "year": 2026,
+   "journal": "Front Psychiatry",
+   "doi": "10.3389/fpsyt.2026.1838523",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:42302916": {
    "kind": "pmid",
@@ -26011,6 +31707,45 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-10"
   },
+  "pmid:42569817": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Procrastination, stress, and self-rated health: A multi-sample meta-analysis.",
+   "firstAuthor": "Sirois",
+   "authors": [
+    "Sirois",
+    "Monaghan"
+   ],
+   "year": 2026,
+   "journal": "Br J Health Psychol",
+   "doi": "10.1111/bjhp.70099",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:42586550": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Not all cues are equal: A systematic review and three-level meta-analysis of context consistency, physical activity and habit strength.",
+   "firstAuthor": "Zhu",
+   "authors": [
+    "Zhu",
+    "Tao",
+    "Zhou",
+    "Ma",
+    "Kaushal",
+    "Ma",
+    "Guo",
+    "Zhao",
+    "Oguntuase",
+    "Li",
+    "Zhang"
+   ],
+   "year": 2026,
+   "journal": "Appl Psychol Health Well Being",
+   "doi": "10.1111/aphw.70204",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:42591646": {
    "kind": "pmid",
    "valid": true,
@@ -26029,6 +31764,61 @@
    "doi": "10.3389/fnins.2026.1832059",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:42595374": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Research agenda to advance anhedonia assessment, understanding and treatment: an ECNP-GALENOS expert meeting report.",
+   "firstAuthor": "Penninx",
+   "authors": [
+    "Penninx",
+    "Kas",
+    "Dawson",
+    "Correll",
+    "Harmer",
+    "Buhl",
+    "De Prisco",
+    "Downs",
+    "Hernaus",
+    "Hopkins",
+    "Husain",
+    "Johnson",
+    "Mckernan",
+    "Ostinelli",
+    "Pizzagalli",
+    "Pryce",
+    "Reif",
+    "Schreiber",
+    "Serretti",
+    "Siafis",
+    "Tunbridge",
+    "Umbricht",
+    "Vinkers",
+    "Cipriani"
+   ],
+   "year": 2026,
+   "journal": "BMJ Ment Health",
+   "doi": "10.1136/bmjment-2026-302843",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
+  "pmid:42601536": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy and Acceptability of Digital and Web-Based Interventions for Stress and Burnout Among Physicians: A Systematic Review and Meta-analysis.",
+   "firstAuthor": "O'Rourke",
+   "authors": [
+    "O'Rourke",
+    "Murphy",
+    "Montagna",
+    "O'Rourke",
+    "O'Tuathaigh"
+   ],
+   "year": 2026,
+   "journal": "Acad Psychiatry",
+   "doi": "10.1007/s40596-026-02408-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:42614159": {
    "kind": "pmid",
@@ -26168,6 +31958,28 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:42732758": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Burnout and secondary traumatic stress in child protection workers: Untangling the role of personal and work-related factors using meta-analysis.",
+   "firstAuthor": "Roest",
+   "authors": [
+    "Roest",
+    "Vang",
+    "Stams",
+    "Turkanović",
+    "Ratling",
+    "Verkennis",
+    "Dekker",
+    "van Miert",
+    "Kuiper"
+   ],
+   "year": 2026,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2026.102801",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:42735381": {
    "kind": "pmid",
    "valid": true,
@@ -26268,6 +32080,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:42785818": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effectiveness of mindfulness-based interventions in enhancing resilience and mitigating occupational burnout among nurses: A meta-analysis of randomized controlled trials.",
+   "firstAuthor": "Lin",
+   "authors": [
+    "Lin",
+    "Wu",
+    "Tseng",
+    "Jimba",
+    "Lin",
+    "Chang"
+   ],
+   "year": 2026,
+   "journal": "Appl Nurs Res",
+   "doi": "10.1016/j.apnr.2026.152125",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:42789370": {
    "kind": "pmid",
    "valid": true,
@@ -26328,6 +32159,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-14"
   },
+  "pmid:42851485": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Behavior plan and the intention-behavior gap in physical activity among adolescents and college students: a systematic review and meta-analysis.",
+   "firstAuthor": "Yin",
+   "authors": [
+    "Yin",
+    "Sun",
+    "He",
+    "Qi",
+    "Li"
+   ],
+   "year": 2026,
+   "journal": "Front Public Health",
+   "doi": "10.3389/fpubh.2026.1950356",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:42870311": {
    "kind": "pmid",
    "valid": true,
@@ -26360,6 +32209,21 @@
    "doi": "10.1152/ajpheart.90182.2026",
    "source": "pubmed",
    "verifiedAt": "2026-11-11"
+  },
+  "pmid:42959890": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Does mental contrasting with implementation intentions (MCII) help to increase physical activity?",
+   "firstAuthor": "Kędra",
+   "authors": [
+    "Kędra",
+    "Łaguna"
+   ],
+   "year": 2026,
+   "journal": "Curr Issues Personal Psychol",
+   "doi": "10.5114/cipp/225999",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:43000936": {
    "kind": "pmid",
@@ -26476,6 +32340,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:7579748": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Changes in cerebral blood flow as monitored by transcranial Doppler during voluntary hyperventilation and their effect on the electroencephalogram.",
+   "firstAuthor": "Duarte",
+   "authors": [
+    "Duarte",
+    "Markus",
+    "Harrison"
+   ],
+   "year": 1995,
+   "journal": "J Neuroimaging",
+   "doi": "10.1111/jon199554209",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
+  },
   "pmid:7585069": {
    "kind": "pmid",
    "valid": true,
@@ -26514,6 +32394,21 @@
    "journal": "Praxis (Bern 1994)",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:7941644": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "[A meta-analysis of the effectiveness of gestalt therapy].",
+   "firstAuthor": "Bretz",
+   "authors": [
+    "Bretz",
+    "Heekerens",
+    "Schmitz"
+   ],
+   "year": 1994,
+   "journal": "Z Klin Psychol Psychopathol Psychother",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-25"
   },
   "pmid:7984236": {
    "kind": "pmid",

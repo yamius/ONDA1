@@ -58,7 +58,7 @@ Choose Muse S Athena if you want one consumer device that handles meditation, fo
 
 The neuroscience these headsets feed back — and what the EEG signal can and cannot tell you about mental states.
 
-- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
+- [Alpha brain waves: calm, creativity and flow](/articles/alpha-brain-waves) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 - [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus
 - [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — a metaphor for how much information the mind can handle
 `,

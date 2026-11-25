@@ -48,7 +48,7 @@ The Neurosity Crown is the best consumer EEG headset if you want to work with yo
 
 EEG (electroencephalography) records tiny electrical signals from the brain through sensors on the scalp. The Crown has **eight dry electrodes** at CP3, C3, F5, PO3, PO4, F6, C4 and CP4. That covers the front, centre, top and back of the head on both sides. Muse headbands use four sensors, mostly on the forehead and behind the ears.
 
-The Crown samples each channel **256 times per second**. A built-in chip cleans the signal (for example, it removes mains-power noise) and encrypts it on the device. From this it estimates **focus** and **calm** scores and shows the main brain-wave bands, such as [alpha](/articles/neural-bridge-alpha-flow-gateway).
+The Crown samples each channel **256 times per second**. A built-in chip cleans the signal (for example, it removes mains-power noise) and encrypts it on the device. From this it estimates **focus** and **calm** scores and shows the main brain-wave bands, such as [alpha](/articles/alpha-brain-waves).
 
 For developers, the key point is access. Neurosity offers official **JavaScript and Python** SDKs, plus support for BrainFlow, LSL and OSC — common tools in research labs. It also ships an MCP server, so AI assistants can read your live data if you allow it. The headset weighs 228 g.
 
@@ -97,7 +97,7 @@ The neuroscience these headsets feed back — and what the EEG signal can and ca
 
 - [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — how prefrontal control loops show up in EEG
 - [Adaptation and range fractionation](/articles/adaptation-hack-range-fractionation) — training cognitive states by deliberate variation
-- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
+- [Alpha brain waves: calm, creativity and flow](/articles/alpha-brain-waves) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 - [Breathing for focus and attention](/articles/breathing-for-focus-and-attention) — a simple experiment to test with an EEG headset
 `,
   references: [

@@ -1,5 +1,5 @@
 ---
-sourceHash: "34edde49fd8a"
+sourceHash: "87b823e6a848"
 title: "EEG神经反馈与消费级头戴设备：证据显示了什么"
 metaTitle: "EEG神经反馈：证据显示了什么"
 metaDescription: "EEG头戴设备实际测量的是什么，为什么专注和平静评分不是实验室指标，以及设盲和假反馈对照的神经反馈试验显示了什么。"
@@ -65,7 +65,7 @@ evidenceMap:
 
 ## 如何测量？
 
-**频段。** 软件按速度把EEG分成不同频段：较慢的**theta**活动；闭眼时增强的**alpha**节律（见 [alpha脑波](/articles/neural-bridge-alpha-flow-gateway)）；主动思考时较快的**beta**活动；以及最快的**gamma**活动（见 [gamma波与冥想体验](/articles/meditation-gamma-waves-experience)）。每个频段都会同时受到许多因素影响——睁眼还是闭眼、困倦、肌肉紧张、正在做的任务——所以一个频段并不等于某一种单一的心理状态。词汇表中的 [alpha状态](/glossary/alpha-state) 和 [theta状态](/glossary/theta-state) 条目给出了简短定义。
+**频段。** 软件按速度把EEG分成不同频段：较慢的**theta**活动；闭眼时增强的**alpha**节律（见 [alpha脑波](/articles/alpha-brain-waves)）；主动思考时较快的**beta**活动；以及最快的**gamma**活动（见 [gamma波与冥想体验](/articles/meditation-gamma-waves-experience)）。每个频段都会同时受到许多因素影响——睁眼还是闭眼、困倦、肌肉紧张、正在做的任务——所以一个频段并不等于某一种单一的心理状态。词汇表中的 [alpha状态](/glossary/alpha-state) 和 [theta状态](/glossary/theta-state) 条目给出了简短定义。
 
 **消费级头戴设备能记录什么。** 在一项实验室任务中，一款低成本头带采集到了经典的事件相关电位，即对大量重复试次取平均后得到的大脑反应 [S7]。这说明硬件记录的是真实的大脑活动，但并不能说明一个实时、逐刻变化的评分能反映注意力。
 

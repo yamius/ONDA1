@@ -58,7 +58,7 @@ Choose Happier Meditation if teaching quality is what you care about most and th
 
 The science of what meditation actually does at the nervous-system level.
 
-- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
+- [Alpha brain waves: calm, creativity and flow](/articles/alpha-brain-waves) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 - [Neural entrainment through meditation](/articles/neural-entrainment-meditation-2) — why structured practice rewires baseline cortical states
 `,
   references: [

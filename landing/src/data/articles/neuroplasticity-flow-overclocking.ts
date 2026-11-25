@@ -49,7 +49,7 @@ BDNF is the "Miracle-Gro" for your brain. It is a protein that supports the surv
 
 ## Section 2: What happens in the brain during a flow state?
 
-Flow State is a high-bandwidth cognitive state where the Prefrontal Cortex (the inner critic) temporarily shuts down—a process called Transient Hypofrontality. This allows for seamless information processing and massive increases in creativity and pattern recognition. EEG studies of flow are small; the clearest finding is more frontal theta with only moderate alpha, so flow is not simply an "alpha state" (see [alpha brain waves](/articles/neural-bridge-alpha-flow-gateway)). Mastering the transition into Flow is the key to peak cognitive performance.
+Flow State is a high-bandwidth cognitive state where the Prefrontal Cortex (the inner critic) temporarily shuts down—a process called Transient Hypofrontality. This allows for seamless information processing and massive increases in creativity and pattern recognition. EEG studies of flow are small; the clearest finding is more frontal theta with only moderate alpha, so flow is not simply an "alpha state" (see [alpha brain waves](/articles/alpha-brain-waves)). Mastering the transition into Flow is the key to peak cognitive performance.
 
 ---
 

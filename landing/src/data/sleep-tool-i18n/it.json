@@ -93,5 +93,12 @@
     "chronotype": "Test del cronotipo",
     "caffeine": "Orario limite per la caffeina",
     "breathing": "Timer per la respirazione per dormire"
+  },
+  "table": {
+    "title": "Tabella: a che ora andare a letto in base alla sveglia",
+    "intro": "Orari per 6 e 5 cicli completi da 90 minuti, contando circa 15 minuti per addormentarsi. I tuoi cicli possono durare da 70 a 120 minuti.",
+    "wake": "Sveglia alle",
+    "bed6": "A letto (6 cicli, 9 h)",
+    "bed5": "A letto (5 cicli, 7,5 h)"
   }
 }

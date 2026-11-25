@@ -1,5 +1,5 @@
 ---
-sourceHash: "34edde49fd8a"
+sourceHash: "87b823e6a848"
 title: "Neurofeedback EEG et casques grand public : ce que montrent les données"
 metaTitle: "Neurofeedback EEG : ce que montrent les données"
 metaDescription: "Ce que mesurent vraiment les casques EEG, pourquoi les scores de concentration et de calme ne sont pas des mesures de labo, et ce que montrent les essais."
@@ -69,7 +69,7 @@ Le point faible est l’étape intermédiaire du raisonnement. Peu d’expérien
 
 ## Comment le mesure-t-on ?
 
-**Bandes de fréquence.** Les logiciels découpent l’EEG en bandes selon leur vitesse : l’activité **thêta**, plus lente ; le rythme **alpha**, qui augmente quand on ferme les yeux (voir [les ondes cérébrales alpha](/articles/neural-bridge-alpha-flow-gateway)) ; l’activité **bêta**, plus rapide, pendant la réflexion active ; et l’activité **gamma**, la plus rapide (voir [les ondes gamma et l’expérience méditative](/articles/meditation-gamma-waves-experience)). Chaque bande varie avec beaucoup de facteurs à la fois — yeux ouverts ou fermés, somnolence, tension musculaire, tâche en cours —, si bien qu’une bande ne correspond pas à un état mental unique. Les entrées du glossaire sur [l’état alpha](/glossary/alpha-state) et [l’état thêta](/glossary/theta-state) en donnent de courtes définitions.
+**Bandes de fréquence.** Les logiciels découpent l’EEG en bandes selon leur vitesse : l’activité **thêta**, plus lente ; le rythme **alpha**, qui augmente quand on ferme les yeux (voir [les ondes cérébrales alpha](/articles/alpha-brain-waves)) ; l’activité **bêta**, plus rapide, pendant la réflexion active ; et l’activité **gamma**, la plus rapide (voir [les ondes gamma et l’expérience méditative](/articles/meditation-gamma-waves-experience)). Chaque bande varie avec beaucoup de facteurs à la fois — yeux ouverts ou fermés, somnolence, tension musculaire, tâche en cours —, si bien qu’une bande ne correspond pas à un état mental unique. Les entrées du glossaire sur [l’état alpha](/glossary/alpha-state) et [l’état thêta](/glossary/theta-state) en donnent de courtes définitions.
 
 **Ce que peuvent enregistrer les casques grand public.** Lors d’une tâche en laboratoire, un bandeau peu coûteux a capté des potentiels évoqués classiques, c’est-à-dire des réponses cérébrales moyennées sur de nombreux essais répétés [S7]. Cela montre que le matériel enregistre une véritable activité cérébrale. Cela ne montre pas qu’un score affiché en direct, d’instant en instant, reflète l’attention.
 

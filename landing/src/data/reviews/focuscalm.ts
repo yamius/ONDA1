@@ -59,7 +59,7 @@ Choose FocusCalm if you want the cheapest legitimate EEG-feedback experience wit
 The neuroscience these headsets feed back — and what the EEG signal can and cannot tell you about mental states.
 
 - [Adaptation and range fractionation](/articles/adaptation-hack-range-fractionation) — training cognitive states by deliberate variation
-- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
+- [Alpha brain waves: calm, creativity and flow](/articles/alpha-brain-waves) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 - [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus
 `,
   references: [

@@ -27,7 +27,7 @@ reviewer: null
 lastReviewed: null
 related:
   glossary: [biofeedback, alpha-state, theta-state]
-  articles: [neural-bridge-alpha-flow-gateway, meditation-gamma-waves-experience]
+  articles: [alpha-brain-waves, meditation-gamma-waves-experience]
   tools: []
   science: [evidence/hrv-biofeedback, evidence/meditation-autonomic-nervous-system, concepts/interoception]
 sources:
@@ -248,7 +248,7 @@ The weak point is the middle step of the argument. Few experiments separate the 
 
 ## How is it measured?
 
-**Frequency bands.** Software splits the EEG into bands by speed. Slower **theta** activity, the **alpha** rhythm that grows when the eyes close (see [alpha brain waves](/articles/neural-bridge-alpha-flow-gateway)), faster **beta** activity during active thinking, and the fastest **gamma** activity (see [gamma and meditation experience](/articles/meditation-gamma-waves-experience)). Each band changes with many things at once — eyes open or closed, drowsiness, muscle tension, the task — so a band is not a single mental state. The glossary entries on the [alpha state](/glossary/alpha-state) and the [theta state](/glossary/theta-state) give the short definitions.
+**Frequency bands.** Software splits the EEG into bands by speed. Slower **theta** activity, the **alpha** rhythm that grows when the eyes close (see [alpha brain waves](/articles/alpha-brain-waves)), faster **beta** activity during active thinking, and the fastest **gamma** activity (see [gamma and meditation experience](/articles/meditation-gamma-waves-experience)). Each band changes with many things at once — eyes open or closed, drowsiness, muscle tension, the task — so a band is not a single mental state. The glossary entries on the [alpha state](/glossary/alpha-state) and the [theta state](/glossary/theta-state) give the short definitions.
 
 **What consumer headsets can record.** In a laboratory task, a low-cost headband picked up classic event-related potentials, brain responses averaged over many repeated trials [S7]. That shows the hardware records real brain activity. It does not show that a live, moment-to-moment score tracks attention.
 

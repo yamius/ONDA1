@@ -1,5 +1,5 @@
 ---
-sourceHash: "34edde49fd8a"
+sourceHash: "87b823e6a848"
 title: "Neurofeedback con EEG y cascos de consumo: qué muestra la evidencia"
 metaTitle: "Neurofeedback con EEG: qué muestra la evidencia"
 metaDescription: "Qué miden de verdad los cascos de EEG, por qué las puntuaciones de concentración y calma no son métricas de laboratorio y qué muestran los ensayos ciegos."
@@ -69,7 +69,7 @@ El punto débil es el paso intermedio del argumento. Pocos experimentos separan 
 
 ## ¿Cómo se mide?
 
-**Bandas de frecuencia.** El software divide el EEG en bandas según su velocidad. La actividad **theta**, más lenta; el ritmo **alfa**, que aumenta al cerrar los ojos (ver [ondas cerebrales alfa](/articles/neural-bridge-alpha-flow-gateway)); la actividad **beta**, más rápida, durante el pensamiento activo, y la actividad **gamma**, la más rápida (ver [gamma y experiencia meditativa](/articles/meditation-gamma-waves-experience)). Cada banda cambia con muchas cosas a la vez —ojos abiertos o cerrados, somnolencia, tensión muscular, la tarea—, así que una banda no equivale a un único estado mental. Las entradas del glosario sobre el [estado alfa](/glossary/alpha-state) y el [estado theta](/glossary/theta-state) ofrecen las definiciones breves.
+**Bandas de frecuencia.** El software divide el EEG en bandas según su velocidad. La actividad **theta**, más lenta; el ritmo **alfa**, que aumenta al cerrar los ojos (ver [ondas cerebrales alfa](/articles/alpha-brain-waves)); la actividad **beta**, más rápida, durante el pensamiento activo, y la actividad **gamma**, la más rápida (ver [gamma y experiencia meditativa](/articles/meditation-gamma-waves-experience)). Cada banda cambia con muchas cosas a la vez —ojos abiertos o cerrados, somnolencia, tensión muscular, la tarea—, así que una banda no equivale a un único estado mental. Las entradas del glosario sobre el [estado alfa](/glossary/alpha-state) y el [estado theta](/glossary/theta-state) ofrecen las definiciones breves.
 
 **Qué pueden registrar los cascos de consumo.** En una tarea de laboratorio, una diadema de bajo coste captó potenciales relacionados con eventos clásicos, respuestas cerebrales promediadas sobre muchos ensayos repetidos [S7]. Eso demuestra que el hardware registra actividad cerebral real. No demuestra que una puntuación en directo, momento a momento, siga la atención.
 

@@ -93,5 +93,12 @@
     "chronotype": "Chronotype-test",
     "caffeine": "Cafeïne-stoptijd",
     "breathing": "Ademhalingstimer voor het slapen"
+  },
+  "table": {
+    "title": "Bedtijdtabel: hoe laat naar bed voor elke wektijd",
+    "intro": "Bedtijden voor 6 en 5 volledige cycli van 90 minuten, met ongeveer 15 minuten om in slaap te vallen. Je eigen cycli kunnen 70 tot 120 minuten duren.",
+    "wake": "Opstaan om",
+    "bed6": "Naar bed (6 cycli, 9 u)",
+    "bed5": "Naar bed (5 cycli, 7,5 u)"
   }
 }

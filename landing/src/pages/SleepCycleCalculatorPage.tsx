@@ -16,6 +16,9 @@ import { SourcesSection } from '../components/SourcesSection'
 
 type Mode = 'wake' | 'bed'
 
+/** Wake-up times for the static bedtime chart (5:00–9:00, every 30 min), prerendered for search. */
+const WAKE_TABLE = Array.from({ length: 9 }, (_, i) => 300 + i * 30)
+
 /** Render inline markdown links ([text](/path)) as router links. */
 function Rich({ text, lang }: { text: string; lang: Lang }) {
   const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g)
@@ -137,6 +140,34 @@ export function SleepCycleCalculatorPage() {
       </div>
 
       <p className="mb-10 font-mono text-[11px] leading-relaxed text-white/30">{c.disclaimer}</p>
+
+      <section className="mb-10">
+        <h2 className="mb-3 text-xl font-bold tracking-tight md:text-2xl">{c.table.title}</h2>
+        <p className="mb-4 text-sm leading-relaxed text-white/60">{c.table.intro}</p>
+        <div className="overflow-x-auto rounded-lg border border-white/10">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-white/5 font-mono text-[11px] uppercase tracking-widest text-white/50">
+              <tr>
+                <th scope="col" className="px-3 py-2">{c.table.wake}</th>
+                <th scope="col" className="px-3 py-2">{c.table.bed6}</th>
+                <th scope="col" className="px-3 py-2">{c.table.bed5}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {WAKE_TABLE.map((w) => {
+                const [six, five] = bedtimesForWake(w)
+                return (
+                  <tr key={w} className="border-t border-white/5">
+                    <th scope="row" className="px-3 py-2 font-semibold text-white/90">{fmtTime(w, lang)}</th>
+                    <td className="px-3 py-2 text-terminal-green">{fmtTime(six.minutes, lang)}</td>
+                    <td className="px-3 py-2 text-white/80">{fmtTime(five.minutes, lang)}</td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       <AppStoreCTA ct={storeCt('tool', 'sleepcycle', lang)} variant="tool" lang={lang} />
 

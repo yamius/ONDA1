@@ -93,5 +93,12 @@
     "chronotype": "Test chronotypu",
     "caffeine": "Godzina ostatniej kawy",
     "breathing": "Timer oddechowy na sen"
+  },
+  "table": {
+    "title": "Tabela: o której iść spać przy danej godzinie pobudki",
+    "intro": "Pory snu dla 6 i 5 pełnych 90-minutowych cykli, z około 15 minutami na zaśnięcie. Twoje cykle mogą trwać od 70 do 120 minut.",
+    "wake": "Pobudka o",
+    "bed6": "Spać (6 cykli, 9 h)",
+    "bed5": "Spać (5 cykli, 7,5 h)"
   }
 }

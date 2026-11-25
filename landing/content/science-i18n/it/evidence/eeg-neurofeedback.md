@@ -1,5 +1,5 @@
 ---
-sourceHash: "34edde49fd8a"
+sourceHash: "87b823e6a848"
 title: "Neurofeedback EEG e cuffie consumer: che cosa mostrano le evidenze"
 metaTitle: "Neurofeedback EEG: che cosa mostrano le evidenze"
 metaDescription: "Che cosa misurano davvero le cuffie EEG, perché i punteggi di concentrazione e calma non sono misure di laboratorio e che cosa mostrano gli studi in cieco."
@@ -69,7 +69,7 @@ Il punto debole è il passaggio centrale del ragionamento. Pochi esperimenti sep
 
 ## Come si misura?
 
-**Bande di frequenza.** Il software suddivide l'EEG in bande in base alla velocità: l'attività **theta**, più lenta; il ritmo **alfa**, che aumenta quando si chiudono gli occhi (vedi [onde cerebrali alfa](/articles/neural-bridge-alpha-flow-gateway)); l'attività **beta**, più veloce, durante il pensiero attivo; e l'attività **gamma**, la più veloce (vedi [onde gamma ed esperienza meditativa](/articles/meditation-gamma-waves-experience)). Ogni banda cambia con molti fattori insieme, come occhi aperti o chiusi, sonnolenza, tensione muscolare e compito in corso, quindi una banda non corrisponde a un singolo stato mentale. Le voci del glossario sullo [stato alfa](/glossary/alpha-state) e sullo [stato theta](/glossary/theta-state) ne danno brevi definizioni.
+**Bande di frequenza.** Il software suddivide l'EEG in bande in base alla velocità: l'attività **theta**, più lenta; il ritmo **alfa**, che aumenta quando si chiudono gli occhi (vedi [onde cerebrali alfa](/articles/alpha-brain-waves)); l'attività **beta**, più veloce, durante il pensiero attivo; e l'attività **gamma**, la più veloce (vedi [onde gamma ed esperienza meditativa](/articles/meditation-gamma-waves-experience)). Ogni banda cambia con molti fattori insieme, come occhi aperti o chiusi, sonnolenza, tensione muscolare e compito in corso, quindi una banda non corrisponde a un singolo stato mentale. Le voci del glossario sullo [stato alfa](/glossary/alpha-state) e sullo [stato theta](/glossary/theta-state) ne danno brevi definizioni.
 
 **Che cosa possono registrare le cuffie consumer.** In un compito di laboratorio, una fascia a basso costo ha rilevato i classici potenziali evento-correlati, cioè risposte cerebrali mediate su molte prove ripetute [S7]. Questo dimostra che l'hardware registra una vera attività cerebrale. Non dimostra che un punteggio in tempo reale, istante per istante, segua l'attenzione.
 

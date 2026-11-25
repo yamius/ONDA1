@@ -1,5 +1,5 @@
 ---
-sourceHash: "34edde49fd8a"
+sourceHash: "87b823e6a848"
 title: "Neurofeedback por EEG e headsets de consumo: o que mostram as evidências"
 metaTitle: "Neurofeedback por EEG: o que mostram as provas"
 metaDescription: "O que os headsets de EEG medem de fato, por que as pontuações de foco e calma não são medidas de laboratório e o que mostram os estudos cegos."
@@ -69,7 +69,7 @@ O ponto fraco é a etapa do meio do raciocínio. Poucos experimentos separam o e
 
 ## Como é medido?
 
-**Faixas de frequência.** O software divide o EEG em faixas conforme a velocidade: a atividade **teta**, mais lenta; o ritmo **alfa**, que aumenta quando os olhos se fecham (veja [ondas cerebrais alfa](/articles/neural-bridge-alpha-flow-gateway)); a atividade **beta**, mais rápida, durante o pensamento ativo; e a atividade **gama**, a mais rápida (veja [ondas gama e a experiência da meditação](/articles/meditation-gamma-waves-experience)). Cada faixa muda com muitos fatores ao mesmo tempo — olhos abertos ou fechados, sonolência, tensão muscular, a tarefa —, por isso uma faixa não corresponde a um único estado mental. Os verbetes do glossário sobre o [estado alfa](/glossary/alpha-state) e o [estado teta](/glossary/theta-state) trazem definições curtas.
+**Faixas de frequência.** O software divide o EEG em faixas conforme a velocidade: a atividade **teta**, mais lenta; o ritmo **alfa**, que aumenta quando os olhos se fecham (veja [ondas cerebrais alfa](/articles/alpha-brain-waves)); a atividade **beta**, mais rápida, durante o pensamento ativo; e a atividade **gama**, a mais rápida (veja [ondas gama e a experiência da meditação](/articles/meditation-gamma-waves-experience)). Cada faixa muda com muitos fatores ao mesmo tempo — olhos abertos ou fechados, sonolência, tensão muscular, a tarefa —, por isso uma faixa não corresponde a um único estado mental. Os verbetes do glossário sobre o [estado alfa](/glossary/alpha-state) e o [estado teta](/glossary/theta-state) trazem definições curtas.
 
 **O que os headsets de consumo conseguem registrar.** Em uma tarefa de laboratório, uma faixa de baixo custo captou potenciais relacionados a eventos clássicos, respostas cerebrais calculadas pela média de muitas repetições [S7]. Isso mostra que o aparelho registra atividade cerebral real. Não mostra que uma pontuação ao vivo, momento a momento, acompanhe a atenção.
 

@@ -93,5 +93,12 @@
     "chronotype": "Chronotyp-Test",
     "caffeine": "Koffein-Deadline",
     "breathing": "Atemtimer zum Einschlafen"
+  },
+  "table": {
+    "title": "Schlafenszeit-Tabelle: wann ins Bett für jede Weckzeit",
+    "intro": "Schlafenszeiten für 6 und 5 volle 90-Minuten-Zyklen, mit etwa 15 Minuten zum Einschlafen. Deine eigenen Zyklen können 70 bis 120 Minuten dauern.",
+    "wake": "Aufstehen um",
+    "bed6": "Ins Bett (6 Zyklen, 9 Std.)",
+    "bed5": "Ins Bett (5 Zyklen, 7,5 Std.)"
   }
 }

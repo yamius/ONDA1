@@ -93,5 +93,12 @@
     "chronotype": "Teste de cronotipo",
     "caffeine": "Horário limite para cafeína",
     "breathing": "Timer de respiração para dormir"
+  },
+  "table": {
+    "title": "Tabela: a que horas dormir para cada horário de acordar",
+    "intro": "Horários para 6 e 5 ciclos completos de 90 minutos, contando cerca de 15 minutos para adormecer. Seus ciclos podem durar de 70 a 120 minutos.",
+    "wake": "Acordar às",
+    "bed6": "Deitar (6 ciclos, 9 h)",
+    "bed5": "Deitar (5 ciclos, 7,5 h)"
   }
 }

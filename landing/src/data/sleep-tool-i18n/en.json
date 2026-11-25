@@ -93,5 +93,12 @@
     "chronotype": "Chronotype quiz",
     "caffeine": "Caffeine cut-off time",
     "breathing": "Breathing timer for sleep"
+  },
+  "table": {
+    "title": "Bedtime chart: what time to go to bed for each wake-up time",
+    "intro": "Bedtimes for 6 and 5 full 90-minute cycles, with about 15 minutes to fall asleep. Your own cycles may run 70 to 120 minutes.",
+    "wake": "Wake up at",
+    "bed6": "Bed for 6 cycles (9 h)",
+    "bed5": "Bed for 5 cycles (7.5 h)"
   }
 }

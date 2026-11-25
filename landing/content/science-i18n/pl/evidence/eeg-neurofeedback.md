@@ -1,5 +1,5 @@
 ---
-sourceHash: "34edde49fd8a"
+sourceHash: "87b823e6a848"
 title: "Neurofeedback EEG i opaski konsumenckie: co pokazują badania"
 metaTitle: "Neurofeedback EEG: co pokazują badania"
 metaDescription: "Co naprawdę mierzą opaski EEG, dlaczego wyniki skupienia i spokoju nie są pomiarami laboratoryjnymi i co pokazują zaślepione badania neurofeedbacku."
@@ -68,7 +68,7 @@ Słabym punktem jest środkowe ogniwo rozumowania. Niewiele eksperymentów oddzi
 
 ## Jak się to mierzy?
 
-**Pasma częstotliwości.** Oprogramowanie dzieli EEG na pasma według szybkości. Wolniejsza aktywność **theta**, rytm **alfa**, który narasta przy zamkniętych oczach (zob. [fale mózgowe alfa](/articles/neural-bridge-alpha-flow-gateway)), szybsza aktywność **beta** podczas aktywnego myślenia i najszybsza aktywność **gamma** (zob. [gamma a doświadczenie medytacji](/articles/meditation-gamma-waves-experience)). Każde pasmo zmienia się pod wpływem wielu czynników naraz — otwartych lub zamkniętych oczu, senności, napięcia mięśni, wykonywanego zadania — więc pasmo nie odpowiada jednemu stanowi umysłu. Krótkie definicje podają hasła słownika [stan alfa](/glossary/alpha-state) i [stan theta](/glossary/theta-state).
+**Pasma częstotliwości.** Oprogramowanie dzieli EEG na pasma według szybkości. Wolniejsza aktywność **theta**, rytm **alfa**, który narasta przy zamkniętych oczach (zob. [fale mózgowe alfa](/articles/alpha-brain-waves)), szybsza aktywność **beta** podczas aktywnego myślenia i najszybsza aktywność **gamma** (zob. [gamma a doświadczenie medytacji](/articles/meditation-gamma-waves-experience)). Każde pasmo zmienia się pod wpływem wielu czynników naraz — otwartych lub zamkniętych oczu, senności, napięcia mięśni, wykonywanego zadania — więc pasmo nie odpowiada jednemu stanowi umysłu. Krótkie definicje podają hasła słownika [stan alfa](/glossary/alpha-state) i [stan theta](/glossary/theta-state).
 
 **Co mogą zarejestrować opaski konsumenckie.** W zadaniu laboratoryjnym tania opaska zarejestrowała klasyczne potencjały wywołane związane ze zdarzeniem, czyli odpowiedzi mózgu uśrednione z wielu powtórzeń [S7]. To pokazuje, że sprzęt rejestruje prawdziwą aktywność mózgu. Nie pokazuje natomiast, że bieżący wynik, zmieniający się z chwili na chwilę, śledzi uwagę.
 

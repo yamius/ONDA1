@@ -93,5 +93,12 @@
     "chronotype": "Test de cronotipo",
     "caffeine": "Hora límite para la cafeína",
     "breathing": "Temporizador de respiración para dormir"
+  },
+  "table": {
+    "title": "Tabla de horarios: a qué hora acostarte según la hora de despertar",
+    "intro": "Horas para acostarte con 6 y 5 ciclos completos de 90 minutos, contando unos 15 minutos para dormirte. Tus ciclos pueden durar de 70 a 120 minutos.",
+    "wake": "Si te levantas a las",
+    "bed6": "Acuéstate (6 ciclos, 9 h)",
+    "bed5": "Acuéstate (5 ciclos, 7,5 h)"
   }
 }

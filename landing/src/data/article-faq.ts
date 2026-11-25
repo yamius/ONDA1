@@ -254,6 +254,21 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
       answer:
         "Alpha neurofeedback can teach people to change their alpha during a session. Whether that brings lasting benefits for stress, focus or sleep is uncertain, and studies use many different protocols.",
     },
+    {
+      question: 'Do alpha waves make you more creative?',
+      answer:
+        'Alpha activity tends to rise while people generate ideas, and a review of EEG studies called this one of the most consistent findings in creativity research (Fink & Benedek 2014). It seems to reflect attention turned inward. That does not show that raising alpha on purpose makes you more creative.',
+    },
+    {
+      question: 'Do alpha waves lower cortisol or stress?',
+      answer:
+        'There is no good evidence that alpha waves themselves lower cortisol. Activities that often go with more alpha, such as eyes-closed rest, slow breathing and meditation, can help you feel calmer, but that does not mean alpha is switching off stress hormones.',
+    },
+    {
+      question: 'Can binaural beats or an app put my brain into alpha?',
+      answer:
+        'The evidence is mixed. A meta-analysis found binaural beats had a medium effect on memory, attention, anxiety and pain, but a systematic review of EEG studies found inconsistent evidence that they actually shift brain rhythms. Apps without an EEG, including ONDA, cannot measure alpha waves; ONDA reads pulse, breathing and, with an Apple Watch, HRV.',
+    },
   ],
   "apple-watch-recovery-hrv-vs-overall-hrv": [
     {
@@ -1119,28 +1134,6 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
       question: 'How does rhythmic entrainment synchronize CPGs and why does music improve endurance?',
       answer:
         'CPGs are oscillator networks that entrain to external rhythmic inputs via the auditory-motor pathway — a direct neural connection between auditory cortex and spinal motor circuits, used clinically in gait rehabilitation for stroke and Parkinson\'s patients. External rhythm provides a phase-locking signal that synchronizes CPG oscillators and shifts them toward maximum efficiency mode — where energy consumption per unit of movement output is minimized. This is the mechanism behind the well-documented ergogenic (performance-enhancing) effect of music during endurance exercise: it is not motivational in origin, it is a CPG synchronization tool. Breathing at 0.1 Hz provides a complementary entrainment signal via the respiratory CPG, which cross-couples with locomotor CPGs and cardiac rhythm.',
-    },
-  ],
-  'neural-bridge-alpha-flow-gateway': [
-    {
-      question: 'What are alpha brain waves?',
-      answer:
-        'Alpha waves are a rhythm in the brain’s electrical activity of about 8–12 cycles per second, recorded with EEG. They are strongest at the back of the head when you are awake, relaxed and have your eyes closed, and they shrink when you open your eyes. Hans Berger first described them in 1929.',
-    },
-    {
-      question: 'Do alpha waves make you more creative?',
-      answer:
-        'Alpha activity tends to rise while people generate ideas, and a review of EEG studies called this one of the most consistent findings in creativity research (Fink & Benedek 2014). It seems to reflect attention turned inward. That does not show that raising alpha on purpose makes you more creative.',
-    },
-    {
-      question: 'Do alpha waves lower cortisol or stress?',
-      answer:
-        'There is no good evidence that alpha waves themselves lower cortisol. Activities that often go with more alpha, such as eyes-closed rest, slow breathing and meditation, can help you feel calmer, but that does not mean alpha is switching off stress hormones.',
-    },
-    {
-      question: 'Can binaural beats or an app put my brain into alpha?',
-      answer:
-        'The evidence is mixed. A meta-analysis found binaural beats had a medium effect on memory, attention, anxiety and pain, but a systematic review of EEG studies found inconsistent evidence that they actually shift brain rhythms. Apps without an EEG, including ONDA, cannot measure alpha waves; ONDA reads pulse, breathing and, with an Apple Watch, HRV.',
     },
   ],
   'anti-entropy-neural-architecture': [
