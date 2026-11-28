@@ -7338,6 +7338,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-11"
   },
+  "doi:10.1038/s41598-026-69362-0": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of E-cigarette and tobacco use on heart rate variability: a case-control study",
+   "firstAuthor": "Çamkıran",
+   "authors": [
+    "Çamkıran",
+    "Achmar",
+    "Achmar",
+    "Kutlu",
+    "Kurul",
+    "Demirel",
+    "Tunç",
+    "İpek"
+   ],
+   "year": 2026,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-11-28"
+  },
   "doi:10.1038/s41746-020-00363-7": {
    "kind": "doi",
    "valid": true,
@@ -8983,6 +9003,20 @@
    "journal": "Family Practice",
    "source": "crossref",
    "verifiedAt": "2026-11-25"
+  },
+  "doi:10.1093/ntr/ntr004": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A Single 4 mg Dose of Nicotine Decreases Heart Rate Variability in Healthy Nonsmokers: Implications for Smoking Cessation Programs",
+   "firstAuthor": "Sjoberg",
+   "authors": [
+    "Sjoberg",
+    "Saint"
+   ],
+   "year": 2011,
+   "journal": "Nicotine &amp; Tobacco Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-28"
   },
   "doi:10.1093/occmed/kqaf101": {
    "kind": "doi",
@@ -11580,6 +11614,23 @@
    "journal": "Evidence-Based Complementary and Alternative Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1155/2022/4286621": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nicotine Ingestion Reduces Heart Rate Variability in Young Healthy Adults",
+   "firstAuthor": "Guo",
+   "authors": [
+    "Guo",
+    "Wang",
+    "Liu",
+    "Wu",
+    "Liao"
+   ],
+   "year": 2022,
+   "journal": "BioMed Research International",
+   "source": "crossref",
+   "verifiedAt": "2026-11-28"
   },
   "doi:10.1159/000440726": {
    "kind": "doi",
@@ -14659,6 +14710,28 @@
    "journal": "JMIR Cardio",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.2196/98116": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Tobacco Use Trajectories and Associated Changes in Biometrics and Sleep During the First 72 Weeks of Wearable Membership: Observational Cohort Study",
+   "firstAuthor": "Curran",
+   "authors": [
+    "Curran",
+    "Leota",
+    "Hippel",
+    "Fielding",
+    "Chapman",
+    "Cohen",
+    "Presby",
+    "Jhunjhunwala",
+    "Holmes",
+    "Grosicki"
+   ],
+   "year": 2026,
+   "journal": "JMIR mHealth and uHealth",
+   "source": "crossref",
+   "verifiedAt": "2026-11-28"
   },
   "doi:10.2196/99630": {
    "kind": "doi",
@@ -19474,6 +19547,21 @@
    "doi": "10.1016/j.ijpsycho.2011.02.004",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:21350044": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A single 4 mg dose of nicotine decreases heart rate variability in healthy nonsmokers: implications for smoking cessation programs.",
+   "firstAuthor": "Sjoberg",
+   "authors": [
+    "Sjoberg",
+    "Saint"
+   ],
+   "year": 2011,
+   "journal": "Nicotine Tob Res",
+   "doi": "10.1093/ntr/ntr004",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-28"
   },
   "pmid:21491410": {
    "kind": "pmid",
@@ -26241,6 +26329,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:35028314": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nicotine Ingestion Reduces Heart Rate Variability in Young Healthy Adults.",
+   "firstAuthor": "Guo",
+   "authors": [
+    "Guo",
+    "Wang",
+    "Liu",
+    "Wu",
+    "Liao"
+   ],
+   "year": 2022,
+   "journal": "Biomed Res Int",
+   "doi": "10.1155/2022/4286621",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-28"
+  },
   "pmid:35040799": {
    "kind": "pmid",
    "valid": true,
@@ -32298,6 +32404,29 @@
    "source": "pubmed",
    "verifiedAt": "2026-11-18"
   },
+  "pmid:42336399": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Tobacco Use Trajectories and Associated Changes in Biometrics and Sleep During the First 72 Weeks of Wearable Membership: Observational Cohort Study.",
+   "firstAuthor": "Curran",
+   "authors": [
+    "Curran",
+    "Leota",
+    "Hippel",
+    "Fielding",
+    "Chapman",
+    "Cohen",
+    "Presby",
+    "Jhunjhunwala",
+    "Holmes",
+    "Grosicki"
+   ],
+   "year": 2026,
+   "journal": "JMIR Mhealth Uhealth",
+   "doi": "10.2196/98116",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-28"
+  },
   "pmid:42341764": {
    "kind": "pmid",
    "valid": true,
@@ -32841,6 +32970,27 @@
    "doi": "10.1002/oto2.70294",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:42686892": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of E-cigarette and tobacco use on heart rate variability: a case-control study.",
+   "firstAuthor": "Çamkıran",
+   "authors": [
+    "Çamkıran",
+    "Achmar",
+    "Achmar",
+    "Kutlu İ",
+    "Kurul",
+    "Demirel ÖU",
+    "Tunç",
+    "İpek"
+   ],
+   "year": 2026,
+   "journal": "Sci Rep",
+   "doi": "10.1038/s41598-026-69362-0",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-28"
   },
   "pmid:42712702": {
    "kind": "pmid",
